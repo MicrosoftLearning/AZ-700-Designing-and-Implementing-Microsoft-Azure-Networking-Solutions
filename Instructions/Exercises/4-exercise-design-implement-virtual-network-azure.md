@@ -17,7 +17,7 @@ On-premises 10.10.0.0/16
 ResearchVNet West India 10.40.40.0/24
 CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
-](../media/az-700-azure-networking-solutions-module-1-10.png)
+](../media/design-implement-vnet-peering.png)
 
 You will create the following resources:
 
