@@ -1,4 +1,3 @@
-# Exercise - connect two Azure Virtual Networks using global virtual network peering
 
 In this unit, you will configure enable connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
@@ -10,7 +9,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test the
 
 1. On the Azure home page, select Virtual Machines.
 2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/az-700-azure-networking-solutions-module-1-38.png)
+   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
 
 3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
 
@@ -97,7 +96,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test the
 
 
 3. The test connection should fail, and you will see a result similar to the following:
-   ![PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed ](../media/az-700-azure-networking-solutions-module-1-39.png)
+   ![PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed ](../media/test-netconnection-fail.png)
 
  
 
@@ -106,7 +105,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test the
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 2. In CoreServicesVnet, under **Settings**, select **Peerings**.
-   ![screen shot of core services VNet Peering settings ](../media/az-700-azure-networking-solutions-module-1-40.png)
+   ![screen shot of core services VNet Peering settings ](../media/create-peering-on-coreservicesvnet.png)
 
 3. On CoreServicesVnet | Peerings, select **+ Add**.
 
@@ -150,7 +149,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test the
 
 
 3. The test connection should succeed, and you will see a result similar to the following:
-   ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/az-700-azure-networking-solutions-module-1-41.png)
+   ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
 
  
 
