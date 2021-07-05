@@ -1,4 +1,3 @@
-# Exercise - Design and implement a Virtual Network in Azure
 
  
 
@@ -17,7 +16,7 @@ On-premises 10.10.0.0/16
 ResearchVNet West India 10.40.40.0/24
 CoreServicesVNet West US 10.20.0.0/16
 ManufacturingVNet North Europe 10.30.0.0/16
-](../media/Design-implement-vnet-peering.png)
+](../media/design-implement-vnet-peering.png)
 
 You will create the following resources:
 
@@ -46,7 +45,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 1. Go to [Azure Portal](https://portal.azure.com/).
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
-   ‎![Azure portal home page with Resource groups highlighted.](../media/az-700-azure-networking-solutions-module-1-11.png)
+   ‎![Azure portal home page with Resource groups highlighted.](../media/azure-portal-home-page-annotated.png)
 
 3. In Resource groups, select **+ Create**.
 
@@ -68,11 +67,11 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 1. On the Azure Portal home page, select **Create a resource**.
 2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/az-700-azure-networking-solutions-module-1-12.png)
+   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
 3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/az-700-azure-networking-solutions-module-1-13.png)
+   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
 4. Use the information in the following table to create the CoreServicesVnet virtual network.  
-   ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/az-700-azure-networking-solutions-module-1-14.png)
+   ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
  
 
@@ -109,10 +108,10 @@ These virtual networks and subnets are structured in a way that accommodates exi
 1. On the Azure Portal home page, select **Create a resource**.
 
 2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/az-700-azure-networking-solutions-module-1-15.png)
+   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
 
 3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/az-700-azure-networking-solutions-module-1-16.png)
+   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
 
 4. Use the information in the following table to create the ManufacturingVnet virtual network.
 
@@ -151,10 +150,10 @@ These virtual networks and subnets are structured in a way that accommodates exi
 1. On the Azure Portal home page, select **Create a resource**.
 
 2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/az-700-azure-networking-solutions-module-1-17.png)
+   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
 
 3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/az-700-azure-networking-solutions-module-1-18.png)
+   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
 
 4. Use the information in the following table to create the ResearchVnet virtual network.
 
@@ -179,11 +178,11 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 1. On the Azure Portal home page, select **All resources**.
 
-   ![Azure portal home page with All resources highlighted.](../media/az-700-azure-networking-solutions-module-1-19.png)
+   ![Azure portal home page with All resources highlighted.](../media/azure-portal-home-page-all-resources-annotated.png)
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
 
-   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/az-700-azure-networking-solutions-module-1-20.png)
+   ![All resources list with CoreServicesVnet, ManufacturingVnet, and ResearchVnet highlighted.](../media/all-resources-list-annotated.png)
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
@@ -193,7 +192,7 @@ These virtual networks and subnets are structured in a way that accommodates exi
 
 6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
-   ![List of subnets in CoreServicesVnet.](../media/az-700-azure-networking-solutions-module-1-21.png)
+   ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
 7. Repeat steps 4 -6 for each subnet.
 
