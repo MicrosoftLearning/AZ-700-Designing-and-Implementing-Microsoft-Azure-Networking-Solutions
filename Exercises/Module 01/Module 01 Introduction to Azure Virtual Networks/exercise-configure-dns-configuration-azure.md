@@ -1,4 +1,8 @@
-
+---
+Exercise:
+    title: 'Configure dns configuration azure'
+    module: 'Module - Introduction to Azure Virtual Networks'
+---
 
 In this unit, you will configure DNS name resolution for Contoso Ltd. You will create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
 
