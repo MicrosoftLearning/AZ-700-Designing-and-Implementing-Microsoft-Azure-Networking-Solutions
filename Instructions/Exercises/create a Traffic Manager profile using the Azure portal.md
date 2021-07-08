@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'create a Traffic Manager profile using the Azure portal'
+    title: 'Create a Traffic Manager profile using the Azure portal'
     module: 'Module - Load balancing non-HTTP(S) traffic in Azure'
 ---
 
