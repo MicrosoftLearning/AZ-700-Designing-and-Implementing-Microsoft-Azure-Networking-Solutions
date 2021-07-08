@@ -6,7 +6,7 @@ layout: home
 
 # Content Directory
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+Hyperlinks to each of the exercises are listed below.
 
 ## Exercises
 
@@ -17,3 +17,6 @@ Hyperlinks to each of the lab exercises and demos are listed below.
 {% endfor %}
 
 
+lab:
+    title: '01 - Manage Azure Active Directory Identities'
+    module: 'Module 01 - Identity'
