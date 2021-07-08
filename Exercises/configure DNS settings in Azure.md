@@ -1,5 +1,5 @@
 ---
-Exercise:
+Exercises:
     title: 'Configure dns configuration azure'
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
