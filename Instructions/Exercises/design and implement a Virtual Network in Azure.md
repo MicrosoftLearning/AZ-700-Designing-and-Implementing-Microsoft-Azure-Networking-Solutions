@@ -5,7 +5,7 @@ Exercise:
 ---
 
 
-Now you're ready to create and deploy some virtual networks with the IP addresses that you planned.
+Now you're ready to deploy virtual networks in the Azure portal.
 
 Consider the fictional organization Contoso Ltd, which is in the process of migrating infrastructure and applications to Azure. In your role as network engineer, you must plan and implement three virtual networks and subnets to support resources in those virtual networks.
 
@@ -38,8 +38,8 @@ You will create the following resources:
 |                     |              |                                   | SensorSubnet1             | 10.30.20.0/24 |
 |                     |              |                                   | SensorSubnet2             | 10.30.21.0/24 |
 |                     |              |                                   | SensorSubnet3             | 10.30.22.0/24 |
-| ResearchVnet        | West India   | 10.40.40.0/24                     |                           |               |
-|                     |              |                                   | ResearchSystemSubnet      | 10.40.40.0/24 |
+| ResearchVnet        | West India   | 10.40.0.0/16                      |                           |               |
+|                     |              |                                   | ResearchSystemSubnet      | 10.40.0.0/24  |
 
 
 These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
@@ -104,20 +104,11 @@ These virtual networks and subnets are structured in a way that accommodates exi
  7.To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
  8.Verify your configuration passed validation, and then select **Create**.
-
  
+ 9. Repeat steps 1 -8 for each VNet based on the tables below  
 
 ## Create the ManufacturingVnet virtual network and subnets
 
-1. On the Azure Portal home page, select **Create a resource**.
-
-2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
-
-3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
-
-4. Use the information in the following table to create the ManufacturingVnet virtual network.
 
 | **Tab**      | **Option**         | **Value**             |
 | ------------ | ------------------ | --------------------- |
@@ -127,9 +118,6 @@ These virtual networks and subnets are structured in a way that accommodates exi
 | IP Addresses | IPv4 address space | 10.30.0.0/16          |
 
 
-5. Use the information in the following table to create the ManufacturingVnet subnets.
-
-6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
 | **Subnet**                | **Option**           | **Value**                 |
 | ------------------------- | -------------------- | ------------------------- |
@@ -141,41 +129,22 @@ These virtual networks and subnets are structured in a way that accommodates exi
 |                           | Subnet address range | 10.30.21.0/24             |
 | SensorSubnet3             | Subnet name          | SensorSubnet3             |
 |                           | Subnet address range | 10.30.22.0/24             |
-
-
-7. To finish creating the ManufacturingVnet and its associated subnets, select **Review + create**.
-
-8. Verify your configuration passed validation, and then select **Create**.
-
  
 
 ## Create the ResearchVnet virtual network and subnets
 
-1. On the Azure Portal home page, select **Create a resource**.
 
-2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
-
-3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
-
-4. Use the information in the following table to create the ResearchVnet virtual network.
-
-
-5. Use the information in the following table to create the ResearchVnet subnet.
-
-6. To begin creating the subnet, select **+ Add subnet**. To finish creating the subnet, select **Add**.
+| **Tab**      | **Option**         | **Value**            |
+| ------------ | ------------------ | -------------------- |
+| Basics       | Resource Group     | ContosoResourceGroup |
+|              | Name               | ResearchVnet         |
+|              | Region             | West India           |
+| IP Addresses | IPv4 address space | 10.40.0.0/16         |
 
 | **Subnet**           | **Option**           | **Value**            |
 | -------------------- | -------------------- | -------------------- |
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
-|                      | Subnet address range | 10.40.40.0/24        |
-
-
-7. To finish creating the ResearchVnet and its associated subnet, select **Review + create**.
-
-8. Verify your configuration passed validation, and then select **Create**.
-
+|                      | Subnet address range | 10.40.0.0/24         |
  
 
 ## Verify the creation of VNets and Subnets
