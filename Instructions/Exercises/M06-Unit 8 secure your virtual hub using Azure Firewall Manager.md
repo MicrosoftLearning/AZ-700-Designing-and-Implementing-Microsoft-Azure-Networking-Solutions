@@ -22,7 +22,7 @@ In this exercise, you will:
 + Task 5: Create a firewall policy and secure your hub
 + Task 6: Associate the firewall policy
 + Task 7: Route traffic to your hub
-+ Task 8: Test the firewall
++ Task 8: Test the application rule
 + Task 9: Test the network rule
 
 ## Task 1: Create two spoke virtual networks and subnets
@@ -327,11 +327,10 @@ In this task you will ensure that network traffic gets routed through your firew
 7. This will take a few minutes to complete.
 8. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
 
-## Task 8: Test the firewall
+
+## Task 8: Test the application rule
 
 In this part of the exercise, you will connect a remote desktop to the firewall public IP address, which is NATed to Srv-Workload-01. You will then use a web browser to test the application rule and connect a remote desktop to Srv-Workload-02 to test the network rule.
-
-### Test the application rule
 
 In this task you will test the application rule to confirm that it works as expected.
 
