@@ -3,7 +3,7 @@ Exercise:
     title: 'M03-Unit 5 Provision an ExpressRoute circuit'
     module: 'Module - Design and implement Azure ExpressRoute'
 ---
-# Exercise - Provision an ExpressRoute circuit
+# M03-Unit 5 Provision an ExpressRoute circuit
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
 
@@ -11,7 +11,16 @@ In this exercise, you will create an ExpressRoute circuit using the Azure portal
 
 To watch a demonstration of how to create an ExpressRoute circuit, see [Azure ExpressRoute - How to create an ExpressRoute circuit | Azure | Channel 9 (msdn.com)](https://channel9.msdn.com/Blogs/Azure/Azure-ExpressRoute-How-to-create-an-ExpressRoute-circuit?term=ExpressRoute&lang-en=true&pageSize=15&skip=15).
 
-## **Create and provision an ExpressRoute circuit**
+
+In this exercise, you will:
+
++ Task 1: Create and provision an ExpressRoute circuit
++ Task 2: Retrieve your Service key
++ Task 3: Deprovisioning an ExpressRoute circuit
++ Task 4: Clean up resources
+
+
+## Task 1: Create and provision an ExpressRoute circuit
 
  
 
@@ -58,8 +67,7 @@ To watch a demonstration of how to create an ExpressRoute circuit, see [Azure Ex
 
 - **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
-## **Retrieve your Service key**
-
+## Task 2: Retrieve your Service key
  
 
 1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
@@ -97,7 +105,7 @@ To watch a demonstration of how to create an ExpressRoute circuit, see [Azure Ex
 
  
 
-## Deprovisioning an ExpressRoute circuit
+## Task 3: Deprovisioning an ExpressRoute circuit
 
 If the ExpressRoute circuit service provider provisioning state is **Provisioning** or **Provisioned,** you must work with your service provider to deprovision the circuit on their side. Microsoft can continue to reserve resources and bill you until the service provider completes deprovisioning the circuit and notifies us.
 
@@ -107,7 +115,7 @@ If the ExpressRoute circuit service provider provisioning state is **Provisionin
 >
 > If the service provider has deprovisioned the circuit (the service provider provisioning state is set to Not provisioned), you can delete the circuit. This stops billing for the circuit.
 
-## Clean up resources
+## Task 4: Clean up resources
 
 You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensure the provider status is Not provisioned before proceeding.
 
