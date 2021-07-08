@@ -134,7 +134,6 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
    ```powershell
    Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
    ```
-
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 
