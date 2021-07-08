@@ -42,8 +42,6 @@ In this section, you will create a virtual network and a subnet.
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
    ```
 
-![Picture 2](../media/create-virtual-network-1.png)
-
 
 ## Task 2: Create the load balancer
 
