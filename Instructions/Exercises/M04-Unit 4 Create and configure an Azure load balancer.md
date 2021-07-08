@@ -30,9 +30,17 @@ In this section, you will create a virtual network and a subnet.
 
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. Click **Create**.
+3. Deploy the following ARM remlates to create the virtual network, subnets, and VMs needed for this exercise:
+
+   ```powershell
+   $RGName = "IntLB-RG"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+   ```
 
 ![Picture 2](../media/create-virtual-network-1.png)
 
@@ -366,20 +374,16 @@ In this section, you will create a test VM, and then test the load balancer.
 13. If you click the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
     ![Picture 9](../media/load-balancer-web-test-2.png)
 
-### Clean up the Azure exercise environment
+## Clean up resources
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group, load balancer, and all their related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. On the Azure portal home page, click **Resource groups**.
-   ![Picture 10](../media/delete-resource-group-1.png)
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the list of resource groups, click on the name of the **IntLB-RG** resource group.
-   ![Picture 11](../media/delete-resource-group-2.png)
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-3. On the **IntLB-RG** resource group page, in the menu, click **Delete resource group**.
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-   ![Picture 12](../media/delete-resource-group-3.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-   ![Picture 13](../media/delete-resource-group-4.png)
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
