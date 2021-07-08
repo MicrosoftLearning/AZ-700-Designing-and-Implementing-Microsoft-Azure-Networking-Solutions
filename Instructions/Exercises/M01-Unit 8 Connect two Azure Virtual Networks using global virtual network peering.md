@@ -8,7 +8,7 @@ Exercise:
 ## Exercise scenario 
 In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
-In this lab, you will:
+In this unit, you will:
 
 + Task 1: Create a Virtual Machine to test the configuration
 + Task 2: Connect to the Test VMs using RDP
