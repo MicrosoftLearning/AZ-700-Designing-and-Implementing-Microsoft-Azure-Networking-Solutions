@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Restrict network access to PaaS resources with virtual network service endpoints'
+    title: 'M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints'
     module: 'Module - Design and implement private access to Azure Services'
 ---
 
