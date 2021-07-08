@@ -59,7 +59,6 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | Advanced        | No changes required                                          |                                       |
 | Tags            | No changes required                                          |                                       |
 | Review + create | Review your settings and select Create                       |                                       |
-|                 |                                                              |                                       |
 
 
 6. When the deployment is complete, select **Go to resource**.
