@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Configure an ExpressRoute Gateway'
+    title: 'M02-Unit 3 Configure an ExpressRoute Gateway'
     module: 'Module - Design and implement Azure ExpressRoute'
 ---
 # **Exercise - Configure an ExpressRoute Gateway**
