@@ -8,7 +8,7 @@ layout: home
 
 Hyperlinks to each of the lab exercises and demos are listed below.
 
-## Exercise
+## Exercises
 
 {% assign labs = site.pages | where_exp:"page", "page.url contains '/Exercises'" %}
 | Module | Exercise |
