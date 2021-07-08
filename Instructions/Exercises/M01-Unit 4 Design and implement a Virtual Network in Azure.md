@@ -97,9 +97,9 @@ In this exercise, you will:
 |              | Region             | (US) West US         |
 | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
- 5.Use the information in the following table to create the CoreServicesVnet subnets.
+ 5. Use the information in the following table to create the CoreServicesVnet subnets.
 
- 6.To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+ 6. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
 | **Subnet**             | **Option**           | **Value**              |
 | ---------------------- | -------------------- | ---------------------- |
@@ -112,9 +112,9 @@ In this exercise, you will:
 | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
 |                        | Subnet address range | 10.20.30.0/24          |
 
- 7.To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+ 7. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
- 8.Verify your configuration passed validation, and then select **Create**.
+ 8. Verify your configuration passed validation, and then select **Create**.
  
  9. Repeat steps 1 -8 for each VNet based on the tables below  
 
