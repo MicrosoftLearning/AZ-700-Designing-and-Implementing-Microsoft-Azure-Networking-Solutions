@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'create a Virtual WAN by using Azure Portal'
+    title: 'Create a Virtual WAN by using Azure Portal'
     module: 'Module - Design and implement hybrid networking'
 ---
 
