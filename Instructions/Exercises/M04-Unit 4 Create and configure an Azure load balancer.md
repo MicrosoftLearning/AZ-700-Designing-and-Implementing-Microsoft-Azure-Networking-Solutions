@@ -44,40 +44,6 @@ In this section, you will create a virtual network and a subnet.
 
 ![Picture 2](../media/create-virtual-network-1.png)
 
-4. On the **Basics** tab, use the information in the table below to create the virtual network.
-
-   | **Setting**    | **Value**                                  |
-   | -------------- | ------------------------------------------ |
-   | Subscription   | Select your subscription                   |
-   | Resource group | Select **Create  new**  Name: **IntLB-RG** |
-   | Name           | **IntLB-VNet**                             |
-   | Region         | **(US) West US**                           |
-
-
-5. Click **Next : IP Addresses**.
-
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
-
-7. Under **Subnet name**, select the word **default**.
-
-8. In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
-
-9. Click **Save**.
-
-10. Click **Next : Security**.
-
-11. Under **BastionHost** select **Enable**, then enter the information from the table below.
-
-    | **Setting**                       | **Value**                                     |
-    | --------------------------------- | --------------------------------------------- |
-    | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet addresss space | **10.1.1.0/24**                               |
-    | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
-
-
-12. Click **Review + create**.
-
-13. Click **Create**.
 
 ## Task 2: Create the load balancer
 
