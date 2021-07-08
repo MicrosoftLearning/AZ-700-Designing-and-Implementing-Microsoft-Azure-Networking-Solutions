@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Deploy Azure application gateway'
+    title: 'Deploy Azure Application Gateway'
     module: 'Module - Load balancing HTTP(S) traffic in Azure'
 ---
 
