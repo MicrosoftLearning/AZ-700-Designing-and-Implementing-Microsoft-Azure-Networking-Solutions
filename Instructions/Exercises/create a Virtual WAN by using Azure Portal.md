@@ -1,3 +1,10 @@
+---
+Exercise:
+    title: 'create a Virtual WAN by using Azure Portal'
+    module: 'Module - Design and implement hybrid networking'
+---
+
+
 # Exercise - Create a Virtual WAN by using Azure Portal
 
 In this exercise, you will create a Virtual WAN for Contoso.
