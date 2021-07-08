@@ -4,26 +4,25 @@ Exercise:
     module: 'Module - Design and implement private access to Azure Services'
 ---
 
+# M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
 
-# Exercise - Restrict network access to PaaS resources with virtual network service endpoints
 
- 
+Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network.
 
-Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network. In this exercise, you learn how to:
+In this exercise, you will:
 
-- Create a virtual network with one subnet
++ Task 1: Create a virtual network
++ Task 2: Enable a service endpoint
++ Task 3: Restrict network access for a subnet
++ Task 4: Add additional outbound rules 
++ Task 5: Allow access for RDP connections
++ Task 6: Restrict network access to a resource
++ Task 7: Create a file share in the storage account
++ Task 8: Restrict network access to a subnet
++ Task 9: Create virtual machines
++ Task 10: Confirm access to storage account
 
-- Add a subnet and enable a service endpoint
-
-- Create an Azure resource and allow network access to it from only a subnet
-
-- Deploy a virtual machine (VM) to each subnet
-
-- Confirm access to a resource from a subnet
-
-- Confirm access is denied to a resource from a subnet and the internet
-
-## Create a virtual network
+## Task 1: Create a virtual network
 
 1. On the Azure Portal home page, select **+ Create a resource**.
 
@@ -61,7 +60,7 @@ Virtual network service endpoints enable you to limit network access to some Azu
 
 7. Click **Review + Create**. Once the resource is validated select **Create**. 
 
-## Enable a service endpoint
+## Task 2: Enable a service endpoint
 
 Service endpoints are enabled per service, per subnet. Create a subnet and enable a service endpoint for the subnet.
 
@@ -86,7 +85,7 @@ You should now have two subnets configured:
 
  
 
-## Restrict network access for a subnet
+## Task 3: Restrict network access for a subnet
 
 By default, all VMs in a subnet can communicate with all resources. You can limit communication to and from all resources in a subnet by creating a network security group and associating it to the subnet.
 
@@ -131,6 +130,9 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 
 9. Select **Add**:
 
+
+## Task 4: Add additional outbound rules 
+
 Create another outbound security rule that denies communication to the internet. This rule overrides a default rule in all network security groups that allows outbound internet communication. 
 
 1. Select **+Add** under **Outbound security rules**.
@@ -153,7 +155,7 @@ Create another outbound security rule that denies communication to the internet.
 
 3. Select **Add**.
 
-## Allow access for RDP connections
+## Task 5: Allow access for RDP connections
 
 Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet from anywhere. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 
@@ -190,7 +192,7 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 
 8. Under **Choose subnet**, select **Private**, and then select **OK**.
 
-## Restrict network access to a resource
+## Task 6: Restrict network access to a resource
 
 The steps necessary to restrict network access to resources created through Azure services enabled for service endpoints varies across services. See the documentation for individual services for specific steps for each service. The remainder of this exercise includes steps to restrict network access for an Azure Storage account, as an example.
 
@@ -212,7 +214,7 @@ The steps necessary to restrict network access to resources created through Azur
 
 4. select **Review + create**, then click **Create**.
 
-## Create a file share in the storage account
+## Task 7: Create a file share in the storage account
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
 2. Select **File shares**, as shown in the following picture: 
@@ -220,7 +222,7 @@ The steps necessary to restrict network access to resources created through Azur
 3. Select **+ File share**.
 4. Enter marketing under **Name**, and then select **Create**.
 
-## Restrict network access to a subnet
+## Task 8: Restrict network access to a subnet
 
 By default, storage accounts accept network connections from clients in any network, including the internet. Deny network access from the internet, and all other subnets in all virtual networks, except for the Private subnet in the CoreServicesVNet virtual network.
 
@@ -247,7 +249,7 @@ By default, storage accounts accept network connections from clients in any netw
 
 8. Select **Show Keys**. Note the **Key** value, as you'll have to manually enter it in a later step when mapping the file share to a drive letter in a VM.
 
-## Create virtual machines
+## Task 9: Create virtual machines
 
 To test network access to a storage account, deploy a VM to each subnet.
 
@@ -298,7 +300,7 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
  
 
-## Confirm access to storage account
+## Task 10: Confirm access to storage account
 
 1. Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
    ![Graphical user interface, application Description automatically generated](../media/private-virtual-machine-connect.png)
