@@ -4,7 +4,7 @@ Exercise:
     module: 'Module - Load balancing HTTP(S) traffic in Azure'
 ---
 
-# Exercise: Deploy Azure Application Gateway
+# M05-Unit 4 Deploy Azure Application Gateway
  
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
@@ -13,7 +13,15 @@ The application gateway directs application web traffic to specific resources in
 
 For Azure to communicate between the resources that you create, it needs a virtual network. You can either create a new virtual network or use an existing one. In this example, you'll create a new virtual network while you create the application gateway. Application Gateway instances are created in separate subnets. You create two subnets in this example: one for the application gateway, and another for the backend servers.
 
-## Create an application gateway
+In this exercise, you will:
+
++ Task 1: Create an application gateway
++ Task 2: Add backend targets
++ Task 3: Add backend servers to backend pool
++ Task 4: Test the application gateway
+
+
+## Task 1: Create an application gateway
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
 
@@ -113,7 +121,7 @@ For Azure to communicate between the resources that you create, it needs a virtu
 
 It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully before moving on to the next section.
 
-## Add backend targets
+## Task 2: Add backend targets
 
 In this example, you'll use virtual machines as the target backend. You'll create two virtual machines as backend servers for the application gateway.
 
@@ -189,7 +197,7 @@ Set-AzVMExtension `
 
 4. Create a second virtual machine and install IIS by using the Create virtual machines and Install IIS for testing steps that you previously completed. Use BackendVM2 for the virtual machine name and for the **VMName** setting of the **Set-AzVMExtension** cmdlet.
 
-### Add backend servers to backend pool
+## Task 3: Add backend servers to backend pool
 
 1. On the Azure portal menu, select **All resources** or search for and select All resources. Then select **ContosoAppGateway**.
 
@@ -211,7 +219,7 @@ Set-AzVMExtension `
 
 Wait for the deployment to complete before proceeding to the next step.
 
-## Test the application gateway
+## Task 4: Test the application gateway
 
 Although IIS isn't required to create the application gateway, you installed it in this exercise to verify if Azure successfully created the application gateway.
 
