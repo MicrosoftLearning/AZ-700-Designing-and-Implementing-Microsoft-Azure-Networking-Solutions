@@ -1,12 +1,12 @@
 ---
 Exercise:
-    title: 'M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal.md'
+    title: 'M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal'
     module: 'Module - Load balancing HTTP(S) traffic in Azure'
 ---
 
 
 
-# Exercise: Create a Front Door for a highly available web application using the Azure portal
+# M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal
 
  
 
@@ -14,7 +14,14 @@ In this exercise, you will set up an Azure Front Door configuration that pools t
 
 ![Network configuration for Azure Front Door.](../media/front-door-environment-diagram.png)
 
-## Create two instances of a web app
+In this exercise, you will:
+
++ Task 1: Create two instances of a web app
++ Task 2: Create a Front Door for your application
++ Task 3: View Azure Front Door in action
+
+
+## Task 1: Create two instances of a web app
 
 This exercise requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
 
@@ -63,7 +70,7 @@ This exercise requires two instances of a web application that run in different 
 9. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
 
-## Create a Front Door for your application
+## Task 2: Create a Front Door for your application
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
 
@@ -136,7 +143,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
  
 
-## View Azure Front Door in action
+## Task 3: View Azure Front Door in action
 
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created. 
 
