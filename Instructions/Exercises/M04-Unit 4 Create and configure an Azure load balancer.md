@@ -30,18 +30,46 @@ In this section, you will create a virtual network and a subnet.
 
 1. Log in to the Azure portal.
 
-2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+2. On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
 
-3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
+3. Click **Create**.
 
-   ```powershell
-   $RGName = "IntLB-RG"
-   
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
-   ```
+![Picture 2](../media/create-virtual-network-1.png)
 
+4. On the **Basics** tab, use the information in the table below to create the virtual network.
+
+   | **Setting**    | **Value**                                  |
+   | -------------- | ------------------------------------------ |
+   | Subscription   | Select your subscription                   |
+   | Resource group | Select **Create  new**  Name: **IntLB-RG** |
+   | Name           | **IntLB-VNet**                             |
+   | Region         | **(US) West US**                           |
+
+
+5. Click **Next : IP Addresses**.
+
+6. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
+
+7. Under **Subnet name**, select the word **default**.
+
+8. In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+
+9. Click **Save**.
+
+10. Click **Next : Security**.
+
+11. Under **BastionHost** select **Enable**, then enter the information from the table below.
+
+    | **Setting**                       | **Value**                                     |
+    | --------------------------------- | --------------------------------------------- |
+    | Bastion name                      | **myBastionHost**                             |
+    | AzureBastionSubnet addresss space | **10.1.1.0/24**                               |
+    | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
+
+
+12. Click **Review + create**.
+
+13. Click **Create**.
 
 ## Task 2: Create the load balancer
 
@@ -156,68 +184,17 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
 In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
-### Create VMs
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating the first VM you will also create a new Availability Set, and then as you create the next two VMs, they will be added to the Availability Set. You will then add these VMs to the backend pool of the load balancer that you created previously.
+2. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
-1. On the Azure portal home page, click **Create a resource**, then **Compute**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
-
-2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
-
-   | **Setting**          | **Value**                                            |
-   | -------------------- | ---------------------------------------------------- |
-   | Subscription         | Select your subscription                             |
-   | Resource group       | **IntLB-RG**                                         |
-   | Virtual machine name | **myVM1**                                            |
-   | Region               | **(US) West US**                                     |
-   | Availability options | **Availability Set**                                 |
-   | Availability set     | Select **Create  new**  Name:  **myAvailabilitySet** |
-   | Image                | **Windows Server 2019 Datacenter - Gen 1**           |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB  memory**        |
-   | Username             | **TestUser**                                         |
-   | Password             | **TestPa$$w0rd!**                                    |
-   | Confirm password     | **TestPa$$w0rd!**                                    |
-
-
-3. Click **Next : Disks**, then click **Next : Networking**. 
-
-4. On the **Networking** tab, use the information in the table below to configure networking settings.
-
-   | **Setting**                                                  | **Value**                               |
-   | ------------------------------------------------------------ | --------------------------------------- |
-   | Virtual network                                              | **IntLB-VNet**                          |
-   | Subnet                                                       | **myBackendSubnet**                     |
-   | Public IP                                                    | Change to **None**                      |
-   | NIC network security group                                   | **Advanced**                            |
-   | Configure network security group                             | Select **Create  new**  Name: **myNSG** |
-   | Place this virtual machine behind an  existing load balancing solution? | **Off** (unchecked)                     |
-
-
-5. Click **Review + create**.
-
-6. Click **Create**.
-
-7. When the deployment of the first VM is complete, click **Create another VM**.
-
-8. On the **Create a virtual machine** page, repeat steps 2-6 above to create a second VM. Use the same settings as before except for the information in the table below. 
-
-   | **Setting**                      | **Value**                                 |
-   | -------------------------------- | ----------------------------------------- |
-   | Virtual machine name             | **myVM2**                                 |
-   | Availability set                 | Select the existing **myAvailabilitySet** |
-   | Configure network security group | Select the existing **myNSG**             |
-
-
-9. When the deployment of the second VM is complete, click **Create another VM**.
-
-10. On the **Create a virtual machine** page, repeat steps 2-6 above to create a third VM. Use the same settings as before except for the information in the table below. 
-
-    | **Setting**                      | **Value**                                 |
-    | -------------------------------- | ----------------------------------------- |
-    | Virtual machine name             | **myVM3**                                 |
-    | Availability set                 | Select the existing **myAvailabilitySet** |
-    | Configure network security group | Select the existing **myNSG**             |
-
+   ```powershell
+   $RGName = "IntLB-RG"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+   ```
 
 ### Add VMs to the backend pool
 
