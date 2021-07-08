@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Deploy and configure Azure Firewall using the Azure portal.md'
+    title: 'Deploy and configure Azure Firewall using the Azure portal'
     module: 'Module - Design and implement network security '
 ---
 
