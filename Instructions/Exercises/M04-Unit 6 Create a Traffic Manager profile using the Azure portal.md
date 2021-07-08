@@ -4,11 +4,11 @@ Exercise:
     module: 'Module - Load balancing non-HTTP(S) traffic in Azure'
 ---
 
-# Exercise: Create a Traffic Manager Profile using the Azure portal
+# M04-Unit 6 Create a Traffic Manager profile using the Azure portal
 
 In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application. 
 
-In this exercise you will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
+You will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
 
 You will then create a Traffic Manager profile based on endpoint priority. This profile will direct user traffic to the primary site running the web application. Traffic Manager will continuously monitor the web application, and if the primary site in East US is unavailable, it will provide automatic failover to the backup site in West Europe.
 
@@ -16,9 +16,15 @@ The diagram below approximately illustrates the environment you will be deployin
 
 ​	![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
 
- 
+ In this exercise, you will:
 
-## Create the web apps
++ Task 1: Create the web apps
++ Task 2: Create a Traffic Manager profile
++ Task 3: Add Traffic Manager endpoints
++ Task 4: Test the Traffic Manager profile
+
+
+## Task 1: Create the web apps
 
 In this section, you will create two instances of a web application deployed in the two different Azure regions.
 
@@ -67,7 +73,7 @@ In this section, you will create two instances of a web application deployed in 
 
  
 
-## Create a Traffic Manager profile
+## Task 2: Create a Traffic Manager profile
 
 Now you will create a Traffic Manager profile that directs user traffic based on endpoint priority.
 
@@ -94,7 +100,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
  
 
-## Add Traffic Manager endpoints
+## Task 3: Add Traffic Manager endpoints
 
 In this section, you will add the website in the East US as the primary endpoint to route all the user traffic. You will then add the website in West Europe as a failover endpoint. If the primary endpoint becomes unavailable, then traffic will automatically be routed to the failover endpoint.
 
@@ -134,7 +140,7 @@ In this section, you will add the website in the East US as the primary endpoint
 
  
 
-## Test the Traffic Manager profile
+## Task 4: Test the Traffic Manager profile
 
 In this section, you will check the DNS name of your Traffic Manager profile, and then you will configure the primary endpoint so that it is unavailable. You will then verify that the web app is still available, to test that the Traffic Manager profile is successfully sending traffic to the failover endpoint.
 
