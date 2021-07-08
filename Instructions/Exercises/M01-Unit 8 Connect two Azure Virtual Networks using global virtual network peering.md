@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Connect two Azure Virtual Networks using global virtual network peering'
+    title: 'M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
  
