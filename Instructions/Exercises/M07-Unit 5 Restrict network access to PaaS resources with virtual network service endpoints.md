@@ -21,6 +21,7 @@ In this exercise, you will:
 + Task 8: Restrict network access to a subnet
 + Task 9: Create virtual machines
 + Task 10: Confirm access to storage account
++ Task 11: Clean up resources
 
 ## Task 1: Create a virtual network
 
@@ -358,3 +359,17 @@ You receive no replies because the network security group associated to the Priv
 >  Prior to continuing you should remove all resources used for this lab. To do this in the Azure Portal click Resource groups. Select any resources groups you have created. On the resource group blade click Delete Resource group, enter the Resource Group Name and click Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
 
 Results: You have now completed this lab.
+
+## Task 11: Clean up resources
+
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
