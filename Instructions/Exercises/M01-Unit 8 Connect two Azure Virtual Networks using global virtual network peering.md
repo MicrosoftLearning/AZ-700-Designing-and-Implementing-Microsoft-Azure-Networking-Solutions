@@ -3,10 +3,20 @@ Exercise:
     title: 'M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
- 
+# M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering
+
+## Exercise scenario 
 In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
-## Create a Virtual Machine to test the configuration
+In this lab, you will:
+
++ Task 1: Create a Virtual Machine to test the configuration
++ Task 2: Connect to the Test VMs using RDP
++ Task 3: Test the connection between the VMs
++ Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
++ Task 5: Test the connection between the VMs
+
+## Task 1: Create a Virtual Machine to test the configuration
 
 In this section, you will create a test VM on the Manufacturing VNet to test if you can access resroues inside another Azure virtual network from your ManufacturingVnet.
 
@@ -53,7 +63,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 6. When the deployment is complete, select **Go to resource**.
 
-## Connect to the Test VMs using RDP
+## Task 2: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
@@ -89,7 +99,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Test the connection between the VMs
+## Task 3: Test the connection between the VMs
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
@@ -105,7 +115,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Create VNet peerings between CoreServicesVnet and ManufacturingVnet
+## Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
@@ -142,7 +152,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  
 
-## Test the connection between the VMs
+## Task 5: Test the connection between the VMs
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
