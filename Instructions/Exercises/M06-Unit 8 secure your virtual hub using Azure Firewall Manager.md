@@ -23,6 +23,7 @@ In this exercise, you will:
 + Task 6: Associate the firewall policy
 + Task 7: Route traffic to your hub
 + Task 8: Test the firewall
++ Task 9: Test the network rule
 
 ## Task 1: Create two spoke virtual networks and subnets
 
@@ -372,7 +373,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 16. So, you have verified that you can connect to the one allowed FQDN but are blocked from all others.
 
-### Test the network rule
+## Task 9: Test the network rule
 
 In this task you will test the network rule to confirm that it works as expected.
 
