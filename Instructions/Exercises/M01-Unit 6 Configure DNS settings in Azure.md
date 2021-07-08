@@ -9,7 +9,7 @@ Exercise:
 ## Exercise scenario 
 In this unit, you will configure DNS name resolution for Contoso Ltd. You will create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
 
-In this lab, you will:
+In this exercise, you will:
 
 + Task 1: Create a private DNS Zone
 + Task 2: Link subnet for auto registration
