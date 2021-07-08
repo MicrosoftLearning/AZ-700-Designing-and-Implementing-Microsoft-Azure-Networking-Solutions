@@ -3,7 +3,7 @@ Exercise:
     title: 'M03-Unit 4 Configure an ExpressRoute Gateway'
     module: 'Module - Design and implement Azure ExpressRoute'
 ---
-# **Exercise - Configure an ExpressRoute Gateway**
+# M03-Unit 4 Configure an ExpressRoute Gateway
 
 ## Deploy ExpressRoute gateways
 
@@ -18,12 +18,14 @@ When you create a virtual network gateway, you need to specify several settings.
 
 Each virtual network can have only one virtual network gateway per gateway type. For example, you can have one virtual network gateway that uses -GatewayType VPN, and one that uses -GatewayType ExpressRoute.
 
-In this exercise, you learn how to:
 
-- Create a VNet and a gateway subnet.
-- Create Virtual Network gateway.
+In this exercise, you will:
 
-## **Create the VNet and gateway subnet**
++ Task 1: Create the VNet and gateway subnet
++ Task 2: Create the virtual network gateway
+
+
+## Task 1: Create the VNet and gateway subnet
 
 1. On any Azure Portal page, in **Search resources, services and docs**, enter virtual network, and then select **Virtual networks** from the results.
 
@@ -60,7 +62,7 @@ In this exercise, you learn how to:
 >
 > If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, click Add IP6 address space and input IPv6 address range values.
 
-## **Create the virtual network gateway**
+## Task 2: Create the virtual network gateway
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
 
