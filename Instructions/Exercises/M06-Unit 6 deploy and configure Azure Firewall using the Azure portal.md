@@ -4,12 +4,26 @@ Exercise:
     module: 'Module - Design and implement network security '
 ---
 
-
-# Exercise: Deploy and configure Azure Firewall using the Azure portal
+# M06-Unit 6 Deploy and configure Azure Firewall using the Azure portal
 
 Being part of the Network Security team at Contoso, your next task is to create firewall rules to allow/deny access to certain websites. The following steps walk you through creating a resource group, a virtual network and subnets, and a virtual machine as environment preparation tasks, and then deploying a firewall and firewall policy, configuring default routes and application, network and DNAT rules, and finally testing the firewall.
 
-### Create a resource group
+In this exercise, you will:
+
++ Task 1: Create a resource group
++ Task 2: Create a virtual network and subnets
++ Task 3: Create a virtual machine
++ Task 4: Deploy the firewall and firewall policy
++ Task 5: Create a default route
++ Task 6: Configure an application rule
++ Task 7: Configure a network rule
++ Task 8: Configure a Destination NAT (DNAT) rule
++ Task 9: Change the primary and secondary DNS address for the server's network interface
++ Task 10: Test the firewall
+
+
+
+## Task 1: Create a resource group
 
 In this task, you will create a new resource group.
 
@@ -31,7 +45,7 @@ In this task, you will create a new resource group.
 
  
 
-### Create a virtual network and subnets
+## Task 2: Create a virtual network and subnets
 
 In this task, you will create a single virtual network with two subnets.
 
@@ -73,7 +87,7 @@ In this task, you will create a single virtual network with two subnets.
 
  
 
-### Create a virtual machine
+## Task 3: Create a virtual machine
 
 In this task, you will create the workload virtual machine and place it in the Workload-SN subnet created previously.
 
@@ -122,7 +136,7 @@ In this task, you will create the workload virtual machine and place it in the W
 
  
 
-### Deploy the firewall and firewall policy
+## Task 4: Deploy the firewall and firewall policy
 
 In this task, you will deploy the firewall into the virtual network with a firewall policy configured.
 
@@ -170,7 +184,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
 
  
 
-### Create a default route
+## Task 5: Create a default route
 
 In this task, on the Workload-SN subnet, you will configure the outbound default route to go through the firewall.
 
@@ -221,7 +235,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
  
 
-### Configure an application rule
+## Task 6: Configure an application rule
 
 In this task, you will add an application rule that allows outbound access to www.google.com.
 
@@ -257,7 +271,7 @@ In this task, you will add an application rule that allows outbound access to ww
 
  
 
-### Configure a network rule
+## Task 7: Configure a network rule
 
 In this task, you will add a network rule that allows outbound access to two IP addresses at port 53 (DNS).
 
@@ -290,7 +304,7 @@ In this task, you will add a network rule that allows outbound access to two IP 
 
  
 
-### Configure a Destination NAT (DNAT) rule
+## Task 8: Configure a Destination NAT (DNAT) rule
 
 In this task, you will add a DNAT rule that allows you to connect a remote desktop to the Srv-Work virtual machine through the firewall.
 
@@ -324,7 +338,7 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
 
  
 
-### Change the primary and secondary DNS address for the server's network interface
+## Task 9: Change the primary and secondary DNS address for the server's network interface
 
 For testing purposes in this exercise, in this task, you will configure the Srv-Work server's primary and secondary DNS addresses. However, this is not a general Azure Firewall requirement.
 
@@ -350,7 +364,7 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
  
 
-### Test the firewall
+## Task 10: Test the firewall
 
 In this final task, you will test the firewall to verify that the rules are configured correctly and working as expected. This configuration will enable you to connect a remote desktop connection to the Srv-Work virtual machine through the firewall, via the firewall's public IP address.
 
