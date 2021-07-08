@@ -4,11 +4,11 @@ Exercise:
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
  
-In this unit, you will configure enable connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
+In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
 ## Create a Virtual Machine to test the configuration
 
-In this section, you will create a test VM on the Manufacturing VNet to test the peering configuration.
+In this section, you will create a test VM on the Manufacturing VNet to test if you can access resroues inside another Azure virtual network from your ManufacturingVnet.
 
 ### Create ManufacturingVM
 
