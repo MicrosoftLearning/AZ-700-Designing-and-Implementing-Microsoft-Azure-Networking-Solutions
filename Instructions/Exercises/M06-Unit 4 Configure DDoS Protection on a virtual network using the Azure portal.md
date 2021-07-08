@@ -4,11 +4,23 @@ Exercise:
     module: 'Module - Design and implement network security'
 ---
 
-# Exercise: Configure DDoS Protection on a virtual network using the Azure portal
+# M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure portal
 
 Being responsible for Contoso's Network Security team, you are going to run a mock DDoS attack on the virtual network. The following steps walk you through creating a virtual network, configuring DDoS Protection, and creating an attack which you can observe and monitor with the help of telemetry and metrics.
 
-## Create a resource group
+In this exercise, you will:
+
++ Task 1: Create a resource group
++ Task 2: Create a DDoS Protection plan
++ Task 3: Enable DDoS Protection on a new virtual network
++ Task 4: Configure DDoS telemetry
++ Task 5: Configure DDoS diagnostic logs
++ Task 6: Configure DDoS alerts
++ Task 7: Submit a DDoS service request to run a DDoS attack
+
+
+
+## Task 1: Create a resource group
 
 1. Log in to your Azure account.
 
@@ -30,7 +42,7 @@ Being responsible for Contoso's Network Security team, you are going to run a mo
 
  
 
-## Create a DDoS Protection plan
+## Task 2: Create a DDoS Protection plan
 
 1. On the Azure portal home page, select **Create a resource**, then in the search box, type **DDoS** and click **DDoS protection plan** when it appears.
 
@@ -48,7 +60,7 @@ Being responsible for Contoso's Network Security team, you are going to run a mo
 
  
 
-## Enable DDoS Protection on a new virtual network
+## Task 3: Enable DDoS Protection on a new virtual network
 
 Here you will enable DDoS on a new virtual network rather than on an existing one, so first you need to create the new virtual network, then enable DDoS protection on it using the plan you created previously.
 
@@ -76,7 +88,7 @@ Here you will enable DDoS on a new virtual network rather than on an existing on
 
  
 
-## Configure DDoS telemetry
+## Task 4: Configure DDoS telemetry
 
 You create a Public IP address, and then set up telemetry in the next steps.
 
@@ -118,7 +130,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
  
 
-## Configure DDoS diagnostic logs
+## Task 5: Configure DDoS diagnostic logs
 
 1. On the Azure home page, click **All resources**.
 
@@ -142,7 +154,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
  
 
-## Configure DDoS alerts
+## Task 6: Configure DDoS alerts
 
 In this step you will create a virtual machine, assign a public IP address to it, and then configure DDoS alerts.
 
@@ -239,7 +251,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
  
 
-## Submit a DDoS service request to run a DDoS attack
+## Task 7: Submit a DDoS service request to run a DDoS attack
 
 1. Create an account with [BreakingPoint Cloud](https://breakingpoint.cloud/)
 
