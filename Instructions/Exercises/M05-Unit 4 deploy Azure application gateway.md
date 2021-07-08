@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Deploy Azure Application Gateway'
+    title: 'M05-Unit 4 Deploy Azure Application Gateway'
     module: 'Module - Load balancing HTTP(S) traffic in Azure'
 ---
 
