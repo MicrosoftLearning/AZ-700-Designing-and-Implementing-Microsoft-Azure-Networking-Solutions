@@ -1,5 +1,10 @@
-# Exercise: Deploy Azure Application Gateway
+---
+Exercise:
+    title: 'Deploy Azure application gateway'
+    module: 'Module - Load balancing HTTP(S) traffic in Azure'
+---
 
+# Exercise: Deploy Azure Application Gateway
  
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
