@@ -176,7 +176,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 12. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
  
- ## Task 4: Clean up resources
+ ## Task 5: Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
