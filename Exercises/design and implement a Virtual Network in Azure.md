@@ -1,4 +1,8 @@
-
+---
+Exercise:
+    Exercise: 'design and implement a Virtual Network in Azure'
+    module: 'Module - Introduction to Azure Virtual Networks'
+---
  
 
 Now you're ready to create and deploy some virtual networks with the IP addresses that you planned.
