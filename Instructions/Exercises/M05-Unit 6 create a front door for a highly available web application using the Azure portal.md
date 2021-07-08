@@ -19,6 +19,7 @@ In this exercise, you will:
 + Task 1: Create two instances of a web app
 + Task 2: Create a Front Door for your application
 + Task 3: View Azure Front Door in action
++ Task 4: Clean up resources
 
 
 ## Task 1: Create two instances of a web app
@@ -178,3 +179,19 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
    Congratulations! You have configured and tested an Azure Front Door.
+   
+  
+   
+   ## Task 4: Clean up resources
+   
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
