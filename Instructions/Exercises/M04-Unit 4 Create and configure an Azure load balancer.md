@@ -32,7 +32,7 @@ In this section, you will create a virtual network and a subnet.
 
 2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. Deploy the following ARM remlates to create the virtual network, subnets, and VMs needed for this exercise:
+3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
    ```powershell
    $RGName = "IntLB-RG"
