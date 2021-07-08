@@ -5,8 +5,7 @@ Exercise:
 ---
 
 
-
-# Exercise: Create and configure an internal load balancer using the Azure portal
+# M04-Unit 4 Create and configure an Azure load balancer
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
 
@@ -17,8 +16,15 @@ The diagram below illustrates the environment you will be deploying in this exer
 ![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
+In this exercise, you will:
 
-## Create the virtual network
++ Task 1: Create the virtual network
++ Task 2: Create the load balancer
++ Task 3: Create load balancer resources
++ Task 4: Create backend servers
++ Task 5: Test the load balancer
+
+## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.
 
@@ -65,7 +71,7 @@ In this section, you will create a virtual network and a subnet.
 
 13. Click **Create**.
 
-## Create the load balancer
+## Task 2: Create the load balancer
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
@@ -97,7 +103,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 7. Click **Create**.
 
-## Create load balancer resources
+## Task 3: Create load balancer resources
 
 In this section, you will configure load balancer settings for a backend address pool, then create a health probe and a load balancer rule.
 
@@ -174,7 +180,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 
  
 
-## Create backend servers
+## Task 4: Create backend servers
 
 In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
@@ -286,7 +292,7 @@ In this section, you will create three VMs (myVM1, myVM2, myVM3). When creating 
 
  
 
-## Test the load balancer
+## Task 5: Test the load balancer
 
 In this section, you will create a test VM, and then test the load balancer.
 
