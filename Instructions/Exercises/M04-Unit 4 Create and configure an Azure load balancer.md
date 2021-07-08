@@ -186,7 +186,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
+
+3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -212,32 +214,6 @@ In this section, you will create three VMs, that will be in the same availabilit
    ![Picture 7](../media/add-vms-backendpool.png)
 
  
-
-### Install IIS on the VMs
-
-1. On the Azure portal home page, click **All resources**, then click on **myVM1** from the resources list.
-
-2. On the **Overview** page, select **Connect**, then **Bastion**.
-
-3. Click **Use Bastion**.
-
-4. In the **U****sername** box, type **TestUser** and in the **P****assword** box, type **TestPa$$w0rd!**, then click **Connect**.
-
-5. The **myVM1** window will open in another browser tab.
-
-6. If a **Networks** pane appears, click **Yes**.
-
-7. Click the **Windows Start icon** in the bottom left corner of the window, then click the **Windows PowerShell** tile.
-
-8. To install IIS, run the following command in PowerShell: ```Install-WindowsFeature -name Web-Server -IncludeManagementTools```
-
-9. To remove the existing default web home page, run the following command in PowerShell: ```Remove-Item C:\inetpub\wwwroot\iisstart.htm```
-
-10. To add a new default web home page and add content to it, run the following command in PowerShell: ```Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello World from " + $env:computername)```
-
-11. Close the Bastion session to **myVM1** by closing the browser tab.
-
-12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **myVM2** and **myVM3** virtual machines.
 
  
 
