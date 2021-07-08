@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Configure DNS configuration azure'
+    title: 'Configure DNS settings in Azure'
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
 
