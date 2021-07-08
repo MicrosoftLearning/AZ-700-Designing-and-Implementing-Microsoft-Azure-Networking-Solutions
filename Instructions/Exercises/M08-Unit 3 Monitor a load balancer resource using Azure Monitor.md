@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'Secure your virtual hub using Azure Firewall Manager'
+    title: 'M08-Unit 3 Secure your virtual hub using Azure Firewall Manager'
     module: 'Module - Design and implement network monitoring'
 ---
 
