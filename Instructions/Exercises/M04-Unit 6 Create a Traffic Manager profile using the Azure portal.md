@@ -22,6 +22,7 @@ The diagram below approximately illustrates the environment you will be deployin
 + Task 2: Create a Traffic Manager profile
 + Task 3: Add Traffic Manager endpoints
 + Task 4: Test the Traffic Manager profile
++ Task 5: Clean up resources
 
 
 ## Task 1: Create the web apps
@@ -175,21 +176,18 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 12. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
  
+ ## Task 4: Clean up resources
 
-### Clean up the Azure exercise environment
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group and all its related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-1. On the Azure portal home page, click **Resource groups**.
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-   ![Picture 10](../media/delete-resource-group-1.png)
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-2. In the list of resource groups, click on the name of the **Contoso-RG-TM1** resource group.
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+ 
 
-3. On the **Contoso-RG-TM1** resource group page, in the menu, click **Delete resource group**.
-
-   ![Picture 28](../media/delete-tm-resource-group-1.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-5. Once the first resource group has been successfully deleted, repeat steps 1-4 to delete the **Contoso-RG-TM2** resource group as well.
