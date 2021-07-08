@@ -8,7 +8,7 @@ layout: home
 
 Hyperlinks to each of the exercises are listed below.
 
-## Exercises
+## Exercise
 
 {% assign Exercise = site.pages | where_exp:"page", "page.url contains '/Exercises/Exercises'" %}
 | Module | Exercise |
