@@ -1,0 +1,21 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName": {
+            "value": "az700-vm2"
+        },
+        "nicName": {
+            "value": "az700-nic2"
+        },
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "TestUser"
+        },
+        "adminPassword": {
+            "value": "TestPa$$w0rd!"
+        }
+    }
+}
