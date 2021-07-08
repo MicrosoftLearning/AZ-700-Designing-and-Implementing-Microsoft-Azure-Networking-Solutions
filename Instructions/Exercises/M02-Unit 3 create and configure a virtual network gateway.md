@@ -5,11 +5,25 @@ Exercise:
 ---
 
 
-# Exercise - Create and configure a virtual network gateway
+# M02-Unit 3 Create and configure a virtual network gateway
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet. 
 
-## Create CoreServicesTestVM
+In this exercise, you will:
+
++ Task 1: Create CoreServicesTestVM
++ Task 2: Create ManufacturingTestVM
++ Task 3: Connect to the Test VMs using RDP
++ Task 4: Test the connection between the VMs
++ Task 5: Create CoreServicesVnet Gateway
++ Task 6: Create ManufacturingVnet Gateway
++ Task 7: CoreServicesVnet to ManufacturingVnet 
++ Task 8: Connect ManufacturingVnet to CoreServicesVnet
++ Task 9: Verify that the connections connect 
++ Task 10: Test the connection between the VMs
+
+
+## Task 1: Create CoreServicesTestVM
 
 1. On the Azure home page, select **Virtual Machines**.
 
@@ -51,7 +65,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 6. When the deployment is complete, select **Go to resource**.
 
-## Create ManufacturingTestVM
+## Task 2: Create ManufacturingTestVM
 
 1. On the Azure home page, select **Virtual Machines**.
 
@@ -93,7 +107,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 6. When the deployment is complete, select **Go to resource**.
 
-## Connect to the Test VMs using RDP
+## Task 3: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 2. Select **ManufacturingTestVM**.
@@ -114,7 +128,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Test the connection between the VMs
+## Task 4: Test the connection between the VMs
 
 1. On the **ManufacturingTestVM**, open PowerShell.
 
@@ -130,7 +144,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Create CoreServicesVnet Gateway
+##  Task 5: Create CoreServicesVnet Gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
    ![Search for virtual network gateway on Azure Portal.](../media/virtual-network-gateway-search.png)
@@ -162,7 +176,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
    >
    > It can take up to 45 minutes to create a virtual network gateway. 
 
-## Create ManufacturingVnet Gateway
+## Task 6: Create ManufacturingVnet Gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -195,7 +209,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Connect CoreServicesVnet to ManufacturingVnet 
+## Task 7: Connect CoreServicesVnet to ManufacturingVnet 
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -226,7 +240,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 5. To create the connection, select **Create**.
    
 
-## Connect ManufacturingVnet to CoreServicesVnet
+## Task 8: Connect ManufacturingVnet to CoreServicesVnet
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
@@ -253,7 +267,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 5. To create the connection, select **Create**.
 
-## Verify that the connections connect 
+## Task 9: Verify that the connections connect 
 
 1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
 
@@ -263,7 +277,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
  
 
-## Test the connection between the VMs
+## Task 10: Test the connection between the VMs
 
 1. On the **ManufacturingTestVM**, open PowerShell.
 
