@@ -28,7 +28,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 12: View detailed metrics
 + Task 13: View resource health
 + Task 14: Configure diagnostic settings
-+ Task 15: Clean up the Azure exercise environment
++ Task 15: Clean up resources
 
 
 
@@ -474,22 +474,16 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Task 15: Clean up the Azure exercise environment
+## Task 15: Clean up resources
 
-After you complete this exercise, and if you no longer need the resources, delete the resource group, load balancer, and all their related resources. The easiest way to do this is to delete the resource group, which deletes all its resources too.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. On the Azure portal home page, click **Resource groups**.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-   ![Select 'Resource groups' tile in Azure portal home page](../media/delete-resource-group-1.png)
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
-2. In the list of resource groups, click on the name of the **IntLB-RG** resource group.
+   ```powershell
+   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   ```
 
-   ![Select the load balancer resource group from the list of resource groups](../media/delete-resource-group-2.png)
-
-3. On the **IntLB-RG** resource group page, in the menu, click **Delete resource group**.
-
-   ![On the load balancer resource group page, with 'Delete resource group' highlighted](../media/delete-resource-group-3.png)
-
-4. In the warning pane that opens, type the name of the resource group into the text box, and then click **Delete**. (The delete button will only become available once you have successfully typed in the full name of the resource group.)
-
-   ![Confirmation pane for deleting a resource group](../media/delete-resource-group-4.png)
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
