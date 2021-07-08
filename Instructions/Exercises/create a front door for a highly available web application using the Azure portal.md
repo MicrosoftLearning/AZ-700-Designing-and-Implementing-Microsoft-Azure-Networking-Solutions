@@ -1,9 +1,10 @@
-
 ---
 Exercise:
     title: 'Create a Front Door for a highly available web application using the Azure portal.md'
     module: 'Module - Load balancing HTTP(S) traffic in Azure'
 ---
+
+
 
 # Exercise: Create a Front Door for a highly available web application using the Azure portal
 
