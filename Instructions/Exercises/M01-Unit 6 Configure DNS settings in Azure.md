@@ -4,10 +4,20 @@ Exercise:
     module: 'Module - Introduction to Azure Virtual Networks'
 ---
 
+# M01 - Unit 6 Configure DNS settings in azure
 
+## Exercise scenario 
 In this unit, you will configure DNS name resolution for Contoso Ltd. You will create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
 
-## Create a private DNS Zone
+In this lab, you will:
+
++ Task 1: Create a private DNS Zone
++ Task 2: Link subnet for auto registration
++ Task 3: Create Virtual Machines to test the configuration
++ Task 4: Verify records are present in the DNS zone
+
+
+## Task 1: Create a private DNS Zone
 
 1. Go to [Azure Portal](https://portal.azure.com/).
 
@@ -30,7 +40,7 @@ In this unit, you will configure DNS name resolution for Contoso Ltd. You will c
 
 6. Verify that the zone has been created.
 
-## Link subnet for auto registration
+## Task 2: Link subnet for auto registration
 
 1. In Contoso.com, under **Settings**, select **Virtual network links**.
 
@@ -85,7 +95,7 @@ In this unit, you will configure DNS name resolution for Contoso Ltd. You will c
 
  
 
-## Create Virtual Machines to test the configuration
+##  Task 3: Create Virtual Machines to test the configuration
 
 In this section, you will create two test VMs to test the Private DNS zone configuration.
 
@@ -181,7 +191,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
  
 
-## Verify records are present in the DNS zone
+## Task 4: Verify records are present in the DNS zone
 
 1. On the Azure Portal home page, select **Private DNS zones**.
 
