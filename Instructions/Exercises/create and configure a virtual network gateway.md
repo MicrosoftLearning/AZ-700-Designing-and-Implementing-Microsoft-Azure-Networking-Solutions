@@ -1,3 +1,10 @@
+---
+Exercise:
+    title: 'Create and configure a virtual network gateway'
+    module: 'Module - Design and implement hybrid networking'
+---
+
+
 # Exercise - Create and configure a virtual network gateway
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet. 
