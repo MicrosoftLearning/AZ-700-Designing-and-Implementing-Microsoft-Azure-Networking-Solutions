@@ -330,7 +330,7 @@ You receive no replies because the network security group associated to the Priv
 
 8. Close the remote desktop session to the ContosoWestPrivate VM.
 
-## Confirm access is denied to storage account
+### Confirm access is denied to storage account
 
 1. Enter ContosoWestPublic In the **Search resources, services, and docs** box at the top of the portal.
 
