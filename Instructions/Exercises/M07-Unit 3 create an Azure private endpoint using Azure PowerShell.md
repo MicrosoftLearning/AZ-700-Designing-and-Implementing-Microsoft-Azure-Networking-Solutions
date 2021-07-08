@@ -4,7 +4,7 @@ Exercise:
     module: 'Module - Design and implement private access to Azure Services'
 ---
 
-# Exercise - Create an Azure Private Endpoint using Azure PowerShell
+# M07-Unit 3 Create an Azure private endpoint using Azure PowerShell
 
 Get started with Azure Private Link by using a Private Endpoint to connect securely to an Azure web app. There are many ways to create Endpoints including Portal, CLI, PowerShell etc. 
 
@@ -20,7 +20,17 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
-## Create a resource group
+In this exercise, you will:
+
++ Task 1: Create a resource group
++ Task 2: Create a virtual network and bastion host
++ Task 3: Create a test virtual machine
++ Task 4: Create a Private Endpoint
++ Task 5:  Configure the private DNS zone
++ Task 6: Test connectivity to the Private Endpoint
++ Task 7: Clean up resources
+
+## Task 1: Create a resource group
 
 An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
@@ -31,7 +41,7 @@ New-AzResourceGroup -Name 'CreatePrivateEndpointQS-rg' -Location 'eastus'
 ```
 
 
-## Create a virtual network and bastion host
+## Task 2: Create a virtual network and bastion host
 
 You'll create a virtual network, subnet, and bastion host.
 
@@ -112,7 +122,7 @@ New-AzBastion @parameters3
 
 
 
-## Create a test virtual machine
+## Task 3: Create a test virtual machine
 
 In this section, you'll create a virtual machine that will be used to test the Private Endpoint.
 
@@ -207,7 +217,7 @@ The ephemeral IP is disabled when a public IP address is assigned to the virtual
 
 For more information on outbound connections in Azure, see Using Source Network Address Translation (SNAT) for outbound connections.
 
-## Create a Private Endpoint
+## Task 4: Create a Private Endpoint
 
 In this section, you'll create the Private Endpoint and connection using:
 
@@ -270,7 +280,7 @@ New-AzPrivateEndpoint @parameters2
 
 
 
-## Configure the private DNS zone
+## Task 5: Configure the private DNS zone
 
 In this section you'll create and configure the private DNS zone using:
 
@@ -345,7 +355,7 @@ New-AzPrivateDnsZoneGroup @parameters4
 ```
 
 
-## Test connectivity to the Private Endpoint
+## Task 6: Test connectivity to the Private Endpoint
 
 In this section, you'll use the virtual machine you created in the previous step to connect to the SQL server across the Private Endpoint.
 
@@ -389,7 +399,7 @@ A private IP address of **10.0.0.5** is returned for the web app name. This addr
   ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
 - Close the connection to **myVM**.
 
-## Clean up resources
+## Task 7: Clean up resources
 
 When you're done using the Private Endpoint and the VM, use [Remove-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/remove-azresourcegroup) to remove the resource group and all the resources it has:
 
