@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: 'configure DDoS Protection on a virtual network using the Azure portal'
+    title: 'Configure DDoS Protection on a virtual network using the Azure portal'
     module: 'Module - Design and implement network security'
 ---
 
