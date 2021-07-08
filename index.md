@@ -13,7 +13,7 @@ Hyperlinks to each of the lab exercises and demos are listed below.
 {% assign Exercise = site.pages | where_exp:"page", "page.url contains '/Exercises/Exercises'" %}
 | Module | Exercise |
 | --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% for activity in Exercise  %}| {{ activity.Exercise.module }} | [{{ activity.Exercise.title }}{% if activity.Exercise.type %} - {{ activity.Exercise.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
 
