@@ -1,3 +1,9 @@
+---
+Exercise:
+    title: 'create a Traffic Manager profile using the Azure portal'
+    module: 'Module - Load balancing non-HTTP(S) traffic in Azure'
+---
+
 # Exercise: Create a Traffic Manager Profile using the Azure portal
 
 In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application. 
