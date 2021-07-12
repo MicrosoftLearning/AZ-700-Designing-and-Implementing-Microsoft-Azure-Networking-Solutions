@@ -63,7 +63,7 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
     | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet addresss space | **10.1.1.0/24**                               |
+    | AzureBastionSubnet address  space | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 
@@ -273,7 +273,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 5. Click **Use Bastion**.
 
-6. In the **U****sername** box, type **TestUser** and in the **P****assword** box, type **TestPa$$w0rd!**, then click **Connect**.
+6. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
 
 7. The **myTestVM** window will open in another browser tab.
 
