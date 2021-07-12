@@ -19,7 +19,7 @@ In this unit, you will:
 
 ## Task 1: Create a Virtual Machine to test the configuration
 
-In this section, you will create a test VM on the Manufacturing VNet to test if you can access resroues inside another Azure virtual network from your ManufacturingVnet.
+In this section, you will create a test VM on the Manufacturing VNet to test if you can access resources inside another Azure virtual network from your ManufacturingVnet.
 
 ### Create ManufacturingVM
 
