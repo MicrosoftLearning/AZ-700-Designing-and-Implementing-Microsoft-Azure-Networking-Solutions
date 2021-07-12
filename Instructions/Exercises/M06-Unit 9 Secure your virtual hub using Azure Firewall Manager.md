@@ -1,11 +1,11 @@
 ---
 Exercise:
-    title: 'M06-Unit 8 Secure your virtual hub using Azure Firewall Manager'
+    title: 'M06-Unit 9 Secure your virtual hub using Azure Firewall Manager'
     module: 'Module - Design and implement network security'
 ---
 
 
-# M06-Unit 8 Secure your virtual hub using Azure Firewall Manager
+# M06-Unit 9 Secure your virtual hub using Azure Firewall Manager
 
 In this exercise, you will create the spoke virtual network and create a secured virtual hub, then you will connect the hub and spoke virtual networks and route traffic to your hub. Next you will deploy the workload servers, then create a firewall policy and secure your hub, and finally you will test the firewall.
 
