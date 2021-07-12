@@ -1,0 +1,15 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "virtualNetworks_ResearchVnet_name": {
+            "value": null
+        },
+        "virtualNetworks_CoreServicesVnet_name": {
+            "value": null
+        },
+        "virtualNetworks_ManufacturingVnet_name": {
+            "value": null
+        }
+    }
+}
