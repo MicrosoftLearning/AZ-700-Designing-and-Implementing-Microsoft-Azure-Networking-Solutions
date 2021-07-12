@@ -1,10 +1,10 @@
 ---
 Exercise:
-    title: 'M06-Unit 6 Deploy and configure Azure Firewall using the Azure portal'
+    title: 'M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal'
     module: 'Module - Design and implement network security '
 ---
 
-# M06-Unit 6 Deploy and configure Azure Firewall using the Azure portal
+# M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
 
 Being part of the Network Security team at Contoso, your next task is to create firewall rules to allow/deny access to certain websites. The following steps walk you through creating a resource group, a virtual network and subnets, and a virtual machine as environment preparation tasks, and then deploying a firewall and firewall policy, configuring default routes and application, network and DNAT rules, and finally testing the firewall.
 
