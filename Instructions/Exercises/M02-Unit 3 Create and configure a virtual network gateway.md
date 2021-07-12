@@ -11,7 +11,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 In this exercise, you will:
 
-+ Task 1: Create CoreServicesVnet
++ Task 1: Create CoreServicesVnet and ManufacturingVnet
 + Task 2: Create CoreServicesTestVM
 + Task 3: Create ManufacturingTestVM
 + Task 4: Connect to the Test VMs using RDP
@@ -23,7 +23,7 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect 
 + Task 11: Test the connection between the VMs
 
-## Task 1: Create CoreServicesVnet
+## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
