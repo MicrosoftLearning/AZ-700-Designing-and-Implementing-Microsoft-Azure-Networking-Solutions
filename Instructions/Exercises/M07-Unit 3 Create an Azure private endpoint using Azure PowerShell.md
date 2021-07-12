@@ -409,17 +409,5 @@ Remove-AzResourceGroup -Name CreatePrivateEndpointQS-rg -Force
 
 
 
-## Quiz title: Check your knowledge 
 
-
-
-## Multiple Choice 
-
-What is true about Azure Virtual Machines which aren't assigned a public IP address?
-
-(X) Azure provides an ephemeral IP.{{Correct! Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer.}} 
-
-( ) Azure creates a Private Endpoint.{{Incorrect, you must create the Private Endpoint. Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer.}} 
-
-( )  Azure creates the static public IP address{{More ActionsIncorrect. Azure provides an ephemeral IP for Azure Virtual Machines which aren't assigned a public IP address, or are in the backend pool of an internal Basic Azure Load Balancer.}}
 
