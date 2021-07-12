@@ -186,7 +186,7 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!Note] 
+   > [!NOTE] 
    >
    > It can take up to 45 minutes to create a virtual network gateway. 
 
@@ -217,7 +217,7 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
    
-   > [!Note]
+   > [!NOTE]
    >
    > It can take up to 45 minutes to create a virtual network gateway. 
 
@@ -231,7 +231,7 @@ In this exercise, you will:
 
 3. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-   > [!Note]
+   > [!NOTE]
    >
    >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
