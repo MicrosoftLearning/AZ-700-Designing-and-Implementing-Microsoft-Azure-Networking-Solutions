@@ -254,7 +254,7 @@ By default, storage accounts accept network connections from clients in any netw
 
 To test network access to a storage account, deploy a VM to each subnet.
 
-1. In the Azure protal Home screen, select Virtual machinesSelect **+ Create**, then **+Virtual machine**.
+1. In the Azure portal Home screen, select Virtual machinesSelect **+ Create**, then **+Virtual machine**.
 
 2. On the Basics tab, enter, or select, the following information: 
    ![Graphical user interface, text, application, email Description automatically generated](../media/create-virtual-machine-basics.png)
