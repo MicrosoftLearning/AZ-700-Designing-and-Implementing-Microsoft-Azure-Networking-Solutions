@@ -18,6 +18,18 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+
+3. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
+
+   ```powershell
+   $RGName = "CreatePrivateEndpointQS-rg"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
+   ```
+
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
 In this exercise, you will:
@@ -26,7 +38,7 @@ In this exercise, you will:
 + Task 2: Create a virtual network and bastion host
 + Task 3: Create a test virtual machine
 + Task 4: Create a Private Endpoint
-+ Task 5:  Configure the private DNS zone
++ Task 5: Configure the private DNS zone
 + Task 6: Test connectivity to the Private Endpoint
 + Task 7: Clean up resources
 
