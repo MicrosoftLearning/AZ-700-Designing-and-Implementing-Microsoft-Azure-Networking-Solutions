@@ -3,8 +3,8 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webAppName": {
-      "value": "GEN-UNIQUE"
-    },
+            "value": "GEN-UNIQUE"
+        },
         "location": {
             "value": "westus"
         },
