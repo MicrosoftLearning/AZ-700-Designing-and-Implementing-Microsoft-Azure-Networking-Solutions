@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "virtualNetworks_ResearchVnet_name": {
-            "value": null
+            "value": "ResearchVnet"
         },
         "virtualNetworks_CoreServicesVnet_name": {
-            "value": null
+            "value": "CoreServicesVnet"
         },
         "virtualNetworks_ManufacturingVnet_name": {
-            "value": null
+            "value": "ManufacturingVnet"
         }
     }
 }
