@@ -94,14 +94,24 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Region                | **(US) West US**         |
    | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
+  
+6. On the **Frontend IP configuration** tab, click **Add a frontend IP**
+
+7. On the **Add frontend IP address** popup, use the information in the table below to create the frontend IP.
+
+   | **Setting**           | **Value**                |
+   | --------------------- | ------------------------ |
+   | Name                  | **LoadBalancerFrontEnd** |
    | Virtual network       | **IntLB-VNet**           |
    | Subnet                | **myBackendSubnet**      |
    | IP address assignment | **Dynamic**              |
+   | Availability zone     | **Zone-redundant**       |
+   
+8. Click **Add**
+   
+9. Click **Review + create** in the load balancer creation wizard.
 
-
-6. Click **Review + create**.
-
-7. Click **Create**.
+10. Click **Create**.
 
 ## Task 3: Create load balancer resources
 
