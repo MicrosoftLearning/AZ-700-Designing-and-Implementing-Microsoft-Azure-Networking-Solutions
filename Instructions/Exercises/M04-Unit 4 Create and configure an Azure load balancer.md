@@ -216,7 +216,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 3. Under **Virtual machines**, click **Add**.
 
-4. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
+4. Select the checkboxes for all 3 VMs (**az700-vm1**, **az700-vm2**, and **az700-vm3**), then click **Add**.
 
 5. On the **myBackendPool** page, click **Save**.
    ![Picture 7](../media/add-vms-backendpool.png)
