@@ -204,13 +204,11 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 2. Under **Settings**, select **Backend pools**., and then select **myBackendPool**.
 
-3. In the **Associated to** box, select **Virtual machines**.
+3. Under **Virtual machines**, click **Add**.
 
-4. Under **Virtual machines**, click **Add**.
+4. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
-5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
-
-6. On the **myBackendPool** page, click **Save**.
+5. On the **myBackendPool** page, click **Save**.
    ![Picture 7](../media/add-vms-backendpool.png)
 
  
