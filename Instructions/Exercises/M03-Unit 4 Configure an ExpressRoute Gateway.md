@@ -37,7 +37,7 @@ In this exercise, you will:
    | **Setting**          | **Value**                        |
    | -------------------- | -------------------------------- |
    | Virtual Network Name | CoreServicesVNet                 |
-   | Resource Group       | Resource Group provided by Learn |
+   | Resource Group       | ContosoResourceGroup             |
    | Location             | West US                          |
 
 4. Select **Next : IP addresses**.
@@ -72,8 +72,7 @@ In this exercise, you will:
    | **Setting**               | **Value**                  |
    | ------------------------- | -------------------------- |
    | **Project details**       |                            |
-   | Subscription              | Provided by Learn          |
-   | Resource Group            | Provided by Learn          |
+   | Resource Group            | ContosoResourceGroup       |
    | **Instance details**      |                            |
    | Name                      | CoreServicesVnetGateway    |
    | Region                    | West US                    |
