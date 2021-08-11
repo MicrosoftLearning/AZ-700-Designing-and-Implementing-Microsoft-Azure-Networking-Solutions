@@ -34,7 +34,7 @@ In this exercise, you will:
 
    ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
 
-3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit. Then select **Next: Configuration &gt;**.
+3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, West US 2, TestERCircuit. Then select **Next: Configuration &gt;**.
 
    ![Azure portal - Create ExpressRoute basic tab](../media/expressroute-create-basic.png)
 
