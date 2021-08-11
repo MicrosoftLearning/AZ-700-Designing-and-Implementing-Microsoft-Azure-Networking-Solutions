@@ -133,7 +133,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 The load balancer monitors the status of your app with a health probe. The health probe adds or removes VMs from the load balancer based on their response to health checks. Here you will create a health probe to monitor the health of the VMs.
 
-1. From the **Backend pools** page of your load balancer, under **Settings**, click **Health probes**, then click **Add**.
+1. Under **Settings**, click **Health probes**, then click **Add**.
 
 2. On the **Add health probe** page, enter the information from the table below.
 
