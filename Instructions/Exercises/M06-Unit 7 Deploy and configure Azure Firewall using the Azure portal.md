@@ -323,7 +323,7 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    | **Rules Section**     |                                                              |
    | Name                  | **rdp-nat**                                                  |
    | Source type           | **IP Address**                                               |
-   | Source                | *****                                                        |
+   | Source                | *                                                            |
    | Protocol              | **TCP**                                                      |
    | Destination Ports     | **3389**                                                     |
    | Destination Type      | **IP Address**                                               |
