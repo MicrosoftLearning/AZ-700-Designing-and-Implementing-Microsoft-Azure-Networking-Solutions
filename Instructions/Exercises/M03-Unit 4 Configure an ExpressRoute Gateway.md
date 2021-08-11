@@ -78,8 +78,7 @@ In this exercise, you will:
    | Region                    | West US                    |
    | Gateway type              | ExpressRoute               |
    | VPN type                  | Route-based                |
-   | SKU                       | VpnGw2                     |
-   | Generation                | Generation2                |
+   | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
    | **Public IP address**     |                            |
    | Public IP address         | Create new                 |
