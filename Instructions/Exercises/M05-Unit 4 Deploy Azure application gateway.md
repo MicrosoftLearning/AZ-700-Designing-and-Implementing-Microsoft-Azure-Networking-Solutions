@@ -35,7 +35,7 @@ In this exercise, you will:
    | **Setting**         | **Value**                                    |
    | ------------------- | -------------------------------------------- |
    | Subscription        | Select your subscription.                    |
-   | Resource group      | Select the resource group provided by Learn. |
+   | Resource group      | Select Create new ContosoResourceGroup       |
    | Application Gateway | ContosoAppGateway                            |
    | Region              | Select **West US**                           |
    | Virtual Network     | Select **Create new**                        |
@@ -144,8 +144,8 @@ To do this, you'll:
    | **Setting**          | **Value**                                        |
    | -------------------- | ------------------------------------------------ |
    | **Basics** tab       |                                                  |
-   | Subscription         | Select the subscription provided by Learn.       |
-   | Resource group       | Select the Resource Group provided by Learn.     |
+   | Subscription         | Select your subscription.                        |
+   | Resource group       | Select ContosoResourceGroup                      |
    | Virtual machine name | BackendVM1                                       |
    | Image                | Select **Windows Server 2016 Datacenter - Gen1** |
    | Username             | TestUser                                         |
