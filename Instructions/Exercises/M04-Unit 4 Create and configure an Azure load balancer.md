@@ -48,7 +48,7 @@ In this section, you will create a virtual network and a subnet.
 
 5. Click **Next : IP Addresses**.
 
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
+6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
 
 7. Under **Subnet name**, select the word **default**.
 
