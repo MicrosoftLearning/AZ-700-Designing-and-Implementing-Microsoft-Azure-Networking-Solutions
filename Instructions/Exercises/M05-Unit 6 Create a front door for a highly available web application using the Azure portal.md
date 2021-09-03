@@ -38,7 +38,7 @@ This exercise requires two instances of a web application that run in different 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
    | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group provided by Learn.                 |
+   | Resource group   | Select the resource group ContosoResourceGroup               |
    | Name             | Enter a unique Name for your web app. This example uses WebAppContoso-1. |
    | Publish          | Select **Code**.                                             |
    | Runtime stack    | Select **.NET Core 2.1 (LTS)**.                              |
@@ -59,7 +59,7 @@ This exercise requires two instances of a web application that run in different 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
    | Subscription     | Select your subscription.                                    |
-   | Resource group   | Select the resource group provided by Learn.                 |
+   | Resource group   | Select the resource group ContosoResourceGroup               |
    | Name             | Enter a unique Name for your web app. This example uses WebAppContoso-2. |
    | Publish          | Select **Code**.                                             |
    | Runtime stack    | Select **.NET Core 2.1 (LTS)**.                              |
@@ -86,7 +86,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
    | **Setting**             | **Value**                                    |
    | ----------------------- | -------------------------------------------- |
    | Subscription            | Select your subscription.                    |
-   | Resource group          | Select the resource group provided by Learn. |
+   | Resource group          | Select ContosoResourceGroup                  |
    | Resource group location | Select **Central US**.                       |
 
 4. Select **Next: Configuration**.
