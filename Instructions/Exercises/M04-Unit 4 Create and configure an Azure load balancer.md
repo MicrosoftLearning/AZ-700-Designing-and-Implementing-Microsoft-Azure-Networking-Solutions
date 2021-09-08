@@ -56,9 +56,11 @@ In this section, you will create a virtual network and a subnet.
 
 9. Click **Save**.
 
-10. Click **Next : Security**.
+10. Click **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.1.0/24**. Click **Add**
 
-11. Under **BastionHost** select **Enable**, then enter the information from the table below.
+11. Click **Next : Security**.
+
+12. Under **BastionHost** select **Enable**, then enter the information from the table below.
 
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
@@ -67,9 +69,9 @@ In this section, you will create a virtual network and a subnet.
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 
-12. Click **Review + create**.
+13. Click **Review + create**.
 
-13. Click **Create**.
+14. Click **Create**.
 
 ## Task 2: Create the load balancer
 
@@ -99,9 +101,20 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | IP address assignment | **Dynamic**              |
 
 
-6. Click **Review + create**.
+6. Click **Next: Frontend IP configurations**.
+7. Click Add a frontend IP
+8. On the **Add frontend IP address** blade, enter the information from the table below.
+ 
+   | **Setting**     | **Value**                |
+   | --------------- | ------------------------ |
+   | Name            | **LoadBalancerFrontEnd** |
+   | Virtual network | **IntLB-VNet**           |
+   | Subnet          | **myFrontEndSubnet**     |
+   | Assignment      | **Dynamic**              |
 
-7. Click **Create**.
+9. Click **Review + create**.
+
+10. Click **Create**.
 
 ## Task 3: Create load balancer resources
 
