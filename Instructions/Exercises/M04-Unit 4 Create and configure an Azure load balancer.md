@@ -96,9 +96,6 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Region                | **(US) West US**         |
    | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
-   | Virtual network       | **IntLB-VNet**           |
-   | Subnet                | **myBackendSubnet**      |
-   | IP address assignment | **Dynamic**              |
 
 
 6. Click **Next: Frontend IP configurations**.
