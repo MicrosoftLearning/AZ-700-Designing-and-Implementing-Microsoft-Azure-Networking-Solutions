@@ -135,7 +135,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 In this section, you will configure load balancer settings for a backend address pool, then create a health probe and a load balancer rule.
 
-### Create a backend pool
+### Create a backend pool and add VMs to the backend pool
 
 The backend address pool contains the IP addresses of the virtual NICs connected to the load balancer.
 
@@ -151,22 +151,13 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | Virtual network | **IntLB-VNet**       |
 
 
-4. Click **Add**.
-   ![Picture 4](../media/create-backendpool.png)
+4. Under **Virtual machines**, click **Add**.
 
- ### Add VMs to the backend pool
+5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
-1. On the Azure portal home page, click **All resources**, then click on **myIntLoadBalancer** from the resources list.
-
-2. Under **Settings**, select **Backend pools**., and then select **myBackendPool**.
-
-3. Under **Virtual machines**, click **Add**.
-
-4. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
-
-5. On the **myBackendPool** page, click **Save**.
+6. Click **Add**.
    ![Picture 7](../media/add-vms-backendpool.png)
-
+   
 
 ### Create a health probe
 
