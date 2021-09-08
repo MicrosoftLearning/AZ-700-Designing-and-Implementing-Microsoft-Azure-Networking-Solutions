@@ -56,7 +56,7 @@ In this section, you will create a virtual network and a subnet.
 
 9. Click **Save**.
 
-10. Click **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.1.0/24**. Click **Add**
+10. Click **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Click **Add**
 
 11. Click **Next : Security**.
 
