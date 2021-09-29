@@ -109,7 +109,7 @@ In this exercise, you will:
    |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                                  |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
-   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
+   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24) |
    |                 | Public IP                                                    | (new) ManufacturingTestVM-ip              |
    |                 | NIC network security group                                   | Basic                                     |
    |                 | Public inbound ports                                         | Allow selected ports                      |
