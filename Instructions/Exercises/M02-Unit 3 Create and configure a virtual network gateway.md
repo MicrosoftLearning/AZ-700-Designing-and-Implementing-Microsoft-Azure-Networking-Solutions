@@ -27,7 +27,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory from the **F:\Allfiles\Exercises\M02** folder.
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
@@ -57,9 +57,9 @@ In this exercise, you will:
    |                 | Virtual machine name                                         | CoreServicesTestVM                    |
    |                 | Region                                                       | (US) West US                          |
    |                 | Availability options                                         | No infrastructure redundancy required |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed)  |
    |                 | Azure Spot instance                                          | Not selected                          |
-   |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+   |                 | Size                                                         | See all sizes - Standard_D2           |
    |                 | Username                                                     | TestUser                              |
    |                 | Password                                                     | TestPa$$w0rd!                         |
    |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -99,9 +99,9 @@ In this exercise, you will:
    |                 | Virtual machine name                                         | ManufacturingTestVM                       |
    |                 | Region                                                       | (Europe) North Europe                     |
    |                 | Availability options                                         | No infrastructure redundancy required     |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1      |
+   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed) |
    |                 | Azure Spot instance                                          | Not selected                              |
-   |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory      |
+   |                 | Size                                                         | See all sizes - Standard_D2_v2            |
    |                 | Username                                                     | TestUser                                  |
    |                 | Password                                                     | TestPa$$w0rd!                             |
    |                 | Public inbound ports                                         | Allow selected ports                      |
@@ -129,13 +129,13 @@ In this exercise, you will:
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
 5. Save the RDP file to your desktop.
-6. Connect to ManufacturingTestVM using the RDP file, and the username and password you specified when you created the VM.
+6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 7. On the Azure Portal home page, select **Virtual Machines**.
 8. Select **CoreServicesTestVM**.
 9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
 10. In **CoreServicesTestVM | Connect**, select **Download RDP file**.
 11. Save the RDP file to your desktop.
-12. Connect to CoreServicesTestVM using the RDP file, and the username and password you specified when you created the VM.
+12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 14. On both VMs, in **Networks**, select **Yes**.
 15. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
@@ -252,7 +252,7 @@ In this exercise, you will:
    | Resource group                 | No changes required               |
    | Location                       | West US                           |
 
-5. To create the connection, select **Create**.
+5. To create the connection, select **OK**.
    
 
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
@@ -280,7 +280,7 @@ In this exercise, you will:
    | Location                       | North Europe                      |
    |                                |                                   |
 
-5. To create the connection, select **Create**.
+5. To create the connection, select **OK**.
 
 ## Task 10: Verify that the connections connect 
 
