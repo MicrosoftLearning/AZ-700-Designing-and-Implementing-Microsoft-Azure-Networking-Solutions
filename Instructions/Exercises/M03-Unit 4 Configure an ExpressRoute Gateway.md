@@ -77,7 +77,6 @@ In this exercise, you will:
    | Name                      | CoreServicesVnetGateway    |
    | Region                    | West US                    |
    | Gateway type              | ExpressRoute               |
-   | VPN type                  | Route-based                |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
    | **Public IP address**     |                            |
@@ -85,9 +84,7 @@ In this exercise, you will:
    | Public IP address name    | CoreServicesVnetGateway-IP |
    | Public IP address SKU     | Basic                      |
    | Assignment                | Not configurable           |
-   | Enable active-active mode | Disabled                   |
-   | Configure BGP             | Disabled                   |
-
+   
 3. Select **Review + Create**.
 
 4. Confirm that the Gateway configuration passes validation and then select **Create**.
