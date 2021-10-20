@@ -18,11 +18,13 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. Find and open parameters.json in M07 folder. Open it in Notepad and find the line "value": "GEN-UNIQUE". Replace the placeholder GEN-UNIQUE string with a unique value for your webapp name. Save this change.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
+3. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+
+4. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
 
    ```powershell
    $RGName = "CreatePrivateEndpointQS-rg"
