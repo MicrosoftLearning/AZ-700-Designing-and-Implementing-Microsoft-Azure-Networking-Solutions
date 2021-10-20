@@ -59,7 +59,7 @@ In this task, you will create a single virtual network with two subnets.
 
    ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
 
-5. Click **Next: IP Addresses**.
+5. Click **Next: IP Addresses**. Enter IPv4 address space 10.0.0.0/16 if not already there by default. 
 
 6. Under **Subnet name**, click the word **default**.
 
