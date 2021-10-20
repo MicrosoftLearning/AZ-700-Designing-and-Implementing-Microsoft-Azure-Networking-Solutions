@@ -49,7 +49,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
 | Disks           | No changes required                                          |                                       |
 | Networking      | Virtual network                                              | ManufacturingVnet                     |
-|                 | Subnet                                                       | DatabaseSubnet (10.30.10.0/24)        |
+|                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24)|
 |                 | Public IP                                                    | (new) ManufacturingVM-ip              |
 |                 | NIC network security group                                   | Basic                                 |
 |                 | Public inbound ports                                         | Allow selected ports                  |
