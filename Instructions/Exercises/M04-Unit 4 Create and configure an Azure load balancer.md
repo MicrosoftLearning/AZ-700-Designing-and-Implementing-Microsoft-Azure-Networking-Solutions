@@ -50,11 +50,11 @@ In this section, you will create a virtual network and a subnet.
 
 6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
 
-7. Under **Subnet name**, select the word **default**.
+7. On the **IP Addresses** tab, select **+ Add subnet**.
 
-8. In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+8. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 
-9. Click **Save**.
+9. Click **Add**.
 
 10. Click **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Click **Add**
 
@@ -99,7 +99,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 2. In the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
 
-3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
+3. On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 
 4. Click **Create**.
    ![Picture 3](../media/create-load-balancer-4.png)
@@ -263,7 +263,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. On the Azure portal home page, click **All resources**, then click on **myIntLoadBalancer** from the resources list.
 
-2. On the **Overview** page, make a note of the **Private IP address**, or copy it to the clipboard.
+2. On the **Overview** page, make a note of the **Private IP address**, or copy it to the clipboard. Note: you may need to select **See more** in order to see the **Private IP address** field.
 
 3. Click **Home**, then on the Azure portal home page, click **All resources**, then click on the **myTestVM** virtual machine that you just created.
 
@@ -298,7 +298,7 @@ In this section, you will create a test VM, and then test the load balancer.
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
