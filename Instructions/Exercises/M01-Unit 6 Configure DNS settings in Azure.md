@@ -121,7 +121,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 |                 | Availability options                                         | No infrastructure redundancy required |
 |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -165,7 +165,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 |                 | Availability options                                         | No infrastructure redundancy required |
 |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
