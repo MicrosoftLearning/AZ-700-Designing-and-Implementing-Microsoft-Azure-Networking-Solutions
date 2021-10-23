@@ -90,8 +90,7 @@ In this exercise, you will:
     | Frontend IP   | Select **Public** |
 
 19. Accept the default values for the other settings on the **Listener** tab.
-
-    ![Azure Portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
+    ![Azure Portal add an Application Gateway routing rule](https://user-images.githubusercontent.com/46939028/138572228-7ff30e0e-bf1d-43aa-96f9-f822eb42c870.JPG)
 
 20. Select the **Backend targets** tab to configure the rest of the routing rule.
 
@@ -99,7 +98,7 @@ In this exercise, you will:
 
     | **Setting**   | **Value**      |
     | ------------- | -------------- |
-    | Target type   | Backend pool   |
+    | Target type and Backend target   | Backend pool (select radio button and also the drop-down option)  |
     | HTTP Settings | **Create new** |
 
 22. In **Add a HTTP setting**, enter or select the following information:
@@ -147,7 +146,7 @@ To do this, you'll:
    | Subscription         | Select your subscription.                        |
    | Resource group       | Select ContosoResourceGroup                      |
    | Virtual machine name | BackendVM1                                       |
-   | Image                | Select **Windows Server 2016 Datacenter - Gen1** |
+   | Image                | Select **Windows Server 2016 Datacenter - Gen1** (Select Configure VM Generation link if needed)|
    | Username             | TestUser                                         |
    | Password             | TestPa$$w0rd                                     |
    | Public inbound ports | None                                             |
@@ -177,22 +176,14 @@ In this example, you install IIS on the virtual machines to verify Azure created
 
 ```Azure PowerShell
 Set-AzVMExtension `
-
- -ResourceGroupName ContosoResourceGroup `
-
- -ExtensionName IIS `
-
- -VMName BackendVM1 `
-
- -Publisher Microsoft.Compute `
-
- -ExtensionType CustomScriptExtension `
-
- -TypeHandlerVersion 1.4 `
-
- -SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}' `
-
- -Location WestUS
+-ResourceGroupName ContosoResourceGroup `
+-ExtensionName IIS `
+-VMName BackendVM1 `
+-Publisher Microsoft.Compute `
+-ExtensionType CustomScriptExtension `
+-TypeHandlerVersion 1.4 `
+-SettingString '{"commandToExecute":"powershell Add-WindowsFeature Web-Server; powershell Add-Content -Path \"C:\\inetpub\\wwwroot\\Default.htm\" -Value $($env:computername)"}' `
+-Location WestUS
 ```
 
 4. Create a second virtual machine and install IIS by using the Create virtual machines and Install IIS for testing steps that you previously completed. Use BackendVM2 for the virtual machine name and for the **VMName** setting of the **Set-AzVMExtension** cmdlet.
