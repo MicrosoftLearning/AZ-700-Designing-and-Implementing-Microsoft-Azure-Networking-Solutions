@@ -61,7 +61,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 2. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-3. On the **Firewall Manager** page, click **View secured virtual hubs**.
+3. On the **Firewall Manager** page, from the Overview page, click **View secured virtual hubs**.
 
 4. On the **Virtual hubs** page, click **Create new secured virtual hub**.
 
@@ -194,7 +194,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 1. From the Azure portal home page, click **Firewall Manager**.
    - If the Firewall Manager icon does not appear on the homepage, then click **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-2. From **Firewall Manager**, click **View Azure Firewall Policies**.
+2. From **Firewall Manager**, from the Overview page, click **View Azure Firewall Policies**.
 
 3. Click **Create Azure Firewall Policy**.
 
@@ -403,7 +403,7 @@ In this task you will test the network rule to confirm that it works as expected
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'fw-manager-rg' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
