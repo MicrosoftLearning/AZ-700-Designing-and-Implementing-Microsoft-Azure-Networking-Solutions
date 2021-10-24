@@ -102,7 +102,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 5. Under **IP address assignment**, select **Static**.
 
-6. In **DNS name label**, type **mypublicdns**.
+6. In **DNS name label**, type **mypublicdnsxx** (where xx is your initials to make this unique).
 
 7. Select your resource group from the list.
 
@@ -173,7 +173,7 @@ In this step you will create a virtual machine, assign a public IP address to it
    | Virtual machine name  | **MyVirtualMachine**                                         |
    | Region                | Your region                                                  |
    | Availability options  | **No infrastructure  redundancy required**                   |
-   | Image                 | **Ubuntu Server 18.04 LTS -  Gen 1**                         |
+   | Image                 | **Ubuntu Server 18.04 LTS -  Gen 1** (Select Configure VM Generation link if needed) |
    | Size                  | Select **See  all sizes**, then choose **B1ls** in the  list and choose **Select**  **(Standard_B1ls - 1 vcpu,  0.5 GiB memory (£3.21/month)** |
    | Authentication type   | **SSH public key**                                           |
    | Username              | **azureuser**                                                |
@@ -255,7 +255,8 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. Create an account with [BreakingPoint Cloud](https://breakingpoint.cloud/)
 
-2. Set up your DDoS test as per the settings in the screenshot below, but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
+2. Set up your DDoS test as per the settings in the screenshot below (you may need to select the 100k pps test size with the trial account), but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
+   ![DDOSAttack](https://user-images.githubusercontent.com/46939028/138599420-58bef33a-2597-4fa2-919f-bf1614037bc3.JPG)
 
    ![DDoS Test Setup](../media/ddos-test-setup.png)
 
@@ -265,7 +266,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 5. In the **Metric** box, select **Under DDoS attack or not** from the list.
 
-6. And here you can see DDoS attack as it happened.
+6. And here you can see DDoS attack as it happened. Note it may take the full 10 minutes before you see the results.
 
    ![Metrics showing resource under DDoS attack](../media/metrics-showing-resource-under-attack.png)
 
