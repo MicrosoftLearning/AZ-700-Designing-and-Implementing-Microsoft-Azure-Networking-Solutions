@@ -1,10 +1,10 @@
 ---
 Exercise:
-    title: 'M08-Unit 3 Secure your virtual hub using Azure Firewall Manager'
-    module: 'Module - Design and implement network monitoring'
+    title: 'M08-Unit 3 Design and implement network monitoring'
+    module: 'Module 08-Unit 3 - Design and implement network monitoring'
 ---
 
-# M08-Unit 3 Secure your virtual hub using Azure Firewall Manager
+# M08-Unit 3 Design and implement network monitoring
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. Then you will create a Log Analytics workspace, and use Azure Monitor Insights to view information about your internal load balancer. You will view the Functional Dependency View, then view detailed metrics for the load balancer resource, and view resource health information for the load balancer. Finally, you will configure the load balancer's diagnostic settings to send metrics to the Log Analytics workspace you created. 
 
@@ -57,11 +57,11 @@ In this section, you will create a virtual network and a subnet.
 
 6. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
 
-7. Under **Subnet name**, select the word **default**.
+7. Above **Subnet name**, select **+ Add subnet**.
 
-8. In the **Edit subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+8. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 
-9. Click **Save**.
+9. Click **Add**.
 
 10. Click **Next : Security**.
 
@@ -95,17 +95,19 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
    | **Setting**           | **Value**                |
    | --------------------- | ------------------------ |
+   | Basics tab            |                          | 
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
    | Region                | **(US) West US**         |
-   | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
+   | Type                  | **Internal**             |
+   | Frontend IP configuration tab | + Add a frontend IP configuration |
    | Virtual network       | **IntLB-VNet**           |
    | Subnet                | **myBackendSubnet**      |
    | IP address assignment | **Dynamic**              |
 
-6. Click **Review + create**.
+6. Click **Add**, **Review + create**.
 
 7. Click **Create**.
 
@@ -188,7 +190,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json**, **azuredeploy.parameters.vm1.json**, **azuredeploy.parameters.vm2.json** and **azuredeploy.parameters.vm3.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M08**.
 
 3. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
@@ -199,6 +201,8 @@ In this section, you will create three VMs, that will be in the same availabilit
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
    ```
+  
+    > **Note:** This will take several minutes to deploy. 
 
 ## Task 7: Add VMs to the backend pool
 
@@ -210,7 +214,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 4. Under **Virtual machines**, click **Add**.
 
-5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
+5. Select the checkboxes for all 3 VMs (**az700-VM1**, **az700-VM2**, and **az700-VM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
 
@@ -220,18 +224,18 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 ## Task 8: Install IIS on the VMs
 
-1. On the Azure portal home page, click **All resources**, then click on **myVM1** from the resources list.
+1. On the Azure portal home page, click **All resources**, then click on **az700-VM1** from the resources list.
 2. On the **Overview** page, select **Connect**, then **Bastion**.
 3. Click **Use Bastion**.
 4. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
-5. The **myVM1** window will open in another browser tab.
+5. The **az700-VM1** window will open in another browser tab.
 6. If a **Networks** pane appears, click **Yes**.
 7. Click the **Windows Start icon** in the bottom left corner of the window, then click the **Windows PowerShell** tile.
 8. To install IIS, run the following command in PowerShell: Install-WindowsFeature -name Web-Server -IncludeManagementTools
 9. To remove the existing default web home page, run the following command in PowerShell: Remove-Item C:\inetpub\wwwroot\iisstart.htm
 10. To add a new default web home page and add content to it, run the following command in PowerShell: Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello World from " + $env:computername)
-11. Close the Bastion session to **myVM1** by closing the browser tab.
-12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **myVM2** and **myVM3** virtual machines.
+11. Close the Bastion session to **az700-VM1** by closing the browser tab.
+12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **az700-VM2** and **az700-VM3** virtual machines.
 
  
 
@@ -281,7 +285,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. On the Azure portal home page, click **All resources**, then click on **myIntLoadBalancer** from the resources list.
 
-2. On the **Overview** page, make a note of the **Private IP address**, or copy it to the clipboard.
+2. On the **Overview** page, make a note of the **Private IP address**, or copy it to the clipboard. Note: you may have to select **See more** to see the **Private IP address**.
 
 3. Click **Home**, then on the Azure portal home page, click **All resources**, then click on the **myTestVM** virtual machine that you just created.
 
@@ -438,7 +442,7 @@ In this section, you will create a test VM, and then test the load balancer.
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
