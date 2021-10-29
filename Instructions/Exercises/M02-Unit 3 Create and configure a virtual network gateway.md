@@ -27,7 +27,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory from the **F:\Allfiles\Exercises\M02** folder.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
@@ -59,7 +59,7 @@ In this exercise, you will:
    |                 | Availability options                                         | No infrastructure redundancy required |
    |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed)  |
    |                 | Azure Spot instance                                          | Not selected                          |
-   |                 | Size                                                         | See all sizes - Standard_D2           |
+   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
    |                 | Username                                                     | TestUser                              |
    |                 | Password                                                     | TestPa$$w0rd!                         |
    |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -101,7 +101,7 @@ In this exercise, you will:
    |                 | Availability options                                         | No infrastructure redundancy required     |
    |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed) |
    |                 | Azure Spot instance                                          | Not selected                              |
-   |                 | Size                                                         | See all sizes - Standard_D2_v2            |
+   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory     |
    |                 | Username                                                     | TestUser                                  |
    |                 | Password                                                     | TestPa$$w0rd!                             |
    |                 | Public inbound ports                                         | Allow selected ports                      |
