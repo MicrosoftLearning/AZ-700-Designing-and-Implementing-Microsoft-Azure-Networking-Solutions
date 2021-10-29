@@ -41,7 +41,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                 | Availability options                                         | No infrastructure redundancy required |
 |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | See all sizes - D2s_v3  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
