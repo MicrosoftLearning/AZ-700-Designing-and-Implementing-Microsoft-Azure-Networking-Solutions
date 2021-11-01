@@ -80,12 +80,9 @@ In this exercise, you will:
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
-1. On the Azure Portal home page, select **Create a resource**.
-2. In **Search services and marketplace**, enter virtual network.  
-   ‎![Azure Portal Create a resource page with Search services and marketplace box highlighted.](../media/create-resource-search-virtual-network-annotated.png)
-3. In Marketplace, in Virtual Network, select **Create &gt; Virtual network**.  
-   ‎![Virtual Network tile with Create Virtual network highlighted.](../media/virtual-network-service-annotated.png)
-4. Use the information in the following table to create the CoreServicesVnet virtual network.  
+1. On the Azure Portal home page, naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.png)
+2. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+3. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
  
