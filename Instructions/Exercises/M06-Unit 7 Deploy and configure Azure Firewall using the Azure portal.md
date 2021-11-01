@@ -49,7 +49,7 @@ In this task, you will create a new resource group.
 
 In this task, you will create a single virtual network with two subnets.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
 
 2. Click **Create**.
 
@@ -91,7 +91,7 @@ In this task, you will create a single virtual network with two subnets.
 
 In this task, you will create the workload virtual machine and place it in the Workload-SN subnet created previously.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual machine** and select **Virtual machine** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual machine** and select **Virtual machine** when it appears.
 
 2. On the **Virtual machine** page, click **Create**.
 
@@ -104,8 +104,8 @@ In this task, you will create the workload virtual machine and place it in the W
    | Virtual machine name | **Srv-Work**                                                 |
    | Region               | Your region                                                  |
    | Availability options | **No infrastructure redundancy required**                    |
-   | Image                | **Windows Server 2016 Datacenter - Gen 1**                   |
-   | Size                 | Select **See all sizes**, then choose **B1s** in the list and choose **Select** <br /><br />**(Standard_B1s - 1 vcpu, 1 GiB memory (£8.60/month)** |
+   | Image                | **Windows Server 2022 Datacenter- Gen2**                     |
+   | Size                 | **Standard_D2_v3** - 2vcpus, 8GiB memory                     |
    | Username             | **MyAdmin**                                                  |
    | Password             | **TestPa$$w0rd!**                                            |
    | Confirm password     | **TestPa$$w0rd!**                                            |
