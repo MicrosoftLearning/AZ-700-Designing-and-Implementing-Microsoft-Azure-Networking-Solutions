@@ -101,17 +101,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Create TestVM1
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
-
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your first VM.
+3. Use the information in the following table to create your first VM.
 
 | **Tab**         | **Option**                                                   | **Value**                             |
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
@@ -119,14 +113,13 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 |                 | Virtual machine name                                         | TestVM1                               |
 |                 | Region                                                       | (US) West US                          |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
 |                 | Azure Spot instance                                          | Not selected                          |
 |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
 |                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
 | Disks           | No changes required                                          |                                       |
 | Networking      | Virtual network                                              | CoreServicesVnet                      |
 |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
@@ -145,17 +138,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ### Create TestVM2
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
-
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your second VM.
+3. Use the information in the following table to create your second VM.
 
 | **Tab**         | **Option**                                                   | **Value**                             |
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
@@ -163,14 +150,13 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 |                 | Virtual machine name                                         | TestVM2                               |
 |                 | Region                                                       | (US) West US                          |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
 |                 | Azure Spot instance                                          | Not selected                          |
 |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
 |                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
 | Disks           | No changes required                                          |                                       |
 | Networking      | Virtual network                                              | CoreServicesVnet                      |
 |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
