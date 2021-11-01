@@ -69,17 +69,16 @@ In this task, you will create a single virtual network with two subnets.
 
 9. Click **Save**.
 
-   ![Create a virtual network - edit subnet](../media/edit-default-subnet-for-firewall.png)
-
 10. Click **Add subnet**, to create another subnet, which will host the workload server that you will create shortly.
 
+
+    ![Add subnet](../media/add-workload-subnet.png)
+    
 11. In the **Edit subnet** dialog box, change the name to **Workload-SN**.
 
 12. Change the **Subnet address range** to **10.0.2.0/24**.
 
 13. Click **Add**.
-
-    ![Add subnet](../media/add-workload-subnet.png)
 
 14. Click **Review + create**.
 
