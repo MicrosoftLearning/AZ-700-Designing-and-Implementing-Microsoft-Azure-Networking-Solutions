@@ -30,7 +30,7 @@ In this exercise, you will:
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
 2. Click **Create**.
 3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and click **OK**.
 4. In **Name**, enter **Spoke-01**.
@@ -130,9 +130,9 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will deploy the two workload servers.
 
-1. From the Azure portal home page, click **Create a resource**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In the Popular offers list, select **Windows Server Datacenter 2019**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
 3. On the **Create a virtual machine** page, on the **Basics** tab, create a new VM using the information in the table below.
 
@@ -142,6 +142,9 @@ In this task you will deploy the two workload servers.
    | Resource group       | **fw-manager-rg**        |
    | Virtual machine name | **Srv-workload-01**      |
    | Region               | Your region              |
+   | Availability options | No infrastructure redundancy required|
+   | Image                | Windows Server 2022 Datacenter- Gen2 |
+   | Azure Spot instance  | Not selected             |
    | Username             | **MyAdmin**              |
    | Password             | **TestPa$$w0rd!**        |
    | Confirm password     | **TestPa$$w0rd!**        |
