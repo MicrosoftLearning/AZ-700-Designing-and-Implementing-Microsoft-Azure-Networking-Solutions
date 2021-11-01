@@ -34,8 +34,6 @@ In this section, you will create a virtual network and a subnet.
 
 3. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 
-![Picture 2](../media/create-virtual-network-1.png)
-
 4. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
