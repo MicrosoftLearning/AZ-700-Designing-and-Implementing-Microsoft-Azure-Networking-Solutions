@@ -134,7 +134,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 | Review + create | Review your settings and select Create                       |                                       |
 
 
-6. While the deployment is in progress, you can proceed with creating TestVM2.
+4. While the deployment is in progress, you can proceed with creating TestVM2.
 
 ### Create TestVM2
 
@@ -171,9 +171,9 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 | Review + create | Review your settings and select **Create**                   |                                       |
 
 
-6. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-7. Verify that both virtual machines have been created.
+5. Verify that both virtual machines have been created.
 
  
 
