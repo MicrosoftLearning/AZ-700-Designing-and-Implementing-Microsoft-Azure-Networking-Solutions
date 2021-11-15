@@ -70,7 +70,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 5. Save the RDP file to your desktop.
 
-6. Connect to ManufacturingVM using the RDP file, and the username and password you specified when you created the VM.
+6. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 
 7. On the Azure Portal home page, select **Virtual Machines**.
 
@@ -82,7 +82,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 11. Save the RDP file to your desktop.
 
-12. Connect to TestVM1 using the RDP file, and the username and password you specified when you created the VM.
+12. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
@@ -169,12 +169,12 @@ Congratulations! You have successful configured connectivity between VNets by ad
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane. (Create Cloud Shell storage if needed, using default settings.)
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
