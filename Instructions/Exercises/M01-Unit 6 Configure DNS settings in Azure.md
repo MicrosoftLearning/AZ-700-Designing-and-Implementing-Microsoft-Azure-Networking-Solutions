@@ -111,11 +111,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
 | Basics          | Resource group                                               | ContosoResourceGroup                  |
 |                 | Virtual machine name                                         | TestVM1                               |
-|                 | Region                                                       | (US) West US                          |
+|                 | Region                                                       | East US                               |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -148,11 +148,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
 | Basics          | Resource group                                               | ContosoResourceGroup                  |
 |                 | Virtual machine name                                         | TestVM2                               |
-|                 | Region                                                       | (US) West US                          |
+|                 | Region                                                       | East US                               |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
