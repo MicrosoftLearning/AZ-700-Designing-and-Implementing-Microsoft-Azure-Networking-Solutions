@@ -158,7 +158,7 @@ In this exercise, you will:
 
 1. On the Azure Portal home page, select **All resources**.
 
-2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed. Your list should look like this:
+2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
 3. Note that Azure creates NetworkWatchers for each region that you use.
 
