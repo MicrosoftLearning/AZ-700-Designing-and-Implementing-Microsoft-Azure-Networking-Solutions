@@ -28,10 +28,9 @@ This exercise requires two instances of a web application that run in different 
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 
-2. On the Azure Portal home page, select + **Create a resource**.
+2. On the Azure home page, using the global search type **WebApp** and select **App Services** under services.
 
-3. On the Create a resource page, select **WebApp**.
-   ![Azure Portal Create a web app. ](../media/create-a-web-app.png)
+3. Click **+ Create** to create a Web App.
 
 4. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
@@ -50,9 +49,9 @@ This exercise requires two instances of a web application that run in different 
 5. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
 
-6. Create a second web app. On the Azure Portal home page, select + **Create a resource**.
+6. Create a second web app. On the Azure Portal home page, search  **WebApp**.
 
-7. On the Create a resource page, select **WebApp**.
+7. Click **+ Create** to create a Web App.
 
 8. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
