@@ -23,15 +23,11 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ### Create ManufacturingVM
 
-1. On the Azure home page, select Virtual Machines.
-2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
 | **Tab**         | **Option**                                                   | **Value**                             |
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
@@ -39,17 +35,16 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                 | Virtual machine name                                         | ManufacturingVM                       |
 |                 | Region                                                       | (Europe) North Europe                 |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
 |                 | Azure Spot instance                                          | Not selected                          |
 |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
 |                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
 | Disks           | No changes required                                          |                                       |
 | Networking      | Virtual network                                              | ManufacturingVnet                     |
-|                 | Subnet                                                       | DatabaseSubnet (10.30.10.0/24)        |
+|                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24)|
 |                 | Public IP                                                    | (new) ManufacturingVM-ip              |
 |                 | NIC network security group                                   | Basic                                 |
 |                 | Public inbound ports                                         | Allow selected ports                  |

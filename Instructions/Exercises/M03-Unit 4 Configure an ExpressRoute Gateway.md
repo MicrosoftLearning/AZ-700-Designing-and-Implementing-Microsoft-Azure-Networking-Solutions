@@ -77,7 +77,6 @@ In this exercise, you will:
    | Name                      | CoreServicesVnetGateway    |
    | Region                    | West US                    |
    | Gateway type              | ExpressRoute               |
-   | VPN type                  | Route-based                |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
    | **Public IP address**     |                            |

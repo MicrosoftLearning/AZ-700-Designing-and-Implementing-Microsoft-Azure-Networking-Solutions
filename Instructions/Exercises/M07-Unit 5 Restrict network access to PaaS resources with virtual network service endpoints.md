@@ -25,9 +25,9 @@ In this exercise, you will:
 
 ## Task 1: Create a virtual network
 
-1. On the Azure Portal home page, select **+ Create a resource**.
+1. Login to the Azure Portal.
 
-2. Search for virtual network and then select **Virtual network** from the results.
+2. On the Azure Portal home page, search for virtual network and then select **Virtual network** from the results.
 
 3. Select **+** **Create**.
 
