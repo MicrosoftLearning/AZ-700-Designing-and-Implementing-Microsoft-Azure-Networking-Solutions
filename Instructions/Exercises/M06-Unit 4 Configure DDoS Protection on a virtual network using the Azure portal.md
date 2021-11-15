@@ -30,11 +30,11 @@ In this exercise, you will:
 
 4. On the **Basics** tab, in **Resource group**, enter **MyResourceGroup**.
 
+   ![Create Resource Group](../media/create-resource-group-ddos-protection-plan.png)
+
 5. In **Region**, select your region from the list.
 
 6. Click **Review + create**.
-
-   ![Create Resource Group](../media/create-resource-group-ddos-protection-plan.png)
 
 7. Click **Create**.
 
@@ -44,11 +44,9 @@ In this exercise, you will:
 
 ## Task 2: Create a DDoS Protection plan
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **DDoS** and click **DDoS protection plan** when it appears.
+1. On the Azure portal home page, in the search box type **DDoS** and click **DDoS protection plan** when it appears.
 
-   ![Start point of creating a DDoS protection plan](../media/create-ddos-protection-plan-start.png)
-
-2. Click **Create**.
+2. Click **+ Create**.
 
 3. On the **Basics** tab, in the **Resource group** list, select the resource group you just created.
 

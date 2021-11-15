@@ -18,17 +18,13 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. Find and open parameters.json in M07 folder. Open it in Notepad and find the line "value": "GEN-UNIQUE". Replace the placeholder GEN-UNIQUE string with a unique value for your webapp name. Save this change.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
+3. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
 
-   ```powershell
-   $RGName = "CreatePrivateEndpointQS-rg"
-   
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
-   ```
+
 
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
@@ -42,7 +38,7 @@ In this exercise, you will:
 + Task 6: Test connectivity to the Private Endpoint
 + Task 7: Clean up resources
 
-## Task 1: Create a resource group
+## Task 1: Create a resource group and deploy the prerequisite web app
 
 An Azure resource group is a logical container into which Azure resources are deployed and managed.
 
@@ -51,7 +47,13 @@ Create a resource group with [New-AzResourceGroup](https://docs.microsoft.com/en
 ```Azure PowerShell
 New-AzResourceGroup -Name 'CreatePrivateEndpointQS-rg' -Location 'eastus'
 ```
+Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
 
+   ```powershell
+   $RGName = "CreatePrivateEndpointQS-rg"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
+   ```
 
 ## Task 2: Create a virtual network and bastion host
 
@@ -140,7 +142,7 @@ In this section, you'll create a virtual machine that will be used to test the P
 
 - Create the virtual machine with:
 
-- Get-Credential
+- Get-Credential (Note: when prompted enter a local admin account credentials for the VM (i.e. Student and Pa55w.rd1234)).
 
 - New-AzNetworkInterface
 
@@ -209,9 +211,7 @@ $parameters4 = @{
 
 }
 
-$vmConfig = 
-
-New-AzVMConfig @parameters2 | Set-AzVMOperatingSystem -Windows @parameters3 | Set-AzVMSourceImage @parameters4 | Add-AzVMNetworkInterface -Id $nicVM.Id
+$vmConfig = New-AzVMConfig @parameters2 | Set-AzVMOperatingSystem -Windows @parameters3 | Set-AzVMSourceImage @parameters4 | Add-AzVMNetworkInterface -Id $nicVM.Id
 
 ## Create the virtual machine ##
 
@@ -387,9 +387,9 @@ In this section, you'll use the virtual machine you created in the previous step
 
 - Open Windows PowerShell on the server after you connect.
 
-- Enter nslookup <your- webapp-name>.azurewebsites.net. Replace <your-webapp-name> with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+- Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
-  ```| Azure PowerShell |
+  ```
   Server: UnKnown
   
   Address: 168.63.129.16
@@ -400,7 +400,8 @@ In this section, you'll use the virtual machine you created in the previous step
   
   Address: 10.0.0.5
   
-  Aliases: mywebapp8675.azurewebsites.net  
+  Aliases: mywebapp8675.azurewebsites.net 
+  ```  
 
 
 A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
@@ -416,7 +417,7 @@ A private IP address of **10.0.0.5** is returned for the web app name. This addr
 When you're done using the Private Endpoint and the VM, use [Remove-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/remove-azresourcegroup) to remove the resource group and all the resources it has:
 
 ```Azure PowerShell
-Remove-AzResourceGroup -Name CreatePrivateEndpointQS-rg -Force
+Remove-AzResourceGroup -Name CreatePrivateEndpointQS-rg -Force -AsJob
 ```
 
 

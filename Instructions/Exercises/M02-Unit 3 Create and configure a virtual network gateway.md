@@ -40,16 +40,11 @@ In this exercise, you will:
 
 ## Task 2: Create CoreServicesTestVM
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                             |
    | --------------- | ------------------------------------------------------------ | ------------------------------------- |
@@ -57,14 +52,13 @@ In this exercise, you will:
    |                 | Virtual machine name                                         | CoreServicesTestVM                    |
    |                 | Region                                                       | (US) West US                          |
    |                 | Availability options                                         | No infrastructure redundancy required |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed)  |
+   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
    |                 | Azure Spot instance                                          | Not selected                          |
    |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
    |                 | Username                                                     | TestUser                              |
    |                 | Password                                                     | TestPa$$w0rd!                         |
    |                 | Public inbound ports                                         | Allow selected ports                  |
    |                 | Select inbound ports                                         | RDP (3389)                            |
-   |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
    | Disks           | No changes required                                          |                                       |
    | Networking      | Virtual network                                              | CoreServicesVnet                      |
    |                 | Subnet                                                       | DatabaseSubnet (10.20.0.0/24)         |
@@ -82,16 +76,11 @@ In this exercise, you will:
 
 ## Task 3: Create ManufacturingTestVM
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                                 |
    | --------------- | ------------------------------------------------------------ | ----------------------------------------- |
@@ -99,14 +88,13 @@ In this exercise, you will:
    |                 | Virtual machine name                                         | ManufacturingTestVM                       |
    |                 | Region                                                       | (Europe) North Europe                     |
    |                 | Availability options                                         | No infrastructure redundancy required     |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1 (Select Configure VM Generation link if needed) |
+   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1      |
    |                 | Azure Spot instance                                          | Not selected                              |
    |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory     |
    |                 | Username                                                     | TestUser                                  |
    |                 | Password                                                     | TestPa$$w0rd!                             |
    |                 | Public inbound ports                                         | Allow selected ports                      |
    |                 | Select inbound ports                                         | RDP (3389)                                |
-   |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                                  |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
    |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
