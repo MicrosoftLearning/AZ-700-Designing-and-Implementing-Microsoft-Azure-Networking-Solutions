@@ -33,11 +33,11 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
 | Basics          | Resource group                                               | ContosoResourceGroup                  |
 |                 | Virtual machine name                                         | ManufacturingVM                       |
-|                 | Region                                                       | (Europe) North Europe                 |
+|                 | Region                                                       | West Europe                           |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows Server 2022 Datacenter- Gen2  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -56,7 +56,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | Review + create | Review your settings and select Create                       |                                       |
 
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 2: Connect to the Test VMs using RDP
 
