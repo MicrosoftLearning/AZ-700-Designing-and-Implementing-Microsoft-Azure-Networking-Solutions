@@ -38,7 +38,7 @@ In this exercise, you will:
    | -------------------- | -------------------------------- |
    | Virtual Network Name | CoreServicesVNet                 |
    | Resource Group       | ContosoResourceGroup             |
-   | Location             | West US                          |
+   | Location             | East US                          |
 
 4. Select **Next : IP addresses**.
 
@@ -75,7 +75,7 @@ In this exercise, you will:
    | Resource Group            | ContosoResourceGroup       |
    | **Instance details**      |                            |
    | Name                      | CoreServicesVnetGateway    |
-   | Region                    | West US                    |
+   | Region                    | East US                    |
    | Gateway type              | ExpressRoute               |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
