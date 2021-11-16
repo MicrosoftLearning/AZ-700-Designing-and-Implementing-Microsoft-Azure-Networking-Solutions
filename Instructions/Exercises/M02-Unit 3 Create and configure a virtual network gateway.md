@@ -50,7 +50,7 @@ In this exercise, you will:
    | --------------- | ------------------------------------------------------------ | ------------------------------------- |
    | Basics          | Resource group                                               | ContosoResourceGroup                  |
    |                 | Virtual machine name                                         | CoreServicesTestVM                    |
-   |                 | Region                                                       | (US) West US                          |
+   |                 | Region                                                       | East US                               |
    |                 | Availability options                                         | No infrastructure redundancy required |
    |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
    |                 | Azure Spot instance                                          | Not selected                          |
@@ -72,7 +72,7 @@ In this exercise, you will:
    | Tags            | No changes required                                          |                                       |
    | Review + create | Review your settings and select Create                       |                                       |
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 3: Create ManufacturingTestVM
 
@@ -86,7 +86,7 @@ In this exercise, you will:
    | --------------- | ------------------------------------------------------------ | ----------------------------------------- |
    | Basics          | Resource group                                               | ContosoResourceGroup                      |
    |                 | Virtual machine name                                         | ManufacturingTestVM                       |
-   |                 | Region                                                       | (Europe) North Europe                     |
+   |                 | Region                                                       | West Europe                               |
    |                 | Availability options                                         | No infrastructure redundancy required     |
    |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1      |
    |                 | Azure Spot instance                                          | Not selected                              |
@@ -108,7 +108,7 @@ In this exercise, you will:
    | Tags            | No changes required                                          |                                           |
    | Review + create | Review your settings and select **Create**                   |                                           |
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 4: Connect to the Test VMs using RDP
 
@@ -161,7 +161,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | CoreServicesVnetGateway      |
-   |                 |                   | Region                                      | West US                      |
+   |                 |                   | Region                                      | East US                      |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
@@ -192,7 +192,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
-   |                 |                   | Region                                      | North Europe                 |
+   |                 |                   | Region                                      | West Europe                  |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
@@ -238,7 +238,7 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | West US                           |
+   | Location                       | East US                           |
 
 5. To create the connection, select **OK**.
    
@@ -265,7 +265,7 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | North Europe                      |
+   | Location                       | West Europe                       |
    |                                |                                   |
 
 5. To create the connection, select **OK**.
