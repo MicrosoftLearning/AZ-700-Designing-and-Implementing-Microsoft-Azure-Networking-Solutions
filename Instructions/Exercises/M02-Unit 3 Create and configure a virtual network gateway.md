@@ -266,7 +266,6 @@ In this exercise, you will:
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
    | Location                       | West Europe                       |
-   |                                |                                   |
 
 5. To create the connection, select **OK**.
 
