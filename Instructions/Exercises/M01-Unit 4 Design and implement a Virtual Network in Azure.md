@@ -57,7 +57,7 @@ In this exercise, you will:
 
 ## Task 1: Create the Contoso resource group
 
-1. Go to [Azure Portal](https://portal.azure.com/).
+1. Go to [Azure portal](https://portal.azure.com/).
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
 
@@ -79,7 +79,7 @@ In this exercise, you will:
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
-1. On the Azure Portal home page, naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
+1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 2. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 3. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
@@ -156,7 +156,7 @@ In this exercise, you will:
 
 ## Task 5: Verify the creation of VNets and Subnets
 
-1. On the Azure Portal home page, select **All resources**.
+1. On the Azure portal home page, select **All resources**.
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
