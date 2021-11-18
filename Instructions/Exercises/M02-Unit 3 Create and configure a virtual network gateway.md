@@ -61,7 +61,7 @@ In this exercise, you will:
    |                 | Select inbound ports                                         | RDP (3389)                            |
    | Disks           | No changes required                                          |                                       |
    | Networking      | Virtual network                                              | CoreServicesVnet                      |
-   |                 | Subnet                                                       | DatabaseSubnet (10.20.0.0/24)         |
+   |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
    |                 | Public IP                                                    | (new) CoreServicesTestVM-ip           |
    |                 | NIC network security group                                   | Basic                                 |
    |                 | Public inbound ports                                         | Allow selected ports                  |
