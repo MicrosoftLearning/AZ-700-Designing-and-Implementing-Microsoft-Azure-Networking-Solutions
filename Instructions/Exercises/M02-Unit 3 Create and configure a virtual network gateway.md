@@ -27,7 +27,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files azuredeploy.json and azuredeploy.parameters.json into the Cloud Shell home directory.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
@@ -40,34 +40,28 @@ In this exercise, you will:
 
 ## Task 2: Create CoreServicesTestVM
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                             |
    | --------------- | ------------------------------------------------------------ | ------------------------------------- |
    | Basics          | Resource group                                               | ContosoResourceGroup                  |
    |                 | Virtual machine name                                         | CoreServicesTestVM                    |
-   |                 | Region                                                       | (US) West US                          |
+   |                 | Region                                                       | East US                               |
    |                 | Availability options                                         | No infrastructure redundancy required |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
    |                 | Azure Spot instance                                          | Not selected                          |
-   |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
    |                 | Username                                                     | TestUser                              |
    |                 | Password                                                     | TestPa$$w0rd!                         |
    |                 | Public inbound ports                                         | Allow selected ports                  |
    |                 | Select inbound ports                                         | RDP (3389)                            |
-   |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
    | Disks           | No changes required                                          |                                       |
    | Networking      | Virtual network                                              | CoreServicesVnet                      |
-   |                 | Subnet                                                       | DatabaseSubnet (10.20.0.0/24)         |
+   |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
    |                 | Public IP                                                    | (new) CoreServicesTestVM-ip           |
    |                 | NIC network security group                                   | Basic                                 |
    |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -78,35 +72,29 @@ In this exercise, you will:
    | Tags            | No changes required                                          |                                       |
    | Review + create | Review your settings and select Create                       |                                       |
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 3: Create ManufacturingTestVM
 
-1. On the Azure home page, select **Virtual Machines**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In Virtual Machines, select **+ Add** > **+ Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
-
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
    | **Tab**         | **Option**                                                   | **Value**                                 |
    | --------------- | ------------------------------------------------------------ | ----------------------------------------- |
    | Basics          | Resource group                                               | ContosoResourceGroup                      |
    |                 | Virtual machine name                                         | ManufacturingTestVM                       |
-   |                 | Region                                                       | (Europe) North Europe                     |
+   |                 | Region                                                       | West Europe                               |
    |                 | Availability options                                         | No infrastructure redundancy required     |
-   |                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1      |
+   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1      |
    |                 | Azure Spot instance                                          | Not selected                              |
-   |                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory      |
+   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory     |
    |                 | Username                                                     | TestUser                                  |
    |                 | Password                                                     | TestPa$$w0rd!                             |
    |                 | Public inbound ports                                         | Allow selected ports                      |
    |                 | Select inbound ports                                         | RDP (3389)                                |
-   |                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                                  |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
    |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
@@ -120,7 +108,7 @@ In this exercise, you will:
    | Tags            | No changes required                                          |                                           |
    | Review + create | Review your settings and select **Create**                   |                                           |
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 4: Connect to the Test VMs using RDP
 
@@ -129,13 +117,13 @@ In this exercise, you will:
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
 5. Save the RDP file to your desktop.
-6. Connect to ManufacturingTestVM using the RDP file, and the username and password you specified when you created the VM.
+6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 7. On the Azure Portal home page, select **Virtual Machines**.
 8. Select **CoreServicesTestVM**.
 9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
 10. In **CoreServicesTestVM | Connect**, select **Download RDP file**.
 11. Save the RDP file to your desktop.
-12. Connect to CoreServicesTestVM using the RDP file, and the username and password you specified when you created the VM.
+12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 14. On both VMs, in **Networks**, select **Yes**.
 15. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
@@ -173,7 +161,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | CoreServicesVnetGateway      |
-   |                 |                   | Region                                      | West US                      |
+   |                 |                   | Region                                      | East US                      |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
@@ -204,7 +192,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
-   |                 |                   | Region                                      | North Europe                 |
+   |                 |                   | Region                                      | West Europe                  |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
@@ -250,9 +238,9 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | West US                           |
+   | Location                       | East US                           |
 
-5. To create the connection, select **Create**.
+5. To create the connection, select **OK**.
    
 
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
@@ -277,10 +265,9 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | North Europe                      |
-   |                                |                                   |
+   | Location                       | West Europe                       |
 
-5. To create the connection, select **Create**.
+5. To create the connection, select **OK**.
 
 ## Task 10: Verify that the connections connect 
 

@@ -3,10 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName": {
-            "value": "az700-vm2"
+            "value": "myVM2"
         },
         "nicName": {
-            "value": "az700-nic2"
+            "value": "myMV2nic2"
         },
         "vmSize": {
             "value": "Standard_DS1_v2"

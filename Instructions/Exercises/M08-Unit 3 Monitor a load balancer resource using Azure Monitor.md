@@ -1,10 +1,15 @@
 ---
 Exercise:
-    title: 'M08-Unit 3 Design and implement network monitoring'
-    module: 'Module 08-Unit 3 - Design and implement network monitoring'
 ---
 
 # M08-Unit 3 Design and implement network monitoring
+=======
+    title: 'M08-Unit 3 Monitor a load balancer resource using Azure Monitor'
+    module: 'Module - Design and implement network monitoring'
+---
+
+# M08-Unit 3 Monitor a load balancer resource using Azure Monitor
+
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. Then you will create a Log Analytics workspace, and use Azure Monitor Insights to view information about your internal load balancer. You will view the Functional Dependency View, then view detailed metrics for the load balancer resource, and view resource health information for the load balancer. Finally, you will configure the load balancer's diagnostic settings to send metrics to the Log Analytics workspace you created. 
 
@@ -38,9 +43,9 @@ In this section, you will create a virtual network and a subnet.
 
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page, click **Create a resource**, then **Networking**, then select **Virtual Network** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+2. On the Azure portal home page, search **Virtual Network** and select virtual network under services.
 
-3. Click **Create**.
+3. Click **+ Create**.
 
    ![Create virtual network](../media/create-virtual-network-1.png)
 
@@ -81,17 +86,13 @@ In this section, you will create a virtual network and a subnet.
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
-1. On the Azure portal home page, click **Create a resource**.
+1. On the Azure portal home page, in the search box at the top of the page, type **Load Balancer** and select load balancers under services.
 
-2. In the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
-
-3. Scroll down to the bottom of the page and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
-
-4. Click **Create**.
+2. Click **Create**.
 
    ![Create Load Balancer](../media/create-load-balancer-4.png)
 
-5. On the **Basics** tab, use the information in the table below to create the load balancer.
+3. On the **Basics** tab, use the information in the table below to create the load balancer.
 
    | **Setting**           | **Value**                |
    | --------------------- | ------------------------ |
@@ -107,9 +108,11 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Subnet                | **myBackendSubnet**      |
    | IP address assignment | **Dynamic**              |
 
-6. Click **Add**, **Review + create**.
 
-7. Click **Create**.
+4. Click **Review + create**.
+
+
+5. Click **Create**.
 
 
 ## Task 3: Create a backend pool
@@ -245,9 +248,9 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ### Create test VM
 
-1. On the Azure portal home page, click **Create a resource**, then **Compute**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services. 
 
-2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
+2. Select **+ Create; + Virtual machine**, on the **Basics** tab, use the information in the table below to create the first VM.
 
    | **Setting**          | **Value**                                    |
    | -------------------- | -------------------------------------------- |
