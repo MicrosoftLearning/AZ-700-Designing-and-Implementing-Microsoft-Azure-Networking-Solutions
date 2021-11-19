@@ -39,7 +39,7 @@ In this exercise, you will:
    | Subscription   | Select your subscription                      |
    | Resource group | (New) myResourceGroup                         |
    | Name           | CoreServicesVNet                              |
-   | Location       | Select **West US**                            |
+   | Location       | Select **East US**                            |
 
 5. Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name):
    ![Graphical user interface, text, application, email Description automatically generated](../media/create-virtual-network-ip.png)
@@ -102,7 +102,7 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
    | Subscription   | Select your subscription                                     |
    | Resource group | myResourceGroup                                              |
    | Name           | ContosoPrivateNSG                                            |
-   | Location       | Select **West US**                                           |
+   | Location       | Select **East US**                                           |
 
 4. select **Review + create**, then click **Create**:
 
@@ -208,7 +208,7 @@ The steps necessary to restrict network access to resources created through Azur
    | Resource group | myResourceGroup                                              |
    | Name           | Enter contosostoragewestxx (where xx are your initials to make it unique) |
    | Performance    | Standard StorageV2 (general purpose v2)                      |
-   | Location       | Select West US                                               |
+   | Location       | Select East US                                               |
    | Replication    | Locally-redundant storage (LRS)                              |
 
 4. select **Review + create**, then click **Create**.
@@ -264,7 +264,7 @@ To test network access to a storage account, deploy a VM to each subnet.
    | Resource group        | myResourceGroup                                              |
    | Instance Details      |                                                              |
    | Virtual machine name  | ContosoWestPublic                                            |
-   | Region                | (US) West US                                                 |
+   | Region                | (US) East US                                                 |
    | Availability Options  | No infrastructure redundancy required                        |
    | Image                 | Select **Windows Server 2019 Datacenter**.                   |
    | Size                  | Standard_D2s                                                 |
