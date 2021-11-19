@@ -147,7 +147,7 @@ To do this, you'll:
    | Subscription         | Select your subscription.                        |
    | Resource group       | Select ContosoResourceGroup                      |
    | Virtual machine name | BackendVM1                                       |
-   | Image                | Select **Windows Server 2016 Datacenter - Gen1** |
+   | Image                | Select **Windows Server 2022 Datacenter- Gen1**  |
    | Username             | TestUser                                         |
    | Password             | TestPa$$w0rd                                     |
    | Public inbound ports | None                                             |
