@@ -13,7 +13,7 @@ The steps to create an internal load balancer, are very similar to those you hav
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Picture 15](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
  
 In this exercise, you will:
@@ -27,10 +27,10 @@ In this exercise, you will:
 ## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.
-
+   
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page,naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
+2. On the Azure portal home page, naviagte to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
 3. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 
@@ -41,7 +41,7 @@ In this section, you will create a virtual network and a subnet.
    | Subscription   | Select your subscription                   |
    | Resource group | Select **Create  new**  Name: **IntLB-RG** |
    | Name           | **IntLB-VNet**                             |
-   | Region         | **(US) West US**                           |
+   | Region         | **(US) East US**                           |
 
 
 5. Click **Next : IP Addresses**.
@@ -109,7 +109,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
-   | Region                | **(US) West US**         |
+   | Region                | **(US) East US**         |
    | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
 
@@ -228,7 +228,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Subscription         | Select your subscription                     |
    | Resource group       | **IntLB-RG**                                 |
    | Virtual machine name | **myTestVM**                                 |
-   | Region               | **(US) West US**                             |
+   | Region               | **(US) East US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
    | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
@@ -296,7 +296,7 @@ In this section, you will create a test VM, and then test the load balancer.
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
