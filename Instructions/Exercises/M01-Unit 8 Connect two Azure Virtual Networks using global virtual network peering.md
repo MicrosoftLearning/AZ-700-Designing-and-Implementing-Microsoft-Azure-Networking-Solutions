@@ -23,33 +23,28 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ### Create ManufacturingVM
 
-1. On the Azure home page, select Virtual Machines.
-2. In Virtual Machines, select **+ Add &gt; + Start with a preset configuration**.
-   ![Virtual machines with + Add and + Start with a preset configuration highlighted.](../media/add-virtual-machine-preset.png)
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-3. In Choose recommended defaults that match your workload, under **Select a workload environment**, select **Dev/Test**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
-4. Under **Select a workload type**, select **General purpose (D-Series)**, and then select **Continue to create a VM**.
-
-5. Use the information in the following table to create your VM.
+3. Use the information in the following table to create your VM.
 
 | **Tab**         | **Option**                                                   | **Value**                             |
 | --------------- | ------------------------------------------------------------ | ------------------------------------- |
 | Basics          | Resource group                                               | ContosoResourceGroup                  |
 |                 | Virtual machine name                                         | ManufacturingVM                       |
-|                 | Region                                                       | (Europe) North Europe                 |
+|                 | Region                                                       | West Europe                           |
 |                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows 10 Pro, Version 20H2 - Gen 1  |
+|                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
 |                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2_v3 - 2vcpus, 8GiB memory  |
+|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
 |                 | Username                                                     | TestUser                              |
 |                 | Password                                                     | TestPa$$w0rd!                         |
 |                 | Public inbound ports                                         | Allow selected ports                  |
 |                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | I confirm I have an eligible Windows 10 license with multi-tenant hosting rights. | Selected                              |
 | Disks           | No changes required                                          |                                       |
 | Networking      | Virtual network                                              | ManufacturingVnet                     |
-|                 | Subnet                                                       | DatabaseSubnet (10.30.10.0/24)        |
+|                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24)|
 |                 | Public IP                                                    | (new) ManufacturingVM-ip              |
 |                 | NIC network security group                                   | Basic                                 |
 |                 | Public inbound ports                                         | Allow selected ports                  |
@@ -61,7 +56,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | Review + create | Review your settings and select Create                       |                                       |
 
 
-6. When the deployment is complete, select **Go to resource**.
+4. When the deployment is complete, select **Go to resource**.
 
 ## Task 2: Connect to the Test VMs using RDP
 
@@ -75,7 +70,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 5. Save the RDP file to your desktop.
 
-6. Connect to ManufacturingVM using the RDP file, and the username and password you specified when you created the VM.
+6. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 
 7. On the Azure Portal home page, select **Virtual Machines**.
 
@@ -87,7 +82,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 11. Save the RDP file to your desktop.
 
-12. Connect to TestVM1 using the RDP file, and the username and password you specified when you created the VM.
+12. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
@@ -174,12 +169,12 @@ Congratulations! You have successful configured connectivity between VNets by ad
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane. (Create Cloud Shell storage if needed, using default settings.)
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

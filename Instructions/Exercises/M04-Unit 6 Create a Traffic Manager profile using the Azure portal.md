@@ -37,7 +37,7 @@ In this section, you will create two instances of a web application deployed in 
    | ---------------- | ------------------------------------------------------------ |
    | Subscription     | Select your subscription                                     |
    | Resource group   | Select **Create  new**  Name: **Contoso-RG-TM1**             |
-   | Name             | **ContosoWebAppEastUS**                                      |
+   | Name             | **ContosoWebAppEastUSxx** (where xx are your initials to make the name unique) |
    | Publish          | **Code**                                                     |
    | Runtime stack    | **ASP.NET V4.8**                                             |
    | Operating system | **Windows**                                                  |
@@ -61,7 +61,7 @@ In this section, you will create two instances of a web application deployed in 
    | **Setting**    | **Value**                                                    |
    | -------------- | ------------------------------------------------------------ |
    | Resource group | Select **Create  new**  Name: **Contoso-RG-TM2**             |
-   | Name           | **ContosoWebAppWestEurope**                                  |
+   | Name           | **ContosoWebAppWestEuropexx** (where xx are your initials to make the name unique)  |
    | Region         | **West Europe**                                              |
    | Windows Plan   | Select **Create  new**  Name: **ContosoAppServicePlanWestEurope** |
 
@@ -90,7 +90,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
    | **Setting**             | **Value**                |
    | ----------------------- | ------------------------ |
-   | Name                    | **Contoso-TMProfile**    |
+   | Name                    | **Contoso-TMProfilexx** (where xx are your initials to make the name unique) |
    | Routing method          | **Priority**             |
    | Subscription            | Select your subscription |
    | Resource group          | **Contoso-RG-TM1**       |
@@ -185,7 +185,9 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+
+   Remove-AzResourceGroup -Name 'Contoso-RG-TM1' -Force -AsJob
+
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

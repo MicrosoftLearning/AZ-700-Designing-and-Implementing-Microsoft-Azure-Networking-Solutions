@@ -20,7 +20,7 @@ In this exercise, you will:
 + Task 8: Configure a Destination NAT (DNAT) rule
 + Task 9: Change the primary and secondary DNS address for the server's network interface
 + Task 10: Test the firewall
-
++ Task 11: Clean up resources
 
 
 ## Task 1: Create a resource group
@@ -49,7 +49,7 @@ In this task, you will create a new resource group.
 
 In this task, you will create a single virtual network with two subnets.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
 
 2. Click **Create**.
 
@@ -59,7 +59,7 @@ In this task, you will create a single virtual network with two subnets.
 
    ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
 
-5. Click **Next: IP Addresses**.
+5. Click **Next: IP Addresses**. Enter IPv4 address space 10.0.0.0/16 if not already there by default. 
 
 6. Under **Subnet name**, click the word **default**.
 
@@ -69,17 +69,16 @@ In this task, you will create a single virtual network with two subnets.
 
 9. Click **Save**.
 
-   ![Create a virtual network - edit subnet](../media/edit-default-subnet-for-firewall.png)
-
 10. Click **Add subnet**, to create another subnet, which will host the workload server that you will create shortly.
 
+
+    ![Add subnet](../media/add-workload-subnet.png)
+    
 11. In the **Edit subnet** dialog box, change the name to **Workload-SN**.
 
 12. Change the **Subnet address range** to **10.0.2.0/24**.
 
 13. Click **Add**.
-
-    ![Add subnet](../media/add-workload-subnet.png)
 
 14. Click **Review + create**.
 
@@ -91,7 +90,7 @@ In this task, you will create a single virtual network with two subnets.
 
 In this task, you will create the workload virtual machine and place it in the Workload-SN subnet created previously.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual machine** and select **Virtual machine** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual machine** and select **Virtual machine** when it appears.
 
 2. On the **Virtual machine** page, click **Create**.
 
@@ -104,8 +103,8 @@ In this task, you will create the workload virtual machine and place it in the W
    | Virtual machine name | **Srv-Work**                                                 |
    | Region               | Your region                                                  |
    | Availability options | **No infrastructure redundancy required**                    |
-   | Image                | **Windows Server 2016 Datacenter - Gen 1**                   |
-   | Size                 | Select **See all sizes**, then choose **B1s** in the list and choose **Select** <br /><br />**(Standard_B1s - 1 vcpu, 1 GiB memory (£8.60/month)** |
+   | Image                | **Windows Server 2022 Datacenter- Gen1**                     |
+   | Size                 | **Standard_D2s_v3** - 2vcpus, 8GiB memory                    |
    | Username             | **MyAdmin**                                                  |
    | Password             | **TestPa$$w0rd!**                                            |
    | Confirm password     | **TestPa$$w0rd!**                                            |
@@ -401,3 +400,16 @@ In this final task, you will test the firewall to verify that the rules are conf
     ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/remote-desktop-connection-3.png)
 
  
+## Task 11: Clean up resources 
+
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+1. Delete all resource groups you created throughout the labs of this module by running the following command:
+
+   ```powershell
+   Remove-AzResourceGroup -Name 'Test-FW-RG' -Force -AsJob
+   ```
+
+    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
