@@ -30,7 +30,7 @@ In this exercise, you will:
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
 2. Click **Create**.
 3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and click **OK**.
 4. In **Name**, enter **Spoke-01**.
@@ -61,7 +61,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 2. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-3. On the **Firewall Manager** page, click **View secured virtual hubs**.
+3. On the **Firewall Manager** page, from the Overview page, click **View secured virtual hubs**.
 
 4. On the **Virtual hubs** page, click **Create new secured virtual hub**.
 
@@ -130,9 +130,9 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will deploy the two workload servers.
 
-1. From the Azure portal home page, click **Create a resource**.
+1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
 
-2. In the Popular offers list, select **Windows Server Datacenter 2019**.
+2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
 3. On the **Create a virtual machine** page, on the **Basics** tab, create a new VM using the information in the table below.
 
@@ -142,6 +142,9 @@ In this task you will deploy the two workload servers.
    | Resource group       | **fw-manager-rg**        |
    | Virtual machine name | **Srv-workload-01**      |
    | Region               | Your region              |
+   | Availability options | No infrastructure redundancy required|
+   | Image                | Windows Server 2022 Datacenter- Gen2 |
+   | Azure Spot instance  | Not selected             |
    | Username             | **MyAdmin**              |
    | Password             | **TestPa$$w0rd!**        |
    | Confirm password     | **TestPa$$w0rd!**        |
@@ -194,7 +197,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 1. From the Azure portal home page, click **Firewall Manager**.
    - If the Firewall Manager icon does not appear on the homepage, then click **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-2. From **Firewall Manager**, click **View Azure Firewall Policies**.
+2. From **Firewall Manager**, from the Overview page, click **View Azure Firewall Policies**.
 
 3. Click **Create Azure Firewall Policy**.
 
@@ -403,7 +406,7 @@ In this task you will test the network rule to confirm that it works as expected
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 
    ```powershell
-   Remove-AzResourceGroup -Name 'NAME OF THE RG' -Force -AsJob
+   Remove-AzResourceGroup -Name 'fw-manager-rg' -Force -AsJob
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
