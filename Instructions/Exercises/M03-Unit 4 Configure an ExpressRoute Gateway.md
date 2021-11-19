@@ -38,7 +38,7 @@ In this exercise, you will:
    | -------------------- | -------------------------------- |
    | Virtual Network Name | CoreServicesVNet                 |
    | Resource Group       | ContosoResourceGroup             |
-   | Location             | West US                          |
+   | Location             | East US                          |
 
 4. Select **Next : IP addresses**.
 
@@ -75,9 +75,8 @@ In this exercise, you will:
    | Resource Group            | ContosoResourceGroup       |
    | **Instance details**      |                            |
    | Name                      | CoreServicesVnetGateway    |
-   | Region                    | West US                    |
+   | Region                    | East US                    |
    | Gateway type              | ExpressRoute               |
-   | VPN type                  | Route-based                |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
    | **Public IP address**     |                            |
@@ -85,9 +84,7 @@ In this exercise, you will:
    | Public IP address name    | CoreServicesVnetGateway-IP |
    | Public IP address SKU     | Basic                      |
    | Assignment                | Not configurable           |
-   | Enable active-active mode | Disabled                   |
-   | Configure BGP             | Disabled                   |
-
+   
 3. Select **Review + Create**.
 
 4. Confirm that the Gateway configuration passes validation and then select **Create**.

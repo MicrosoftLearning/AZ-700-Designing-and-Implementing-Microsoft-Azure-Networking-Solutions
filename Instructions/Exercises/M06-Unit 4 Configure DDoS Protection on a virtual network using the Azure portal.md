@@ -30,11 +30,11 @@ In this exercise, you will:
 
 4. On the **Basics** tab, in **Resource group**, enter **MyResourceGroup**.
 
+   ![Create Resource Group](../media/create-resource-group-ddos-protection-plan.png)
+
 5. In **Region**, select your region from the list.
 
 6. Click **Review + create**.
-
-   ![Create Resource Group](../media/create-resource-group-ddos-protection-plan.png)
 
 7. Click **Create**.
 
@@ -44,11 +44,9 @@ In this exercise, you will:
 
 ## Task 2: Create a DDoS Protection plan
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **DDoS** and click **DDoS protection plan** when it appears.
+1. On the Azure portal home page, in the search box type **DDoS** and click **DDoS protection plan** when it appears.
 
-   ![Start point of creating a DDoS protection plan](../media/create-ddos-protection-plan-start.png)
-
-2. Click **Create**.
+2. Click **+ Create**.
 
 3. On the **Basics** tab, in the **Resource group** list, select the resource group you just created.
 
@@ -173,8 +171,8 @@ In this step you will create a virtual machine, assign a public IP address to it
    | Virtual machine name  | **MyVirtualMachine**                                         |
    | Region                | Your region                                                  |
    | Availability options  | **No infrastructure  redundancy required**                   |
-   | Image                 | **Ubuntu Server 18.04 LTS -  Gen 1** (Select Configure VM Generation link if needed) |
-   | Size                  | Select **See  all sizes**, then choose **B1ls** in the  list and choose **Select**  **(Standard_B1ls - 1 vcpu,  0.5 GiB memory (£3.21/month)** |
+   | Image                 | **Ubuntu Server 18.04 LTS -  Gen 1** (Select Configure VM Generation link if needed) |                     
+   | Size                  | Select **See  all sizes**, then choose **B1ls** in the  list and choose **Select**  **(Standard_B1ls - 1 vcpu,  0.5 GiB memory** |
    | Authentication type   | **SSH public key**                                           |
    | Username              | **azureuser**                                                |
    | SSH public key source | **Generate new key pair**                                    |
@@ -199,7 +197,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. On the **Overview** page of the new virtual machine, under **Settings**, click **Networking**.
 
-2. Next to **Network Interface**, click **myvirtualmachine**xxx (e.g., myvirtualmachine892).
+2. Next to **Network Interface**, click **myvirtualmachine** (e.g., myvirtualmachine892).
 
 3. Under **Settings**, click **IP configurations**.
 
