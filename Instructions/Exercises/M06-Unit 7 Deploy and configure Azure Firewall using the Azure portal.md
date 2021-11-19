@@ -20,7 +20,7 @@ In this exercise, you will:
 + Task 8: Configure a Destination NAT (DNAT) rule
 + Task 9: Change the primary and secondary DNS address for the server's network interface
 + Task 10: Test the firewall
-
++ Task 11: Clean up resources
 
 
 ## Task 1: Create a resource group
