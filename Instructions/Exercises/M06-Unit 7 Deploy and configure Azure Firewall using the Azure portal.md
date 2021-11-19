@@ -103,8 +103,8 @@ In this task, you will create the workload virtual machine and place it in the W
    | Virtual machine name | **Srv-Work**                                                 |
    | Region               | Your region                                                  |
    | Availability options | **No infrastructure redundancy required**                    |
-   | Image                | **Windows Server 2022 Datacenter- Gen2**                     |
-   | Size                 | **Standard_D2_v3** - 2vcpus, 8GiB memory                     |
+   | Image                | **Windows Server 2022 Datacenter- Gen1**                     |
+   | Size                 | **Standard_D2s_v3** - 2vcpus, 8GiB memory                    |
    | Username             | **MyAdmin**                                                  |
    | Password             | **TestPa$$w0rd!**                                            |
    | Confirm password     | **TestPa$$w0rd!**                                            |
