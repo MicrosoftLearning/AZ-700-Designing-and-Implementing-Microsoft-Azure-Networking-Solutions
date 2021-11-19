@@ -6,7 +6,7 @@
             "value": "myVM1"
         },
         "nicName": {
-            "value": "myVM1-nic1"
+            "value": "myVMnic1"
         },
         "vmSize": {
             "value": "Standard_DS1_v2"
