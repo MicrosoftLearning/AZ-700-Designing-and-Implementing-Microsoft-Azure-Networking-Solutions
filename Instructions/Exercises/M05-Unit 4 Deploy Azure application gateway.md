@@ -37,7 +37,7 @@ In this exercise, you will:
    | Subscription        | Select your subscription.                    |
    | Resource group      | Select Create new ContosoResourceGroup       |
    | Application Gateway | ContosoAppGateway                            |
-   | Region              | Select **West US**                           |
+   | Region              | Select **East US**                           |
    | Virtual Network     | Select **Create new**                        |
 
 5. In Create virtual network, enter, or select the following information:
