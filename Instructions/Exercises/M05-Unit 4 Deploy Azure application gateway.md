@@ -37,7 +37,7 @@ In this exercise, you will:
    | Subscription        | Select your subscription.                    |
    | Resource group      | Select Create new ContosoResourceGroup       |
    | Application Gateway | ContosoAppGateway                            |
-   | Region              | Select **West US**                           |
+   | Region              | Select **East US**                           |
    | Virtual Network     | Select **Create new**                        |
 
 5. In Create virtual network, enter, or select the following information:
@@ -147,7 +147,7 @@ To do this, you'll:
    | Subscription         | Select your subscription.                        |
    | Resource group       | Select ContosoResourceGroup                      |
    | Virtual machine name | BackendVM1                                       |
-   | Image                | Select **Windows Server 2016 Datacenter - Gen1** |
+   | Image                | Select **Windows Server 2022 Datacenter- Gen1**  |
    | Username             | TestUser                                         |
    | Password             | TestPa$$w0rd                                     |
    | Public inbound ports | None                                             |
