@@ -1,9 +1,5 @@
 ---
 Exercise:
----
-
-# M08-Unit 3 Design and implement network monitoring
-=======
     title: 'M08-Unit 3 Monitor a load balancer resource using Azure Monitor'
     module: 'Module - Design and implement network monitoring'
 ---
@@ -217,7 +213,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 4. Under **Virtual machines**, click **Add**.
 
-5. Select the checkboxes for all 3 VMs (**az700-VM1**, **az700-VM2**, and **az700-VM3**), then click **Add**.
+5. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then click **Add**.
 
 6. On the **myBackendPool** page, click **Save**.
 
@@ -227,18 +223,18 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 ## Task 8: Install IIS on the VMs
 
-1. On the Azure portal home page, click **All resources**, then click on **az700-VM1** from the resources list.
+1. On the Azure portal home page, click **All resources**, then click on **myVM1** from the resources list.
 2. On the **Overview** page, select **Connect**, then **Bastion**.
 3. Click **Use Bastion**.
 4. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
-5. The **az700-VM1** window will open in another browser tab.
+5. The **myVM1** window will open in another browser tab.
 6. If a **Networks** pane appears, click **Yes**.
 7. Click the **Windows Start icon** in the bottom left corner of the window, then click the **Windows PowerShell** tile.
 8. To install IIS, run the following command in PowerShell: Install-WindowsFeature -name Web-Server -IncludeManagementTools
 9. To remove the existing default web home page, run the following command in PowerShell: Remove-Item C:\inetpub\wwwroot\iisstart.htm
 10. To add a new default web home page and add content to it, run the following command in PowerShell: Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello World from " + $env:computername)
-11. Close the Bastion session to **az700-VM1** by closing the browser tab.
-12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **az700-VM2** and **az700-VM3** virtual machines.
+11. Close the Bastion session to **myVM1** by closing the browser tab.
+12. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **myVM2** and **myVM3** virtual machines.
 
  
 
