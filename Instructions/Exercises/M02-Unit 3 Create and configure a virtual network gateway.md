@@ -15,7 +15,7 @@ In this exercise, you will:
 + Task 2: Create CoreServicesTestVM
 + Task 3: Create ManufacturingTestVM
 + Task 4: Connect to the Test VMs using RDP
-+ Task 5: Test the connection between the VMs
++ Task 5: Test the connection between the VMs 
 + Task 6: Create CoreServicesVnet Gateway
 + Task 7: Create ManufacturingVnet Gateway
 + Task 8: CoreServicesVnet to ManufacturingVnet 
@@ -34,7 +34,7 @@ In this exercise, you will:
    ```powershell
    $RGName = "ContosoResourceGroup"
    #create resource group if it doesnt exist
-   New-AzResourceGroup -Name $RGName -Location East US
+   New-AzResourceGroup -Name $RGName -Location "East US"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
