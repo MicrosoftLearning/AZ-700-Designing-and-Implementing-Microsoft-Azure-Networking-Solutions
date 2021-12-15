@@ -74,7 +74,7 @@ Create a virtual network and bastion host with:
 ```Azure PowerShell
 ## Create backend subnet config. ##
 
-$subnetConfig = New-AzVirtualNetworkSubnetConfig -Name myBackendSubnet -AddressPrefix 10.0.0.0/24```
+$subnetConfig = New-AzVirtualNetworkSubnetConfig -Name myBackendSubnet -AddressPrefix 10.0.0.0/24
 
 ## Create Azure Bastion subnet. ##
 
