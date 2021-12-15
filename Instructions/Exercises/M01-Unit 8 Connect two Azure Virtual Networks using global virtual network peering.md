@@ -100,9 +100,9 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 2. Use the following command to verify that there is no connection to TestVM1 on CoreServicesVnet. Be sure to use the IPv4 address for TestVM1.
 
-| PowerShell                               |
-| ---------------------------------------- |
-| Test-NetConnection 10.20.20.4 -port 3389 |
+   ```powershell
+    Test-NetConnection 10.20.20.4 -port 3389
+    ```
 
 
 3. The test connection should fail, and you will see a result similar to the following:
@@ -153,9 +153,9 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 2. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
 
-| PowerShell                               |
-| ---------------------------------------- |
-| Test-NetConnection 10.20.20.4 -port 3389 |
+   ```powershell
+    Test-NetConnection 10.20.20.4 -port 3389
+    ```
 
 
 3. The test connection should succeed, and you will see a result similar to the following:
