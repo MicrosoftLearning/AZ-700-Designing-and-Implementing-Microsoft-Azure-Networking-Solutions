@@ -206,7 +206,7 @@ The steps necessary to restrict network access to resources created through Azur
    | -------------- | ------------------------------------------------------------ |
    | Subscription   | Select your subscription                                     |
    | Resource group | myResourceGroup                                              |
-   | Name           | Enter contosostoragewestxx (where xx are your initials to make it unique) |
+   | Name           | Enter contosostoragexx (where xx are your initials to make it unique) |
    | Performance    | Standard StorageV2 (general purpose v2)                      |
    | Location       | Select East US                                               |
    | Replication    | Locally-redundant storage (LRS)                              |
@@ -263,7 +263,7 @@ To test network access to a storage account, deploy a VM to each subnet.
    | Subscription          | Select your subscription.                                    |
    | Resource group        | myResourceGroup                                              |
    | Instance Details      |                                                              |
-   | Virtual machine name  | ContosoWestPublic                                            |
+   | Virtual machine name  | ContosoPublic                                            |
    | Region                | (US) East US                                                 |
    | Availability Options  | No infrastructure redundancy required                        |
    | Image                 | Select **Windows Server 2019 Datacenter**.                   |
@@ -283,7 +283,7 @@ To test network access to a storage account, deploy a VM to each subnet.
    | -------------------------- | -------------------------- |
    | Virtual network            | CoreServicesVNet           |
    | Subnet                     | Public (10.0.0.0/24)       |
-   | Public IP                  | (new) ContosoWestPublic-ip |
+   | Public IP                  | (new) ContosoPublic-ip |
    | NIC network security group | Basic                      |
    | Public inbound ports       | Allow selected ports       |
    | Select inbound ports       | RDP (3389)                 |
@@ -292,7 +292,7 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 5. Select **Create** to start the virtual machine deployment. The VM takes a few minutes to deploy, but you can continue to the next step while the VM is creating.
 
-6. Create another virtual machine Complete steps 2-5 again, but name the virtual machine ContosoWestPrivate and and select the **Private** subnet.
+6. Create another virtual machine Complete steps 2-5 again, but name the virtual machine ContosoPrivate and and select the **Private** subnet.
 
 The VM takes a few minutes to deploy. Do not continue to the next step until it finishes creating and its settings open in the portal.
 
@@ -300,20 +300,20 @@ The VM takes a few minutes to deploy. Do not continue to the next step until it 
 
 ## Task 10: Confirm access to storage account
 
-1. Once the ContosoWestPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
+1. Once the ContosoPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
    ![Graphical user interface, application Description automatically generated](../media/private-virtual-machine-connect.png)
 2. After selecting the Connect button and RDP, select the Download RDP File button. A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.
 3. Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
 4. Select **OK**.
 5. You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
-6. On the ContosoWestPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragewestxx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
+6. On the ContosoPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragexx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
 
 ```Azure CLI
 $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
 
 $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
 
-New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\my-file-share" -Credential $credential
+New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\marketing" -Credential $credential
 ```
 
 The Azure file share successfully mapped to the Z drive.
@@ -324,23 +324,23 @@ The Azure file share successfully mapped to the Z drive.
 
 You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
-8. Close the remote desktop session to the ContosoWestPrivate VM.
+8. Close the remote desktop session to the ContosoPrivate VM.
 
 ### Confirm access is denied to storage account
 
-1. Enter ContosoWestPublic In the **Search resources, services, and docs** box at the top of the portal.
+1. Enter ContosoPublic In the **Search resources, services, and docs** box at the top of the portal.
 
-2. When **ContosoWestPublic** appears in the search results, select it.
+2. When **ContosoPublic** appears in the search results, select it.
 
-3. Complete steps 1-6 in the Confirm access to storage account task for the ContosoWestPublic VM.  
+3. Complete steps 1-6 in the Confirm access to storage account task for the ContosoPublic VM.  
      
-   ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoWestPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
+   ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
 
 4. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
 
  ping bing.com    
     
-5. Close the remote desktop session to the ContosoWestPublic VM.
+5. Close the remote desktop session to the ContosoPublic VM.
 
 6. From your computer, browse to the Azure portal.
 
