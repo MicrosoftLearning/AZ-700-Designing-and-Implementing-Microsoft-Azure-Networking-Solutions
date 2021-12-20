@@ -44,7 +44,7 @@ An Azure resource group is a logical container into which Azure resources are de
 
 Create a resource group with [New-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/new-azresourcegroup):
 
-```Azure PowerShell
+```PowerShell
 New-AzResourceGroup -Name 'CreatePrivateEndpointQS-rg' -Location 'eastus'
 ```
 Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
@@ -71,7 +71,7 @@ Create a virtual network and bastion host with:
 
  
 
-```Azure PowerShell
+```PowerShell
 ## Create backend subnet config. ##
 
 $subnetConfig = New-AzVirtualNetworkSubnetConfig -Name myBackendSubnet -AddressPrefix 10.0.0.0/24```
@@ -156,7 +156,7 @@ In this section, you'll create a virtual machine that will be used to test the P
 
 - Add-AzVMNetworkInterface
 
-``` Azure PowerShell
+```PowerShell
 ## Set credentials for server admin and password. ##
 
 $cred = Get-Credential
@@ -239,12 +239,10 @@ In this section, you'll create the Private Endpoint and connection using:
 
  
 
-```Azure PowerShell
-## Place web app into variable. Replace <webapp-resource-group-name> with the resource group of your webapp. ##
+```PowerShell
+## Place web app into variable. This assumes that only one web app exists in the resource group. ##
 
-## Replace <your-webapp-name> with your webapp name ##
-
-$webapp = Get-AzWebApp -ResourceGroupName <webapp-resource-group-name> -Name <your-webapp-name>
+$webapp = Get-AzWebApp -ResourceGroupName CreatePrivateEndpointQS-rg
 
 ## Create Private Endpoint connection. ##
 
@@ -304,7 +302,7 @@ In this section you'll create and configure the private DNS zone using:
 
 - New-AzPrivateDnsZoneGroup
 
-```Azure PowerShell
+```PowerShell
 ## Place virtual network into variable. ##
 
 $vnet = Get-AzVirtualNetwork -ResourceGroupName 'CreatePrivateEndpointQS-rg' -Name 'myVNet'
@@ -416,7 +414,7 @@ A private IP address of **10.0.0.5** is returned for the web app name. This addr
 
 When you're done using the Private Endpoint and the VM, use [Remove-AzResourceGroup](https://docs.microsoft.com/en-us/powershell/module/az.resources/remove-azresourcegroup) to remove the resource group and all the resources it has:
 
-```Azure PowerShell
+```PowerShell
 Remove-AzResourceGroup -Name CreatePrivateEndpointQS-rg -Force -AsJob
 ```
 
