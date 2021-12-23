@@ -231,7 +231,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 17. Enter the command ping TestVM2.contoso.com.
 
-18. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on teh VMs.
+18. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
 
  
 
