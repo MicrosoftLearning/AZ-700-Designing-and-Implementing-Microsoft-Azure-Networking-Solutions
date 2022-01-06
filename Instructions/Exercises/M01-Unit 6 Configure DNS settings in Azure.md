@@ -229,9 +229,9 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 16. Verify that the IP address is the same as the one you noted in the DNS zone.
 
-17. Enter the command ping TestVM2.contoso.com.
+17. Enter the command nslookup TestVM2.contoso.com.
 
-18. Verify that you receive four replies from TestVM2.
+18. Verify that you receive successful name resolution records for VM2. 
 
  
 
