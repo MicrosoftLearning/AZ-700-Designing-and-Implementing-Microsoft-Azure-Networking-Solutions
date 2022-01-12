@@ -221,17 +221,15 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 12. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
 
-13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
+13. On both VMs, if prompted, in **Networks**, select **Yes**.
 
-14. On both VMs, if prompted, in **Networks**, select **Yes**.
+14. On TestVM1, open a command prompt and enter the command ipconfig /all.
 
-15. On TestVM1, open a command prompt and enter the command ipconfig /all.
+15. Verify that the IP address is the same as the one you noted in the DNS zone.
 
-16. Verify that the IP address is the same as the one you noted in the DNS zone.
+16. Enter the command ping TestVM2.contoso.com.
 
-17. Enter the command ping TestVM2.contoso.com.
-
-18. Verify that you receive four replies from TestVM2.
+17. Verify that you receive four replies from TestVM2.
 
  
 
