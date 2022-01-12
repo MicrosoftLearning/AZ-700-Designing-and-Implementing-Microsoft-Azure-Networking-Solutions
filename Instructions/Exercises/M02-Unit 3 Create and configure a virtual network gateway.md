@@ -97,7 +97,7 @@ In this exercise, you will:
    |                 | Select inbound ports                                         | RDP (3389)                                |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
-   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
+   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24) |
    |                 | Public IP                                                    | (new) ManufacturingTestVM-ip              |
    |                 | NIC network security group                                   | Basic                                     |
    |                 | Public inbound ports                                         | Allow selected ports                      |
