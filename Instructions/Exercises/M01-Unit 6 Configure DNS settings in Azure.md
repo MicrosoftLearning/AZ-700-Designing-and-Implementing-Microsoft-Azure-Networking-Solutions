@@ -217,9 +217,9 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 10. Save the RDP file to your desktop.
 
-11. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
+11. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
-12. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
+12. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
