@@ -117,13 +117,13 @@ In this exercise, you will:
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
 5. Save the RDP file to your desktop.
-6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
+6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 7. On the Azure Portal home page, select **Virtual Machines**.
 8. Select **CoreServicesTestVM**.
 9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
 10. In **CoreServicesTestVM | Connect**, select **Download RDP file**.
 11. Save the RDP file to your desktop.
-12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$w0rd!**.
+12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 14. On both VMs, in **Networks**, select **Yes**.
 15. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
