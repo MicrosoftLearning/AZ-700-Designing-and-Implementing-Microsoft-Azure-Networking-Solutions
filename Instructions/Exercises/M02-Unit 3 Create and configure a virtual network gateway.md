@@ -34,7 +34,7 @@ In this exercise, you will:
    ```powershell
    $RGName = "ContosoResourceGroup"
    #create resource group if it doesnt exist
-   New-AzResourceGroup -Name $RGName -Location East US
+   New-AzResourceGroup -Name $RGName -Location "eastus"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
@@ -97,7 +97,7 @@ In this exercise, you will:
    |                 | Select inbound ports                                         | RDP (3389)                                |
    | Disks           | No changes required                                          |                                           |
    | Networking      | Virtual network                                              | ManufacturingVnet                         |
-   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.40.40.0/24) |
+   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24) |
    |                 | Public IP                                                    | (new) ManufacturingTestVM-ip              |
    |                 | NIC network security group                                   | Basic                                     |
    |                 | Public inbound ports                                         | Allow selected ports                      |
@@ -117,7 +117,7 @@ In this exercise, you will:
 3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
 4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
 5. Save the RDP file to your desktop.
-6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**. After connecting, minimize the RDP session.
 7. On the Azure Portal home page, select **Virtual Machines**.
 8. Select **CoreServicesTestVM**.
 9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
@@ -293,6 +293,6 @@ In this exercise, you will:
 
    ![Test-NetConnection suceeded.](../media/test-connection-succeeded.png)
 
- 
+4. Close the Remote Desktop connection windows.
 
 Congratulations! You have configured a VNet-to-VNet connection by using a virtual network gateway.
