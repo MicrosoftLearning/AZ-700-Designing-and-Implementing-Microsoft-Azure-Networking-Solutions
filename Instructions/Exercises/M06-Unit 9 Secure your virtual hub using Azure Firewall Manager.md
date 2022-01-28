@@ -207,7 +207,9 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 6. In **Region** select your region.
 
-7. Click **Next : DNS Settings**.
+7. In **Policy tier**, select **Standard**.
+
+8. Click **Next : DNS Settings**.
 
 8. Click **Next : TLS Inspection (preview)**.
 
