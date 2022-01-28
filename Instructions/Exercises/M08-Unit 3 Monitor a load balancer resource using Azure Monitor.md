@@ -256,7 +256,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) West US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
-   | Size                 | **Standard_DS1_v2 - 1 vcpu, 3.5 GiB memory** |
+   | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
    | Confirm password     | **TestPa$$w0rd!**                            |
@@ -352,15 +352,12 @@ In this section, you will create a test VM, and then test the load balancer.
 
 7. Notice that you can use the links in these pop-up windows to view information about these load balancer components and open their respective Azure portal blades.
 
-8. Hover over the **myVM3** virtual machine component. Note that you can open the resource blade for the virtual machine, and you can open the **VM Insights** page, or you can run the **Connection troubleshoot** tool from Network Watcher - all from this part of the topology diagram.
-   ![Azure Monitor Network Insights functional dependency view](../media/network-insights-functional-dependency-view-2.png)
+8. To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder. 
 
-9. To download a .SVG file copy of the topology diagram, click **Download topology**, and save the file in your **Downloads** folder. 
-
-10. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen.
+9. In the top right corner, click **View metrics** to reopen the metrics pane on the right-hand side of the screen.
     ![Azure Monitor Network Insights functional dependency view - View metrics button highlighted](../media/network-insights-functional-dependency-view-3.png)
 
-11. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
+10. The Metrics pane provides a quick view of some key metrics for this load balancer resource, in the form of bar and line charts.
 
     ![Azure Monitor Network Insights - Basic metrics view](../media/network-insights-basicmetrics-view.png)
 
