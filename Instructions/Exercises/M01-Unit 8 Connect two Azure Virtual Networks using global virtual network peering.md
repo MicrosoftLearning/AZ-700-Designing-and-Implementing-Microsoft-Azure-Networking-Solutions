@@ -23,7 +23,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ### Create ManufacturingVM
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
 
 2. In Virtual Machines, select **+ Create; + Virtual machine**.
 
