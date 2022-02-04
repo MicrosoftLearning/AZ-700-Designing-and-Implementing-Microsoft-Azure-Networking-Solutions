@@ -42,14 +42,15 @@
     "subnetName": "ManufacturingSystemSubnet",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "computeApiVersion": "2018-06-01",
-    "networkApiVersion": "2018-08-01"
+    "networkApiVersion": "2018-08-01",
+    "location": "West Europe"
   },
     "resources": [
         {
             "name": "[parameters('vmName1')]",
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "[variables('computeApiVersion')]",
-            "location": "[resourceGroup().location]",
+            "location": "[variables('location')]",
             "dependsOn": [
                 "[parameters('nicName1')]"
             ],
@@ -94,7 +95,7 @@
             "name": "[parameters('nicName1')]",
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "[variables('networkApiVersion')]",
-            "location": "[resourceGroup().location]",
+            "location": "[variables('location')]",
             "comments": "Primary NIC",
             "dependsOn": [
                 "[variables('nsgName1')]",
@@ -124,7 +125,7 @@
             "name": "[variables('nsgName1')]",
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "[variables('networkApiVersion')]",
-            "location": "[resourceGroup().location]",
+            "location": "[variables('location')]",
             "comments": "Network Security Group (NSG) for Primary NIC",
             "properties": {
                 "securityRules": [
@@ -149,7 +150,7 @@
   "type": "Microsoft.Network/publicIPAddresses",
   "apiVersion": "2021-05-01",
   "name":  "[variables('PIPName1')]",
-  "location": "[resourceGroup().location]",
+  "location": "[variables('location')]",
   "sku": {
     "name": "Basic",
     "tier": "Regional"
