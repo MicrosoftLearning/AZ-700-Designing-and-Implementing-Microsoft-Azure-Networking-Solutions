@@ -23,40 +23,21 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ### Create ManufacturingVM
 
-1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In Virtual Machines, select **+ Create; + Virtual machine**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M01**.
 
-3. Use the information in the following table to create your VM.
+3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-| **Tab**         | **Option**                                                   | **Value**                             |
-| --------------- | ------------------------------------------------------------ | ------------------------------------- |
-| Basics          | Resource group                                               | ContosoResourceGroup                  |
-|                 | Virtual machine name                                         | ManufacturingVM                       |
-|                 | Region                                                       | West Europe                           |
-|                 | Availability options                                         | No infrastructure redundancy required |
-|                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
-|                 | Azure Spot instance                                          | Not selected                          |
-|                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
-|                 | Username                                                     | TestUser                              |
-|                 | Password                                                     | TestPa$$w0rd!                         |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-| Disks           | No changes required                                          |                                       |
-| Networking      | Virtual network                                              | ManufacturingVnet                     |
-|                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24)|
-|                 | Public IP                                                    | (new) ManufacturingVM-ip              |
-|                 | NIC network security group                                   | Basic                                 |
-|                 | Public inbound ports                                         | Allow selected ports                  |
-|                 | Select inbound ports                                         | RDP (3389)                            |
-|                 | Load balancing                                               | Not selected                          |
-| Management      | No changes required                                          |                                       |
-| Advanced        | No changes required                                          |                                       |
-| Tags            | No changes required                                          |                                       |
-| Review + create | Review your settings and select Create                       |                                       |
+   ```powershell
+   $RGName = "ContosoResourceGroup"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
+   ```
+  
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-
-4. When the deployment is complete, select **Go to resource**.
+5. Verify that the virtual machine has been created.
 
 ## Task 2: Connect to the Test VMs using RDP
 
