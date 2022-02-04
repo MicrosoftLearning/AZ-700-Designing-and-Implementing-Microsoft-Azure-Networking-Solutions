@@ -12,8 +12,8 @@ In this exercise you will configure a virtual network gateway to connect the Con
 In this exercise, you will:
 
 + Task 1: Create CoreServicesVnet and ManufacturingVnet
-+ Task 2: Create CoreServicesTestVM
-+ Task 3: Create ManufacturingTestVM
++ Task 2: Create CoreServicesVM
++ Task 3: Create ManufacturingVM
 + Task 4: Connect to the Test VMs using RDP
 + Task 5: Test the connection between the VMs
 + Task 6: Create CoreServicesVnet Gateway
@@ -38,90 +38,55 @@ In this exercise, you will:
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
-## Task 2: Create CoreServicesTestVM
+## Task 2: Create CoreServicesVM
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In Virtual Machines, select **+ Create; + Virtual machine**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **CoreServicesVMazuredeploy.json** and **CoreServicesVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M02**.
 
-3. Use the information in the following table to create your VM.
+3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-   | **Tab**         | **Option**                                                   | **Value**                             |
-   | --------------- | ------------------------------------------------------------ | ------------------------------------- |
-   | Basics          | Resource group                                               | ContosoResourceGroup                  |
-   |                 | Virtual machine name                                         | CoreServicesTestVM                    |
-   |                 | Region                                                       | East US                               |
-   |                 | Availability options                                         | No infrastructure redundancy required |
-   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1  |
-   |                 | Azure Spot instance                                          | Not selected                          |
-   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory |
-   |                 | Username                                                     | TestUser                              |
-   |                 | Password                                                     | TestPa$$w0rd!                         |
-   |                 | Public inbound ports                                         | Allow selected ports                  |
-   |                 | Select inbound ports                                         | RDP (3389)                            |
-   | Disks           | No changes required                                          |                                       |
-   | Networking      | Virtual network                                              | CoreServicesVnet                      |
-   |                 | Subnet                                                       | DatabaseSubnet (10.20.20.0/24)        |
-   |                 | Public IP                                                    | (new) CoreServicesTestVM-ip           |
-   |                 | NIC network security group                                   | Basic                                 |
-   |                 | Public inbound ports                                         | Allow selected ports                  |
-   |                 | Select inbound ports                                         | RDP (3389)                            |
-   |                 | Load balancing                                               | Not selected                          |
-   | Management      | No changes required                                          |                                       |
-   | Advanced        | No changes required                                          |                                       |
-   | Tags            | No changes required                                          |                                       |
-   | Review + create | Review your settings and select Create                       |                                       |
+   ```powershell
+   $RGName = "ContosoResourceGroup"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
+   ```
+  
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-4. When the deployment is complete, select **Go to resource**.
+5. Verify that the virtual machine has been created.
 
-## Task 3: Create ManufacturingTestVM
+## Task 3: Create ManufacturingVM
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In Virtual Machines, select **+ Create; + Virtual machine**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M02**.
 
-3. Use the information in the following table to create your VM.
+3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-   | **Tab**         | **Option**                                                   | **Value**                                 |
-   | --------------- | ------------------------------------------------------------ | ----------------------------------------- |
-   | Basics          | Resource group                                               | ContosoResourceGroup                      |
-   |                 | Virtual machine name                                         | ManufacturingTestVM                       |
-   |                 | Region                                                       | West Europe                               |
-   |                 | Availability options                                         | No infrastructure redundancy required     |
-   |                 | Image                                                        | Windows Server 2022 Datacenter- Gen1      |
-   |                 | Azure Spot instance                                          | Not selected                              |
-   |                 | Size                                                         | Standard_D2s_v3 - 2vcpus, 8GiB memory     |
-   |                 | Username                                                     | TestUser                                  |
-   |                 | Password                                                     | TestPa$$w0rd!                             |
-   |                 | Public inbound ports                                         | Allow selected ports                      |
-   |                 | Select inbound ports                                         | RDP (3389)                                |
-   | Disks           | No changes required                                          |                                           |
-   | Networking      | Virtual network                                              | ManufacturingVnet                         |
-   |                 | Subnet                                                       | ManufacturingSystemSubnet (10.30.10.0/24) |
-   |                 | Public IP                                                    | (new) ManufacturingTestVM-ip              |
-   |                 | NIC network security group                                   | Basic                                     |
-   |                 | Public inbound ports                                         | Allow selected ports                      |
-   |                 | Select inbound ports                                         | RDP (3389)                                |
-   |                 | Load balancing                                               | Not selected                              |
-   | Management      | No changes required                                          |                                           |
-   | Advanced        | No changes required                                          |                                           |
-   | Tags            | No changes required                                          |                                           |
-   | Review + create | Review your settings and select **Create**                   |                                           |
+   ```powershell
+   $RGName = "ContosoResourceGroup"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
+   ```
+  
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-4. When the deployment is complete, select **Go to resource**.
+5. Verify that the virtual machine has been created.
+
 
 ## Task 4: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
-2. Select **ManufacturingTestVM**.
-3. In **ManufacturingTestVM**, select **Connect &gt; RDP**.
-4. In **ManufacturingTestVM | Connect**, select **Download RDP file**.
+2. Select **ManufacturingVM**.
+3. In **ManufacturingVM**, select **Connect &gt; RDP**.
+4. In **ManufacturingVM | Connect**, select **Download RDP file**.
 5. Save the RDP file to your desktop.
 6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**. After connecting, minimize the RDP session.
 7. On the Azure Portal home page, select **Virtual Machines**.
-8. Select **CoreServicesTestVM**.
-9. In **CoreServicesTestVM**, select **Connect &gt; RDP**.
-10. In **CoreServicesTestVM | Connect**, select **Download RDP file**.
+8. Select **CoreServicesVM**.
+9. In **CoreServicesVM**, select **Connect &gt; RDP**.
+10. In **CoreServicesVM | Connect**, select **Download RDP file**.
 11. Save the RDP file to your desktop.
 12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
@@ -133,9 +98,9 @@ In this exercise, you will:
 
 ## Task 5: Test the connection between the VMs
 
-1. On the **ManufacturingTestVM**, open PowerShell.
+1. On the **ManufacturingVM**, open PowerShell.
 
-2. Use the following command to verify that there is no connection to CoreServicesTestVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesTestVM.
+2. Use the following command to verify that there is no connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
    Test-NetConnection 10.20.20.4 -port 3389
@@ -281,9 +246,9 @@ In this exercise, you will:
 
 ## Task 11: Test the connection between the VMs
 
-1. On the **ManufacturingTestVM**, open PowerShell.
+1. On the **ManufacturingVM**, open PowerShell.
 
-2. Use the following command to verify that there is now a connection to CoreServicesTestVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesTestVM.
+2. Use the following command to verify that there is now a connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
    Test-NetConnection 10.20.20.4 -port 3389
