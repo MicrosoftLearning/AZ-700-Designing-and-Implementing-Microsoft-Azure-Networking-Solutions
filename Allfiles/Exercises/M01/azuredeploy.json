@@ -110,8 +110,8 @@
             "location": "[resourceGroup().location]",
             "comments": "Primary NIC",
             "dependsOn": [
-                "[variables('nsgName1')]"
-                 "[variables('PIPName1')]"
+                "[variables('nsgName1')]",
+                "[variables('PIPName1')]"
             ],
             "properties": {
                 "ipConfigurations": [
