@@ -99,6 +99,20 @@ In this exercise, you will:
 
 In this section, you will create two test VMs to test the Private DNS zone configuration.
 
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M01**.
+
+3. Deploy the following ARM templates to create the VMs needed for this exercise:
+
+   ```powershell
+   $RGName = "ContosoResourceGroup"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   ```
+   
+   
+
 ### Create TestVM1
 
 1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
