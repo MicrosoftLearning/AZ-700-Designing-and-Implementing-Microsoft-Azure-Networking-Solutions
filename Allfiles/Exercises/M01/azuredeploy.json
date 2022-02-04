@@ -124,7 +124,7 @@
                             "privateIPAllocationMethod": "Dynamic",
                             "publicIPAddress": {
                                  "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('PIPName1'))]"
-                            },
+                            }
                         }
                     }
                 ],
@@ -223,7 +223,7 @@
                             "privateIPAllocationMethod": "Dynamic",
                              "publicIPAddress": {
                                  "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('PIPName2'))]"
-                            },
+                            }
                         }
                     }
                 ],
@@ -267,8 +267,8 @@
   },
   "properties": {
     "publicIPAddressVersion": "IPv4",
-    "publicIPAllocationMethod": "Dynamic",
-  },
+    "publicIPAllocationMethod": "Dynamic"
+  }
 },
         
         {
@@ -282,8 +282,8 @@
   },
   "properties": {
     "publicIPAddressVersion": "IPv4",
-    "publicIPAllocationMethod": "Dynamic",
-  },
+    "publicIPAllocationMethod": "Dynamic"
+  }
 }
     ],
     "outputs": {}
