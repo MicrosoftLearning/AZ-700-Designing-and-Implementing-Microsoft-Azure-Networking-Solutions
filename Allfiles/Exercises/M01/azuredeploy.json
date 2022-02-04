@@ -50,6 +50,8 @@
     "virtualNetworkName": "CoreServicesVnet",
     "nsgName1": "testvm1-nsg",
     "nsgName2": "testvm2-nsg",
+    "PIPName1": "testvm1-pip",
+    "PIPName2": "testvm2-pip",
     "subnetName": "DatabaseSubnet",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
     "computeApiVersion": "2018-06-01",
@@ -109,6 +111,7 @@
             "comments": "Primary NIC",
             "dependsOn": [
                 "[variables('nsgName1')]"
+                 "[variables('PIPName1')]"
             ],
             "properties": {
                 "ipConfigurations": [
@@ -118,7 +121,10 @@
                             "subnet": {
                                 "id": "[variables('subnetRef')]"
                             },
-                            "privateIPAllocationMethod": "Dynamic"
+                            "privateIPAllocationMethod": "Dynamic",
+                            "publicIPAddress": {
+                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('PIPName1'))]"
+                            },
                         }
                     }
                 ],
@@ -203,7 +209,8 @@
             "location": "[resourceGroup().location]",
             "comments": "Primary NIC",
             "dependsOn": [
-                "[variables('nsgName2')]"
+                "[variables('nsgName2')]",
+                "[variables('PIPName2')]"
             ],
             "properties": {
                 "ipConfigurations": [
@@ -213,7 +220,10 @@
                             "subnet": {
                                 "id": "[variables('subnetRef')]"
                             },
-                            "privateIPAllocationMethod": "Dynamic"
+                            "privateIPAllocationMethod": "Dynamic",
+                             "publicIPAddress": {
+                                 "id": "[resourceId('Microsoft.Network/publicIPAddresses', variables('PIPName2'))]"
+                            },
                         }
                     }
                 ],
@@ -245,7 +255,36 @@
                     }
                 ]
             }
-        }
+        },
+         {
+  "type": "Microsoft.Network/publicIPAddresses",
+  "apiVersion": "2021-05-01",
+  "name":  "[variables('PIPName1')]",
+  "location": "[resourceGroup().location]",
+  "sku": {
+    "name": "Basic",
+    "tier": "Regional"
+  },
+  "properties": {
+    "publicIPAddressVersion": "IPv4",
+    "publicIPAllocationMethod": "Dynamic",
+  },
+},
+        
+        {
+  "type": "Microsoft.Network/publicIPAddresses",
+  "apiVersion": "2021-05-01",
+  "name":  "[variables('PIPName2')]",
+  "location": "[resourceGroup().location]",
+  "sku": {
+    "name": "Basic",
+    "tier": "Regional"
+  },
+  "properties": {
+    "publicIPAddressVersion": "IPv4",
+    "publicIPAllocationMethod": "Dynamic",
+  },
+}
     ],
     "outputs": {}
 }
