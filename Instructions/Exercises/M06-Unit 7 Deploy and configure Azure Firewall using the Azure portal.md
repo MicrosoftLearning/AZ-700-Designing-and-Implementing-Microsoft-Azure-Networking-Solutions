@@ -149,7 +149,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | -------------------- | ------------------------------------------------------------ |
    | Subscription         | Select your subscription                                     |
    | Resource group       | **Test-FW-RG**                                               |
-   | Virtual machine name | **Test-FW01**                                                |
+   | Firewall name.       | **Test-FW01**                                                |
    | Region               | Your region                                                  |
    | Firewall tier        | **Standard**                                                 |
    | Firewall management  | **Use a Firewall Policy to manage this firewall**            |
