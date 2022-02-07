@@ -27,35 +27,29 @@ In this exercise, you will:
 
 2. On the Azure portal home page, select **Resource groups**.
 
-3. Click **Create**. 
+3. Select **Create**. 
 
 4. On the **Basics** tab, in **Resource group**, enter **MyResourceGroup**.
 
-   ![Create Resource Group](../media/create-resource-group-ddos-protection-plan.png)
+5. In **Region**, select East US.
 
-5. In **Region**, select your region from the list.
+6. Select **Review + create**.
 
-6. Click **Review + create**.
+7. Select **Create**.
 
-7. Click **Create**.
 
-   ![End state when creating a resource group](../media/create-resource-group-end.png)
-
- 
 
 ## Task 2: Create a DDoS Protection plan
 
-1. On the Azure portal home page, in the search box type **DDoS** and click **DDoS protection plan** when it appears.
+1. On the Azure portal home page, in the search box type **DDoS** and select **DDoS protection plan** when it appears.
 
-2. Click **+ Create**.
+2. Select **+ Create**.
 
 3. On the **Basics** tab, in the **Resource group** list, select the resource group you just created.
 
-4. In the **Instance name** box, type **MyDdoSProtectionPlan**, then click **Review + create**.
+4. In the **Instance name** box, type **MyDdoSProtectionPlan**, then select **Review + create**.
 
-   ![Create DDoS protection plan](../media/create-ddos-protection-plan-new.png)
-
-5. Click **Create**.
+5. Select **Create**.
 
  
 
@@ -63,17 +57,13 @@ In this exercise, you will:
 
 Here you will enable DDoS on a new virtual network rather than on an existing one, so first you need to create the new virtual network, then enable DDoS protection on it using the plan you created previously.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **Virtual Network**, then click **Virtual Network** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, type **Virtual Network**, then select **Virtual Network** when it appears.
 
-   ![Start point for creating a virtual network](../media/create-virtual-network-basics-for-ddos-protection-start.png)
-
-2. On the **Virtual Network** page, click **Create**.
+2. On the **Virtual Network** page, select **Create**.
 
 3. On the **Basics** tab, select the resource group you created previously.
 
 4. In the **Name** box, type **MyVirtualNetwork**, then click the **Security** tab. 
-
-   ![Create virtual network - Basics tab](../media/create-virtual-network-basics-for-ddos-protection.png)
 
 5. On the **Security** tab, next to **DDoS Protection Standard**, select **Enable**.
 
