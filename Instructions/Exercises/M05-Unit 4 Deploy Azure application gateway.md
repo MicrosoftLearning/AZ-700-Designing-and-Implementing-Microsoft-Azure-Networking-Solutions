@@ -125,14 +125,14 @@ It may take several minutes for Azure to create the application gateway. Wait un
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M05**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **backend.json** and **backend.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M05**.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
    
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```
   
 4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
