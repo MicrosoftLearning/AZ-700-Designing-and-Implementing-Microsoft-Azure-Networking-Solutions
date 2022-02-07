@@ -6,6 +6,8 @@ layout: home
 
 # Content Directory
 
+Required labs files can be [DOWNLOADED HERE](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/archive/master.zip)
+
 Hyperlinks to each of the exercises are listed below.
 
 ## Exercise
