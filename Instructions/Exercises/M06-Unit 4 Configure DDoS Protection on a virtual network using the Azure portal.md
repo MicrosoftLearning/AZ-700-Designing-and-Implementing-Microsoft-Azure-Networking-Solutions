@@ -156,7 +156,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 3. Deploy the following ARM templates to create the VM needed for this exercise:
 
    ```powershell
-   $RGName = "ContosoResourceGroup"
+   $RGName = "MyResourceGroup"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ddos.json -TemplateParameterFile ddos.parameters.json
    ```
