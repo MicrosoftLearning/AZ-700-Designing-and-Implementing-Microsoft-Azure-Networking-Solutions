@@ -102,7 +102,7 @@
                 "autoUpgradeMinorVersion":true,
                 "settings": {
                     "fileUris": [
-                       "https://raw.githubusercontent.com/tiagocostapt/az-700-labs/master/install-iis.ps1"
+                       "https://raw.githubusercontent.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/master/Allfiles/Exercises/M08/install-iis.ps1"
                     ],
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File install-iis.ps1"
                 }
