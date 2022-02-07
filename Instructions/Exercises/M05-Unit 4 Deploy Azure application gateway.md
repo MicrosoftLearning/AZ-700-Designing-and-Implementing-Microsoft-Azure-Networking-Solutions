@@ -16,7 +16,7 @@ For Azure to communicate between the resources that you create, it needs a virtu
 In this exercise, you will:
 
 + Task 1: Create an application gateway
-+ Task 2: Add backend targets
++ Task 2: Create virtual machines
 + Task 3: Add backend servers to backend pool
 + Task 4: Test the application gateway
 
@@ -121,19 +121,7 @@ In this exercise, you will:
 
 It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully before moving on to the next section.
 
-## Task 2: Add backend targets
-
-In this task, you'll use virtual machines as the target backend. You'll create two virtual machines as backend servers for the application gateway.
-
-To do this, you'll:
-
-- Create two new VMs, BackendVM1 and BackendVM2, to be used as backend servers.
-
-- Install IIS on the virtual machines to verify that the application gateway was created successfully.
-
-- Add the backend servers to the backend pool.
-
-### Create virtual machines
+## Task 2: Create virtual machines
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
