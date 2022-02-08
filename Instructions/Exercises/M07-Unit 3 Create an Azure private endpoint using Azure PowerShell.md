@@ -369,23 +369,23 @@ New-AzPrivateDnsZoneGroup @parameters4
 
 In this section, you'll use the virtual machine you created in the previous step to connect to the SQL server across the Private Endpoint.
 
-- Sign in to the [Azure portal](https://portal.azure.com/)
+1.  Sign in to the [Azure portal](https://portal.azure.com/)
 
-- Select **Resource groups** in the left-hand navigation pane.
+2.  Select **Resource groups** in the left-hand navigation pane.
 
-- Select **CreatePrivateEndpointQS-rg**.
+3. Select **CreatePrivateEndpointQS-rg**.
 
-- Select **myVM**.
+4. Select **myVM**.
 
-- On the overview page for **myVM**, select **Connect** then **Bastion**.
+5. On the overview page for **myVM**, select **Connect** then **Bastion**.
 
-- Select the blue **Use Bastion** button.
+6. Select the blue **Use Bastion** button.
 
-- Enter the username and password that you entered during the virtual machine creation.
+7. Enter the username and password that you entered during the virtual machine creation.
 
-- Open Windows PowerShell on the server after you connect.
+8. Open Windows PowerShell on the server after you connect.
 
-- Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+9. Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
   ```
   Server: UnKnown
@@ -404,11 +404,11 @@ In this section, you'll use the virtual machine you created in the previous step
 
 A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
-- In the bastion connection to **myVM**, open Internet Explorer.
-- Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**.
-- You'll receive the default web app page if your application hasn't been deployed:
+1. In the bastion connection to **myVM**, open Internet Explorer.
+2. Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**
+3. You'll receive the default web app page if your application hasn't been deployed:
   ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
-- Close the connection to **myVM**.
+4. Close the connection to **myVM**. 
 
 ## Task 7: Clean up resources
 
