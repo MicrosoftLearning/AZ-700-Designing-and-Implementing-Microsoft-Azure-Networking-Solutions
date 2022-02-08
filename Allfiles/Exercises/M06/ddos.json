@@ -84,7 +84,7 @@
                             },
                             "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('nicName1'))]"
                         }
-                    ]
+                    ],
                   "networkSecurityGroup": {
                     "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('nsgName1'))]"
                 }
