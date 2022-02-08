@@ -128,66 +128,23 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 ## Task 4: Deploy the servers
 
-In this task you will deploy the two workload servers.
+1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
 
-2. In Virtual Machines, select **+ Create; + Virtual machine**.
+3. Deploy the following ARM templates to create the VM needed for this exercise:
 
-3. On the **Create a virtual machine** page, on the **Basics** tab, create a new VM using the information in the table below.
+   ```powershell
+   $RGName = "fw-manager-rg"
+   
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile FirewallManager.json -TemplateParameterFile FirewallManager.parameters.json
+   ```
+  
+4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-   | **Setting**          | **Value**                |
-   | -------------------- | ------------------------ |
-   | Subscription         | Select your subscription |
-   | Resource group       | **fw-manager-rg**        |
-   | Virtual machine name | **Srv-workload-01**      |
-   | Region               | Your region              |
-   | Availability options | No infrastructure redundancy required|
-   | Image                | Windows Server 2022 Datacenter- Gen2 |
-   | Azure Spot instance  | Not selected             |
-   | Username             | **MyAdmin**              |
-   | Password             | **TestPa$$w0rd!**        |
-   | Confirm password     | **TestPa$$w0rd!**        |
-   | Public inbound ports | **None**                 |
+5. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
 
-4. Click **Next : Disks**.
-
-5. Click **Next : Networking**.
-
-6. In **Virtual network**, ensure that **Spoke-01** is selected.
-
-7. In **Subnet**, ensure that **Workload-01-SN** is selected. 
-
-8. In **Public IP**, select **None**.
-
-9. Click **Next : Management**.
-
-10. Under **Monitoring**, in **Boot diagnostics**, click **Disable**.
-
-11. Click **Review + create**.
-
-12. Click **Create**.
-
-13. When this deployment has completed, click **Create another VM**.
-
-14. Repeat steps **3 to 12** above to create another virtual machine but using the following information:
-
-    - Virtual machine name: **Srv-workload-02**
-    - Virtual network: **Spoke-02**
-    - Subnet: **Workload-02-SN**
-    - Public IP: **None**
-
-15. When deployment of the second VM has completed, click **Go to resource**.
-
-16. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
-
-17. Click **Home**.
-
-18. On the Azure portal home page, click **All resources**.
-
-19. Click the **Srv-workload-01** virtual machine.
-
-20. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
+6. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
 
 
 ## Task 5: Create a firewall policy and secure your hub
