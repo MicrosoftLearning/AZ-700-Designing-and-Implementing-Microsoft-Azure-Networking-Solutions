@@ -186,7 +186,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 16. For the **Source type**, select **IP Address**.
 
-17. For **Source**, enter *****.
+17. For **Source**, enter *.
 
 18. For **Protocol**, enter **http,https**.
 
@@ -210,7 +210,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 27. For the **Source type**, select **IP Address**.
 
-28. For **Source**, enter *****.
+28. For **Source**, enter *.
 
 29. For **Protocol**, select **TCP**.
 
@@ -240,7 +240,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 42. For the **Source type**, select **IP Address**.
 
-43. For **Source**, enter *****.
+43. For **Source**, enter *.
 
 44. For **Protocol**, select **TCP**.
 
