@@ -54,7 +54,7 @@ Deploy the following ARM templates to create the PremiumV2-tier Azure Web App ne
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
    ```
-If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the Prerequisits mentioned above regarding editing the template.
+If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the Prerequisites mentioned above regarding editing the template.
 
 ## Task 2: Create a virtual network and bastion host
 
