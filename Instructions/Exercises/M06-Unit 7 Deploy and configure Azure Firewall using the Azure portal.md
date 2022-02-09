@@ -347,7 +347,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 2. In the **Computer** box, enter the firewall's public IP address (e.g., **20.90.136.51**) followed by **:3389** (e.g., **20.90.136.51:3389**).
 
-3. In the **Username** box, enter **MyAdmin**.
+3. In the **Username** box, enter **TestUser**.
 
 4. Click **Connect**.
 
