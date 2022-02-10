@@ -149,21 +149,36 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 ### Create the VM
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual machine**, then click **Virtual machine** when it appears.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **ddos.json** and **ddos.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
+2. On the **Virtual machine** page, click **Create**.
 
-3. Deploy the following ARM templates to create the VM needed for this exercise:
+3. On the **Basics** tab, create a new VM using the information in the table below.
 
-   ```powershell
-   $RGName = "MyResourceGroup"
-   
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ddos.json -TemplateParameterFile ddos.parameters.json
-   ```
-  
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+   | **Setting**           | **Value**                                                    |
+   | --------------------- | ------------------------------------------------------------ |
+   | Subscription          | Select your subscription                                     |
+   | Resource group        | **MyResourceGroup**                                          |
+   | Virtual machine name  | **MyVirtualMachine**                                         |
+   | Region                | Your region                                                  |
+   | Availability options  | **No infrastructure  redundancy required**                   |
+   | Image                 | **Ubuntu Server 18.04 LTS -  Gen 1** (Select Configure VM Generation link if needed) |                     
+   | Size                  | Select **See  all sizes**, then choose **B1ls** in the  list and choose **Select**  **(Standard_B1ls - 1 vcpu,  0.5 GiB memory** |
+   | Authentication type   | **SSH public key**                                           |
+   | Username              | **azureuser**                                                |
+   | SSH public key source | **Generate new key pair**                                    |
+   | Key pair name         | **myvirtualmachine-ssh-key**                                 |
 
-5. Verify that the virtual machine has been created.
+
+4. Click **Review + create**.
+
+5. Click **Create**.
+
+6. In the **Generate new key pair** dialog box, click **Download private key and create resource**.
+
+7. Save the private key.
+
+8. When deployment is complete, click **Go to resource**.
 
 ### Assign the Public IP address
 
