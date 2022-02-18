@@ -62,7 +62,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 6. On the **Site-to-site** tab, complete the following fields:
    - **Do you want to create a Site to site (VPN gateway)?:** Yes
    - The **AS Number** field cannot be edited.
-   - **Gateway scale units:** 1 scale unit = 500 Mbps
+   - **Gateway scale units:** 1 scale unit = 500 Mbps x 2
 7. Select **Review + Create** to validate.
 8. Select **Create** to create the hub. 
 9. After 30 minutes, **Refresh** to view the hub on the Hubs page. 
