@@ -68,7 +68,7 @@ In this exercise, you will:
 ## Task 2: Retrieve your Service key
  
 
-1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
+1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**. If you are unable to find **ExpressRoute circuits** under Networking, in **Search resources, services and docs (G+/)**, enter **express**, and then select **ExpressRoute circuits** from the results.
 
    ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
 
