@@ -125,7 +125,7 @@ It may take several minutes for Azure to create the application gateway. Wait un
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **backend.json** and **backend.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M05**.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **backend.json** and **backend.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M05**.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
