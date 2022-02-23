@@ -303,7 +303,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 3. Click **Show Options**.
 
-4. In the **Username** box, enter **MyAdmin**.
+4. In the **Username** box, enter **TestUser**.
 
 5. Click **Connect**.
 
