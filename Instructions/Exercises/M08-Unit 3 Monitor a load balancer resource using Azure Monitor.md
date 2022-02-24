@@ -100,6 +100,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | SKU                   | **Standard**             |
    | Type                  | **Internal**             |
    | Frontend IP configuration tab | + Add a frontend IP configuration |
+   | Name                  | **LoadBalancerFrontEnd** |
    | Virtual network       | **IntLB-VNet**           |
    | Subnet                | **myBackendSubnet**      |
    | IP address assignment | **Dynamic**              |
