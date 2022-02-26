@@ -26,7 +26,7 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 
 
-If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
+If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
 In this exercise, you will:
 
