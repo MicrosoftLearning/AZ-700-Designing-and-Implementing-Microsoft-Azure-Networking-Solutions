@@ -368,7 +368,7 @@ New-AzPrivateDnsZoneGroup @parameters4
 
 ## Task 6: Test connectivity to the Private Endpoint
 
-In this section, you'll use the virtual machine you created in the previous step to connect to the SQL server across the Private Endpoint.
+In this section, you'll use the virtual machine you created in the previous step to connect to the web app across the Private Endpoint.
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/)
 
