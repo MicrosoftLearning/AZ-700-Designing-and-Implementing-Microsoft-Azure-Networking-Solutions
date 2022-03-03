@@ -22,7 +22,7 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory.
+3. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files template.json and parameters.json into the Cloud Shell home directory one by one.
 
 
 
