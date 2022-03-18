@@ -92,7 +92,7 @@ In this task, you will create the workload virtual machine and place it in the W
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **firewall.json** and **firewall.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M06**.
 
 3. Deploy the following ARM templates to create the VM needed for this exercise:
 
