@@ -243,13 +243,13 @@ In this section, you will create a test VM, and then test the load balancer.
 
 4. On the **Networking** tab, use the information in the table below to configure networking settings.
 
-   | **Setting**                                                  | **Value**                            |
-   | ------------------------------------------------------------ | ------------------------------------ |
-   | Virtual network                                              | **IntLB-VNet**                       |
-   | Subnet                                                       | **myBackendSubnet**                  |
-   | Public IP                                                    | Change to **None**                   |
-   | NIC network security group                                   | **Advanced**                         |
-   | Configure network security group                             | Select the existing **myTestVM-nsg** |
+   | **Setting**                                                  | **Value**                     |
+   | ------------------------------------------------------------ | ----------------------------- |
+   | Virtual network                                              | **IntLB-VNet**                |
+   | Subnet                                                       | **myBackendSubnet**           |
+   | Public IP                                                    | Change to **None**            |
+   | NIC network security group                                   | **Advanced**                  |
+   | Configure network security group                             | Select the existing **myNSG** |
    | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
 
 
@@ -271,7 +271,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 5. Click **Use Bastion**.
 
-6. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**.
+6. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then click **Connect**. If popup blocker is preventing the new window, allow popup blocker and **Connect** again.
 
 7. The **myTestVM** window will open in another browser tab.
 
