@@ -18,6 +18,8 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
+- Below steps will guide you through creating the required resource group and web app.
+
 1. Find and open parameters.json in M07 folder. Open it in Notepad and find the line "value": "GEN-UNIQUE". Replace the placeholder GEN-UNIQUE string with a unique value for your webapp name. Save this change.
 
 2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
