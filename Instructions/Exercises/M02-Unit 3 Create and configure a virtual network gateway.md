@@ -164,9 +164,9 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | ManufacturingVnet            |
    |                 |                   | Subnet                                      | GatewaySubnet (10.30.0.0/27) |
+   |                 |                   | Public IP Address Type                      | Basic                        |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | ManufacturingVnetGateway-ip  |
-   |                 |                   | Public IP address SKU                       | Basic                        |
    |                 |                   | Enable active-active mode                   | Disabled                     |
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
