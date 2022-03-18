@@ -27,7 +27,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one.
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
@@ -42,7 +42,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **CoreServicesVMazuredeploy.json** and **CoreServicesVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M02**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **CoreServicesVMazuredeploy.json** and **CoreServicesVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -60,7 +60,7 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M02**.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -133,9 +133,9 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | CoreServicesVnet             |
    |                 |                   | Subnet                                      | GatewaySubnet (10.20.0.0/27) |
+   |                 |                   | Public IP address type                      | Basic                        |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | CoreServicesVnetGateway-ip   |
-   |                 |                   | Public IP address SKU                       | Basic                        |
    |                 |                   | Enable active-active mode                   | Disabled                     |
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
@@ -164,9 +164,9 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | ManufacturingVnet            |
    |                 |                   | Subnet                                      | GatewaySubnet (10.30.0.0/27) |
+   |                 |                   | Public IP Address Type                      | Basic                        |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | ManufacturingVnetGateway-ip  |
-   |                 |                   | Public IP address SKU                       | Basic                        |
    |                 |                   | Enable active-active mode                   | Disabled                     |
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
@@ -214,7 +214,7 @@ In this exercise, you will:
 
 2. In Virtual network gateways, select **ManufacturingVnetGateway**.
 
-3. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
+3. In **ManufacturingVnetGateway**, select **Connections**, and then select **+ Add**.
 
 4. Use the information in the following table to create the connection:
 
