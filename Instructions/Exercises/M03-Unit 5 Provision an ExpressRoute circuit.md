@@ -38,6 +38,11 @@ In this exercise, you will:
 
 4. When you are filling in the values on this page, make sure that you specify the correct SKU tier (Local, Standard, or Premium) and data metering billing model (Unlimited or Metered).
 
+5. Select **Review + Create**.
+
+6. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
+
+
 ![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration.png)
 
  
