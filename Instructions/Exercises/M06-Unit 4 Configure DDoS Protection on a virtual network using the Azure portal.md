@@ -184,7 +184,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. On the **Overview** page of the new virtual machine, under **Settings**, click **Networking**.
 
-2. Next to **Network Interface**, click **myvirtualmachine-nic**.
+2. Next to **Network Interface**, click **myvirtualmachine-nic**. The name of the nic may differ.
 
 3. Under **Settings**, click **IP configurations**.
 
