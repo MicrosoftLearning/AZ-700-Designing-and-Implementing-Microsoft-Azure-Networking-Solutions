@@ -153,7 +153,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 3. Open a web browser tab, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 
-4. The web app's default web site should be displayed.
+4. The web app's default web site should be displayed. If you get **404 Web Site not found** message, **Disable profile** from **Contoso-TMProfilexx** Traffic Manager profile overview page and **Enable profile**. Then refresh the webpage.
 
    ![Picture 24](../media/tm-webapp-test-1a.png)
 
@@ -187,6 +187,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
    ```powershell
 
    Remove-AzResourceGroup -Name 'Contoso-RG-TM1' -Force -AsJob
+   Remove-AzResourceGroup -Name 'Contoso-RG-TM2' -Force -AsJob
 
    ```
 

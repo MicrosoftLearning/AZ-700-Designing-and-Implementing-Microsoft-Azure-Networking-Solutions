@@ -67,7 +67,9 @@ In this exercise, you will:
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
 
-2. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
+2. On the Virtual network gateways page, select **+Create**.
+
+3. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 
    | **Setting**               | **Value**                  |
    | ------------------------- | -------------------------- |
@@ -85,11 +87,11 @@ In this exercise, you will:
    | Public IP address SKU     | Basic                      |
    | Assignment                | Not configurable           |
    
-3. Select **Review + Create**.
+4. Select **Review + Create**.
 
-4. Confirm that the Gateway configuration passes validation and then select **Create**.
+5. Confirm that the Gateway configuration passes validation and then select **Create**.
 
-5. When the deployment is complete, select **Go to Resource**.
+6. When the deployment is complete, select **Go to Resource**.
 
 > [!Note] 
 >

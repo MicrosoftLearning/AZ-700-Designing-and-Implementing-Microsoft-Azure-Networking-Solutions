@@ -38,6 +38,11 @@ In this exercise, you will:
 
 4. When you are filling in the values on this page, make sure that you specify the correct SKU tier (Local, Standard, or Premium) and data metering billing model (Unlimited or Metered).
 
+5. Select **Review + Create**.
+
+6. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
+
+
 ![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration.png)
 
  
@@ -68,7 +73,7 @@ In this exercise, you will:
 ## Task 2: Retrieve your Service key
  
 
-1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**.
+1. You can view all the circuits that you created by selecting **All services &gt; Networking &gt; ExpressRoute circuits**. If you are unable to find **ExpressRoute circuits** under Networking, in **Search resources, services and docs (G+/)**, enter **express**, and then select **ExpressRoute circuits** from the results.
 
    ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
 

@@ -116,7 +116,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 6. Click **Next: Frontend IP configurations**.
 7. Click Add a frontend IP
-8. On the **Add frontend IP address** blade, enter the information from the table below.
+8. On the **Add frontend IP address** blade, enter the information from the table below and select **Add**.
  
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
@@ -219,7 +219,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ### Create test VM
 
-1. On the Azure portal home page, click **Create a resource**, then **Compute**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
+1. On the Azure portal home page, click **Create a resource**, then **virtual**, then select **Virtual machine** (if this resource type is not listed on the page, use the search box at the top of the page to search for it and select it).
 
 2. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
@@ -230,7 +230,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Virtual machine name | **myTestVM**                                 |
    | Region               | **(US) East US**                             |
    | Availability options | **No infrastructure redundancy required**    |
-   | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
+   | Image                | **Windows Server 2019 Datacenter - Gen 2**   |
    | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory** |
    | Username             | **TestUser**                                 |
    | Password             | **TestPa$$w0rd!**                            |
@@ -241,13 +241,13 @@ In this section, you will create a test VM, and then test the load balancer.
 
 4. On the **Networking** tab, use the information in the table below to configure networking settings.
 
-   | **Setting**                                                  | **Value**                     |
-   | ------------------------------------------------------------ | ----------------------------- |
-   | Virtual network                                              | **IntLB-VNet**                |
-   | Subnet                                                       | **myBackendSubnet**           |
-   | Public IP                                                    | Change to **None**            |
-   | NIC network security group                                   | **Advanced**                  |
-   | Configure network security group                             | Select the existing **myNSG** |
+   | **Setting**                                                  | **Value**                            |
+   | ------------------------------------------------------------ | ------------------------------------ |
+   | Virtual network                                              | **IntLB-VNet**                       |
+   | Subnet                                                       | **myBackendSubnet**                  |
+   | Public IP                                                    | Change to **None**                   |
+   | NIC network security group                                   | **Advanced**                         |
+   | Configure network security group                             | Select the existing **myTestVM-nsg** |
    | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
 
 

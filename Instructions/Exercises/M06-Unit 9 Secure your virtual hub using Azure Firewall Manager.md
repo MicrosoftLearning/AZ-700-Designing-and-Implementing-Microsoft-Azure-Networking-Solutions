@@ -130,7 +130,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory from the source folder **F:\Allfiles\Exercises\M06**.
+2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M06**.
 
 3. Deploy the following ARM templates to create the VM needed for this exercise:
 
@@ -303,7 +303,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 3. Click **Show Options**.
 
-4. In the **Username** box, enter **MyAdmin**.
+4. In the **Username** box, enter **TestUser**.
 
 5. Click **Connect**.
 
@@ -343,7 +343,7 @@ In this task you will test the network rule to confirm that it works as expected
 
 2. In the **Computer** box, enter the **private IP address** of **Srv-workload-02** (e.g., **10.1.1.4**).
 
-3. In the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **MyAdmin**, and a password of **TestPa$$w0rd!**.
+3. In the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and a password of **TestPa$$w0rd!**.
 
 4. Click **OK**.
 
