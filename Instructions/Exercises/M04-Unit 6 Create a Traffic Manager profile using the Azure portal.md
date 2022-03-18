@@ -187,6 +187,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
    ```powershell
 
    Remove-AzResourceGroup -Name 'Contoso-RG-TM1' -Force -AsJob
+   Remove-AzResourceGroup -Name 'Contoso-RG-TM2' -Force -AsJob
 
    ```
 
