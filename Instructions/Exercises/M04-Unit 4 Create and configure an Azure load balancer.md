@@ -116,7 +116,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 6. Click **Next: Frontend IP configurations**.
 7. Click Add a frontend IP
-8. On the **Add frontend IP address** blade, enter the information from the table below.
+8. On the **Add frontend IP address** blade, enter the information from the table below and select **Add**.
  
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
