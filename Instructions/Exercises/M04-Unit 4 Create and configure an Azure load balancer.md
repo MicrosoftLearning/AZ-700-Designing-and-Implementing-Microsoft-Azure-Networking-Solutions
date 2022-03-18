@@ -241,13 +241,13 @@ In this section, you will create a test VM, and then test the load balancer.
 
 4. On the **Networking** tab, use the information in the table below to configure networking settings.
 
-   | **Setting**                                                  | **Value**                     |
-   | ------------------------------------------------------------ | ----------------------------- |
-   | Virtual network                                              | **IntLB-VNet**                |
-   | Subnet                                                       | **myBackendSubnet**           |
-   | Public IP                                                    | Change to **None**            |
-   | NIC network security group                                   | **Advanced**                  |
-   | Configure network security group                             | Select the existing **myNSG** |
+   | **Setting**                                                  | **Value**                            |
+   | ------------------------------------------------------------ | ------------------------------------ |
+   | Virtual network                                              | **IntLB-VNet**                       |
+   | Subnet                                                       | **myBackendSubnet**                  |
+   | Public IP                                                    | Change to **None**                   |
+   | NIC network security group                                   | **Advanced**                         |
+   | Configure network security group                             | Select the existing **myTestVM-nsg** |
    | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
 
 
