@@ -228,7 +228,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
     ![Add condition to alert rule - configure signal logic](../media/add-condition-to-alert-rule-2.png)
 
-13. Back on the **Create alert rule** page, scroll down to the **Alert rule details** section and in **Alert rule name**, enter **MyDdosAlert**.
+13. Back on the **Create alert rule** page, under the **Alert rule details** section and in **Alert rule name**, enter **MyDdosAlert**.
 
     ![End point of create new alert rule](../media/new-alert-rule-end.png)
 
