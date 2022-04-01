@@ -121,6 +121,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 | Review your settings and select Add. |                                               |                                       |
 |                                      |                                               |                                       |
 
+ >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously. It's just a name.
 
 5. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
