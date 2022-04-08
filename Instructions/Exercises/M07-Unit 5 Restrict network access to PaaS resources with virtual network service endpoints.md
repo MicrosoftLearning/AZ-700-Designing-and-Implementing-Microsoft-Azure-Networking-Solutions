@@ -142,7 +142,7 @@ Create another outbound security rule that denies communication to the internet.
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
-   | Source                  | Select **VirtualNetwork** |
+   | Source                  | Select **Any** |
    | Source port ranges      | *                         |
    | Destination             | Select **Service Tag**    |
    | Destination service tag | Select **Internet**       |
