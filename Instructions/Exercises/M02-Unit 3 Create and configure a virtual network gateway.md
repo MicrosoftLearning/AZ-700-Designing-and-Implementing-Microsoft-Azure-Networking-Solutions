@@ -27,15 +27,16 @@ In this exercise, you will:
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
    ```powershell
-   $RGName = "ContosoResourceGroup"
-   #create resource group if it doesnt exist
-   New-AzResourceGroup -Name $RGName -Location "eastus"
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+$RGName = "ContosoResourceGroup"
+#create resource group if it doesnt exist
+New-AzResourceGroup -Name $RGName -Location "eastus"
+New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+
    ```
 
 ## Task 2: Create CoreServicesVM
@@ -47,9 +48,10 @@ In this exercise, you will:
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
-   $RGName = "ContosoResourceGroup"
+$RGName = "ContosoResourceGroup"
    
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
+New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
+   
    ```
   
 4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
@@ -103,7 +105,8 @@ In this exercise, you will:
 2. Use the following command to verify that there is no connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
-   Test-NetConnection 10.20.20.4 -port 3389
+Test-NetConnection 10.20.20.4 -port 3389
+
    ```
 
 3. The test connection should fail, and you will see a result similar to the following:
@@ -251,7 +254,8 @@ In this exercise, you will:
 2. Use the following command to verify that there is now a connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
-   Test-NetConnection 10.20.20.4 -port 3389
+Test-NetConnection 10.20.20.4 -port 3389
+
    ```
 
 3. The test connection should succeed, and you will see a result similar to the following:
