@@ -82,13 +82,10 @@ In this section, you will create a virtual network and a subnet.
 
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
-1. On the Azure portal home page, in the search box at the top of the page, type **Load Balancer** and select load balancers under services.
-
-2. Click **Create**.
-
-   ![Create Load Balancer](../media/create-load-balancer-4.png)
-
-3. On the **Basics** tab, use the information in the table below to create the load balancer.
+1.  On the Azure home page, in the search bar, enter **Load Balancer** 
+2.  Select **Create Load Balancer**.
+3.  On the **Basics** tab, use the information in the table below to create the load balancer.
+    
 
    | **Setting**           | **Value**                |
    | --------------------- | ------------------------ |
