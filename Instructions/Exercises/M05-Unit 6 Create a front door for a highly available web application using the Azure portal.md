@@ -96,7 +96,8 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 1. Select **Review and Create**, and then select **Create**.
 
 1. Wait for the resource to deploy, and then select **Go to resource**.
-2. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created, to update the origin group select the name from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
+2. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created
+3. To update the origin group select the name **default-origin-group** from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
 
 ## Task 3: View Azure Front Door in action
 
