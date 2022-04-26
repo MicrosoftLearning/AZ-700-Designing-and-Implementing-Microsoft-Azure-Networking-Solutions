@@ -74,37 +74,60 @@ This exercise requires two instances of a web application that run in different 
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter front door, and then select **Front Doors** from the results.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, Search for Front Door and CDN profiles, and then select **Front Door and CDN profiles**.
 
-   ![Azure Portal Search for Front Door](../media/search-front-door.png)
+1. Select **Create front door and CDN profiles**. On the Compare offerings page, select Quick create. Then select Continue to create a Front Door.
 
-1. On the Front Doors page, select **+ Create**.
-
-1. In Create a Front Door, enter or select the following information.
+1. On the Basics tab, enter or select the following information.
 
    | **Setting**             | **Value**                                    |
    | ----------------------- | -------------------------------------------- |
    | Subscription            | Select your subscription.                    |
    | Resource group          | Select ContosoResourceGroup                  |
    | Resource group location | Accept default setting                       |
-   | Name                    | FrontDoor(yourinitials)   |
+   | Name                    | Enter a unique name in this subscription like FrontDoor(yourinitials)   |
    | Tier                    | Standard   |
    | Endpoint Name           | FDendpoint   |
    | Origin Type             | App Service| 
    | Origin host name        | The name of the web app you previously deployed |
-   | 
+   
 
 1. Select **Review and Create**, and then select **Create**.
 
 1. Wait for the resource to deploy, and then select **Go to resource**.
+2. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created, to update the origin group select the name from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
+
+## Task 3: View Azure Front Door in action
+
+Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created. 
 
 1. On the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
 
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
    ![Browser showing App Service information page](../media/app-service-info-page.png)
 
+5. To test instant global failover in action, try the following steps:
+
+6. Switch to the Azure portal, search for and select **App services**. 
+
+7. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+
+   ![Azure Portal showing stopped Web App](../media/stop-web-app.png)
+
+8. Switch back to your browser and select Refresh. You should see the same information page.
+
+**There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+
+1. Switch back to the Azure Portal, locate the other web app, and stop it.
+
+2. Switch back to your browser and select Refresh. This time, you should see an error message.
+
+   ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
+
+   Congratulations! You have configured and tested an Azure Front Door.
    
-   ## Task 4: Clean up resources
+
+## Task 4: Clean up resources
    
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
