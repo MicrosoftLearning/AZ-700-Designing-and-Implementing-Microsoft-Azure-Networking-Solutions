@@ -91,7 +91,7 @@ In this exercise, you will:
 
 19. Accept the default values for the other settings on the **Listener** tab.
 
-    ![Azure Portal add an Application Gateway routing rule](../media/routing-rule-listener-tab.png)
+    ![Azure Portal add an Application Gateway routing rule](../media/Routing-rule-listener-tab.png)
 
 20. Select the **Backend targets** tab to configure the rest of the routing rule.
 
