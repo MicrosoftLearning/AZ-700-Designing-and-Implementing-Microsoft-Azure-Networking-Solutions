@@ -74,89 +74,37 @@ This exercise requires two instances of a web application that run in different 
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
 
-1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter front door, and then select **Front Door and CDN profiles** from the results.
+1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, Search for Front Door and CDN profiles, and then select **Front Door and CDN profiles**.
 
-   ![Azure Portal Search for Front Door](../media/search-front-door.png)
+1. Select **Create front door and CDN profiles**. On the Compare offerings page, select Quick create. Then select Continue to create a Front Door.
 
-2. On the Front Door and CDN profiles page, select **+ Create**. Accept the default Azure Front Door and Quick Create options selected and then select **Continue to create a Front Door**.
+1. On the Basics tab, enter or select the following information.
 
-3. In Create a Front Door, enter or select the following information.
 
    | **Setting**             | **Value**                                    |
    | ----------------------- | -------------------------------------------- |
    | Subscription            | Select your subscription.                    |
    | Resource group          | Select ContosoResourceGroup                  |
    | Resource group location | Accept default setting                       |
+   | Name                    | Enter a unique name in this subscription like FrontDoor(yourinitials)   |
+   | Tier                    | Standard   |
+   | Endpoint Name           | FDendpoint   |
+   | Origin Type             | App Service| 
+   | Origin host name        | The name of the web app you previously deployed |
+   
 
-4. Select **Next: Configuration**.
+1. Select **Review and Create**, and then select **Create**.
 
-5. On the Configuration tab, in **Frontends/domains**, select **+** to add a frontend host.
-
-   ![Create a Front Door add Frontends/Domains](../media/add-frontends-domains.png)
-
-6. Enter a globally unique **host name**, like contoso-frontend, and then select **Add**.
-
-7. Next, create a backend pool that contains your two web apps.  
-   ‎In Create a Front Door, in **Backend** pools, select + to add a backend pool.
-
-   ![Create a Front Door add a backend pool](../media/add-backends.png)
-
-8. Enter a host name, like **BackendPool**.
-
-9. Under **BACKENDS**, select + **Add a backend**.
-
-10. In Add a backend, enter, or select the following information.
-
-    | **Setting**       | **Value**                                                    |
-    | ----------------- | ------------------------------------------------------------ |
-    | Backend host type | Select **App service**.                                      |
-    | Subscription      | Select your subscription.                                    |
-    | Backend host name | Select the first web app you created. In this example, the web app was **WebAppContoso-1**. |
-
-11. Leave all other fields as default and then select **Add**.
-
-12. Select **+ Add a backend** again, enter or select the following.
-
-    | **Setting**       | **Value**                                                    |
-    | ----------------- | ------------------------------------------------------------ |
-    | Backend host type | Select App service.                                          |
-    | Subscription      | Select your subscription.                                    |
-    | Backend host name | Select the second web app you created. In this example, the web app was **WebAppContoso-2**. |
-
-13. Leave all other fields as default and then select **Add**.
-
-14. On the **Add a backend** **pool** blade, select **Add** to complete the configuration of the backend pool.
-
-15. Finally, add a routing rule. A routing rule maps your frontend host to the backend pool. This rule forwards a request for contoso-frontend.azurefd.net to myBackendPool.
-
-16. In Create a Front Door, in **Routing rules**, select **+** to configure a routing rule.
-
-    ![Create a Front Door add a routing rule](../media/add-routing-rules.png)
-
-17. In Add a rule, for **Name**, enter LocationRule. 
-
-18. Accept all the default values, then select **Add** to add the routing rule.
-
-19. Select **Review + Create**, and then **Create**.
-
-**You must ensure that each of the frontend hosts in your Front Door has a routing rule with a default path (\*) associated with it. That is, across all your routing rules there must be at least one routing rule for each of your frontend hosts defined at the default path (\*). Failing to do so may result in your end-user traffic not getting routed correctly**.
-
- 
+1. Wait for the resource to deploy, and then select **Go to resource**.
+2. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created, to update the origin group select the name from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
 
 ## Task 3: View Azure Front Door in action
 
 Once you create a Front Door, it takes a few minutes for the configuration to be deployed globally. Once complete, access the frontend host you created. 
 
-1. In the Azure Portal, navigate to your Front Door frontend. Select **Go to Resource**. Or in Search resources, services, and docs (G+/), enter **front door**, and select **Front Doors** from the results, and then select your Front Door.
+1. On the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
 
-2. On the Front Door page, note the **Frontend host** URL. This exercise uses contoso-frontend.azurefd.net, but you may have altered it to ensure the name is unique.
-
-   ![Azure portal Frontend page - Verify Frontend URL](../media/frontend-url.png)
-
-3. In a browser, go to your Frontend host URL (contoso-frontend.azurefd.net). Your request will automatically be routed to the nearest server to you from the specified servers in the backend pool.
-
-4. You'll see the following information page:
-
+1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
    ![Browser showing App Service information page](../media/app-service-info-page.png)
 
 5. To test instant global failover in action, try the following steps:
@@ -179,9 +127,8 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    Congratulations! You have configured and tested an Azure Front Door.
    
-  
-   
-   ## Task 4: Clean up resources
+
+## Task 4: Clean up resources
    
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
