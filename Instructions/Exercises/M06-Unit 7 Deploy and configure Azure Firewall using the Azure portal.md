@@ -204,7 +204,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 15. In **Next hop address**, type the private IP address for the firewall that you noted previously (e.g., **10.0.1.4**)
 
-16. Click **OK**.
+16. Click **Add**.
 
     ![Add firewall route](../media/add-firewall-route.png)
 
