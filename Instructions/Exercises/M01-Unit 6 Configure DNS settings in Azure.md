@@ -100,6 +100,8 @@ In this exercise, you will:
 In this section, you will create two test VMs to test the Private DNS zone configuration.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+    
+    > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 

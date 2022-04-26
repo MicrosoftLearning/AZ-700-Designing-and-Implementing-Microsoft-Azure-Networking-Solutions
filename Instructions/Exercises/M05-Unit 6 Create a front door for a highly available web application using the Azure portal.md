@@ -80,6 +80,7 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 
 1. On the Basics tab, enter or select the following information.
 
+
    | **Setting**             | **Value**                                    |
    | ----------------------- | -------------------------------------------- |
    | Subscription            | Select your subscription.                    |
