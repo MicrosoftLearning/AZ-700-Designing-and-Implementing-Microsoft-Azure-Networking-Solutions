@@ -100,7 +100,7 @@ In this exercise, you will:
     | **Setting**   | **Value**      |
     | ------------- | -------------- |
     | Target type   | Backend pool   |
-    | HTTP Settings | **Create new** |
+    | HTTP Settings | **Add new** |
 
 22. In **Add a HTTP setting**, enter or select the following information:
 
