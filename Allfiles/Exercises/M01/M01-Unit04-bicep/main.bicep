@@ -1,6 +1,6 @@
 //This template creates three VNets, and their associated subnets.
 param location01 string = 'eastus'
-param location02 string = 'westus'
+param location02 string = 'westeurope'
 param location03 string = 'southeastasia'
 
 param virtualNetworks_ResearchVnet_name string = 'ResearchVnet'

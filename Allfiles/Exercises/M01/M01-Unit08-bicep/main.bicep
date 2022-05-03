@@ -3,7 +3,7 @@
 //Task 1: Creates a Virtual Machine to test the configuration
 //Task 4: Creates VNet peerings between CoreServicesVnet and ManufacturingVnet
 
-param location string = 'westus'
+param location string = 'westeurope'
 
 @description('description')
 param vmName1 string
