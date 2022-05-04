@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M07-Unit 6 Create an Azure private endpoint using Azure PowerShell'
-    module: 'Module - Design and implement private access to Azure Services'
+    title: 'M07 - Unit 6 Create an Azure private endpoint using Azure PowerShell'
+    module: 'Module 07 - Design and implement private access to Azure Services'
 ---
 
 # M07-Unit 6 Create an Azure private endpoint using Azure PowerShell
