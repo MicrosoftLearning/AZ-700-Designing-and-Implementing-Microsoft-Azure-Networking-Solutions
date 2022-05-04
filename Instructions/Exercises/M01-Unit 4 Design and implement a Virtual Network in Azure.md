@@ -1,6 +1,6 @@
 ---
 Exercise:
-    title: '01 - Unit 4 Design and implement a Virtual Network in Azure'
+    title: 'M01 - Unit 4 Design and implement a Virtual Network in Azure'
     module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
 # M01-Unit 4 Design and implement a Virtual Network in Azure
