@@ -276,7 +276,7 @@ To test network access to a storage account, deploy a VM to each subnet.
 5. You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
 6. On the ContosoPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragexx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
 
-```Azure CLI
+```
 $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
 
 $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
@@ -288,7 +288,9 @@ The Azure file share successfully mapped to the Z drive.
 
 7. Confirm that the VM has no outbound connectivity to the internet from a command prompt:
 
+```
  ping bing.com
+```
 
 You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
@@ -305,9 +307,9 @@ You receive no replies because the network security group associated to the Priv
    ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
 
 4. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
-
+```
  ping bing.com    
-    
+``` 
 5. Close the remote desktop session to the ContosoPublic VM.
 
 6. From your computer, browse to the Azure portal.
