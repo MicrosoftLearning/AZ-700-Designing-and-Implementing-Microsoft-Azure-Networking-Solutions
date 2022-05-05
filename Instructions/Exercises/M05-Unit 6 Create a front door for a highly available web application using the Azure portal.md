@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal'
-    module: 'Module - Load balancing HTTP(S) traffic in Azure'
+    title: 'M05 - Unit 6 Create a Front Door for a highly available web application using the Azure portal'
+    module: 'Module 05 - Load balancing HTTP(S) traffic in Azure'
 ---
 
 

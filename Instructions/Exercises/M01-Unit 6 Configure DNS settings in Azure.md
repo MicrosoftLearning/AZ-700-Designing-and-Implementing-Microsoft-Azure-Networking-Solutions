@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M01-Unit 6 Configure DNS settings in Azure'
-    module: 'Module - Introduction to Azure Virtual Networks'
+    title: 'M01 - Unit 6 Configure DNS settings in Azure'
+    module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
 
 # M01 - Unit 6 Configure DNS settings in Azure

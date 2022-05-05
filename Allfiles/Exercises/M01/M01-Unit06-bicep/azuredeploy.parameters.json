@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmName1": {
+            "value": "testvm1"
+        },
+        "nicName1": {
+            "value": "testvm1-nic"
+        },
+        "vmName2": {
+            "value": "testvm2"
+        },
+        "nicName2": {
+            "value": "testvm2-nic"
+        },
+        "vmSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "TestUser"
+        },
+        "adminPassword": {
+            "value": "TestPa$$w0rd!"
+        }
+    }
+}
