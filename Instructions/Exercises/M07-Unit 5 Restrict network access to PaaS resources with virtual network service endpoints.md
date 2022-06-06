@@ -117,7 +117,8 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
-   | Source                  | Select **VirtualNetwork** |
+   | Source                  | Select **Service Tag**    |
+   | Source service tag      | Select **VirtualNetwork** |
    | Source port ranges      | *                         |
    | Destination             | Select **Service Tag**    |
    | Destination service tag | Select **Storage**        |
