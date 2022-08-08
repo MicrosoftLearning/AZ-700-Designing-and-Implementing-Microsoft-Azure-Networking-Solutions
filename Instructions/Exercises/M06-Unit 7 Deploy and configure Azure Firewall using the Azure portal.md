@@ -23,6 +23,8 @@ In this exercise, you will:
 + Task 11: Clean up resources
 
 
+#### Estimated time: 60 minutes
+
 ## Task 1: Create a resource group
 
 In this task, you will create a new resource group.
