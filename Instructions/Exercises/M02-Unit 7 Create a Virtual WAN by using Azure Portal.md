@@ -18,6 +18,8 @@ In this exercise, you will:
 
 
 
+#### Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
+
 ## Task 1: Create a Virtual WAN
 
 1. From a browser, navigate to the Azure portal and sign in with your Azure account.
