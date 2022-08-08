@@ -21,6 +21,8 @@ In this exercise, you will:
 
 
 
+#### Estimated time: 40 minutes
+
 ## Task 1: Create a resource group
 
 1. Log in to your Azure account.
