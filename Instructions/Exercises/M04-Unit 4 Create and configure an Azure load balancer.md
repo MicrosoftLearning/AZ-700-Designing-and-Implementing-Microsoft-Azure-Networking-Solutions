@@ -124,9 +124,10 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
    | Name            | **LoadBalancerFrontEnd** |
-   | Virtual network | **IntLB-VNet**           |
-   | Subnet          | **myFrontEndSubnet**     |
-   | Assignment      | **Dynamic**              |
+   | IP version      | **IPv4**           |
+   | IP Type         | **IP address**     |
+   | Public IP Address      | **Create New** named **myFrontEndIP**             |
+   | Gateway Load Balancer  | **None**  |
 
 9. Click **Review + create**.
 
