@@ -89,6 +89,7 @@ In this exercise, you will:
     | **Setting**   | **Value**         |
     | ------------- | ----------------- |
     | Listener name | Listener          |
+    | Priority      | **100**           |
     | Frontend IP   | Select **Public** |
 
 19. Accept the default values for the other settings on the **Listener** tab.
