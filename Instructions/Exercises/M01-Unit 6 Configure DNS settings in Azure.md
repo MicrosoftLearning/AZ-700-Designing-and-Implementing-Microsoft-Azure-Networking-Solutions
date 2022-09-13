@@ -16,6 +16,7 @@ In this exercise, you will:
 + Task 3: Create Virtual Machines to test the configuration
 + Task 4: Verify records are present in the DNS zone
 
+#### Estimated time: 25 minutes
 
 ## Task 1: Create a private DNS Zone
 
