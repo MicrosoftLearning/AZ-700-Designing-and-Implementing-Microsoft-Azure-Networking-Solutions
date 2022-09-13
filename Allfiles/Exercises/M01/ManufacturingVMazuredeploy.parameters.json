@@ -11,7 +11,7 @@
             "value": "ManufacturingVM-nic"
         },
         "vmSize": {
-            "value": "Standard_DS1_v2"
+            "value": "Standard_D2as_V5"
         },
         "adminUsername": {
             "value": "TestUser"
