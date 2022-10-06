@@ -9,6 +9,8 @@ Exercise:
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
 
+#### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
+
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
 The diagram below illustrates the environment you will be deploying in this exercise.
@@ -122,9 +124,10 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
    | Name            | **LoadBalancerFrontEnd** |
-   | Virtual network | **IntLB-VNet**           |
-   | Subnet          | **myFrontEndSubnet**     |
-   | Assignment      | **Dynamic**              |
+   | IP version      | **IPv4**           |
+   | IP Type         | **IP address**     |
+   | Public IP Address      | **Create New** named **myFrontEndIP**             |
+   | Gateway Load Balancer  | **None**  |
 
 9. Click **Review + create**.
 
@@ -249,7 +252,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Public IP                                                    | Change to **None**            |
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
-   | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
+   | Load balancing options                                       | **None**                      |
 
 
 5. Click **Review + create**.

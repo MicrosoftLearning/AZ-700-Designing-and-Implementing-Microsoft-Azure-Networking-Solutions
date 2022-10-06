@@ -7,6 +7,8 @@ Exercise:
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
 
+#### Estimated time: 15 minutes
+
 ![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
 
 

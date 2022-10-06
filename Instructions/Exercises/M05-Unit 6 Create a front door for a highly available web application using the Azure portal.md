@@ -22,6 +22,8 @@ In this exercise, you will:
 + Task 4: Clean up resources
 
 
+#### Estimated time: 30 minutes
+
 ## Task 1: Create two instances of a web app
 
 This exercise requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.

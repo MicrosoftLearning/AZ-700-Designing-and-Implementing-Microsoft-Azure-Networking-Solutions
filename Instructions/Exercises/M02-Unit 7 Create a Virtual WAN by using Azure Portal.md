@@ -18,6 +18,8 @@ In this exercise, you will:
 
 
 
+#### Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
+
 ## Task 1: Create a Virtual WAN
 
 1. From a browser, navigate to the Azure portal and sign in with your Azure account.
@@ -58,6 +60,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
    - **Region:** West US
    - **Name:** ContosoVirtualWANHub-WestUS
    - **Hub private address space:** 10.60.0.0/24
+   - **Virtual hub capacity:** 2 Routing infrastructure units
 5. Select **Next: Site-to-site**.
 6. On the **Site-to-site** tab, complete the following fields:
    - **Do you want to create a Site to site (VPN gateway)?:** Yes

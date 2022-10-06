@@ -33,6 +33,8 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 
 
+#### Estimated time: 55 minutes
+
 ## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.

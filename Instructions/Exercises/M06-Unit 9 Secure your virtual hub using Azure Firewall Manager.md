@@ -26,6 +26,8 @@ In this exercise, you will:
 + Task 9: Test the network rule
 + Task 10: Clean up resources
 
+#### Estimated time: 35 minutes
+
 ## Task 1: Create two spoke virtual networks and subnets
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
