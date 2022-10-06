@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M03-Unit 5 Provision an ExpressRoute circuit'
-    module: 'Module - Design and implement Azure ExpressRoute'
+    title: 'M03 - Unit 5 Provision an ExpressRoute circuit'
+    module: 'Module 03 - Design and implement Azure ExpressRoute'
 ---
 # M03-Unit 5 Provision an ExpressRoute circuit
 

@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints'
-    module: 'Module - Design and implement private access to Azure Services'
+    title: 'M07 - Unit 5 Restrict network access to PaaS resources with virtual network service endpoints'
+    module: 'Module 07 - Design and implement private access to Azure Services'
 ---
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
@@ -295,6 +295,7 @@ The Azure file share successfully mapped to the Z drive.
 
  ping bing.com
 
+
 You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
 8. Close the remote desktop session to the ContosoPrivate VM.
@@ -312,7 +313,7 @@ You receive no replies because the network security group associated to the Priv
 4. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
 
  ping bing.com    
-    
+
 5. Close the remote desktop session to the ContosoPublic VM.
 
 6. From your computer, browse to the Azure portal.

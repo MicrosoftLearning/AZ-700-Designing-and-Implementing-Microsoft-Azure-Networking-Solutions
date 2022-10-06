@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webAppName": {
+            "value": "az700drendon"
+        },
+        "location": {
+            "value": "westus"
+        },
+        "sku": {
+            "value": "PremiumV2"
+        },
+        "skucode": {
+            "value": "P1v2"
+        },
+        "language": {
+            "value": ".net"
+        },
+        "helloWorld": {
+            "value": false
+        },
+        "repoUrl": {
+            "value": ""
+        }
+    }
+}
