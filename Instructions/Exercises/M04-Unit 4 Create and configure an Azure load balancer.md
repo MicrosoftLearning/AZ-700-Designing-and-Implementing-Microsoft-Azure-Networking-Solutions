@@ -1,13 +1,15 @@
 ---
 Exercise:
-    title: 'M04-Unit 4 Create and configure an Azure load balancer'
-    module: 'Module - Load balancing non-HTTP(S) traffic in Azure'
+    title: 'M04 - Unit 4 Create and configure an Azure load balancer'
+    module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
 ---
 
 
 # M04-Unit 4 Create and configure an Azure load balancer
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
+
+#### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
@@ -123,8 +125,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | --------------- | ------------------------ |
    | Name            | **LoadBalancerFrontEnd** |
    | Virtual network | **IntLB-VNet**           |
-   | Subnet          | **myBackEndSubnet**     |
+   | Subnet          | **myBackEndSubnet**      |
    | Assignment      | **Dynamic**              |
+
 
 9. Click **Review + create**.
 
@@ -249,7 +252,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Public IP                                                    | Change to **None**            |
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
-   | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
+   | Load balancing options                                       | **None**                      |
 
 
 5. Click **Review + create**.

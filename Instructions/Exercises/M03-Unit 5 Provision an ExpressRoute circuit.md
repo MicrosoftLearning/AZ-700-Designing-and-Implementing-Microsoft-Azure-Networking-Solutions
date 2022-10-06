@@ -1,11 +1,13 @@
 ---
 Exercise:
-    title: 'M03-Unit 5 Provision an ExpressRoute circuit'
-    module: 'Module - Design and implement Azure ExpressRoute'
+    title: 'M03 - Unit 5 Provision an ExpressRoute circuit'
+    module: 'Module 03 - Design and implement Azure ExpressRoute'
 ---
 # M03-Unit 5 Provision an ExpressRoute circuit
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model. 
+
+#### Estimated time: 15 minutes
 
 ![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
 

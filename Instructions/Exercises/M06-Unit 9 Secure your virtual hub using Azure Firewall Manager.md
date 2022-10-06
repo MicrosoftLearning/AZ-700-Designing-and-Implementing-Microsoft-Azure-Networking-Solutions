@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M06-Unit 9 Secure your virtual hub using Azure Firewall Manager'
-    module: 'Module - Design and implement network security'
+    title: 'M06 - Unit 9 Secure your virtual hub using Azure Firewall Manager'
+    module: 'Module 06 - Design and implement network security'
 ---
 
 
@@ -25,6 +25,8 @@ In this exercise, you will:
 + Task 8: Test the application rule
 + Task 9: Test the network rule
 + Task 10: Clean up resources
+
+#### Estimated time: 35 minutes
 
 ## Task 1: Create two spoke virtual networks and subnets
 

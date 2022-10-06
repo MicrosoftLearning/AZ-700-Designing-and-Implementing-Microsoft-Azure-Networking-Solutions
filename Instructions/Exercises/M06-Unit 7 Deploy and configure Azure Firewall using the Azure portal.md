@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal'
-    module: 'Module - Design and implement network security '
+    title: 'M06 - Unit 7 Deploy and configure Azure Firewall using the Azure portal'
+    module: 'Module 06 - Design and implement network security '
 ---
 
 # M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
@@ -22,6 +22,8 @@ In this exercise, you will:
 + Task 10: Test the firewall
 + Task 11: Clean up resources
 
+
+#### Estimated time: 60 minutes
 
 ## Task 1: Create a resource group
 

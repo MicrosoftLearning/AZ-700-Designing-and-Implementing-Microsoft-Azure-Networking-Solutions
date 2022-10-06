@@ -1,17 +1,21 @@
-
-
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmName1": {
-            "value": "ManufacturingVM"
+            "value": "ContosoPublic"
         },
         "nicName1": {
-            "value": "ManufacturingVM-nic"
+            "value": "ContosoPublic-nic"
+        },
+        "vmName2": {
+            "value": "ContosoPrivate"
+        },
+        "nicName2": {
+            "value": "ContosoPrivate-nic"
         },
         "vmSize": {
-            "value": "Standard_D2as_v5"
+            "value": "Standard_DS1_v2"
         },
         "adminUsername": {
             "value": "TestUser"

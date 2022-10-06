@@ -1,13 +1,16 @@
 ---
 Exercise:
-    title: 'M03-Unit 4 Configure an ExpressRoute Gateway'
-    module: 'Module - Design and implement Azure ExpressRoute'
+    title: 'M03 - Unit 4 Configure an ExpressRoute Gateway'
+    module: 'Module 03 - Design and implement Azure ExpressRoute'
 ---
 # M03-Unit 4 Configure an ExpressRoute Gateway
 
 ## Deploy ExpressRoute gateways
 
 To connect your Azure virtual network and your on-premises network via ExpressRoute, you must create a virtual network gateway first. A virtual network gateway serves two purposes: to exchange IP routes between the networks and to route network traffic. 
+
+
+#### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
 **Gateway types**
 

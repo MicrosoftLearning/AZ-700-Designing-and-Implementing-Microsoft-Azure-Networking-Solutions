@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M02-Unit 7 Create a Virtual WAN by using Azure Portal'
-    module: 'Module - Design and implement hybrid networking'
+    title: 'M02 - Unit 7 Create a Virtual WAN by using Azure Portal'
+    module: 'Module 02 - Design and implement hybrid networking'
 ---
 
 # M02-Unit 7 Create a Virtual WAN by using Azure Portal
@@ -17,6 +17,8 @@ In this exercise, you will:
 + Task 4: Clean up resources
 
 
+
+#### Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
 
 ## Task 1: Create a Virtual WAN
 

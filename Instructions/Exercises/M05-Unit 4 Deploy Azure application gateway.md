@@ -1,13 +1,15 @@
 ---
 Exercise:
-    title: 'M05-Unit 4 Deploy Azure Application Gateway'
-    module: 'Module - Load balancing HTTP(S) traffic in Azure'
+    title: 'M05 - Unit 4 Deploy Azure Application Gateway'
+    module: 'Module 05 - Load balancing HTTP(S) traffic in Azure'
 ---
 
 # M05-Unit 4 Deploy Azure Application Gateway
  
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
+
+#### Estimated time: 25 minutes
 
 The application gateway directs application web traffic to specific resources in a backend pool. You assign listeners to ports, create rules, and add resources to a backend pool. For the sake of simplicity, this article uses a simple setup with a public front-end IP, a basic listener to host a single site on the application gateway, a basic request routing rule, and two virtual machines in the backend pool.
 
@@ -87,6 +89,7 @@ In this exercise, you will:
     | **Setting**   | **Value**         |
     | ------------- | ----------------- |
     | Listener name | Listener          |
+    | Priority      | **100**           |
     | Frontend IP   | Select **Public** |
 
 19. Accept the default values for the other settings on the **Listener** tab.

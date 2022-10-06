@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
-    module: 'Module - Introduction to Azure Virtual Networks'
+    title: 'M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
+    module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
 # M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering
 
@@ -16,6 +16,8 @@ In this unit, you will:
 + Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 + Task 5: Test the connection between the VMs
 + Task 6: Clean up resources
+
+#### Estimated time: 20 minutes
 
 ## Task 1: Create a Virtual Machine to test the configuration
 

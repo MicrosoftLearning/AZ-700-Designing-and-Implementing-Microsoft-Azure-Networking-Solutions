@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M02-Unit 3 Create and configure a virtual network gateway'
-    module: 'Module - Design and implement hybrid networking'
+    title: 'M02 - Unit 3 Create and configure a virtual network gateway'
+    module: 'Module 02 - Design and implement hybrid networking'
 ---
 
 
@@ -23,11 +23,13 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect 
 + Task 11: Test the connection between the VMs
 
+#### Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
+
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one.
+2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
 
 3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 

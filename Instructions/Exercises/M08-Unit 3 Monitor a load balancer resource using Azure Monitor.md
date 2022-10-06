@@ -1,7 +1,7 @@
 ---
 Exercise:
-    title: 'M08-Unit 3 Monitor a load balancer resource using Azure Monitor'
-    module: 'Module - Design and implement network monitoring'
+    title: 'M08 - Unit 3 Monitor a load balancer resource using Azure Monitor'
+    module: 'Module 08 - Design and implement network monitoring'
 ---
 
 # M08-Unit 3 Monitor a load balancer resource using Azure Monitor
@@ -32,6 +32,8 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 15: Clean up resources
 
 
+
+#### Estimated time: 55 minutes
 
 ## Task 1: Create the virtual network
 
