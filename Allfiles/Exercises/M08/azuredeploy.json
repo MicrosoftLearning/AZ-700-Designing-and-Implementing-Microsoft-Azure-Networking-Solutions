@@ -32,18 +32,6 @@
         "metadata": {
           "description": "Admin password"
         }
-      },
-      "zone": {
-        "type": "string",
-        "defaultValue": "1",
-        "allowedValues": [
-            "1",
-            "2",
-            "3"
-         ],
-      "metadata": {
-        "description": "Zone number for the virtual machine"
-        }
       }
     },
   "variables": {
@@ -62,10 +50,7 @@
             "location": "[resourceGroup().location]",
             "dependsOn": [
                 "[parameters('nicName')]"
-            ],
-            "zones": [
-                "[parameters('zone')]"
-            ],            
+            ],        
             "properties": {
                 "osProfile": {
                     "computerName": "[parameters('vmName')]",
