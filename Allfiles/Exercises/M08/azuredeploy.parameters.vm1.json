@@ -16,9 +16,6 @@
         },
         "adminPassword": {
             "value": "TestPa$$w0rd!"
-        },
-        "zone":{
-            "value": "1"
         }
     }
 }
