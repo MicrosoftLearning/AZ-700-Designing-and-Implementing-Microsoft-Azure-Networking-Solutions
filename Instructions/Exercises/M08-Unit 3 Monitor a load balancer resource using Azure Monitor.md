@@ -185,7 +185,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 ## Task 6: Create backend servers
 
 
-In this section, you will create three VMs, that will be in the same availability set, for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
+In this section, you will create three VMs for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
 1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
