@@ -37,7 +37,7 @@ In this exercise, you will:
 
 3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, East US 2, TestERCircuit. Then select **Next: Configuration &gt;**.
 
-4. When you are filling in the values on this page, make sure that you specify the correct SKU tier (Local, Standard, or Premium) and data metering billing model (Unlimited or Metered).
+4. When you are filling in the values on this page, for this example, make sure that you specify the correct SKU tier (**Standard**) data metering billing model (**Metered**) Provider (**Equinix**) Peering location (**Seattle**) and Bandwidth (**50Mbps**).
 
 5. Select **Review + Create**.
 
