@@ -229,7 +229,7 @@ By default, storage accounts accept network connections from clients in any netw
 
 1. Under **Security + networking** for the storage account, select **Networking**.
 
-2. Select **Selected networks**.
+2. Select **Enabled from selected virtual networks and IP addresses**.
 
 3. Select **+Add existing virtual network**.
 

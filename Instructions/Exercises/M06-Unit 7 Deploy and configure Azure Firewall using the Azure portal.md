@@ -129,7 +129,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Resource group       | **Test-FW-RG**                                               |
    | Firewall name        | **Test-FW01**                                                |
    | Region               | Your region                                                  |
-   | Firewall tier        | **Standard**                                                 |
+   | Firewall SKU        | **Standard**                                                 |
    | Firewall management  | **Use a Firewall Policy to manage this firewall**            |
    | Firewall policy      | Select **Add new**<br />Name: **fw-test-pol**<br />Region: **your region** |
 
@@ -200,7 +200,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 12. In **Route name**, enter **fw-dg**.
 
-13. In **Address prefix**, enter **0.0.0.0/0**.
+13. In **Address prefix destination**, enter **0.0.0.0/0**.
 
 14. In **Next hop type**, select **Virtual appliance**.
 
