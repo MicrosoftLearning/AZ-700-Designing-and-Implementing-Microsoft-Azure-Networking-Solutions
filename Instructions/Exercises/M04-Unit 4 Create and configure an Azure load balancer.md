@@ -125,7 +125,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | --------------- | ------------------------ |
    | Name            | **LoadBalancerFrontEnd** |
    | Virtual network | **IntLB-VNet**           |
-   | Subnet          | **myBackEndSubnet**      |
+   | Subnet          | **myFrontEndSubnet**     |
    | Assignment      | **Dynamic**              |
 
 
