@@ -87,7 +87,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 2. On the **Public IP address** page, click **Create**.
 
-3. On the **Create public IP address** page, under **SKU**, select **Basic**.
+3. On the **Create public IP address** page, under **SKU**, select **Standard**.
 
 4. In the **Name** box, type **MyPublicIPAddress**.
 
