@@ -16,7 +16,7 @@ In this exercise, you will:
 + Task 4: Configure DDoS telemetry
 + Task 5: Configure DDoS diagnostic logs
 + Task 6: Configure DDoS alerts
-+ Task 7: Submit a DDoS service request to run a DDoS attack
++ Task 7: Test with simulation partners
 + Task 8: Clean up resources
 
 
