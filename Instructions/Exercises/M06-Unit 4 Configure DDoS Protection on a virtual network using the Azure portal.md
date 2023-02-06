@@ -170,6 +170,8 @@ In this step you will create a virtual machine, assign a public IP address to it
    | Username              | **azureuser**                                                |
    | SSH public key source | **Generate new key pair**                                    |
    | Key pair name         | **myvirtualmachine-ssh-key**                                 |
+   | Public inbound ports  | Select None                                                  |
+
 
 
 4. Click **Review + create**.
