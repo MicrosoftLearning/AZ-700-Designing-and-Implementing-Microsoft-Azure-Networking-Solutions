@@ -97,8 +97,6 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 7. Select your resource group from the list.
 
-   ![Create public IP address](../media/create-public-ip-address-for-ddos-telemetry.png)
-
 8. Click **Create**.
 
 9. On the Azure home page, click **All resources**.
