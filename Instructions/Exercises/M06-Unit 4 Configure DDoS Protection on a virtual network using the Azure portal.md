@@ -238,14 +238,11 @@ In this step you will create a virtual machine, assign a public IP address to it
 
  
 
-## Task 7: Submit a DDoS service request to run a DDoS attack
+## Task 7: Test with simulation partners
 
-1. Create an account with [BreakingPoint Cloud](https://breakingpoint.cloud/)
+1. Review [Azure DDoS simulation testing policy](https://learn.microsoft.com/azure/ddos-protection/test-through-simulations#azure-ddos-simulation-testing-policy)
 
-2. Set up your DDoS test as per the settings in the screenshot below (you may need to select the 100k pps test size with the trial account), but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
-   ![DDOSAttack](https://user-images.githubusercontent.com/46939028/138599420-58bef33a-2597-4fa2-919f-bf1614037bc3.JPG)
-
-   ![DDoS Test Setup](../media/ddos-test-setup.png)
+2. Configure a DDoS test attack using an approved testing partner.
 
 3. On the Azure portal home page, click **All resources**.
 
