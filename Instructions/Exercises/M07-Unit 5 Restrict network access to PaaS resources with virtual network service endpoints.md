@@ -213,7 +213,7 @@ The steps necessary to restrict network access to resources created through Azur
    | Location       | Select East US                                               |
    | Replication    | Locally-redundant storage (LRS)                              |
 
-4. select **Review + create**, then click **Create**.
+4. select **Review**, then click **Create**.
 
 ## Task 7: Create a file share in the storage account
 

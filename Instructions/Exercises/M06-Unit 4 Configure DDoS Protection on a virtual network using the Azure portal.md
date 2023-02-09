@@ -67,7 +67,7 @@ Here you will enable DDoS on a new virtual network rather than on an existing on
 
 4. In the **Name** box, type **MyVirtualNetwork**, then click the **Security** tab. 
 
-5. On the **Security** tab, next to **DDoS Protection Standard**, select **Enable**.
+5. On the **Security** tab, next to **DDoS Network Protection**, select **Enable**.
 
 6. In the **DDoS protection plan** drop-down list, select **MyDdosProtectionPlan**.
 

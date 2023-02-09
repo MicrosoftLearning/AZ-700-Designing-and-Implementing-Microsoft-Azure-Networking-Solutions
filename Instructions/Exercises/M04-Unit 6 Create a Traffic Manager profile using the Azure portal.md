@@ -45,10 +45,10 @@ In this section, you will create two instances of a web application deployed in 
    | Operating system | **Windows**                                                  |
    | Region           | **East US**                                                  |
    | Windows Plan     | Select **Create  new**  Name: **ContosoAppServicePlanEastUS** |
-   | Sku and size     | **Standard S1 100 total ACU, 1.75-GB  memory**               |
+   | Pricing Plan     | **Standard S1 100 total ACU, 1.75-GB  memory**               |
 
 
-3. Click **Next : Deployment**, then click **Next : Monitoring**.
+3. Click **Monitoring** tab.
 
 4. On the **Monitoring** tab, select the **No** option for **Enable Application Insights**.
 
