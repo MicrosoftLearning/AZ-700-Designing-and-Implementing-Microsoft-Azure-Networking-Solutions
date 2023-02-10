@@ -55,11 +55,11 @@ In this exercise, you will:
 6. Select the **Security** tab and enter the following values:
    ![Graphical user interface, text, application, email Description automatically generated](../media/ create-virtual-network-security.png)
 
-   | **Setting**     | **Value** |
-   | --------------- | --------- |
-   | BastionHost     | Disabled  |
-   | DDoS protection | Disabled  |
-   | Firewall        | Disabled  |
+   | **Setting**             | **Value** |
+   | ----------------------- | --------- |
+   | BastionHost             | Disabled  |
+   | DDoS Network Protection | Disabled  |
+   | Firewall                | Disabled  |
 
 7. Click **Review + Create**. Once the resource is validated select **Create**. 
 
