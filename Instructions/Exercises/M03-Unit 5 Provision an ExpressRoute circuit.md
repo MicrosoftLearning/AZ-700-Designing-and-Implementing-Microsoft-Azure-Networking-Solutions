@@ -31,17 +31,17 @@ In this exercise, you will:
    >
    > Your ExpressRoute circuit is billed from the moment a service key is issued. Ensure that you perform this operation when the connectivity provider is ready to provision the circuit.
 
-2. On the Azure portal menu, select **+ Create a resource**. Select **Networking**, and then select **ExpressRoute**, as shown in the following image. If ExpressRoute does not appear in the list, use **Search the marketplace** to search for it:
+1. On the Azure portal menu, select **+ Create a resource**. Select **Networking**, and then select **ExpressRoute**, as shown in the following image. If ExpressRoute does not appear in the list, use **Search the marketplace** to search for it:
 
    ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
 
-3. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, East US 2, TestERCircuit. Then select **Next: Configuration &gt;**.
+1. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, East US 2, TestERCircuit. Then select **Next: Configuration &gt;**.
 
-4. When you are filling in the values on this page, for this example, make sure that you specify the correct SKU tier (**Standard**) data metering billing model (**Metered**) Provider (**Equinix**) Peering location (**Seattle**) and Bandwidth (**50Mbps**).
+1. When you are filling in the values on this page, for this example, make sure that you specify the correct SKU tier (**Standard**) data metering billing model (**Metered**) Provider (**Equinix**) Peering location (**Seattle**) and Bandwidth (**50Mbps**).
 
-5. Select **Review + Create**.
+1. Select **Review + Create**.
 
-6. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
+1. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
 
 
 ![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration2.png)
@@ -78,17 +78,17 @@ In this exercise, you will:
 
    ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
 
-2. All ExpressRoute circuits created in the subscription will appear here. 
+1. All ExpressRoute circuits created in the subscription will appear here. 
 
    ![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)
 
-3. The circuit page displays the properties of the circuit. The service key appears in the service key field. Your service provider will need the Service Key to complete the provisioning process. The service key is specific to your circuit. **You must send the service key to your connectivity provider for provisioning.**
+1. The circuit page displays the properties of the circuit. The service key appears in the service key field. Your service provider will need the Service Key to complete the provisioning process. The service key is specific to your circuit. **You must send the service key to your connectivity provider for provisioning.**
 
    ![Azure portal - ExpressRoute Circuit properties showing service key](../media/expressroute-circuit-overview.png)
 
-4. On this page, **Provider status** gives you the current state of provisioning on the service-provider side. **Circuit status** provides you the state on the Microsoft side. 
+1. On this page, **Provider status** gives you the current state of provisioning on the service-provider side. **Circuit status** provides you the state on the Microsoft side. 
 
-5. When you create a new ExpressRoute circuit, the circuit is in the following state:
+1. When you create a new ExpressRoute circuit, the circuit is in the following state:
 
    - Provider status: Not provisioned
    - Circuit status: Enabled
@@ -128,7 +128,7 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 

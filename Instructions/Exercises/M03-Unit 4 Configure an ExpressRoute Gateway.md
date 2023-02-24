@@ -33,9 +33,9 @@ In this exercise, you will:
 
 1. On any Azure Portal page, in **Search resources, services and docs**, enter virtual network, and then select **Virtual networks** from the results.
 
-2. On the Virtual networks page, select **+Create**.
+1. On the Virtual networks page, select **+Create**.
 
-3. On the Create virtual networks pane, on the **Basics** tab, use the information in the following table to create the VNet:
+1. On the Create virtual networks pane, on the **Basics** tab, use the information in the following table to create the VNet:
 
    | **Setting**          | **Value**                        |
    | -------------------- | -------------------------------- |
@@ -43,36 +43,36 @@ In this exercise, you will:
    | Resource Group       | ContosoResourceGroup             |
    | Location             | East US                          |
 
-4. Select **Next : IP addresses**.
+1. Select **Next : IP addresses**.
 
-5. On the **IP Addresses** tab, in **IPv4 address space**, enter 10.20.0.0/16, and then select **+ Add subnet**. 
+1. On the **IP Addresses** tab, in **IPv4 address space**, enter 10.20.0.0/16, and then select **+ Add subnet**. 
 
-6. In the Add subnet pane, use the information in the following table to create the subnet:
+1. In the Add subnet pane, use the information in the following table to create the subnet:
 
    | **Setting**                  | **Value**     |
    | ---------------------------- | ------------- |
    | Gateway Subnet name          | GatewaySubnet |
    | Gateway Subnet address space | 10.20.0.0/27  |
 
-7. And then select **Add**. 
+1. And then select **Add**. 
 
-8. On the Create virtual network page, select **Review + Create**.
+1. On the Create virtual network page, select **Review + Create**.
 
    ![Azure portal - add gateway subnet](../media/add-gateway-subnet.png)
 
-9. Confirm that the VNet passes the validation and then select **Create**.
+1. Confirm that the VNet passes the validation and then select **Create**.
 
 > [!Note]  
 >
-> If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, click Add IP6 address space and input IPv6 address range values.
+> If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
 
 ## Task 2: Create the virtual network gateway
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter virtual network gateway, and then select **Virtual network gateways** from the results.
 
-2. On the Virtual network gateways page, select **+Create**.
+1. On the Virtual network gateways page, select **+Create**.
 
-3. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
+1. On the **Create virtual network gateway** page, use the information in the following table to create the gateway:
 
    | **Setting**               | **Value**                  |
    | ------------------------- | -------------------------- |
@@ -90,11 +90,11 @@ In this exercise, you will:
    | Public IP address SKU     | Basic                      |
    | Assignment                | Not configurable           |
    
-4. Select **Review + Create**.
+1. Select **Review + Create**.
 
-5. Confirm that the Gateway configuration passes validation and then select **Create**.
+1. Confirm that the Gateway configuration passes validation and then select **Create**.
 
-6. When the deployment is complete, select **Go to Resource**.
+1. When the deployment is complete, select **Go to Resource**.
 
 > [!Note] 
 >

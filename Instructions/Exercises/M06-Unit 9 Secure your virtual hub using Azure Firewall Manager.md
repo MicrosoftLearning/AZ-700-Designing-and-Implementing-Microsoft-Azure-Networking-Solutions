@@ -33,19 +33,19 @@ In this exercise, you will:
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
 1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
-2. Click **Create**.
-3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and click **OK**.
+2. Select **Create**.
+3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
 4. In **Name**, enter **Spoke-01**.
 5. In **Region**, select your region.
-6. Click **Next: IP Addresses**.
+6. Select **Next: IP Addresses**.
 7. In **IPv4 address space**, enter **10.0.0.0/16**. 
 8. **Delete** any other address spaces listed here, such as **10.1.0.0/16**.
-9. Under **Subnet name**, click the word **default**.
+9. Under **Subnet name**, select the word **default**.
 10. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**.
 11. Change the **Subnet address range** to **10.0.1.0/24**.
-12. Click **Save**.
-13. Click **Review + create**.
-14. Click **Create**.
+12. Select **Save**.
+13. Select **Review + create**.
+14. Select **Create**.
 
 Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information:
 
@@ -59,13 +59,13 @@ Repeat steps 1 to 14 above to create another similar virtual network and subnet 
 
 In this task you will create your secured virtual hub using Firewall Manager.
 
-1. From the Azure portal home page, click **All services**.
+1. From the Azure portal home page, select **All services**.
 
 2. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-3. On the **Firewall Manager** page, from the Overview page, click **View secured virtual hubs**.
+3. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
 
-4. On the **Virtual hubs** page, click **Create new secured virtual hub**.
+4. On the **Virtual hubs** page, select **Create new secured virtual hub**.
 
 5. For **Resource group**, select **fw-manager-rg**.
 
@@ -79,14 +79,14 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 10. In **Virtual WAN Name**, enter **Vwan-01**.
 
-11. Click **Next: Azure Firewall**.
+11. Select **Next: Azure Firewall**.
     ![Create new secured virtual hub - Basics tab](../media/create-new-secured-virtual-hub-1.png)
 
-12. Click **Next: Security Partner Provider**.
+12. Select **Next: Security Partner Provider**.
 
-13. Click **Next: Review + create.**
+13. Select **Next: Review + create.**
 
-14. Click **Create**.
+14. Select **Create**.
 
     > **[!NOTE]** 
     >
@@ -96,15 +96,15 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
     ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
 
-15. When the deployment completes, from the Azure portal home page, click **All services**.
+15. When the deployment completes, from the Azure portal home page, select **All services**.
 
 16. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-17. On the **Firewall Manager** page, click **Virtual hubs**.
+17. On the **Firewall Manager** page, select **Virtual hubs**.
 
-18. Click **Hub-01**.
+18. Select **Hub-01**.
 
-19. Click **Public IP configuration**.
+19. Select **Public IP configuration**.
 
 20. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
 
@@ -112,15 +112,15 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 In this task you will connect the hub and spoke virtual networks. This is commonly known as peering.
 
-1. From the Azure portal home page, click **Resource groups**.
+1. From the Azure portal home page, select **Resource groups**.
 2. Select the **fw-manager-rg** resource group, then select the **Vwan-01** virtual WAN.
-3. Under **Connectivity**, click **Virtual network connections**.
-4. Click **Add connection**.
+3. Under **Connectivity**, select **Virtual network connections**.
+4. Select **Add connection**.
 5. For **Connection name**, enter **hub-spoke-01**.
 6. For **Hubs**, select **Hub-01**.
 7. For **Resource group**, select **fw-manager-rg**.
 8. For **Virtual network**, select **Spoke-01**.
-9. Click **Create**.
+9. Select **Create**.
    ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
 10. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
 
@@ -130,11 +130,11 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 ## Task 4: Deploy the servers
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M06**.
+1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **FirewallManager.json** and **FirewallManager.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M06**.
 
-3. Deploy the following ARM templates to create the VM needed for this exercise:
+1. Deploy the following ARM templates to create the VM needed for this exercise:
 
    ```powershell
    $RGName = "fw-manager-rg"
@@ -142,138 +142,138 @@ In this task you will connect the hub and spoke virtual networks. This is common
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile FirewallManager.json -TemplateParameterFile FirewallManager.parameters.json
    ```
   
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
+1. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
 
-6. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
+1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
 
 
 ## Task 5: Create a firewall policy and secure your hub
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. From the Azure portal home page, click **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then click **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+1. From the Azure portal home page, select **Firewall Manager**.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
-2. From **Firewall Manager**, from the Overview page, click **View Azure Firewall Policies**.
+1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
 
-3. Click **Create Azure Firewall Policy**.
+1. Select **Create Azure Firewall Policy**.
 
-4. In **Resource group**, select **fw-manager-rg**.
+1. On **Resource group**, select **fw-manager-rg**.
 
 5. Under **Policy details**, for the **Name**, enter **Policy-01**.
 
-6. In **Region** select your region.
+1. On **Region** select your region.
 
-7. In **Policy tier**, select **Standard**.
+1. On **Policy tier**, select **Standard**.
 
-8. Click **Next : DNS Settings**.
+1. Select **Next : DNS Settings**.
 
-8. Click **Next : TLS Inspection (preview)**.
+1. Select **Next : TLS Inspection (preview)**.
 
-9. Click **Next : Rules**.
+1. Select **Next : Rules**.
 
-10. On the **Rules** tab, click **Add a rule collection**.
+1. On the **Rules** tab, select **Add a rule collection**.
 
-11. On the **Add a rule collection** page, in **Name**, enter **App-RC-01**.
+1. On the **Add a rule collection** page, in **Name**, enter **App-RC-01**.
 
-12. For **Rule collection type**, select **Application**.
+1. For **Rule collection type**, select **Application**.
 
-13. For **Priority**, enter **100**.
+1. For **Priority**, enter **100**.
 
-14. Ensure **Rule collection action** is **Allow**.
+1. Ensure **Rule collection action** is **Allow**.
 
-15. Under **Rules**, in **Name** type **Allow-msft**.
+1. Under **Rules**, in **Name** type **Allow-msft**.
 
-16. For the **Source type**, select **IP Address**.
+1. For the **Source type**, select **IP Address**.
 
-17. For **Source**, enter *.
+1. For **Source**, enter *.
 
-18. For **Protocol**, enter **http,https**.
+1. For **Protocol**, enter **http,https**.
 
-19. Ensure **Destination type** is **FQDN**.
+1. Ensure **Destination type** is **FQDN**.
 
-20. For **Destination**, enter ***.microsoft.com**.
+1. For **Destination**, enter ***.microsoft.com**.
 
-21. Click **Add**.
+1. Select **Add**.
 
     ![Add application rule collection to firewall policy](../media/add-rule-collection-firewall-policy-1.png)
 
-22. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, click **Add a rule collection**.
+1. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, select **Add a rule collection**.
 
-23. For **Name**, enter **dnat-rdp**.
+1. For **Name**, enter **dnat-rdp**.
 
-24. For **Rule collection type**, select **DNAT**.
+1. For **Rule collection type**, select **DNAT**.
 
-25. For **Priority**, enter **100**.
+1. For **Priority**, enter **100**.
 
-26. Under **Rules**, in **Name** enter **Allow-rdp**.
+1. Under **Rules**, in **Name** enter **Allow-rdp**.
 
-27. For the **Source type**, select **IP Address**.
+1. For the **Source type**, select **IP Address**.
 
-28. For **Source**, enter *.
+1. For **Source**, enter *.
 
-29. For **Protocol**, select **TCP**.
+1. For **Protocol**, select **TCP**.
 
-30. For **Destination Ports**, enter **3389**.
+1. For **Destination Ports**, enter **3389**.
 
-31. For **Destination Type**, select **IP Address**.
+1. For **Destination Type**, select **IP Address**.
 
-32. For **Destination**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
+1. For **Destination**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
 
-33. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (e.g., **10.0.1.4**).
+1. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (e.g., **10.0.1.4**).
 
-34. For **Translated port**, enter **3389**.
+1. For **Translated port**, enter **3389**.
 
-35. Click **Add**.
+1. Select **Add**.
 
-36. To add a Network rule so you can connect a remote desktop from Srv-workload-01 to Srv-workload-02 VM, click **Add a rule collection**.
+1. To add a Network rule so you can connect a remote desktop from Srv-workload-01 to Srv-workload-02 VM, select **Add a rule collection**.
 
-37. For **Name**, enter **vnet-rdp**.
+1. For **Name**, enter **vnet-rdp**.
 
-38. For **Rule collection type**, select **Network**.
+1. For **Rule collection type**, select **Network**.
 
-39. For **Priority**, enter **100**.
+1. For **Priority**, enter **100**.
 
-40. For **Rule collection action**, select **Allow**.
+1. For **Rule collection action**, select **Allow**.
 
-41. Under **Rules**, in **Name** enter **Allow-vnet**.
+1. Under **Rules**, in **Name** enter **Allow-vnet**.
 
-42. For the **Source type**, select **IP Address**.
+1. For the **Source type**, select **IP Address**.
 
-43. For **Source**, enter *.
+1. For **Source**, enter *.
 
-44. For **Protocol**, select **TCP**.
+1. For **Protocol**, select **TCP**.
 
-45. For **Destination Ports**, enter **3389**.
+1. For **Destination Ports**, enter **3389**.
 
-46. For **Destination Type**, select **IP Address**.
+1. For **Destination Type**, select **IP Address**.
 
-47. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.1.4**).
+1. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.1.4**).
 
-48. Click **Add**.
+1. Select **Add**.
 
     ![List rule collections in the firewall policy](../media/list-rule-collections-firewall-policy.png)
 
-49. You should now have 3 rule collections listed.
+1. You should now have 3 rule collections listed.
 
-50. Click **Review + create**.
+1. Select **Review + create**.
 
-51. Click **Create**.
+1. Select **Create**.
 
 ## Task 6: Associate the firewall policy
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. From the Azure portal home page, click **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then click **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
-2. In **Firewall Manager**, under **Security**, click **Azure Firewall Policies**.
-3. Select the checkbox for **Policy-01**.
-4. Select **Manage associations&gt;Associate hubs**.
-5. Select the checkbox for **Hub-01**.
-6. Click **Add**.
-7. When the policy has been attached, click **Refresh**. The association should be displayed.
+1. From the Azure portal home page, select **Firewall Manager**.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
+1. Select the checkbox for **Policy-01**.
+1. Select **Manage associations&gt;Associate hubs**.
+1. Select the checkbox for **Hub-01**.
+1. Select **Add**.
+1. When the policy has been attached, select **Refresh**. The association should be displayed.
 
 ![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
 
@@ -283,14 +283,14 @@ In this task you will associate the firewall policy with the virtual hub.
 
 In this task you will ensure that network traffic gets routed through your firewall.
 
-1. In **Firewall Manager**, click **Virtual hubs**.
-2. Click **Hub-01**.
-3. Under **Settings**, click **Security configuration**.
-4. In **Internet traffic**, select **Azure Firewall**.
-5. In **Private traffic**, select **Send via Azure Firewall**.
-6. Click **Save**. 
-7. This will take a few minutes to complete.
-8. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
+1. On **Firewall Manager**, select **Virtual hubs**.
+1. Select **Hub-01**.
+1. Under **Settings**, select **Security configuration**.
+1. On **Internet traffic**, select **Azure Firewall**.
+1. On **Private traffic**, select **Send via Azure Firewall**.
+1. Select **Save**. 
+1. This will take a few minutes to complete.
+1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
 
 
 ## Task 8: Test the application rule
@@ -301,41 +301,41 @@ In this task you will test the application rule to confirm that it works as expe
 
 1. Open **Remote Desktop Connection** on your PC.
 
-2. In the **Computer** box, enter the **firewall's public IP address** (e.g., **51.143.226.18**).
+1. On the **Computer** box, enter the **firewall's public IP address** (e.g., **51.143.226.18**).
 
-3. Click **Show Options**.
+1. Select **Show Options**.
 
-4. In the **Username** box, enter **TestUser**.
+1. On the **Username** box, enter **TestUser**.
 
-5. Click **Connect**.
+1. Select **Connect**.
 
    ![RDP connection to srv-workload-01](../media/rdp-srv-workload-01.png)
 
-6. In the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password, **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password, **TestPa$$w0rd!**.
 
-7. Click **OK**.
+1. Select **OK**.
 
-8. Click **Yes** on the certificate message.
+1. Select **Yes** on the certificate message.
 
-9. Open Internet Explorer and click **OK** in the **Set up Internet Explorer 11** dialog box.
+1. Open Internet Explorer and select **OK** in the **Set up Internet Explorer 11** dialog box.
 
-10. Browse to **https://** **www.microsoft.com**.
+1. Browse to **https://** **www.microsoft.com**.
 
-11. In the **Security Alert** dialog box, click **OK**.
+1. On the **Security Alert** dialog box, select **OK**.
 
-12. Click **Close** on the Internet Explorer security alerts that may pop-up.
+1. Select **Close** on the Internet Explorer security alerts that may pop-up.
 
-13. You should see the Microsoft home page.
+1. You should see the Microsoft home page.
 
     ![RDP session browsing microsoft.com](../media/microsoft-home-page.png)
 
-14. Browse to **https://** **www.google.com**.
+1. Browse to **https://** **www.google.com**.
 
-15. You should be blocked by the firewall.
+1. You should be blocked by the firewall.
 
     ![RDP session browser blocked on google.com](../media/google-home-page-fail.png)
 
-16. So, you have verified that you can connect to the one allowed FQDN but are blocked from all others.
+1. So, you have verified that you can connect to the one allowed FQDN but are blocked from all others.
 
 ## Task 9: Test the network rule
 
@@ -343,26 +343,26 @@ In this task you will test the network rule to confirm that it works as expected
 
 1. While still logged in to the **Srv-workload-01** RDP session, from this remote computer, open **Remote Desktop Connection**.
 
-2. In the **Computer** box, enter the **private IP address** of **Srv-workload-02** (e.g., **10.1.1.4**).
+1. On the **Computer** box, enter the **private IP address** of **Srv-workload-02** (e.g., **10.1.1.4**).
 
-3. In the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and a password of **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and a password of **TestPa$$w0rd!**.
 
-4. Click **OK**.
+1. Select **OK**.
 
-5. Click **Yes** on the certificate message.
+1. Select **Yes** on the certificate message.
 
    ![RDP session from srv-workload-01 to another RDP session on srv-workload-02](../media/rdp-srv-workload-02-from-srv-workload-01.png)
 
-6. So, now you have verified that the firewall network rule is working, as you have connected a remote desktop from one server to another server located in another virtual network.
+1. So, now you have verified that the firewall network rule is working, as you have connected a remote desktop from one server to another server located in another virtual network.
 
-7. Close both RDP sessions to disconnect them.
+1. Close both RDP sessions to disconnect them.
 
 
 ## Task 10: Clean up resources 
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 

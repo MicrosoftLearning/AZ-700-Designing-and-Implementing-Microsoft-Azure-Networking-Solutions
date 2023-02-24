@@ -30,11 +30,11 @@ This exercise requires two instances of a web application that run in different 
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 
-2. On the Azure home page, using the global search type **WebApp** and select **App Services** under services.
+1. On the Azure home page, using the global search type **WebApp** and select **App Services** under services.
 
-3. Click **+ Create** to create a Web App.
+1. Select **+ Create** to create a Web App.
 
-4. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
@@ -48,14 +48,14 @@ This exercise requires two instances of a web application that run in different 
    | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
    | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
-5. Select **Review + create**, review the Summary, and then select **Create**.   
+1. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
 
-6. Create a second web app. On the Azure Portal home page, search  **WebApp**.
+1. Create a second web app. On the Azure Portal home page, search  **WebApp**.
 
-7. Click **+ Create** to create a Web App.
+1. Select **+ Create** to create a Web App.
 
-8. On the Create Web App page, on the **Basics** tab, enter or select the following information.
+1. On the Create Web App page, on the **Basics** tab, enter or select the following information.
 
    | **Setting**      | **Value**                                                    |
    | ---------------- | ------------------------------------------------------------ |
@@ -69,7 +69,7 @@ This exercise requires two instances of a web application that run in different 
    | Windows Plan     | Select **Create new** and enter myAppServicePlanEastUS in the text box. |
    | Pricing Plan     | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
-9. Select **Review + create**, review the Summary, and then select **Create**.   
+1. Select **Review + create**, review the Summary, and then select **Create**.   
    ‎It might take several minutes for the deployment to complete.
 
 ## Task 2: Create a Front Door for your application
@@ -98,8 +98,8 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 1. Select **Review and Create**, and then select **Create**.
 
 1. Wait for the resource to deploy, and then select **Go to resource**.
-2. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created
-3. To update the origin group select the name **default-origin-group** from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
+1. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created
+1. To update the origin group select the name **default-origin-group** from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update. 
 
 ## Task 3: View Azure Front Door in action
 
@@ -110,21 +110,21 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 1. In a new browser tab, navigate to the Front Door endpoint FQDN. The default App Service page will be displayed.
    ![Browser showing App Service information page](../media/app-service-info-page.png)
 
-5. To test instant global failover in action, try the following steps:
+1. To test instant global failover in action, try the following steps:
 
-6. Switch to the Azure portal, search for and select **App services**. 
+1. Switch to the Azure portal, search for and select **App services**. 
 
-7. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
+1. Select one of your web apps, then select **Stop**, and then select **Yes** to verify.
 
    ![Azure Portal showing stopped Web App](../media/stop-web-app.png)
 
-8. Switch back to your browser and select Refresh. You should see the same information page.
+1. Switch back to your browser and select Refresh. You should see the same information page.
 
 **There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
 
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
 
-2. Switch back to your browser and select Refresh. This time, you should see an error message.
+1. Switch back to your browser and select Refresh. This time, you should see an error message.
 
    ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
@@ -135,7 +135,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
    
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 

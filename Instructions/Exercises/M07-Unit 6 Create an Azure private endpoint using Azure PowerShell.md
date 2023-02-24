@@ -24,9 +24,9 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 1. Find and open **parameters.json** in M07 folder. Open it in Notepad and find the line "value": "GEN-UNIQUE". Replace the placeholder GEN-UNIQUE string with a unique value for your webapp name. Save this change.
 
-2. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-3. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **template.json** and **parameters.json** into the Cloud Shell home directory one by one.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **template.json** and **parameters.json** into the Cloud Shell home directory one by one.
 
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
@@ -372,23 +372,23 @@ New-AzPrivateDnsZoneGroup @parameters4
 
 In this section, you'll use the virtual machine you created in the previous step to connect to the web app across the Private Endpoint.
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/)
+1. Sign in to the [Azure portal](https://portal.azure.com/)
 
-2.  Select **Resource groups** in the left-hand navigation pane.
+1. Select **Resource groups** in the left-hand navigation pane.
 
-3. Select **CreatePrivateEndpointQS-rg**.
+1. Select **CreatePrivateEndpointQS-rg**.
 
-4. Select **myVM**.
+1. Select **myVM**.
 
-5. On the overview page for **myVM**, select **Connect** then **Bastion**.
+1. On the overview page for **myVM**, select **Connect** then **Bastion**.
 
-6. Select the blue **Use Bastion** button.
+1. Select the blue **Use Bastion** button.
 
-7. Enter the username and password that you entered during the virtual machine creation.
+1. Enter the username and password that you entered during the virtual machine creation.
 
-8. Open Windows PowerShell on the server after you connect.
+1. Open Windows PowerShell on the server after you connect.
 
-9. Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+1. Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
   ```
   Server: UnKnown
@@ -408,10 +408,10 @@ In this section, you'll use the virtual machine you created in the previous step
 A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
 1. In the bastion connection to **myVM**, open Internet Explorer.
-2. Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**
-3. You'll receive the default web app page if your application hasn't been deployed:
+1. Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**
+1. You'll receive the default web app page if your application hasn't been deployed:
   ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
-4. Close the connection to **myVM**. 
+1. Close the connection to **myVM**. 
 
 ## Task 7: Clean up resources
 
