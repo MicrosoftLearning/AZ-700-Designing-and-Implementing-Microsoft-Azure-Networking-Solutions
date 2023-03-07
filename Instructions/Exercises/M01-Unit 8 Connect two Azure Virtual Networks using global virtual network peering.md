@@ -17,6 +17,8 @@ In this unit, you will:
 + Task 5: Test the connection between the VMs
 + Task 6: Clean up resources
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Connect%20two%20Azure%20virtual%20networks%20using%20global%20virtual%20network%20peering)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
 #### Estimated time: 20 minutes
 
 ## Task 1: Create a Virtual Machine to test the configuration
