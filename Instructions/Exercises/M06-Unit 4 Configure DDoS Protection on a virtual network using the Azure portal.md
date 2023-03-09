@@ -16,7 +16,7 @@ In this exercise, you will:
 + Task 4: Configure DDoS telemetry
 + Task 5: Configure DDoS diagnostic logs
 + Task 6: Configure DDoS alerts
-+ Task 7: Submit a DDoS service request to run a DDoS attack
++ Task 7: Test with simulation partners
 + Task 8: Clean up resources
 
 
@@ -87,7 +87,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 1. On the **Public IP address** page, select **Create**.
 
-1. On the **Create public IP address** page, under **SKU**, select **Basic**.
+1. On the **Create public IP address** page, under **SKU**, select **Standard**.
 
 1. On the **Name** box, type **MyPublicIPAddress**.
 
@@ -100,6 +100,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
    ![Create public IP address](../media/create-public-ip-address-for-ddos-telemetry.png)
 
 1. Select **Create**.
+
 
 1. On the Azure home page, select **All resources**.
 
@@ -170,6 +171,8 @@ In this step you will create a virtual machine, assign a public IP address to it
    | Username              | **azureuser**                                                |
    | SSH public key source | **Generate new key pair**                                    |
    | Key pair name         | **myvirtualmachine-ssh-key**                                 |
+   | Public inbound ports  | Select None                                                  |
+
 
 
 1. Select **Review + create**.
@@ -238,14 +241,13 @@ In this step you will create a virtual machine, assign a public IP address to it
 
  
 
-## Task 7: Submit a DDoS service request to run a DDoS attack
+## Task 7: Test with simulation partners
 
-1. Create an account with [BreakingPoint Cloud](https://breakingpoint.cloud/)
 
-1. Set up your DDoS test as per the settings in the screenshot below (you may need to select the 100k pps test size with the trial account), but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
+1. Review [Azure DDoS simulation testing policy](https://learn.microsoft.com/azure/ddos-protection/test-through-simulations#azure-ddos-simulation-testing-policy)
+
+1. Configure a DDoS test attack using an approved testing partner. If using BreakingPoint Cloud to test use the settings in the screenshot below (you may need to select the 100k pps test size with the trial account), but specifying the IP address of your own **MyPublicIPAddress** resource in the **Target IP Address** box (e.g., **51.140.137.219**)
    ![DDOSAttack](https://user-images.githubusercontent.com/46939028/138599420-58bef33a-2597-4fa2-919f-bf1614037bc3.JPG)
-
-   ![DDoS Test Setup](../media/ddos-test-setup.png)
 
 1. On the Azure portal home page, select **All resources**.
 
@@ -253,7 +255,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. In the **Metric** box, select **Under DDoS attack or not** from the list.
 
-1. And here you can see DDoS attack as it happened. Note it may take the full 10 minutes before you see the results.
+1. Now you can see the DDoS attack as it happened. Note it may take the full 10 minutes before you see the results.
 
    ![Metrics showing resource under DDoS attack](../media/metrics-showing-resource-under-attack.png)
 

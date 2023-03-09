@@ -61,11 +61,13 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
    - **Name:** ContosoVirtualWANHub-WestUS
    - **Hub private address space:** 10.60.0.0/24
    - **Virtual hub capacity:** 2 Routing infrastructure units
+   - **Hub routing preference:** leave the default
 1. Select **Next: Site-to-site**.
 1. On the **Site-to-site** tab, complete the following fields:
    - **Do you want to create a Site to site (VPN gateway)?:** Yes
    - The **AS Number** field cannot be edited.
    - **Gateway scale units:** 1 scale unit = 500 Mbps x 2
+   - **Routing preference:** leave the default 
 1. Select **Review + Create** to validate.
 1. Select **Create** to create the hub. 
 1. After 30 minutes, **Refresh** to view the hub on the Hubs page. 
