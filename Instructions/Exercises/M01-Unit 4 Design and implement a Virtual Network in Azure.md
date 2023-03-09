@@ -63,7 +63,7 @@ In this exercise, you will:
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
 
-3. In Resource groups, select **+ Create**.
+3. In the Resource groups, select **+ Create**.
 
 4. Use the information in the following table to create the resource group.
 

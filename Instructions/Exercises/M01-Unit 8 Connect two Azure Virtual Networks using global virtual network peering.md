@@ -25,11 +25,11 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 ### Create ManufacturingVM
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -37,43 +37,43 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
    ```
   
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. Verify that the virtual machine has been created.
+1. Verify that the virtual machine has been created.
 
 ## Task 2: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
-2. Select **ManufacturingVM**.
+1. Select **ManufacturingVM**.
 
-3. In ManufacturingVM, select **Connect &gt; RDP**.
+1. On ManufacturingVM, select **Connect &gt; RDP**.
 
-4. In ManufacturingVM | Connect, select **Download RDP file**.
+1. On ManufacturingVM | Connect, select **Download RDP file**.
 
-5. Save the RDP file to your desktop.
+1. Save the RDP file to your desktop.
 
-6. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
-7. On the Azure Portal home page, select **Virtual Machines**.
+1. On the Azure Portal home page, select **Virtual Machines**.
 
-8. Select **TestVM1**.
+1. Select **TestVM1**.
 
-9. In TestVM1, select **Connect &gt; RDP**.
+1. On TestVM1, select **Connect &gt; RDP**.
 
-10. In TestVM1 | Connect, select **Download RDP file**.
+1. On TestVM1 | Connect, select **Download RDP file**.
 
-11. Save the RDP file to your desktop.
+1. Save the RDP file to your desktop.
 
-12. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
-13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
+1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
-14. On both VMs, in **Networks**, select **Yes**.
+1. On both VMs, in **Networks**, select **Yes**.
 
-15. On TestVM1, open a PowerShell prompt, and run the following command: ipconfig
+1. On TestVM1, open a PowerShell prompt, and run the following command: ipconfig
 
-16. Note the IPv4 address. 
+1. Note the IPv4 address. 
 
  
 
@@ -81,14 +81,14 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
-2. Use the following command to verify that there is no connection to TestVM1 on CoreServicesVnet. Be sure to use the IPv4 address for TestVM1.
+1. Use the following command to verify that there is no connection to TestVM1 on CoreServicesVnet. Be sure to use the IPv4 address for TestVM1.
 
    ```powershell
     Test-NetConnection 10.20.20.4 -port 3389
     ```
 
 
-3. The test connection should fail, and you will see a result similar to the following:
+1. The test connection should fail, and you will see a result similar to the following:
    ![PowerShell window with Test-NetConnection 10.20.20.4 -port 3389 showing failed ](../media/test-netconnection-fail.png)
 
  
@@ -97,12 +97,12 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
-2. In CoreServicesVnet, under **Settings**, select **Peerings**.
+1. In CoreServicesVnet, under **Settings**, select **Peerings**.
    ![screen shot of core services VNet Peering settings ](../media/create-peering-on-coreservicesvnet.png)
 
-3. On CoreServicesVnet | Peerings, select **+ Add**.
+1. On CoreServicesVnet | Peerings, select **+ Add**.
 
-4. Use the information in the following table to create the peering.
+1. Use the information in the following table to create the peering.
 
 | **Section**                          | **Option**                                    | **Value**                             |
 | ------------------------------------ | --------------------------------------------- | ------------------------------------- |
@@ -125,9 +125,9 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
  >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously. It's just a name.
 
-5. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
+1. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
-6. Under Virtual networks, select **ManufacturingVnet**, and verify the **ManufacturingVnet-to-CoreServicesVnet** peering is listed.
+1. Under Virtual networks, select **ManufacturingVnet**, and verify the **ManufacturingVnet-to-CoreServicesVnet** peering is listed.
 
  
 
@@ -135,14 +135,14 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On the ManufacturingVM, open a PowerShell prompt.
 
-2. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
+1. Use the following command to verify that there is now a connection to TestVM1 on CoreServicesVnet. 
 
    ```powershell
     Test-NetConnection 10.20.20.4 -port 3389
     ```
 
 
-3. The test connection should succeed, and you will see a result similar to the following:
+1. The test connection should succeed, and you will see a result similar to the following:
    ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
 
  
@@ -153,7 +153,7 @@ Congratulations! You have successful configured connectivity between VNets by ad
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane. (Create Cloud Shell storage if needed, using default settings.)
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane. (Create Cloud Shell storage if needed, using default settings.)
 
 1. Delete all resource groups you created throughout the labs of this module by running the following command:
 

@@ -100,11 +100,11 @@ In this exercise, you will:
 
 In this section, you will create two test VMs to test the Private DNS zone configuration.
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
     
     > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
-2. In the toolbar of the Cloud Shell pane, select the Upload/Download files icon, in the drop-down menu, select Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
+2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -124,7 +124,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. On the Azure Portal home page, select **Private DNS zones**.
 
-2. In Private DNS zones, select **contoso.com**.
+2. On Private DNS zones, select **contoso.com**.
 
 3. Verify that host (A) records are listed for both VMs, as shown:
 
@@ -142,11 +142,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 2. Select **TestVM1**.
 
-3. In TestVM1, select **Connect &gt; RDP**.
+3. On TestVM1, select **Connect &gt; RDP**.
 
 ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
 
-4. In TestVM1 | Connect, select **Download RDP file**.
+4. On TestVM1 | Connect, select **Download RDP file**.
 
 5. Save the RDP file to your desktop.
 
@@ -154,9 +154,9 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 7. Select **TestVM2**.
 
-8. In TestVM2, select **Connect &gt; RDP**.
+8. On TestVM2, select **Connect &gt; RDP**.
 
-9. In TestVM2 | Connect, select **Download RDP file**.
+9. On TestVM2 | Connect, select **Download RDP file**.
 
 10. Save the RDP file to your desktop.
 

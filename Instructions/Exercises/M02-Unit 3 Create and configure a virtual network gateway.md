@@ -27,11 +27,11 @@ In this exercise, you will:
 
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
 
-3. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
+1. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -42,11 +42,11 @@ In this exercise, you will:
 
 ## Task 2: Create CoreServicesVM
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **CoreServicesVMazuredeploy.json** and **CoreServicesVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **CoreServicesVMazuredeploy.json** and **CoreServicesVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -54,17 +54,17 @@ In this exercise, you will:
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
    ```
   
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. Verify that the virtual machine has been created.
+1. Verify that the virtual machine has been created.
 
 ## Task 3: Create ManufacturingVM
 
-1. In the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. In the toolbar of the Cloud Shell pane, click the Upload/Download files icon, in the drop-down menu, click Upload and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -72,29 +72,29 @@ In this exercise, you will:
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
    ```
   
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. Verify that the virtual machine has been created.
+1. Verify that the virtual machine has been created.
 
 
 ## Task 4: Connect to the Test VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
-2. Select **ManufacturingVM**.
-3. In **ManufacturingVM**, select **Connect &gt; RDP**.
-4. In **ManufacturingVM | Connect**, select **Download RDP file**.
-5. Save the RDP file to your desktop.
-6. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**. After connecting, minimize the RDP session.
-7. On the Azure Portal home page, select **Virtual Machines**.
-8. Select **CoreServicesVM**.
-9. In **CoreServicesVM**, select **Connect &gt; RDP**.
-10. In **CoreServicesVM | Connect**, select **Download RDP file**.
-11. Save the RDP file to your desktop.
-12. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
-13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
-14. On both VMs, in **Networks**, select **Yes**.
-15. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
-16. Note the IPv4 address. 
+1. Select **ManufacturingVM**.
+1. On **ManufacturingVM**, select **Connect &gt; RDP**.
+1. On **ManufacturingVM | Connect**, select **Download RDP file**.
+1. Save the RDP file to your desktop.
+1. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**. After connecting, minimize the RDP session.
+1. On the Azure Portal home page, select **Virtual Machines**.
+1. Select **CoreServicesVM**.
+1. On **CoreServicesVM**, select **Connect &gt; RDP**.
+1. On **CoreServicesVM | Connect**, select **Download RDP file**.
+1. Save the RDP file to your desktop.
+1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
+1. On both VMs, in **Networks**, select **Yes**.
+1. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
+1. Note the IPv4 address. 
 
  
 
@@ -102,13 +102,13 @@ In this exercise, you will:
 
 1. On the **ManufacturingVM**, open PowerShell.
 
-2. Use the following command to verify that there is no connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
+1. Use the following command to verify that there is no connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
    Test-NetConnection 10.20.20.4 -port 3389
    ```
 
-3. The test connection should fail, and you will see a result similar to the following:
+1. The test connection should fail, and you will see a result similar to the following:
 
    ![Test-NetConnection failed.](../media/test-netconnection-fail.png)
 
@@ -119,9 +119,9 @@ In this exercise, you will:
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
    ![Search for virtual network gateway on Azure Portal.](../media/virtual-network-gateway-search.png)
 
-2. In Virtual network gateways, select **+ Create**.
+1. In Virtual network gateways, select **+ Create**.
 
-3. Use the information in the following table to create the virtual network gateway:
+1. Use the information in the following table to create the virtual network gateway:
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
    | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
@@ -150,9 +150,9 @@ In this exercise, you will:
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-2. In Virtual network gateways, select **+ Create**.
+1. In Virtual network gateways, select **+ Create**.
 
-3. Use the information in the following table to create the virtual network gateway:
+1. Use the information in the following table to create the virtual network gateway:
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
    | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
@@ -183,15 +183,15 @@ In this exercise, you will:
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-2. In Virtual network gateways, select **CoreServicesVnetGateway**.
+1. In Virtual network gateways, select **CoreServicesVnetGateway**.
 
-3. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
+1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
    > [!NOTE]
    >
    >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
-4. Use the information in the following table to create the connection:
+1. Use the information in the following table to create the connection:
 
    | **Option**                     | **Value**                         |
    | ------------------------------ | --------------------------------- |
@@ -207,18 +207,18 @@ In this exercise, you will:
    | Resource group                 | No changes required               |
    | Location                       | East US                           |
 
-5. To create the connection, select **OK**.
+1. To create the connection, select **OK**.
    
 
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
-2. In Virtual network gateways, select **ManufacturingVnetGateway**.
+1. In Virtual network gateways, select **ManufacturingVnetGateway**.
 
-3. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
+1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-4. Use the information in the following table to create the connection:
+1. Use the information in the following table to create the connection:
 
    | **Option**                     | **Value**                         |
    | ------------------------------ | --------------------------------- |
@@ -234,13 +234,13 @@ In this exercise, you will:
    | Resource group                 | No changes required               |
    | Location                       | West Europe                       |
 
-5. To create the connection, select **OK**.
+1. To create the connection, select **OK**.
 
 ## Task 10: Verify that the connections connect 
 
 1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
 
-2. Wait until the status of both connections is **Connected**. You may need to refresh your screen. 
+1. Wait until the status of both connections is **Connected**. You may need to refresh your screen. 
 
    ![VPN Gateway connections successfully created.](../media/connections-status-connected.png)
 
@@ -250,16 +250,16 @@ In this exercise, you will:
 
 1. On the **ManufacturingVM**, open PowerShell.
 
-2. Use the following command to verify that there is now a connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
+1. Use the following command to verify that there is now a connection to CoreServicesVM on CoreServicesVnet. Be sure to use the IPv4 address for CoreServicesVM.
 
    ```Powershell
    Test-NetConnection 10.20.20.4 -port 3389
    ```
 
-3. The test connection should succeed, and you will see a result similar to the following:
+1. The test connection should succeed, and you will see a result similar to the following:
 
    ![Test-NetConnection suceeded.](../media/test-connection-succeeded.png)
 
-4. Close the Remote Desktop connection windows.
+1. Close the Remote Desktop connection windows.
 
 Congratulations! You have configured a VNet-to-VNet connection by using a virtual network gateway.
