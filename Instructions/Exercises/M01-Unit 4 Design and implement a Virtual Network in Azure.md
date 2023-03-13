@@ -59,7 +59,7 @@ In this exercise, you will:
 
 ## Task 1: Create the Contoso resource group
 
-1. Go to [Azure portal](https://portal.azure.com/).
+1. Go to Azure portal at `https://portal.azure.com/`.
 
 2. On the home page, under **Azure services**, select **Resource groups**.  
 

@@ -25,7 +25,7 @@ In this exercise, you will:
 
 ## Task 1: Create an application gateway
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
+1. Sign in to the Azure portal at `https://portal.azure.com/` with your Azure account.
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
     ![Azure Portal search for application gateway](../media/search-application-gateway.png)    
