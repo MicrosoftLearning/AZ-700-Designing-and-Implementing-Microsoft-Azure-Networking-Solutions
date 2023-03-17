@@ -16,8 +16,6 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 **Prerequisites**
 
-- An Azure account with an active subscription. Create an account for free.
-
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
 - Below steps will guide you through creating the required resource group and web app.
