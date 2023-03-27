@@ -31,6 +31,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 14: Configure diagnostic settings
 + Task 15: Clean up resources
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 
 #### Estimated time: 55 minutes

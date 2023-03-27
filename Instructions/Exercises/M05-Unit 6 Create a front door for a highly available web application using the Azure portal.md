@@ -21,6 +21,8 @@ In this exercise, you will:
 + Task 3: View Azure Front Door in action
 + Task 4: Clean up resources
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Front%20Door%20profile%20for%20a%20highly%20available%20web%20application)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
 
 #### Estimated time: 30 minutes
 

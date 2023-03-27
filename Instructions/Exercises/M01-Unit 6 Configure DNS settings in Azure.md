@@ -16,6 +16,8 @@ In this exercise, you will:
 + Task 3: Create Virtual Machines to test the configuration
 + Task 4: Verify records are present in the DNS zone
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
 #### Estimated time: 25 minutes
 
 ## Task 1: Create a private DNS Zone

@@ -23,6 +23,8 @@ In this exercise, you will:
 + Task 10: Confirm access to storage account
 + Task 11: Clean up resources
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
 #### Estimated time: 35 minutes
 
 ## Task 1: Create a virtual network

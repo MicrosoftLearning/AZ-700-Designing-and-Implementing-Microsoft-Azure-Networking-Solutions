@@ -22,6 +22,8 @@ In this exercise, you will:
 + Task 10: Test the firewall
 + Task 11: Clean up resources
 
+**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+
 
 #### Estimated time: 60 minutes
 
