@@ -139,6 +139,8 @@ In this section, you will add the website in the East US as the primary endpoint
 
 1. Setting a priority of 2 means that traffic will route to this failover endpoint if the configured primary endpoint becomes unhealthy.
 
+1. Under **Settings**, select **Configuration**, and then update the Endpoint monitor settings **Protocol** to HTTPS and **Port** to 443 and select **Save**.
+
 1. The two new endpoints are displayed in the Traffic Manager profile. Notice that after a few minutes the **Monitoring status** should change to **Online**.
 
    ![Picture 22](../media/create-tmendpoints-2.png)
