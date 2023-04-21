@@ -142,43 +142,33 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
-2. Select **TestVM1**.
+1. Select **TestVM1**.
 
-3. On TestVM1, select **Connect &gt; RDP**.
+1. On TestVM1, select **Connect &gt; RDP** and download the RDP file.
 
-![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
+    ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
 
-4. On TestVM1 | Connect, select **Download RDP file**.
+1. Save the RDP file to your desktop.
 
-5. Save the RDP file to your desktop.
+1. Follow the same steps for **TestVM2**
 
-6. On the Azure Portal home page, select **Virtual Machines**.
+1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
-7. Select **TestVM2**.
+1. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
-8. On TestVM2, select **Connect &gt; RDP**.
+1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
-9. On TestVM2 | Connect, select **Download RDP file**.
+1. On both VMs, if prompted, in **Networks**, select **Yes**.
 
-10. Save the RDP file to your desktop.
+1. On TestVM1, open a command prompt and enter the command ipconfig /all.
 
-11. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Verify that the IP address is the same as the one you noted in the DNS zone.
 
-12. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Enter the command ping TestVM2.contoso.com.
 
-13. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
+1. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
 
-14. On both VMs, if prompted, in **Networks**, select **Yes**.
-
-15. On TestVM1, open a command prompt and enter the command ipconfig /all.
-
-16. Verify that the IP address is the same as the one you noted in the DNS zone.
-
-17. Enter the command ping TestVM2.contoso.com.
-
-18. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
-
-19. Alternatively, you can enter the command nslookup TestVM2.contoso.com and verify that you receive a successful name resolution record for VM2
+1. Alternatively, you can enter the command nslookup TestVM2.contoso.com and verify that you receive a successful name resolution record for VM2
  
 
 Congratulations! You have created a private DNS Zone, added a name resolution and auto-registration link, and tested name resolution in your configuration. 
