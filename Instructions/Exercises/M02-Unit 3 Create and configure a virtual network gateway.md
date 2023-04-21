@@ -168,7 +168,7 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | ManufacturingVnet            |
    |                 |                   | Subnet                                      | GatewaySubnet (10.30.0.0/27) |
-   |                 |                   | Public IP Address Type                      | Basic                        |
+   |                 |                   | Public IP Address Type                      | Standard                     |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | ManufacturingVnetGateway-ip  |
    |                 |                   | Enable active-active mode                   | Disabled                     |
