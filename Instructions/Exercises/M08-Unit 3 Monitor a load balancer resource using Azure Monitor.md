@@ -34,6 +34,9 @@ The diagram below illustrates the environment you will be deploying in this exer
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 
+> [!Note]  
+> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same. 
+
 #### Estimated time: 55 minutes
 
 ## Task 1: Create the virtual network
@@ -126,7 +129,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | --------------- | -------------------- |
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
-   | Associated to   | **Virtual machines** |
+   | Backend Pool Configuration   | **NIC** |
 
 1. Select **Add**.
 
@@ -149,7 +152,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Port                | **80**            |
    | Path                | **/**             |
    | Interval            | **15**            |
-   | Unhealthy threshold | **2**             |
 
 1. Select **Add**.
 
@@ -245,6 +247,9 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ### Create test VM
 
+> [!Note]  
+> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same. 
+
 1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services. 
 
 1. Select **+ Create; + Virtual machine**, on the **Basics** tab, use the information in the table below to create the first VM.
@@ -273,7 +278,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Public IP                                                    | Change to **None**            |
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
-   | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
+   | Load balancing                                               | **None** (or unchecked)       |
 
 1. Select **Review + create**.
 
