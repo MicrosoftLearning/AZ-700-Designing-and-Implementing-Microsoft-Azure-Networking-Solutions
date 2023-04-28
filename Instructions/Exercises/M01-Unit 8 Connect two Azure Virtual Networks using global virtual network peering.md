@@ -119,7 +119,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
 |                                      | Virtual network deployment model              | Resource manager                      |
 |                                      | I know my resource ID                         | Not selected                          |
-|                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
+|                                      | Subscription                                  | Select the Subscription provided      |
 |                                      | Virtual network                               | ManufacturingVnet                     |
 |                                      | Traffic to remote virtual network             | Allow (default)                       |
 |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |

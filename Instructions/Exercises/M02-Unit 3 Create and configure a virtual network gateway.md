@@ -50,6 +50,8 @@ In this exercise, you will:
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "ContosoResourceGroup"
    
@@ -67,6 +69,8 @@ In this exercise, you will:
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
+
+   >**Note**: You will be prompted to provide an Admin password.
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -86,13 +90,13 @@ In this exercise, you will:
 1. On **ManufacturingVM**, select **Connect &gt; RDP**.
 1. On **ManufacturingVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**. After connecting, minimize the RDP session.
+1. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **CoreServicesVM**.
 1. On **CoreServicesVM**, select **Connect &gt; RDP**.
 1. On **CoreServicesVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment.
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 1. On both VMs, in **Networks**, select **Yes**.
 1. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
@@ -260,7 +264,7 @@ In this exercise, you will:
 
 1. The test connection should succeed, and you will see a result similar to the following:
 
-   ![Test-NetConnection suceeded.](../media/test-connection-succeeded.png)
+   ![Test-NetConnection succeeded.](../media/test-connection-succeeded.png)
 
 1. Close the Remote Desktop connection windows.
 
