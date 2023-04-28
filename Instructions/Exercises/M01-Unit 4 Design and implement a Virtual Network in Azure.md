@@ -167,8 +167,6 @@ In this exercise, you will:
 
 1. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
-1. Note that Azure creates NetworkWatchers for each region that you use.
-
 1. Select **CoreServicesVnet**. 
 
 1. In CoreServicesVnet, under **Settings**, select **Subnets**.
@@ -177,6 +175,6 @@ In this exercise, you will:
 
    ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
-1. Repeat steps 4 -6 for each VNet.
+1. Repeat steps 3 - 5 for each VNet.
 
 Congratulations! You have successfully created a resource group, three VNets, and their associated subnets. 

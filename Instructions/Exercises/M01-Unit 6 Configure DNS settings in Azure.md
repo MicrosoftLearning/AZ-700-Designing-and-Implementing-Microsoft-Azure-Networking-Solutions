@@ -144,23 +144,13 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Select **TestVM1**.
 
-1. On TestVM1, select **Connect &gt; RDP**.
+1. On TestVM1, select **Connect &gt; RDP** and download the RDP file.
 
-![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
-
-1. On TestVM1 | Connect, select **Download RDP file**.
+    ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
 
 1. Save the RDP file to your desktop.
 
-1. On the Azure Portal home page, select **Virtual Machines**.
-
-1. Select **TestVM2**.
-
-1. On TestVM2, select **Connect &gt; RDP**.
-
-1. On TestVM2 | Connect, select **Download RDP file**.
-
-1. Save the RDP file to your desktop.
+1. Follow the same steps for **TestVM2**
 
 1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
 
