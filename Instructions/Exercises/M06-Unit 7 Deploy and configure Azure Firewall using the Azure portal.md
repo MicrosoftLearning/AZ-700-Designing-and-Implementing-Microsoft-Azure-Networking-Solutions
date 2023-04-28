@@ -100,6 +100,8 @@ In this task, you will create the workload virtual machine and place it in the W
 
 1. Deploy the following ARM templates to create the VM needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "Test-FW-RG"
    
@@ -357,7 +359,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
    ![RDP connection to firewall's public IP address](../media/remote-desktop-connection-1.png)
 
-1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password, **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password you provided during deployment.
 
 1. Select **OK**.
 

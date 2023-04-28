@@ -134,6 +134,8 @@ It may take several minutes for Azure to create the application gateway. Wait un
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
+>**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "ContosoResourceGroup"
    

@@ -19,9 +19,6 @@
         },
         "adminUsername": {
             "value": "TestUser"
-        },
-        "adminPassword": {
-            "value": "TestPa$$w0rd!"
         }
     }
 }

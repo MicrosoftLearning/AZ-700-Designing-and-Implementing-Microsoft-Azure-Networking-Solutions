@@ -85,6 +85,8 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
+>**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "IntLB-RG"
    
@@ -237,10 +239,10 @@ In this section, you will create a test VM, and then test the load balancer.
    | Region               | **(US) East US**                             |
    | Availability options | **No infrastructure redundancy required**    |
    | Image                | **Windows Server 2019 Datacenter - Gen 2**   |
-   | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory** |
+   | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory**   |
    | Username             | **TestUser**                                 |
-   | Password             | **TestPa$$w0rd!**                            |
-   | Confirm password     | **TestPa$$w0rd!**                            |
+   | Password             | **Provide a secure password**                |
+   | Confirm password     | **Provide a secure password**                |
 
 
 1. Select **Next : Disks**, then select **Next : Networking**. 
@@ -275,7 +277,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. Select **Use Bastion**.
 
-1. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then select **Connect**. If popup blocker is preventing the new window, allow popup blocker and **Connect** again.
+1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you created, then select **Connect**. If popup blocker is preventing the new window, allow popup blocker and **Connect** again.
 
 1. The **myTestVM** window will open in another browser tab.
 
