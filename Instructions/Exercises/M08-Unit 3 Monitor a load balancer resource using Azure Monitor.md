@@ -122,10 +122,11 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. On the **Add backend pool** page, enter the information from the table below.
 
-   | **Setting**     | **Value**            |
-   | --------------- | -------------------- |
-   | Name            | **myBackendPool**    |
-   | Virtual network | **IntLB-VNet**       |
+   | **Setting**                | **Value**            |
+   | -------------------------- | -------------------- |
+   | Name                       | **myBackendPool**    |
+   | Virtual network            | **IntLB-VNet**       |
+   | Backend Pool Configuration | **NIC**              |
 
 1. Select **Save**.
 
