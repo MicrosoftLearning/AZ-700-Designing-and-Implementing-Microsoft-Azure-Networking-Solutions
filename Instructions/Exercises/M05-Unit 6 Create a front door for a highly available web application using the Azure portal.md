@@ -30,7 +30,7 @@ In this exercise, you will:
 
 This exercise requires two instances of a web application that run in different Azure regions. Both the web application instances run in Active/Active mode, so either one can take traffic. This configuration differs from an Active/Stand-By configuration, where one acts as a failover.
 
-1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
+1. Sign in to the Azure portal at `https://portal.azure.com/`.
 
 1. On the Azure home page, using the global search type **WebApp** and select **App Services** under services.
 

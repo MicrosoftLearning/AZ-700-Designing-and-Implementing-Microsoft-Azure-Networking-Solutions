@@ -61,13 +61,13 @@ In this exercise, you will:
 
 ## Task 1: Create the Contoso resource group
 
-1. Go to [Azure portal](https://portal.azure.com/).
+1. Go to Azure portal at `https://portal.azure.com/`.
 
-2. On the home page, under **Azure services**, select **Resource groups**.  
+1. On the home page, under **Azure services**, select **Resource groups**.  
 
-3. In the Resource groups, select **+ Create**.
+1. In the Resource groups, select **+ Create**.
 
-4. Use the information in the following table to create the resource group.
+1. Use the information in the following table to create the resource group.
 
 | **Tab**         | **Option**                                 | **Value**            |
 | --------------- | ------------------------------------------ | -------------------- |
@@ -77,18 +77,19 @@ In this exercise, you will:
 | Review + create | Review your settings and select **Create** |                      |
 
 
-5. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
+1. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
 
  
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
 1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
-2. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
-3. Use the information in the following table to create the CoreServicesVnet virtual network.  
+
+1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+
+1. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
- 
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
@@ -97,9 +98,10 @@ In this exercise, you will:
 |              | Region             | (US) East US         |
 | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
- 4. Use the information in the following table to create the CoreServicesVnet subnets.
 
- 5. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+1. Use the information in the following table to create the CoreServicesVnet subnets.
+
+1. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
 | **Subnet**             | **Option**           | **Value**              |
 | ---------------------- | -------------------- | ---------------------- |
@@ -112,11 +114,12 @@ In this exercise, you will:
 | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
 |                        | Subnet address range | 10.20.30.0/24          |
 
- 6. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+1. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
- 7. Verify your configuration passed validation, and then select **Create**.
+1. Verify your configuration passed validation, and then select **Create**.
  
- 8. Repeat steps 1 -8 for each VNet based on the tables below  
+1. Repeat steps 1 -8 for each VNet based on the tables below  
+
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
 
@@ -162,18 +165,18 @@ In this exercise, you will:
 
 1. On the Azure portal home page, select **All resources**.
 
-2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
+1. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
-3. Note that Azure creates NetworkWatchers for each region that you use.
+1. Note that Azure creates NetworkWatchers for each region that you use.
 
-4. Select **CoreServicesVnet**. 
+1. Select **CoreServicesVnet**. 
 
-5. In CoreServicesVnet, under **Settings**, select **Subnets**.
+1. In CoreServicesVnet, under **Settings**, select **Subnets**.
 
-6. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
+1. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
    ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
-7. Repeat steps 4 -6 for each VNet.
+1. Repeat steps 4 -6 for each VNet.
 
 Congratulations! You have successfully created a resource group, three VNets, and their associated subnets. 

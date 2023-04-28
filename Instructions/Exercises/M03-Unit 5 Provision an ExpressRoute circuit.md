@@ -27,7 +27,7 @@ In this exercise, you will:
 
  
 
-1. From a browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in with your Azure account.
+1. From a browser, navigate to the Azure portal at `https://portal.azure.com/` and sign in with your Azure account.
 
    > [!Important] 
    >

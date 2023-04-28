@@ -126,9 +126,8 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | --------------- | -------------------- |
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
-   | Associated to   | **Virtual machines** |
 
-1. Select **Add**.
+1. Select **Save**.
 
    ![Show backend pool created in load balancer](../media/create-backendpool.png)
 
@@ -149,7 +148,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Port                | **80**            |
    | Path                | **/**             |
    | Interval            | **15**            |
-   | Unhealthy threshold | **2**             |
 
 1. Select **Add**.
 
@@ -179,7 +177,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Idle timeout (minutes) | **15**                   |
    | Floating IP            | **Disabled**             |
 
-1. Select **Add**.
+1. Select **Save**.
 
    ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
 
@@ -273,7 +271,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Public IP                                                    | Change to **None**            |
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
-   | Place this virtual machine behind an existing load balancing solution? | **Off** (unchecked)           |
+   | Load balancing options | **None** |
 
 1. Select **Review + create**.
 

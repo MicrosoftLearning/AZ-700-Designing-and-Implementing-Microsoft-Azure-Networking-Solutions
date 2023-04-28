@@ -34,11 +34,11 @@ In this section, you will create a virtual network and a subnet.
    
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
+1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
-3. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 
-4. On the **Basics** tab, use the information in the table below to create the virtual network.
+1. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
    | -------------- | ------------------------------------------ |
@@ -48,21 +48,21 @@ In this section, you will create a virtual network and a subnet.
    | Region         | **(US) East US**                           |
 
 
-5. Select **Next : IP Addresses**.
+1. Select **Next : IP Addresses**.
 
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
+1. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
 
-7. On the **IP Addresses** tab, select **+ Add subnet**.
+1. On the **IP Addresses** tab, select **+ Add subnet**.
 
-8. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+1. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 
-9. Select **Add**.
+1. Select **Add**.
 
-10. Select **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
+1. Select **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
 
-11. Select **Next : Security**.
+1. Select **Next : Security**.
 
-12. Under **BastionHost** select **Enable**, then enter the information from the table below.
+1. Under **BastionHost** select **Enable**, then enter the information from the table below.
 
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
@@ -71,9 +71,9 @@ In this section, you will create a virtual network and a subnet.
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 
-13. Select **Review + create**.
+1. Select **Review + create**.
 
-14. Select **Create**.
+1. Select **Create**.
 
 ## Task 2: Create backend servers
 
@@ -81,9 +81,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory one by one.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory one by one.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -159,7 +159,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 7](../media/add-vms-backendpool.png)
    
 
@@ -178,7 +178,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Port                | **80**            |
    | Path                | **/**             |
    | Interval            | **15**            |
-   | Unhealthy threshold | **2**             |
 
 
 1. Select **Add**.
@@ -209,7 +208,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Floating IP            | **Disabled**             |
 
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 6](../media/create-loadbalancerrule.png)
 
  
@@ -254,7 +253,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Public IP                                                    | Change to **None**            |
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
-   | Load balancing options                                       | **None**                      |
+   | Load balancing options | **None** |
 
 
 1. Select **Review + create**.
