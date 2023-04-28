@@ -50,7 +50,7 @@ In this section, you will create a virtual network and a subnet.
 
 5. Select **Next : IP Addresses**.
 
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and type **10.1.0.0/16**.
+6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
 
 7. On the **IP Addresses** tab, select **+ Add subnet**.
 
@@ -103,7 +103,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 1. On the Azure portal home page, select **Create a resource**.
 
-1. On the search box at the top of the page, type **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
+1. On the search box at the top of the page, enter **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
 
 1. On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
 

@@ -24,7 +24,7 @@ In this exercise, you will:
 
 1. From a browser, navigate to the Azure portal and sign in with your Azure account.
 
-1. In the portal, type Virtual WAN into the search box and select **Virtual WANs** from the results list.
+1. In the portal, enter Virtual WAN into the search box and select **Virtual WANs** from the results list.
 
    ![Search for Virtual WAN in Azure Portal.](../media/search-for-virtual-wan.png)
 

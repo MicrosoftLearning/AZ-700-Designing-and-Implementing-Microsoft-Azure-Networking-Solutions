@@ -84,7 +84,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 1. On the Azure portal home page, select **Create a resource**.
 
-1. In the search box at the top of the page, type **Traffic Manager profile**, and then select it from the pop-up list.
+1. In the search box at the top of the page, enter **Traffic Manager profile**, and then select it from the pop-up list.
 
    ![Picture 20](../media/create-tmprofile-1.png)
 

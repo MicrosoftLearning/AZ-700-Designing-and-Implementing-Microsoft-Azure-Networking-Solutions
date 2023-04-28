@@ -32,7 +32,7 @@ This exercise requires two instances of a web application that run in different 
 
 1. Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 
-1. On the Azure home page, using the global search type **WebApp** and select **App Services** under services.
+1. On the Azure home page, using the global search enter **WebApp** and select **App Services** under services.
 
 1. Select **+ Create** to create a Web App.
 

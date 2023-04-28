@@ -44,13 +44,13 @@ In this exercise, you will:
 
 ## Task 2: Create a DDoS Protection plan
 
-1. On the Azure portal home page, in the search box type **DDoS** and select **DDoS protection plan** when it appears.
+1. On the Azure portal home page, in the search box enter **DDoS** and select **DDoS protection plan** when it appears.
 
 1. Select **+ Create**.
 
 1. On the **Basics** tab, in the **Resource group** list, select the resource group you just created.
 
-1. On the **Instance name** box, type **MyDdoSProtectionPlan**, then select **Review + create**.
+1. On the **Instance name** box, enter **MyDdoSProtectionPlan**, then select **Review + create**.
 
 1. Select **Create**.
 
@@ -60,13 +60,13 @@ In this exercise, you will:
 
 Here you will enable DDoS on a new virtual network rather than on an existing one, so first you need to create the new virtual network, then enable DDoS protection on it using the plan you created previously.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **Virtual Network**, then select **Virtual Network** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, enter **Virtual Network**, then select **Virtual Network** when it appears.
 
 1. On the **Virtual Network** page, select **Create**.
 
 1. On the **Basics** tab, select the resource group you created previously.
 
-1. On the **Name** box, type **MyVirtualNetwork**, then select the **Security** tab. 
+1. On the **Name** box, enter **MyVirtualNetwork**, then select the **Security** tab. 
 
 1. On the **Security** tab, next to **DDoS Network Protection**, select **Enable**.
 
@@ -84,17 +84,17 @@ Here you will enable DDoS on a new virtual network rather than on an existing on
 
 You create a Public IP address, and then set up telemetry in the next steps.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **public ip**, then select **Public IP address** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, enter **public ip**, then select **Public IP address** when it appears.
 
 1. On the **Public IP address** page, select **Create**.
 
 1. On the **Create public IP address** page, under **SKU**, select **Standard**.
 
-1. On the **Name** box, type **MyPublicIPAddress**.
+1. On the **Name** box, enter **MyPublicIPAddress**.
 
 1. Under **IP address assignment**, select **Static**.
 
-1. On **DNS name label**, type **mypublicdnsxx** (where xx is your initials to make this unique).
+1. On **DNS name label**, enter **mypublicdnsxx** (where xx is your initials to make this unique).
 
 1. Select your resource group from the list.
 
@@ -133,7 +133,7 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 1. Select **Add diagnostic setting**. 
 
-1. On the **Diagnostic setting** page, in the **Diagnostic setting name** box, type **MyDiagnosticSetting**. 
+1. On the **Diagnostic setting** page, in the **Diagnostic setting name** box, enter **MyDiagnosticSetting**. 
 
 1. Under **Category details**, select all 3 **log** checkboxes and the **AllMetrics** checkbox.
 
@@ -153,7 +153,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 ### Create the VM
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **virtual machine**, then select **Virtual machine** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, enter **virtual machine**, then select **Virtual machine** when it appears.
 
 1. On the **Virtual machine** page, select **Create**.
 

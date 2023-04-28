@@ -34,7 +34,7 @@ In this exercise, you will:
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
-1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, enter **virtual network** and select **Virtual Network** when it appears.
 2. Select **Create**.
 3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
 4. In **Name**, enter **Spoke-01**.
@@ -63,7 +63,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. From the Azure portal home page, select **All services**.
 
-2. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+2. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
 3. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
 
@@ -100,7 +100,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 15. When the deployment completes, from the Azure portal home page, select **All services**.
 
-16. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+16. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
 17. On the **Firewall Manager** page, select **Virtual hubs**.
 
@@ -158,7 +158,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
 1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
 
@@ -188,7 +188,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Ensure **Rule collection action** is **Allow**.
 
-1. Under **Rules**, in **Name** type **Allow-msft**.
+1. Under **Rules**, in **Name** enter **Allow-msft**.
 
 1. For the **Source type**, select **IP Address**.
 
@@ -271,7 +271,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 In this task you will associate the firewall policy with the virtual hub.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
 1. Select the checkbox for **Policy-01**.
 1. Select **Manage associations&gt;Associate hubs**.
