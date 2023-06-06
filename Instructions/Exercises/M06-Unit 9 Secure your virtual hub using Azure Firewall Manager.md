@@ -34,6 +34,7 @@ In this exercise, you will:
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
 
+
 1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
 1. Select **Create**.
 1. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
@@ -49,6 +50,7 @@ In this task, you will create the two spoke virtual networks each containing a s
 1. Select **Review + create**.
 1. Select **Create**.
 
+
 Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information:
 
 - Resource Group: **fw-manager-rg** (select existing)
@@ -62,6 +64,7 @@ Repeat steps 1 to 14 above to create another similar virtual network and subnet 
 In this task you will create your secured virtual hub using Firewall Manager.
 
 1. From the Azure portal home page, select **All services**.
+
 
 1. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
@@ -99,6 +102,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
     ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
 
 1. When the deployment completes, from the Azure portal home page, select **All services**.
+
 
 1. In the search box, type **firewall manager** and select **Firewall Manager** when it appears.
 
@@ -138,6 +142,8 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. Deploy the following ARM templates to create the VM needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "fw-manager-rg"
    
@@ -156,7 +162,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
 1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
 
@@ -186,7 +192,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Ensure **Rule collection action** is **Allow**.
 
-1. Under **Rules**, in **Name** type **Allow-msft**.
+1. Under **Rules**, in **Name** enter **Allow-msft**.
 
 1. For the **Source type**, select **IP Address**.
 
@@ -269,7 +275,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 In this task you will associate the firewall policy with the virtual hub.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, type **firewall manager** and select **Firewall Manager** when it appears.
+   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
 1. Select the checkbox for **Policy-01**.
 1. Select **Manage associations&gt;Associate hubs**.
@@ -313,7 +319,7 @@ In this task you will test the application rule to confirm that it works as expe
 
    ![RDP connection to srv-workload-01](../media/rdp-srv-workload-01.png)
 
-1. On the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password, **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password you provided during deployment.
 
 1. Select **OK**.
 
@@ -347,7 +353,7 @@ In this task you will test the network rule to confirm that it works as expected
 
 1. On the **Computer** box, enter the **private IP address** of **Srv-workload-02** (e.g., **10.1.1.4**).
 
-1. On the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and a password of **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log in to the **Srv-workload-02** server by using the username **TestUser**, and the password you provided during deployment.
 
 1. Select **OK**.
 

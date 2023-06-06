@@ -143,9 +143,9 @@ New-AzBastion @parameters3
 
 In this section, you'll create a virtual machine that will be used to test the Private Endpoint.
 
-- Create the virtual machine with:
+Create the virtual machine with the following commands:
 
-- Get-Credential (Note: when prompted enter a local admin account credentials for the VM (i.e. Student and Pa55w.rd1234)).
+- Get-Credential (Note: You will be prompted to provide an Admin password.)
 
 - New-AzNetworkInterface
 

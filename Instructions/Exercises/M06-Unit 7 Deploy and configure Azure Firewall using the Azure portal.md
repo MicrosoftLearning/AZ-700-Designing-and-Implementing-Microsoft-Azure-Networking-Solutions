@@ -53,7 +53,7 @@ In this task, you will create a new resource group.
 
 In this task, you will create a single virtual network with two subnets.
 
-1. On the Azure portal home page, in the search box, type **virtual network** and select **Virtual Network** when it appears.
+1. On the Azure portal home page, in the search box, enter **virtual network** and select **Virtual Network** when it appears.
 
 1. Select **Create**.
 
@@ -100,6 +100,8 @@ In this task, you will create the workload virtual machine and place it in the W
 
 1. Deploy the following ARM templates to create the VM needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "Test-FW-RG"
    
@@ -119,7 +121,7 @@ In this task, you will create the workload virtual machine and place it in the W
 
 In this task, you will deploy the firewall into the virtual network with a firewall policy configured.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **firewall** and select **Firewall** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, enter **firewall** and select **Firewall** when it appears.
 
 1. On the **Firewall** page, select **Create**.
 
@@ -167,7 +169,7 @@ In this task, you will deploy the firewall into the virtual network with a firew
 
 In this task, on the Workload-SN subnet, you will configure the outbound default route to go through the firewall.
 
-1. On the Azure portal home page, select **Create a resource**, then in the search box, type **route** and select **Route table** when it appears.
+1. On the Azure portal home page, select **Create a resource**, then in the search box, enter **route** and select **Route table** when it appears.
 
 1. On the **Route table** page, select **Create**.
 
@@ -206,7 +208,7 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 1. On **Next hop type**, select **Virtual appliance**.
 
-1. On **Next hop address**, type the private IP address for the firewall that you noted previously (e.g., **10.0.1.4**)
+1. On **Next hop address**, enter the private IP address for the firewall that you noted previously (e.g., **10.0.1.4**)
 
 1. Select **Add**.
 
@@ -333,7 +335,7 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
 1. Under **DNS servers**, select **Custom**.
 
-1. Type **209.244.0.3** in the **Add DNS server** text box, and **209.244.0.4** in the next text box.
+1. enter **209.244.0.3** in the **Add DNS server** text box, and **209.244.0.4** in the next text box.
 
 1. Select **Save**.
 
@@ -357,7 +359,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
    ![RDP connection to firewall's public IP address](../media/remote-desktop-connection-1.png)
 
-1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password, **TestPa$$w0rd!**.
+1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password you provided during deployment.
 
 1. Select **OK**.
 

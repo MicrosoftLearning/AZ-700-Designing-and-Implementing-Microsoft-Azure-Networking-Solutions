@@ -262,6 +262,8 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "myResourceGroup"
    

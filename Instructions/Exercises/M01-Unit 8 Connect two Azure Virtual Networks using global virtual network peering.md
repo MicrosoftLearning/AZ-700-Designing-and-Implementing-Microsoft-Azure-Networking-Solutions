@@ -33,6 +33,8 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "ContosoResourceGroup"
    
@@ -55,7 +57,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. Save the RDP file to your desktop.
 
-1. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Connect to ManufacturingVM using the RDP file, and the username **TestUser** and the password you provided during deployment.
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
@@ -67,7 +69,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. Save the RDP file to your desktop.
 
-1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password **TestPa$$w0rd!**.
+1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password you provided during deployment.
 
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 
@@ -117,7 +119,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
 |                                      | Virtual network deployment model              | Resource manager                      |
 |                                      | I know my resource ID                         | Not selected                          |
-|                                      | Subscription                                  | MOC Subscription-lodxxxxxxxx          |
+|                                      | Subscription                                  | Select the Subscription provided      |
 |                                      | Virtual network                               | ManufacturingVnet                     |
 |                                      | Traffic to remote virtual network             | Allow (default)                       |
 |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |

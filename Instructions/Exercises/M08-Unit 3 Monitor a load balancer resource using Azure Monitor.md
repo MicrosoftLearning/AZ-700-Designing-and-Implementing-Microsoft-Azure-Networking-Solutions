@@ -34,6 +34,9 @@ The diagram below illustrates the environment you will be deploying in this exer
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 
+> [!Note]  
+> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same. 
+
 #### Estimated time: 55 minutes
 
 ## Task 1: Create the virtual network
@@ -59,7 +62,7 @@ In this section, you will create a virtual network and a subnet.
 
 1. Select **Next : IP Addresses**.
 
-1. On the **IP Addresses** tab, in the **IPv4 address space** box, type **10.1.0.0/16**.
+1. On the **IP Addresses** tab, in the **IPv4 address space** box, enter **10.1.0.0/16**.
 
 1. Above **Subnet name**, select **+ Add subnet**.
 
@@ -122,11 +125,13 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. On the **Add backend pool** page, enter the information from the table below.
 
+
    | **Setting**                | **Value**            |
    | -------------------------- | -------------------- |
    | Name                       | **myBackendPool**    |
    | Virtual network            | **IntLB-VNet**       |
    | Backend Pool Configuration | **NIC**              |
+
 
 1. Select **Save**.
 
@@ -193,6 +198,8 @@ In this section, you will create three VMs for the backend pool of the load bala
 
 1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
+   >**Note**: You will be prompted to provide an Admin password.
+
    ```powershell
    $RGName = "IntLB-RG"
    
@@ -226,7 +233,7 @@ In this section, you will create three VMs for the backend pool of the load bala
 1. On the Azure portal home page, select **All resources**, then select on **myVM1** from the resources list.
 1. On the **Overview** page, select **Connect**, then **Bastion**.
 1. Select **Use Bastion**.
-1. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then select **Connect**.
+1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you provided during deployment, then select **Connect**.
 1. The **myVM1** window will open in another browser tab.
 1. If a **Networks** pane appears, select **Yes**.
 1. Select the **Windows Start icon** in the bottom left corner of the window, then select the **Windows PowerShell** tile.
@@ -244,7 +251,10 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ### Create test VM
 
-1. On the Azure home page, using the global search type **Virtual Machines** and select virtual machines under services. 
+> [!Note]  
+> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same. 
+
+1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services. 
 
 1. Select **+ Create; + Virtual machine**, on the **Basics** tab, use the information in the table below to create the first VM.
 
@@ -258,8 +268,8 @@ In this section, you will create a test VM, and then test the load balancer.
    | Image                | **Windows Server 2019 Datacenter - Gen 1**   |
    | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory** |
    | Username             | **TestUser**                                 |
-   | Password             | **TestPa$$w0rd!**                            |
-   | Confirm password     | **TestPa$$w0rd!**                            |
+   | Password             | **Provide a secure password**                |
+   | Confirm password     | **Provide a secure password**                |
 
 1. Select **Next : Disks**, then select **Next : Networking**. 
 
@@ -273,6 +283,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
    | Load balancing options                                       | **None**                      |
+
 
 1. Select **Review + create**.
 
@@ -292,7 +303,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. Select **Use Bastion**.
 
-1. In the **Username** box, type **TestUser** and in the **Password** box, type **TestPa$$w0rd!**, then select **Connect**.
+1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you provided during deployment, then select **Connect**.
 
 1. The **myTestVM** window will open in another browser tab.
 
@@ -313,7 +324,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Task 10: Create a Log Analytics Workspace
 
-1. On the Azure portal home page, select **All services**, then in the search box at the top of the page type **Log Analytics**, and select **Log Analytics workspaces** from the filtered list.
+1. On the Azure portal home page, select **All services**, then in the search box at the top of the page enter **Log Analytics**, and select **Log Analytics workspaces** from the filtered list.
 
    ![Accessing Log Analytics workspaces from the Azure portal home page](../media/log-analytics-workspace-1.png)
 
@@ -415,7 +426,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
    ![Diagnostic settings>Add diagnostic setting button highlighted](../media/diagnostic-settings-1.png)
 
-1. On the **Diagnostic setting** page, in the name box, type **myLBDiagnostics**.
+1. On the **Diagnostic setting** page, in the name box, enter **myLBDiagnostics**.
 
 1. Select the **AllMetrics** checkbox, then select the **Send to Log Analytics workspace** checkbox.
 
