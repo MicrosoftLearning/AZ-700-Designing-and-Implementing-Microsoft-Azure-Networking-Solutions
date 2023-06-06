@@ -141,7 +141,7 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | CoreServicesVnet             |
    |                 |                   | Subnet                                      | GatewaySubnet (10.20.0.0/27) |
-   |                 |                   | Public IP address type                      | Basic                        |
+   |                 |                   | Public IP address type                      | Standard                     |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | CoreServicesVnetGateway-ip   |
    |                 |                   | Enable active-active mode                   | Disabled                     |
