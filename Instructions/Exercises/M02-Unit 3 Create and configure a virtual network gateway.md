@@ -14,11 +14,11 @@ In this exercise, you will:
 + Task 1: Create CoreServicesVnet and ManufacturingVnet
 + Task 2: Create CoreServicesVM
 + Task 3: Create ManufacturingVM
-+ Task 4: Connect to the Test VMs using RDP
++ Task 4: Connect to the VMs using RDP
 + Task 5: Test the connection between the VMs
 + Task 6: Create CoreServicesVnet Gateway
 + Task 7: Create ManufacturingVnet Gateway
-+ Task 8: CoreServicesVnet to ManufacturingVnet 
++ Task 8: Connect CoreServicesVnet to ManufacturingVnet 
 + Task 9: Connect ManufacturingVnet to CoreServicesVnet
 + Task 10: Verify that the connections connect 
 + Task 11: Test the connection between the VMs
@@ -83,23 +83,23 @@ In this exercise, you will:
 1. Verify that the virtual machine has been created.
 
 
-## Task 4: Connect to the Test VMs using RDP
+## Task 4: Connect to the VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **ManufacturingVM**.
 1. On **ManufacturingVM**, select **Connect &gt; RDP**.
 1. On **ManufacturingVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
+1. Connect to **ManufacturingVM** using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **CoreServicesVM**.
 1. On **CoreServicesVM**, select **Connect &gt; RDP**.
 1. On **CoreServicesVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment.
+1. Connect to **CoreServicesVM** using the RDP file, and the username **TestUser** and the password you provided during deployment.
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 1. On both VMs, in **Networks**, select **Yes**.
-1. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
+1. On **CoreServicesVM**, open PowerShell, and run the following command: ipconfig
 1. Note the IPv4 address. 
 
  
