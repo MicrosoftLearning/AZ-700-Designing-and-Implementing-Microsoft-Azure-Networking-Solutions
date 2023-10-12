@@ -221,9 +221,13 @@ The steps necessary to restrict network access to resources created through Azur
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
 1. Select **File shares**, as shown in the following picture: 
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share.png)
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-2.png)
 1. Select **+ File share**.
-1. Enter marketing under **Name**, and then select **Create**.
+1. Enter marketing under **Name**, and then select **Next : Backup**.
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-basics.png)
+1. Unselect **Enable backup**, as shown in the following picture: 
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-backup.png)
+1. Select **Review + Create**. Once the resource is validated select **Create**.
 
 ## Task 8: Restrict network access to a subnet
 
