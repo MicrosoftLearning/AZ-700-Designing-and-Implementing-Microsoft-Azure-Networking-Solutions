@@ -28,6 +28,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 ### Create ManufacturingVM
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+  > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 
