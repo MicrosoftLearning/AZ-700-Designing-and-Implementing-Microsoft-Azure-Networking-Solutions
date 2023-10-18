@@ -132,7 +132,7 @@ It may take several minutes for Azure to create the application gateway. Wait un
 ## Task 2: Create virtual machines
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **backend.json** and **backend.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M05**.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
