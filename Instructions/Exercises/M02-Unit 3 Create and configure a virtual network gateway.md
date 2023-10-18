@@ -30,7 +30,7 @@ In this exercise, you will:
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
 
 1. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
