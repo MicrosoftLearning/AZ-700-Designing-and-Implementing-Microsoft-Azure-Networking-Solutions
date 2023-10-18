@@ -191,7 +191,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
 In this section, you will create three VMs for the backend pool of the load balancer, add the VMs to the backend pool, and then install IIS on the three VMs to test the load balancer.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json**, **azuredeploy.parameters.vm1.json**, **azuredeploy.parameters.vm2.json** and **azuredeploy.parameters.vm3.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M08**.
 
 1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
