@@ -96,14 +96,9 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 1. On **DNS name label**, enter **mypublicdnsxx** (where xx is your initials to make this unique).
 
-1. Select your resource group from the list.
-
-   ![Create public IP address](../media/create-public-ip-address-for-ddos-telemetry.png)
-
 1. Select **Create**.
 
-
-1. On the Azure home page, select **All resources**.
+1. To set up telemetry, navigate to the Azure home page, select **All resources**.
 
 1. On the list of your resources, select **MyDdosProtectionPlan**.
 
@@ -206,35 +201,21 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. On the Azure home page, select **All resources**.
 
-1. On the list of your resources, select **MyDdosProtectionPlan**.
+1. On the list of your resources, select **MyPublicIPAddress**.
 
 1. Under **Monitoring**, select **Alerts**.
 
-1. Select **New alert rule**.
+1. Select **Create alert rule**.
 
 1. On the **Create alert rule** page, under **Scope**, select **Edit resource**.
 
-1. On the **Select a resource** pane, in the **Filter by resource type** box, scroll down the list and select **Public IP addresses**.
+1. Select **Under DDoS attack or not** for the signal name.
 
-   ![New alert rule change scope to public IP address](../media/new-alert-rule-change-scope-to-public-ip-address-1.png)
-
-1. On the **Resource** list, select **MyPublicIPAddress**, then select **Done**.
-
-1. On the **Create alert rule** page, under **Condition**, select **Add condition**.
-
-1. Select **Under DDoS attack or not**.
-
-   ![Add condition to alert rule - select a signal](../media/add-condition-to-alert-rule-1.png)
-
-1. On the **Operator** box select **Greater than or equal to**.
+1. Under Alert logic find the **Operator** setting and select **Greater than or equal to**.
 
 1. On **Threshold value**, enter **1** (means under attack).
 
-1. Select **Done**.
-
-    ![Add condition to alert rule - configure signal logic](../media/add-condition-to-alert-rule-2.png)
-
-1. Back on the **Create alert rule** page, under the **Alert rule details** section and in **Alert rule name**, enter **MyDdosAlert**.
+1. Navigate to the details tab and select **Alert rule name**, enter **MyDdosAlert**.
 
     ![End point of create new alert rule](../media/new-alert-rule-end.png)
 
