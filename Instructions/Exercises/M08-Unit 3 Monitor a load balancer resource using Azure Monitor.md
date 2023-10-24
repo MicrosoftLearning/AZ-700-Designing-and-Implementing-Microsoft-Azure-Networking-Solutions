@@ -22,14 +22,14 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 5: Create a load balancer rule
 + Task 6: Create backend servers
 + Task 7: Add VMs to the backend pool
-+ Task 8: Install IIS on the VMs
-+ Task 9: Test the load balancer
-+ Task 10: Create a Log Analytics Workspace
-+ Task 11: Use Functional Dependency View
-+ Task 12: View detailed metrics
-+ Task 13: View resource health
-+ Task 14: Configure diagnostic settings
-+ Task 15: Clean up resources
++ Task 8: Test the load balancer
++ Task 9: Create a Log Analytics Workspace
++ Task 10: Use Functional Dependency View
++ Task 11: View detailed metrics
++ Task 12: View resource health
++ Task 13: Configure diagnostic settings
++ Task 14: Clean up resources
+
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -226,24 +226,7 @@ In this section, you will create three VMs for the backend pool of the load bala
 
  
 
-## Task 8: Install IIS on the VMs
-
-1. On the Azure portal home page, select **All resources**, then select on **myVM1** from the resources list.
-1. On the **Overview** page, select **Connect**, then **Bastion**.
-1. Select **Use Bastion**.
-1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you provided during deployment, then select **Connect**.
-1. The **myVM1** window will open in another browser tab.
-1. If a **Networks** pane appears, select **Yes**.
-1. Select the **Windows Start icon** in the bottom left corner of the window, then select the **Windows PowerShell** tile.
-1. To install IIS, run the following command in PowerShell: Install-WindowsFeature -name Web-Server -IncludeManagementTools
-1. To remove the existing default web home page, run the following command in PowerShell: Remove-Item C:\inetpub\wwwroot\iisstart.htm
-1. To add a new default web home page and add content to it, run the following command in PowerShell: Add-Content -Path "C:\inetpub\wwwroot\iisstart.htm" -Value $("Hello World from " + $env:computername)
-1. Close the Bastion session to **myVM1** by closing the browser tab.
-1. Repeat steps 1-11 above twice more to install IIS and the updated default home page on the **myVM2** and **myVM3** virtual machines.
-
- 
-
-## Task 9: Test the load balancer
+## Task 8: Test the load balancer
 
 In this section, you will create a test VM, and then test the load balancer.
 
@@ -319,7 +302,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
     ![Browser window showing Hello World response from VM3](../media/load-balancer-web-test-2.png)
 
-## Task 10: Create a Log Analytics Workspace
+## Task 9:: Create a Log Analytics Workspace
 
 1. On the Azure portal home page, select **All services**, then in the search box at the top of the page enter **Log Analytics**, and select **Log Analytics workspaces** from the filtered list.
 
@@ -342,7 +325,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 
 
-## Task 11: Use Functional Dependency View
+## Task 10: Use Functional Dependency View
 
 1. On the Azure portal home page, select **All resources**, then in the resources list, select **myIntLoadBalancer**.
 
@@ -371,7 +354,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Task 12: View detailed metrics
+## Task 11: View detailed metrics
 
 1. To view more comprehensive metrics for this network resource, select **View detailed metrics**.
    ![Azure Monitor Network Insights - View detailed metrics button highlighted](../media/network-insights-detailedmetrics-1.png)
@@ -393,7 +376,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Task 13: View resource health
+## Task 12: View resource health
 
 1. To view the health of your Load Balancer resources, on the Azure portal home page, select **All services**, then select **Monitor**.
 
@@ -413,7 +396,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
-## Task 14: Configure diagnostic settings
+## Task 13: Configure diagnostic settings
 
 1. On the Azure portal home page, select **Resource groups**, then select the **IntLB-RG** resource group from the list.
 
@@ -435,9 +418,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
  
 
- 
-
-## Task 15: Clean up resources
+## Task 14: Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
