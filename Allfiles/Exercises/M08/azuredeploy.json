@@ -53,7 +53,7 @@
   },
     "resources": [
         {
-            "name": "[concat(parameters('vmName'),copyIndex())]",
+            "name": "[concat(parameters('vmName'),copyIndex(1))]",
             "copy": {
                 "name": "VMcopy",
                 "count": "[parameters('vmCount')]"
@@ -62,11 +62,11 @@
             "apiVersion": "[variables('computeApiVersion')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[concat(parameters('nicName'),copyIndex())]"
+                "[concat(parameters('nicName'),copyIndex(1))]"
             ],        
             "properties": {
                 "osProfile": {
-                    "computerName": "[concat(parameters('vmName'),copyIndex())]",
+                    "computerName": "[concat(parameters('vmName'),copyIndex(1))]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
                     "windowsConfiguration": {
@@ -94,7 +94,7 @@
                             "properties": {
                                 "primary": true
                             },
-                            "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(parameters('nicName'),copyIndex()))]"
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(parameters('nicName'),copyIndex(1)))]"
                         }
                     ]
                 }
@@ -103,14 +103,14 @@
           {
             "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines/extensions",
-            "name": "[concat(parameters('vmName'),copyIndex(),'/', 'VMConfig')]",
+            "name": "[concat(parameters('vmName'),copyIndex(1),'/', 'VMConfig')]",
              "copy": {
                 "name": "IIScopy",
                 "count": "[parameters('vmCount')]"
             },
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/',parameters('vmName'),copyIndex())]"
+                "[concat('Microsoft.Compute/virtualMachines/',parameters('vmName'),copyIndex(1))]"
             ],
             "properties": {
                 "publisher": "Microsoft.Compute",
@@ -126,7 +126,7 @@
             }
         },
         {
-            "name": "[concat(parameters('nicName'),copyIndex())]",
+            "name": "[concat(parameters('nicName'),copyIndex(1))]",
             "copy":{
                 "name": "nicCopy",
                 "count": "[parameters('vmCount')]"
