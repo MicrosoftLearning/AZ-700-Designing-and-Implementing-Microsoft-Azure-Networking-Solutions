@@ -8,6 +8,9 @@ Exercise:
 
 Being responsible for Contoso's Network Security team, you are going to run a mock DDoS attack on the virtual network. The following steps walk you through creating a virtual network, configuring DDoS Protection, and creating an attack which you can observe and monitor with the help of telemetry and metrics.
 
+![Diagram of DDoS architecture.](../media/4-exercise-configure-ddos-protection-virtual-network-using-azure-portal.png)
+
+
 In this exercise, you will:
 
 + Task 1: Create a resource group

@@ -8,6 +8,8 @@ Exercise:
 
 Being part of the Network Security team at Contoso, your next task is to create firewall rules to allow/deny access to certain websites. The following steps walk you through creating a resource group, a virtual network and subnets, and a virtual machine as environment preparation tasks, and then deploying a firewall and firewall policy, configuring default routes and application, network and DNAT rules, and finally testing the firewall.
 
+![Diagram of virtual network with Azure Firewall architecture.](../media/7-exercise-deploy-configure-azure-firewall-using-azure-portal.png)
+
 In this exercise, you will:
 
 + Task 1: Create a resource group

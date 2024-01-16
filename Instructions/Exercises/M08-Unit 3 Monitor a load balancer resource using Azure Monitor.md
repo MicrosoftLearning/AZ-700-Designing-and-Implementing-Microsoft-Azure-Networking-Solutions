@@ -11,7 +11,7 @@ In this exercise, you will create an internal load balancer for the fictional Co
 
 The diagram below illustrates the environment you will be deploying in this exercise.
 
-![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/3-exercise-monitor-load-balancer-resource-using-azure-monitor.png)
 
  In this exercise, you will:
 
