@@ -115,8 +115,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
    | Region                | **(US) East US**         |
-   | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
+   | Type                  | **Internal**             |
+   | Tier                  | **Regional**             |
 
 
 1. Select **Next: Frontend IP configurations**.
@@ -159,7 +160,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 7](../media/add-vms-backendpool.png)
    
 
@@ -178,7 +179,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Port                | **80**            |
    | Path                | **/**             |
    | Interval            | **15**            |
-   | Unhealthy threshold | **2**             |
 
 
 1. Select **Add**.
@@ -190,7 +190,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 A load balancer rule is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic. The source and destination port are defined in the rule. Here you will create a load balancer rule.
 
-1. From the **Backend pools** page of your load balancer, under **Settings**, select **Load balancing rules**, then select **Add**.
+1. Under **Settings**, select **Load balancing rules**, then select **Add**.
 
 1. On the **Add load balancing rule** page, enter the information from the table below.
 
@@ -199,17 +199,17 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Name                   | **myHTTPRule**           |
    | IP Version             | **IPv4**                 |
    | Frontend IP address    | **LoadBalancerFrontEnd** |
+   | Backend pool           | **myBackendPool**        |
    | Protocol               | **TCP**                  |
    | Port                   | **80**                   |
    | Backend port           | **80**                   |
-   | Backend pool           | **myBackendPool**        |
    | Health probe           | **myHealthProbe**        |
    | Session persistence    | **None**                 |
    | Idle timeout (minutes) | **15**                   |
    | Floating IP            | **Disabled**             |
 
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 6](../media/create-loadbalancerrule.png)
 
  
