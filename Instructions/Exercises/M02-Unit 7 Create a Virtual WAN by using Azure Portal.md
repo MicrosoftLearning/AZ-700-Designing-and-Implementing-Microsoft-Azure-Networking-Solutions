@@ -6,8 +6,10 @@ Exercise:
 
 # M02-Unit 7 Create a Virtual WAN by using Azure Portal
 
-
 In this exercise, you will create a Virtual WAN for Contoso.
+
+![Diagram of virtual network WAN architecture.](../media/7-exercise-create-virtual-wan-by-using-azure-portal.png)
+
 
 In this exercise, you will:
 
