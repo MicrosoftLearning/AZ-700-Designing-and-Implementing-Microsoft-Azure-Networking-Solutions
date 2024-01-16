@@ -11,7 +11,8 @@ In this exercise, you will create an ExpressRoute circuit using the Azure portal
 
 #### Estimated time: 15 minutes
 
-![Diagram ExpressRoute circuit layout for exercise](../media/environment-diagram.png)
+![Diagram ExpressRoute circuit layout for exercise](../media/5-exercise-provision-expressroute-circuit.png)
+)
 
 
 
