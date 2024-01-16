@@ -8,6 +8,8 @@ Exercise:
 ## Exercise scenario 
 In this unit, you will configure connectivity between the CoreServicesVnet and the ManufacturingVnet by adding peerings to allow traffic flow. 
 
+![Diagram of virtual network peering.](../media/8-exercise-connect-two-azure-virtual-networks-global.png)
+
 In this unit, you will:
 
 + Task 1: Create a Virtual Machine to test the configuration
