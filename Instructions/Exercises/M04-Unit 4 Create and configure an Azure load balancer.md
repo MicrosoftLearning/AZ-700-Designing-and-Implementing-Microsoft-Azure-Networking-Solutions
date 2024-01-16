@@ -15,9 +15,8 @@ In this exercise, you will create an internal load balancer for the fictional Co
 
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
-The diagram below illustrates the environment you will be deploying in this exercise.
 
-![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![internal standard loadbalancer diagram](../media/4-exercise-create-configure-azure-load-balancer.png)
 
  
 In this exercise, you will:
