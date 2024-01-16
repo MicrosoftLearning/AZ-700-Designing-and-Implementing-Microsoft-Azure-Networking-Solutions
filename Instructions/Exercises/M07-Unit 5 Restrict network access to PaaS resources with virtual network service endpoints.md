@@ -9,6 +9,8 @@ Exercise:
 
 Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network.
 
+![Diagram of service endpoint architecture.](../media/5-exercise-restrict-network-paas-resources-virtual-network-service-endpoints.png)
+
 In this exercise, you will:
 
 + Task 1: Create a virtual network
