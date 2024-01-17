@@ -43,6 +43,7 @@ In this exercise, you will:
    New-AzResourceGroup -Name $RGName -Location "eastus"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
+ > **Note:** Currently, there is an ongoing issue in West Europe Region affecting multiple customers. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment. 
 
 ## Task 2: Create CoreServicesVM
 
@@ -167,7 +168,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
-   |                 |                   | Region                                      | West Europe                  |
+   |                 |                   | Region                                      | North Europe                  |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
