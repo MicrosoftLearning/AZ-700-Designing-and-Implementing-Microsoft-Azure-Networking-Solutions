@@ -43,7 +43,7 @@ In this exercise, you will:
    New-AzResourceGroup -Name $RGName -Location "eastus"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
- > **Note:** Currently, there is an ongoing issue in West Europe Region affecting multiple customers. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment. 
+ > **Note:** Currently, there is an ongoing issue in the West Europe Region affecting gateway deployments. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment. 
 
 ## Task 2: Create CoreServicesVM
 
