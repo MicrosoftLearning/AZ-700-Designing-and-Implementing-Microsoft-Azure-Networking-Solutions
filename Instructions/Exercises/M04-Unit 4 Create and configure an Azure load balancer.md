@@ -7,8 +7,6 @@ Exercise:
 
 # M04-Unit 4 Create and configure an Azure load balancer
 
-## Exercise scenario
-
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
@@ -200,7 +198,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Idle timeout (minutes) | **15**                   |
    | Floating IP            | **Disabled**             |
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 6](../media/create-loadbalancerrule.png)
 
 ## Task 5: Test the load balancer
