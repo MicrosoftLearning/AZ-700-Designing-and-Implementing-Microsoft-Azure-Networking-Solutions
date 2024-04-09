@@ -30,20 +30,20 @@ ManufacturingVNet West Europe 10.30.0.0/16
 
 You will create the following resources:
 
-| **Virtual Network** | **Region**   | **Virtual network address space** | **Subnet**                | **Subnet**    |
-| ------------------- | ------------ | --------------------------------- | ------------------------- | ------------- |
-| CoreServicesVnet    | East US      | 10.20.0.0/16                      |                           |               |
-|                     |              |                                   | GatewaySubnet             | 10.20.0.0/27  |
-|                     |              |                                   | SharedServicesSubnet      | 10.20.10.0/24 |
-|                     |              |                                   | DatabaseSubnet            | 10.20.20.0/24 |
-|                     |              |                                   | PublicWebServiceSubnet    | 10.20.30.0/24 |
-| ManufacturingVnet   | West Europe  | 10.30.0.0/16                      |                           |               |
-|                     |              |                                   | ManufacturingSystemSubnet | 10.30.10.0/24 |
-|                     |              |                                   | SensorSubnet1             | 10.30.20.0/24 |
-|                     |              |                                   | SensorSubnet2             | 10.30.21.0/24 |
-|                     |              |                                   | SensorSubnet3             | 10.30.22.0/24 |
-| ResearchVnet        |Southeast Asia| 10.40.0.0/16                      |                           |               |
-|                     |              |                                   | ResearchSystemSubnet      | 10.40.0.0/24  |
+| **Virtual Network** | **Region**     | **Virtual network address space** | **Subnet**                | **Subnet**    |
+| ------------------- | -------------- | --------------------------------- | ------------------------- | ------------- |
+| CoreServicesVnet    | East US        | 10.20.0.0/16                      |                           |               |
+|                     |                |                                   | GatewaySubnet             | 10.20.0.0/27  |
+|                     |                |                                   | SharedServicesSubnet      | 10.20.10.0/24 |
+|                     |                |                                   | DatabaseSubnet            | 10.20.20.0/24 |
+|                     |                |                                   | PublicWebServiceSubnet    | 10.20.30.0/24 |
+| ManufacturingVnet   | West Europe    | 10.30.0.0/16                      |                           |               |
+|                     |                |                                   | ManufacturingSystemSubnet | 10.30.10.0/24 |
+|                     |                |                                   | SensorSubnet1             | 10.30.20.0/24 |
+|                     |                |                                   | SensorSubnet2             | 10.30.21.0/24 |
+|                     |                |                                   | SensorSubnet3             | 10.30.22.0/24 |
+| ResearchVnet        | Southeast Asia | 10.40.0.0/16                      |                           |               |
+|                     |                |                                   | ResearchSystemSubnet      | 10.40.0.0/24  |
 
 These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
@@ -111,12 +111,12 @@ In this exercise, you will:
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
 
-| **Tab**      | **Option**         | **Value**             |
-| ------------ | ------------------ | --------------------- |
-| Basics       | Resource Group     | ContosoResourceGroup  |
-|              | Name               | ManufacturingVnet     |
-|              | Region             | (Europe) West Europe  |
-| IP Addresses | IPv4 address space | 10.30.0.0/16          |
+| **Tab**      | **Option**         | **Value**            |
+| ------------ | ------------------ | -------------------- |
+| Basics       | Resource Group     | ContosoResourceGroup |
+|              | Name               | ManufacturingVnet    |
+|              | Region             | (Europe) West Europe |
+| IP Addresses | IPv4 address space | 10.30.0.0/16         |
 
 | **Subnet**                | **Option**           | **Value**                 |
 | ------------------------- | -------------------- | ------------------------- |
@@ -149,7 +149,7 @@ In this exercise, you will:
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
-3 Select **CoreServicesVnet**.
+3. Select **CoreServicesVnet**.
 
 4. In CoreServicesVnet, under **Settings**, select **Subnets**.
 
