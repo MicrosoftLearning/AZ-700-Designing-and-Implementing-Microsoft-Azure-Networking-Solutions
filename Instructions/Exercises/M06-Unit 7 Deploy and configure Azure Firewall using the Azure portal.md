@@ -6,6 +6,8 @@ Exercise:
 
 # M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
 
+## Exercise scenario
+
 Being part of the Network Security team at Contoso, your next task is to create firewall rules to allow/deny access to certain websites. The following steps walk you through creating a resource group, a virtual network and subnets, and a virtual machine as environment preparation tasks, and then deploying a firewall and firewall policy, configuring default routes and application, network and DNAT rules, and finally testing the firewall.
 
 In this exercise, you will:
@@ -24,8 +26,7 @@ In this exercise, you will:
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-
-#### Estimated time: 60 minutes
+### Estimated time: 60 minutes
 
 ## Task 1: Create a resource group
 
@@ -35,7 +36,7 @@ In this task, you will create a new resource group.
 
 1. On the Azure portal home page, select **Resource groups**.
 
-1. Select **Create**. 
+1. Select **Create**.
 
 1. On the **Basics** tab, in **Resource group**, enter **Test-FW-RG**.
 
@@ -46,8 +47,6 @@ In this task, you will create a new resource group.
 1. Select **Review + create**.
 
 1. Select **Create**.
-
- 
 
 ## Task 2: Create a virtual network and subnets
 
@@ -63,7 +62,7 @@ In this task, you will create a single virtual network with two subnets.
 
    ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
 
-1. Select **Next: IP Addresses**. Enter IPv4 address space 10.0.0.0/16 if not already there by default. 
+1. Select **Next: IP Addresses**. Enter IPv4 address space 10.0.0.0/16 if not already there by default.
 
 1. Under **Subnet name**, select the word **default**.
 
@@ -75,9 +74,8 @@ In this task, you will create a single virtual network with two subnets.
 
 1. Select **Add subnet**, to create another subnet, which will host the workload server that you will create shortly.
 
-
     ![Add subnet](../media/add-workload-subnet.png)
-    
+
 1. In the **Edit subnet** dialog box, change the name to **Workload-SN**.
 
 1. Change the **Subnet address range** to **10.0.2.0/24**.
@@ -87,8 +85,6 @@ In this task, you will create a single virtual network with two subnets.
 1. Select **Review + create**.
 
 1. Select **Create**.
-
- 
 
 ## Task 3: Create a virtual machine
 
@@ -115,7 +111,6 @@ In this task, you will create the workload virtual machine and place it in the W
 1. When deployment of the VM completes, select **Go to resource**.
 
 1. On the **Overview** page of **Srv-Work**, on the right of the page under **Networking**, take a note of the **Private IP address** for this VM (e.g., **10.0.2.4**).
- 
 
 ## Task 4: Deploy the firewall and firewall policy
 
@@ -144,7 +139,6 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Virtual network          | **Test-FW-VN**                           |
    | Public IP address        | Select **Add new**<br />Name: **fw-pip** |
 
-
    ![Add public IP address to firewall](../media/assign-public-ip-to-firewall.png)
 
 1. Review all the settings to ensure they match the screenshot below.
@@ -163,8 +157,6 @@ In this task, you will deploy the firewall into the virtual network with a firew
 
 1. Take a note of the address under **IP Address** for the **fw-pip** public IP configuration (e.g., **20.90.136.51**).
 
- 
-
 ## Task 5: Create a default route
 
 In this task, on the Workload-SN subnet, you will configure the outbound default route to go through the firewall.
@@ -182,7 +174,6 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
    | Region                   | Your region              |
    | Name                     | **Firewall-route**       |
    | Propagate gateway routes | **Yes**                  |
-
 
 1. Select **Review + create**.
 
@@ -214,11 +205,9 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
     ![Add firewall route](../media/add-firewall-route.png)
 
- 
-
 ## Task 6: Configure an application rule
 
-In this task, you will add an application rule that allows outbound access to www.google.com.
+In this task, you will add an application rule that allows outbound access to <www.google.com>.
 
 1. On the Azure portal home page, select **All resources**.
 
@@ -243,14 +232,11 @@ In this task, you will add an application rule that allows outbound access to ww
    | Source                 | **10.0.2.0/24**                           |
    | Protocol               | **http,https**                            |
    | Destination type       | **FQDN**                                  |
-   | Destination            | **www.google.com**                        |
-
+   | Destination            | **<www.google.com>**                        |
 
    ![Add an application rule collection](../media/add-an-application-rule-for-firewall.png)
 
 1. Select **Add**.
-
- 
 
 ## Task 7: Configure a network rule
 
@@ -278,12 +264,9 @@ In this task, you will add a network rule that allows outbound access to two IP 
    | Destination Type       | **IP Address**                                               |
    | Destination            | **209.244.0.3, 209.244.0.4**<br />These are public DNS servers operated by Century Link |
 
-
-   ​	![Add a network rule collection](../media/add-a-network-rule-for-firewall.png)
+   ​ ![Add a network rule collection](../media/add-a-network-rule-for-firewall.png)
 
 1. Select **Add**.
-
- 
 
 ## Task 8: Configure a Destination NAT (DNAT) rule
 
@@ -312,12 +295,9 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    | Translated address    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />**e.g. - 10.0.2.4** |
    | Translated port       | **3389**                                                     |
 
-
-​		![Add a DNAT rule collection](../media/add-a-dnat-rule.png)
+​  ![Add a DNAT rule collection](../media/add-a-dnat-rule.png)
 
 1. Select **Add**.
-
- 
 
 ## Task 9: Change the primary and secondary DNS address for the server's network interface
 
@@ -343,8 +323,6 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
 1. Restart the **Srv-Work** virtual machine.
 
- 
-
 ## Task 10: Test the firewall
 
 In this final task, you will test the firewall to verify that the rules are configured correctly and working as expected. This configuration will enable you to connect a remote desktop connection to the Srv-Work virtual machine through the firewall, via the firewall's public IP address.
@@ -365,7 +343,7 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 1. Select **Yes** on the certificate message.
 
-1. Open Internet Explorer and browse to **https://www.google.com**.
+1. Open Internet Explorer and browse to **<https://www.google.com>**.
 
 1. On the **Security Alert** dialog box, select **OK**.
 
@@ -375,14 +353,13 @@ In this final task, you will test the firewall to verify that the rules are conf
 
     ![RDP session on Srv-work server - browser on google.com](../media/remote-desktop-connection-2.png)
 
-1. Browse to **https://www.microsoft.com**.
+1. Browse to **<https://www.microsoft.com>**.
 
 1. You should be blocked by the firewall.
 
     ![RDP session on Srv-work server - browser blocked on microsoft.com](../media/remote-desktop-connection-3.png)
 
- 
-## Task 11: Clean up resources 
+## Task 11: Clean up resources
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 

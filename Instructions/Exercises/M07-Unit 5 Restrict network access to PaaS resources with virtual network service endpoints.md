@@ -6,6 +6,7 @@ Exercise:
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
 
+## Exercise scenario
 
 Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network.
 
@@ -14,7 +15,7 @@ In this exercise, you will:
 + Task 1: Create a virtual network
 + Task 2: Enable a service endpoint
 + Task 3: Restrict network access for a subnet
-+ Task 4: Add additional outbound rules 
++ Task 4: Add additional outbound rules
 + Task 5: Allow access for RDP connections
 + Task 6: Restrict network access to a resource
 + Task 7: Create a file share in the storage account
@@ -25,7 +26,7 @@ In this exercise, you will:
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 35 minutes
+### Estimated time: 35 minutes
 
 ## Task 1: Create a virtual network
 
@@ -63,7 +64,7 @@ In this exercise, you will:
    | DDoS Network Protection | Disabled  |
    | Firewall                | Disabled  |
 
-1. Select **Review + Create**. Once the resource is validated select **Create**. 
+1. Select **Review + Create**. Once the resource is validated select **Create**.
 
 ## Task 2: Enable a service endpoint
 
@@ -71,7 +72,7 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 
 1. In the **Search resources, services, and docs** box at the top of the portal, enter CoreServicesVNet. When CoreServicesVNet appears in the search results, select it.
 
-1. Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture: 
+1. Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture:
    ![Graphical user interface, application Description automatically generated](../media/create-subnet.png)
 
 1. Under **Add subnet**, select or enter the following information:
@@ -88,18 +89,15 @@ You should now have two subnets configured:
 
 ![Graphical user interface, text, application, email Description automatically generated](../media/configured-subnets.png)
 
- 
-
 ## Task 3: Restrict network access for a subnet
 
 By default, all VMs in a subnet can communicate with all resources. You can limit communication to and from all resources in a subnet by creating a network security group and associating it to the subnet.
 
 1. In the **Search resources, services, and docs** box at the top of the portal, enter **security group**. When **Network Security groups** appears in the search results, select it.
 
-1. In Network security groups, select **+ Create**. 
+1. In Network security groups, select **+ Create**.
 
-1. Enter or select, the following information: 
-
+1. Enter or select, the following information:
 
    | **Setting**    | **Value**                                                    |
    | -------------- | ------------------------------------------------------------ |
@@ -135,10 +133,9 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 
 1. Select **Add**:
 
+## Task 4: Add additional outbound rules
 
-## Task 4: Add additional outbound rules 
-
-Create another outbound security rule that denies communication to the internet. This rule overrides a default rule in all network security groups that allows outbound internet communication. 
+Create another outbound security rule that denies communication to the internet. This rule overrides a default rule in all network security groups that allows outbound internet communication.
 
 1. Select **+Add** under **Outbound security rules**.
 
@@ -205,7 +202,6 @@ The steps necessary to restrict network access to resources created through Azur
 
 1. Enter, or select, the following information and accept the remaining defaults:
 
-
    | **Setting**    | **Value**                                                    |
    | -------------- | ------------------------------------------------------------ |
    | Subscription   | Select your subscription                                     |
@@ -220,7 +216,7 @@ The steps necessary to restrict network access to resources created through Azur
 ## Task 7: Create a file share in the storage account
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
-1. Select **File shares**, as shown in the following picture: 
+1. Select **File shares**, as shown in the following picture:
    ![Graphical user interface, application Description automatically generated](../media/new-file-share.png)
 1. Select **+ File share**.
 1. Enter marketing under **Name**, and then select **Create**.
@@ -272,7 +268,6 @@ To test network access to a storage account, deploy a VM to each subnet.
   
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-
 ## Task 10: Confirm access to storage account
 
 1. Once the ContosoPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
@@ -282,7 +277,6 @@ To test network access to a storage account, deploy a VM to each subnet.
 1. Select **OK**.
 1. You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
 1. On the ContosoPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragexx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
-
 
 ```azurecli
 $acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
@@ -299,7 +293,6 @@ The Azure file share successfully mapped to the Z drive.
 
  ping bing.com
 
-
 You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
 1. Close the remote desktop session to the ContosoPrivate VM.
@@ -311,12 +304,12 @@ You receive no replies because the network security group associated to the Priv
 1. When **ContosoPublic** appears in the search results, select it.
 
 1. Complete steps 1-6 in the Confirm access to storage account task for the ContosoPublic VM.  
-     
+
    ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
 
 1. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
 
- ping bing.com    
+ ping bing.com
 
 1. Close the remote desktop session to the ContosoPublic VM.
 

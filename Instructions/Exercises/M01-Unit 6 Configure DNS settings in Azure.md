@@ -6,7 +6,8 @@ Exercise:
 
 # M01 - Unit 6 Configure DNS settings in Azure
 
-## Exercise scenario 
+## Exercise scenario
+
 In this unit, you will configure DNS name resolution for Contoso Ltd. You will create a private DNS zone named contoso.com, link the VNets for registration and resolution, and then create two virtual machines and test the configuration.
 
 In this exercise, you will:
@@ -18,7 +19,7 @@ In this exercise, you will:
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 25 minutes
+### Estimated time: 25 minutes
 
 ## Task 1: Create a private DNS Zone
 
@@ -37,7 +38,6 @@ In this exercise, you will:
 |                 | Name                                   | Contoso.com          |
 | Tags            | No changes required                    |                      |
 | Review + create | Review your settings and select Create |                      |
-
 
 5. Wait until the deployment is complete, and then select **Go to resource**.
 
@@ -61,12 +61,11 @@ In this exercise, you will:
 | Enable auto registration            | Selected                                |
 | Review your settings and select OK. |                                         |
 
-
 4. Select **Refresh**.
 
 5. Verify that the CoreServicesVnetLink has been created, and that auto-registration is enabled.
 
-6. Repeat steps 2 - 5 for the ManufacturingVnet, using the information in the following table: 
+6. Repeat steps 2 - 5 for the ManufacturingVnet, using the information in the following table:
 
 | **Option**                          | **Value**                                |
 | ----------------------------------- | ---------------------------------------- |
@@ -76,12 +75,11 @@ In this exercise, you will:
 | Enable auto registration            | Selected                                 |
 | Review your settings and select OK. |                                          |
 
-
 7. Select **Refresh**.
 
 8. Verify that the ManufacturingVnetLink has been created, and that auto-registration is enabled.
 
-9. Repeat steps 2 - 5 for the ResearchVnet, using the information in the following table: 
+9. Repeat steps 2 - 5 for the ResearchVnet, using the information in the following table:
 
 | **Option**                          | **Value**                           |
 | ----------------------------------- | ----------------------------------- |
@@ -91,19 +89,16 @@ In this exercise, you will:
 | Enable auto registration            | Selected                            |
 | Review your settings and select OK. |                                     |
 
-
 10. Select **Refresh**.
 
 11. Verify that the ResearchVnetLink has been created, and that auto-registration is enabled.
 
- 
-
-##  Task 3: Create Virtual Machines to test the configuration
+## Task 3: Create Virtual Machines to test the configuration
 
 In this section, you will create two test VMs to test the Private DNS zone configuration.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-    
+
     > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
@@ -122,8 +117,6 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 5. Verify that both virtual machines have been created.
 
- 
-
 ## Task 4: Verify records are present in the DNS zone
 
 1. On the Azure Portal home page, select **Private DNS zones**.
@@ -134,11 +127,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 ![Contoso.com DNS zone showing auto-registered host A records.](../media/contoso_com-dns-zone.png)
 
- 
-
 4. Make a note of the names and IP addresses of the VMs.
-
- 
 
 ### Connect to the Test VMs using RDP
 
@@ -171,6 +160,5 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 1. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
 
 1. Alternatively, you can enter the command nslookup TestVM2.contoso.com and verify that you receive a successful name resolution record for VM2
- 
 
-Congratulations! You have created a private DNS Zone, added a name resolution and auto-registration link, and tested name resolution in your configuration. 
+Congratulations! You have created a private DNS Zone, added a name resolution and auto-registration link, and tested name resolution in your configuration.

@@ -7,11 +7,13 @@ Exercise:
 
 # M04-Unit 4 Create and configure an Azure load balancer
 
-In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization. 
+## Exercise scenario
+
+In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
+### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
@@ -19,7 +21,6 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 ![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
 
- 
 In this exercise, you will:
 
 + Task 1: Create the virtual network
@@ -31,7 +32,7 @@ In this exercise, you will:
 ## Task 1: Create the virtual network
 
 In this section, you will create a virtual network and a subnet.
-   
+
 1. Log in to the Azure portal.
 
 2. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
@@ -46,7 +47,6 @@ In this section, you will create a virtual network and a subnet.
    | Resource group | Select **Create  new**  Name: **IntLB-RG** |
    | Name           | **IntLB-VNet**                             |
    | Region         | **(US) East US**                           |
-
 
 5. Select **Next : IP Addresses**.
 
@@ -69,7 +69,6 @@ In this section, you will create a virtual network and a subnet.
     | Bastion name                      | **myBastionHost**                             |
     | AzureBastionSubnet address  space | **10.1.1.0/24**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
-
 
 13. Select **Review + create**.
 
@@ -120,18 +119,16 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
 
-
 1. Select **Next: Frontend IP configurations**.
 1. Select Add a frontend IP
 1. On the **Add frontend IP address** blade, enter the information from the table below and select **Add**.
- 
+
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
    | Name            | **LoadBalancerFrontEnd** |
    | Virtual network | **IntLB-VNet**           |
    | Subnet          | **myFrontEndSubnet**     |
    | Assignment      | **Dynamic**              |
-
 
 1. Select **Review + create**.
 
@@ -156,14 +153,12 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
 
-
 1. Under **Virtual machines**, select **Add**.
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
 1. Select **Add**.
    ![Picture 7](../media/add-vms-backendpool.png)
-   
 
 ### Create a health probe
 
@@ -182,11 +177,8 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Interval            | **15**            |
    | Unhealthy threshold | **2**             |
 
-
 1. Select **Add**.
    ![Picture 5](../media/create-healthprobe.png)
-
- 
 
 ### Create a load balancer rule
 
@@ -210,16 +202,8 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Idle timeout (minutes) | **15**                   |
    | Floating IP            | **Disabled**             |
 
-
 1. Select **Add**.
    ![Picture 6](../media/create-loadbalancerrule.png)
-
- 
-
-
- 
-
- 
 
 ## Task 5: Test the load balancer
 
@@ -244,8 +228,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Password             | **Provide a secure password**                |
    | Confirm password     | **Provide a secure password**                |
 
-
-1. Select **Next : Disks**, then select **Next : Networking**. 
+1. Select **Next : Disks**, then select **Next : Networking**.
 
 1. On the **Networking** tab, use the information in the table below to configure networking settings.
 
@@ -257,7 +240,6 @@ In this section, you will create a test VM, and then test the load balancer.
    | NIC network security group                                   | **Advanced**                  |
    | Configure network security group                             | Select the existing **myNSG** |
    | Load balancing options                                       | **None**                      |
-
 
 1. Select **Review + create**.
 

@@ -6,11 +6,13 @@ Exercise:
 
 # M04-Unit 6 Create a Traffic Manager profile using the Azure portal
 
-In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application. 
+## Exercise scenario
+
+In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 35 minutes
+### Estimated time: 35 minutes
 
 You will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
 
@@ -18,7 +20,7 @@ You will then create a Traffic Manager profile based on endpoint priority. This 
 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
-​	![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
+​ ![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
 
  In this exercise, you will:
 
@@ -27,7 +29,6 @@ The diagram below approximately illustrates the environment you will be deployin
 + Task 3: Add Traffic Manager endpoints
 + Task 4: Test the Traffic Manager profile
 + Task 5: Clean up resources
-
 
 ## Task 1: Create the web apps
 
@@ -49,7 +50,6 @@ In this section, you will create two instances of a web application deployed in 
    | Windows Plan     | Select **Create  new**  Name: **ContosoAppServicePlanEastUS** |
    | Pricing Plan     | **Standard S1 100 total ACU, 1.75-GB  memory**               |
 
-
 1. Select **Monitoring** tab.
 
 1. On the **Monitoring** tab, select the **No** option for **Enable Application Insights**.
@@ -60,7 +60,7 @@ In this section, you will create two instances of a web application deployed in 
 
 1. Select **Create**. When the Web App successfully deploys, it creates a default web site.
 
-1. Repeat steps 1-6 above to create a second web app. Use the same settings as before except for the information in the table below. 
+1. Repeat steps 1-6 above to create a second web app. Use the same settings as before except for the information in the table below.
 
    | **Setting**    | **Value**                                                    |
    | -------------- | ------------------------------------------------------------ |
@@ -69,14 +69,11 @@ In this section, you will create two instances of a web application deployed in 
    | Region         | **West Europe**                                              |
    | Windows Plan   | Select **Create  new**  Name: **ContosoAppServicePlanWestEurope** |
 
-
 1. On the Azure home page, select **All services**, in the left navigation menu, select **Web**, and then select **App Services**.
 
 1. You should see the two new web apps listed.
 
    ![Picture 19](../media/create-web-app-2.png)
-
- 
 
 ## Task 2: Create a Traffic Manager profile
 
@@ -100,10 +97,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
    | Resource group          | **Contoso-RG-TM1**       |
    | Resource group location | **East US**              |
 
-
 1. Select **Create**.
-
- 
 
 ## Task 3: Add Traffic Manager endpoints
 
@@ -125,17 +119,15 @@ In this section, you will add the website in the East US as the primary endpoint
    | Target resource      | **ContosoWebAppEastUS (East US)** |
    | Priority             | **1**                             |
 
-
 1. Select **Add**.
 
-1. Repeat steps 2-4 above to create the failover endpoint. Use the same settings as before except for the information in the table below. 
+1. Repeat steps 2-4 above to create the failover endpoint. Use the same settings as before except for the information in the table below.
 
    | **Setting**     | **Value**                                 |
    | --------------- | ----------------------------------------- |
    | Name            | **myFailoverEndpoint**                    |
    | Target resource | **ContosoWebAppWestEurope (West Europe)** |
    | Priority        | **2**                                     |
-
 
 1. Setting a priority of 2 means that traffic will route to this failover endpoint if the configured primary endpoint becomes unhealthy.
 
@@ -144,8 +136,6 @@ In this section, you will add the website in the East US as the primary endpoint
 1. The two new endpoints are displayed in the Traffic Manager profile. Notice that after a few minutes the **Monitoring status** should change to **Online**.
 
    ![Picture 22](../media/create-tmendpoints-2.png)
-
- 
 
 ## Task 4: Test the Traffic Manager profile
 
@@ -181,8 +171,7 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 1. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
- 
- ## Task 5: Clean up resources
+## Task 5: Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
@@ -198,5 +187,3 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
    ```
 
     >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
- 
-

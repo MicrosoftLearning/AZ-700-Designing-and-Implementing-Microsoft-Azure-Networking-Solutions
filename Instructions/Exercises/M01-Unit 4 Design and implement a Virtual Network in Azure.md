@@ -5,8 +5,7 @@ Exercise:
 ---
 # M01-Unit 4 Design and implement a Virtual Network in Azure
 
-
-## Exercise scenario 
+## Exercise scenario
 
 Now you're ready to deploy virtual networks in the Azure portal.
 
@@ -14,7 +13,7 @@ Consider the fictional organization Contoso Ltd, which is in the process of migr
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Design%20and%20implement%20a%20virtual%20network%20in%20Azure)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 20 minutes
+### Estimated time: 20 minutes
 
 The **CoreServicesVnet** virtual network is deployed in the **East US** region. This virtual network will have the largest number of resources. It will have connectivity to on-premises networks through a VPN connection. This network will have web services, databases, and other systems that are key to the operations of the business. Shared services, such as domain controllers and DNS also will be located here. A large amount of growth is anticipated, so a large address space is necessary for this virtual network.
 
@@ -22,16 +21,14 @@ The **ManufacturingVnet** virtual network is deployed in the **West Europe** reg
 
 The **ResearchVnet** virtual network is deployed in the **Southeast Asia** region, near the location of the organization's research and development team. The research and development team uses this virtual network. The team has a small, stable set of resources that is not expected to grow. The team needs a small number of IP addresses for a few virtual machines for their work.
 
-![Network layout for Contoso. 
+![Network layout for Contoso.
 On-premises 10.10.0.0/16
 ResearchVNet Southeast Asia 10.40.40.0/24
 CoreServicesVNet East US 10.20.0.0/16
 ManufacturingVNet West Europe 10.30.0.0/16
 ](../media/design-implement-vnet-peering.png)
 
-
 You will create the following resources:
- 
 
 | **Virtual Network** | **Region**   | **Virtual network address space** | **Subnet**                | **Subnet**    |
 | ------------------- | ------------ | --------------------------------- | ------------------------- | ------------- |
@@ -47,7 +44,6 @@ You will create the following resources:
 |                     |              |                                   | SensorSubnet3             | 10.30.22.0/24 |
 | ResearchVnet        |Southeast Asia| 10.40.0.0/16                      |                           |               |
 |                     |              |                                   | ResearchSystemSubnet      | 10.40.0.0/24  |
-
 
 These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
@@ -76,10 +72,7 @@ In this exercise, you will:
 | Tags            | No changes required                        |                      |
 | Review + create | Review your settings and select **Create** |                      |
 
-
 5. In Resource groups, verify that **ContosoResourceGroup** appears in the list.
-
- 
 
 ## Task 2: Create the CoreServicesVnet virtual network and subnets
 
@@ -87,8 +80,6 @@ In this exercise, you will:
 2. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 3. Use the information in the following table to create the CoreServicesVnet virtual network.  
    ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
-
- 
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
@@ -115,11 +106,10 @@ In this exercise, you will:
  6. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
  7. Verify your configuration passed validation, and then select **Create**.
- 
+
  8. Repeat steps 1 -8 for each VNet based on the tables below  
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
-
 
 | **Tab**      | **Option**         | **Value**             |
 | ------------ | ------------------ | --------------------- |
@@ -127,8 +117,6 @@ In this exercise, you will:
 |              | Name               | ManufacturingVnet     |
 |              | Region             | (Europe) West Europe  |
 | IP Addresses | IPv4 address space | 10.30.0.0/16          |
-
-
 
 | **Subnet**                | **Option**           | **Value**                 |
 | ------------------------- | -------------------- | ------------------------- |
@@ -140,10 +128,8 @@ In this exercise, you will:
 |                           | Subnet address range | 10.30.21.0/24             |
 | SensorSubnet3             | Subnet name          | SensorSubnet3             |
 |                           | Subnet address range | 10.30.22.0/24             |
- 
 
 ## Task 4: Create the ResearchVnet virtual network and subnets
-
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
@@ -156,7 +142,6 @@ In this exercise, you will:
 | -------------------- | -------------------- | -------------------- |
 | ResearchSystemSubnet | Subnet name          | ResearchSystemSubnet |
 |                      | Subnet address range | 10.40.0.0/24         |
- 
 
 ## Task 5: Verify the creation of VNets and Subnets
 
@@ -164,7 +149,7 @@ In this exercise, you will:
 
 2. Verify that the CoreServicesVnet, ManufacturingVnet, and ResearchVnet are listed.
 
-3 Select **CoreServicesVnet**. 
+3 Select **CoreServicesVnet**.
 
 4. In CoreServicesVnet, under **Settings**, select **Subnets**.
 
@@ -174,4 +159,4 @@ In this exercise, you will:
 
 6. Repeat steps 3 - 5 for each VNet.
 
-Congratulations! You have successfully created a resource group, three VNets, and their associated subnets. 
+Congratulations! You have successfully created a resource group, three VNets, and their associated subnets.

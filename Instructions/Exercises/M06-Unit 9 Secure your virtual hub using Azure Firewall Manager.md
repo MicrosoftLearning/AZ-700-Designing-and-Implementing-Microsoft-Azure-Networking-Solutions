@@ -7,6 +7,8 @@ Exercise:
 
 # M06-Unit 9 Secure your virtual hub using Azure Firewall Manager
 
+## Exercise scenario
+
 In this exercise, you will create the spoke virtual network and create a secured virtual hub, then you will connect the hub and spoke virtual networks and route traffic to your hub. Next you will deploy the workload servers, then create a firewall policy and secure your hub, and finally you will test the firewall.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
@@ -28,11 +30,11 @@ In this exercise, you will:
 + Task 9: Test the network rule
 + Task 10: Clean up resources
 
-#### Estimated time: 35 minutes
+### Estimated time: 35 minutes
 
 ## Task 1: Create two spoke virtual networks and subnets
 
-In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers. 
+In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers.
 
 1. On the Azure portal home page, in the search box, enter **virtual network** and select **Virtual Network** when it appears.
 2. Select **Create**.
@@ -40,7 +42,7 @@ In this task, you will create the two spoke virtual networks each containing a s
 4. In **Name**, enter **Spoke-01**.
 5. In **Region**, select your region.
 6. Select **Next: IP Addresses**.
-7. In **IPv4 address space**, enter **10.0.0.0/16**. 
+7. In **IPv4 address space**, enter **10.0.0.0/16**.
 8. **Delete** any other address spaces listed here, such as **10.1.0.0/16**.
 9. Under **Subnet name**, select the word **default**.
 10. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**.
@@ -51,11 +53,11 @@ In this task, you will create the two spoke virtual networks each containing a s
 
 Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information:
 
-- Resource Group: **fw-manager-rg** (select existing)
-- Name: **Spoke-02**
-- Address space: **10.1.0.0/16** - (delete any other listed address spaces)
-- Subnet name: **Workload-02-SN**
-- Subnet address range: **10.1.1.0/24**
++ Resource Group: **fw-manager-rg** (select existing)
++ Name: **Spoke-02**
++ Address space: **10.1.0.0/16** - (delete any other listed address spaces)
++ Subnet name: **Workload-02-SN**
++ Subnet address range: **10.1.1.0/24**
 
 ## Task 2: Create the secured virtual hub
 
@@ -90,7 +92,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 14. Select **Create**.
 
-    > **[!NOTE]** 
+    > **[!NOTE]**
     >
     > This can take up to 30 minutes to deploy.
 
@@ -128,8 +130,6 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 ![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
 
- 
-
 ## Task 4: Deploy the servers
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
@@ -152,13 +152,12 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
 
-
 ## Task 5: Create a firewall policy and secure your hub
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   + If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
 1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
 
@@ -271,7 +270,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 In this task you will associate the firewall policy with the virtual hub.
 
 1. From the Azure portal home page, select **Firewall Manager**.
-   - If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+   + If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
 1. Select the checkbox for **Policy-01**.
 1. Select **Manage associations&gt;Associate hubs**.
@@ -280,8 +279,6 @@ In this task you will associate the firewall policy with the virtual hub.
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
 
 ![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
-
- 
 
 ## Task 7: Route traffic to your hub
 
@@ -292,10 +289,9 @@ In this task you will ensure that network traffic gets routed through your firew
 1. Under **Settings**, select **Security configuration**.
 1. On **Internet traffic**, select **Azure Firewall**.
 1. On **Private traffic**, select **Send via Azure Firewall**.
-1. Select **Save**. 
+1. Select **Save**.
 1. This will take a few minutes to complete.
 1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
-
 
 ## Task 8: Test the application rule
 
@@ -323,7 +319,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 1. Open Internet Explorer and select **OK** in the **Set up Internet Explorer 11** dialog box.
 
-1. Browse to **https://** **www.microsoft.com**.
+1. Browse to **https://** **<www.microsoft.com>**.
 
 1. On the **Security Alert** dialog box, select **OK**.
 
@@ -333,7 +329,7 @@ In this task you will test the application rule to confirm that it works as expe
 
     ![RDP session browsing microsoft.com](../media/microsoft-home-page.png)
 
-1. Browse to **https://** **www.google.com**.
+1. Browse to **https://** **<www.google.com>**.
 
 1. You should be blocked by the firewall.
 
@@ -361,8 +357,7 @@ In this task you will test the network rule to confirm that it works as expected
 
 1. Close both RDP sessions to disconnect them.
 
-
-## Task 10: Clean up resources 
+## Task 10: Clean up resources
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 

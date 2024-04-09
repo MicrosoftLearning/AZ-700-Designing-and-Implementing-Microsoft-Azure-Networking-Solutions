@@ -5,13 +5,14 @@ Exercise:
 ---
 
 # M05-Unit 4 Deploy Azure Application Gateway
- 
+
+## Exercise scenario
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-#### Estimated time: 25 minutes
+### Estimated time: 25 minutes
 
 The application gateway directs application web traffic to specific resources in a backend pool. You assign listeners to ports, create rules, and add resources to a backend pool. For the sake of simplicity, this article uses a simple setup with a public front-end IP, a basic listener to host a single site on the application gateway, a basic request routing rule, and two virtual machines in the backend pool.
 
@@ -24,13 +25,12 @@ In this exercise, you will:
 + Task 3: Add backend servers to backend pool
 + Task 4: Test the application gateway
 
-
 ## Task 1: Create an application gateway
 
 1. Sign in to the [Azure portal](https://portal.azure.com/) with your Azure account.
 
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
-    ![Azure Portal search for application gateway](../media/search-application-gateway.png)    
+    ![Azure Portal search for application gateway](../media/search-application-gateway.png)
 
 1. On the Application gateways page, select **+ Create**.
 
@@ -122,7 +122,7 @@ In this exercise, you will:
 
 1. Review the settings on the **Review + create** tab
 
-1. Select **Create** to create the virtual network, the public IP address, and the application gateway. 
+1. Select **Create** to create the virtual network, the public IP address, and the application gateway.
 
 It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully before moving on to the next section.
 
@@ -156,11 +156,11 @@ It may take several minutes for Azure to create the application gateway. Wait un
 
 1. On the Edit backend pool page, under **Backend targets**, in **Target type**, select **Virtual machine**.
 
-1. Under **Target**, select **BackendVM1.** 
+1. Under **Target**, select **BackendVM1.**
 
 1. On **Target type**, select **Virtual machine**.
 
-1. Under **Target**, select **BackendVM2.** 
+1. Under **Target**, select **BackendVM2.**
 
    ![Azure Portal add target backends to backend pool](../media/edit-backend-pool.png)
 
@@ -172,9 +172,9 @@ Wait for the deployment to complete before proceeding to the next step.
 
 Although IIS isn't required to create the application gateway, you installed it in this exercise to verify if Azure successfully created the application gateway.
 
-### Use IIS to test the application gateway:
+### Use IIS to test the application gateway
 
-1. Find the public IP address for the application gateway on its **Overview** page. 
+1. Find the public IP address for the application gateway on its **Overview** page.
 
    ![Azure Portal look up Frontend Public IP address ](../media/app-gw-public-ip.png)
 
