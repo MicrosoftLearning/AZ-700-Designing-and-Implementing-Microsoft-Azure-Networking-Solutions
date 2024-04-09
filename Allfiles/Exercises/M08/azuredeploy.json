@@ -4,16 +4,25 @@
     "parameters": {
        "vmName": {
          "type": "string",
+         "defaultValue": "myVM",
          "metadata": {
-              "description": "description"
+              "description": "VM name Prefix"
           }
       },
       "nicName": {
          "type": "string",
+          "defaultValue": "myVMnic",
          "metadata": {
-              "description": "description"
+              "description": "NIC name Prefix"
           }
       },
+      "vmCount": {
+          "type": "int",
+          "defaultValue": 3,
+          "metadata": {
+              "description": "Number of VMs"
+            }
+        },
       "vmSize": {
         "type": "string",
         "defaultValue": "Standard_DS1_v2",
@@ -44,16 +53,20 @@
   },
     "resources": [
         {
-            "name": "[parameters('vmName')]",
+            "name": "[concat(parameters('vmName'),copyIndex(1))]",
+            "copy": {
+                "name": "VMcopy",
+                "count": "[parameters('vmCount')]"
+            },
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "[variables('computeApiVersion')]",
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[parameters('nicName')]"
+                "[concat(parameters('nicName'),copyIndex(1))]"
             ],        
             "properties": {
                 "osProfile": {
-                    "computerName": "[parameters('vmName')]",
+                    "computerName": "[concat(parameters('vmName'),copyIndex(1))]",
                     "adminUsername": "[parameters('adminUsername')]",
                     "adminPassword": "[parameters('adminPassword')]",
                     "windowsConfiguration": {
@@ -71,7 +84,7 @@
                         "version": "latest"
                     },
                     "osDisk": {
-                        "createOption": "fromImage"
+                        "createOption": "FromImage"
                     },
                     "dataDisks": []
                 },
@@ -81,19 +94,23 @@
                             "properties": {
                                 "primary": true
                             },
-                            "id": "[resourceId('Microsoft.Network/networkInterfaces', parameters('nicName'))]"
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(parameters('nicName'),copyIndex(1)))]"
                         }
                     ]
                 }
-            },
-            "resources": [
+            }
+        },
           {
             "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines/extensions",
-            "name": "[concat(parameters('vmName'),'/', 'VMConfig')]",
+            "name": "[concat(parameters('vmName'),copyIndex(1),'/', 'VMConfig')]",
+             "copy": {
+                "name": "IIScopy",
+                "count": "[parameters('vmCount')]"
+            },
             "location": "[resourceGroup().location]",
             "dependsOn": [
-                "[concat('Microsoft.Compute/virtualMachines/',parameters('vmName'))]"
+                "[concat('Microsoft.Compute/virtualMachines/',parameters('vmName'),copyIndex(1))]"
             ],
             "properties": {
                 "publisher": "Microsoft.Compute",
@@ -107,12 +124,13 @@
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File install-iis.ps1"
                 }
             }
-        }
-        ]
-            
         },
         {
-            "name": "[parameters('nicName')]",
+            "name": "[concat(parameters('nicName'),copyIndex(1))]",
+            "copy":{
+                "name": "nicCopy",
+                "count": "[parameters('vmCount')]"
+            },
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "[variables('networkApiVersion')]",
             "location": "[resourceGroup().location]",

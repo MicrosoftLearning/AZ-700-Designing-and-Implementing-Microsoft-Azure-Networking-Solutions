@@ -9,18 +9,20 @@ Exercise:
 
 ## Exercise scenario
 
-In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet.
+In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet. 
+
+![Diagram of virtual network gateway.](../media/3-exercise-create-configure-local-network-gateway.png)
 
 In this exercise, you will:
 
 + Task 1: Create CoreServicesVnet and ManufacturingVnet
 + Task 2: Create CoreServicesVM
 + Task 3: Create ManufacturingVM
-+ Task 4: Connect to the Test VMs using RDP
++ Task 4: Connect to the VMs using RDP
 + Task 5: Test the connection between the VMs
 + Task 6: Create CoreServicesVnet Gateway
 + Task 7: Create ManufacturingVnet Gateway
-+ Task 8: CoreServicesVnet to ManufacturingVnet
++ Task 8: Connect CoreServicesVnet to ManufacturingVnet 
 + Task 9: Connect ManufacturingVnet to CoreServicesVnet
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
@@ -32,7 +34,7 @@ In this exercise, you will:
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
 
 1. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
@@ -43,6 +45,7 @@ In this exercise, you will:
    New-AzResourceGroup -Name $RGName -Location "eastus"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
+ > **Note:** Currently, there is an ongoing issue in the West Europe Region affecting gateway deployments. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment. 
 
 ## Task 2: Create CoreServicesVM
 
@@ -84,24 +87,27 @@ In this exercise, you will:
 
 1. Verify that the virtual machine has been created.
 
-## Task 4: Connect to the Test VMs using RDP
+
+## Task 4: Connect to the VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **ManufacturingVM**.
 1. On **ManufacturingVM**, select **Connect &gt; RDP**.
 1. On **ManufacturingVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to ManufacturingTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
+1. Connect to **ManufacturingVM** using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **CoreServicesVM**.
 1. On **CoreServicesVM**, select **Connect &gt; RDP**.
 1. On **CoreServicesVM | Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
-1. Connect to CoreServicesTestVM using the RDP file, and the username **TestUser** and the password you provided during deployment.
+1. Connect to **CoreServicesVM** using the RDP file, and the username **TestUser** and the password you provided during deployment.
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
 1. On both VMs, in **Networks**, select **Yes**.
-1. On CoreServicesTestVM, open PowerShell, and run the following command: ipconfig
-1. Note the IPv4 address.
+1. On **CoreServicesVM**, open PowerShell, and run the following command: ipconfig
+1. Note the IPv4 address. 
+
+ 
 
 ## Task 5: Test the connection between the VMs
 
@@ -138,7 +144,7 @@ In this exercise, you will:
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | CoreServicesVnet             |
    |                 |                   | Subnet                                      | GatewaySubnet (10.20.0.0/27) |
-   |                 |                   | Public IP address type                      | Basic                        |
+   |                 |                   | Public IP address type                      | Standard                     |
    |                 | Public IP address | Public IP address                           | Create new                   |
    |                 |                   | Public IP address name                      | CoreServicesVnetGateway-ip   |
    |                 |                   | Enable active-active mode                   | Disabled                     |
@@ -162,7 +168,7 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
-   |                 |                   | Region                                      | West Europe                  |
+   |                 |                   | Region                                      | North Europe                  |
    |                 |                   | Gateway type                                | VPN                          |
    |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |

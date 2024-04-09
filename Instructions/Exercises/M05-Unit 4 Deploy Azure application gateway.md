@@ -10,7 +10,10 @@ Exercise:
 
 In this exercise, you use the Azure portal to create an application gateway. Then you test it to make sure it works correctly.
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+![Diagram of application gateway architecture.](../media/4-exercise-deploy-azure-application-gateway.png)
+
+
+>**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 25 minutes
 
@@ -56,6 +59,9 @@ In this exercise, you will:
    | Address range     | 10.0.0.0/24                        |
    | Subnet name       | BackendSubnet                      |
    | Address range     | 10.0.1.0/24                        |
+
+
+>**Note**: If the UI does not have the option to add additional subnets, complete the steps and add the backend subnet after creating the gateway. 
 
 1. Select **OK** to return to the Create application gateway Basics tab.
 
@@ -129,7 +135,7 @@ It may take several minutes for Azure to create the application gateway. Wait un
 ## Task 2: Create virtual machines
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **backend.json** and **backend.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M05**.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:

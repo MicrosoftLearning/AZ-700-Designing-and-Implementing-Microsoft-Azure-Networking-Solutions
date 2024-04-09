@@ -17,9 +17,7 @@ In this exercise, you will create an internal load balancer for the fictional Co
 
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
-The diagram below illustrates the environment you will be deploying in this exercise.
-
-![internal standard loadbalancer diagram](../media/exercise-internal-standard-load-balancer-environment-diagram.png)
+![internal standard loadbalancer diagram](../media/4-exercise-create-configure-azure-load-balancer.png)
 
 In this exercise, you will:
 
@@ -67,7 +65,7 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
     | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet address  space | **10.1.1.0/24**                               |
+    | AzureBastionSubnet address  space | **10.1.1.0/26**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
 13. Select **Review + create**.
@@ -80,7 +78,9 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, azuredeploy.parameters.vm1.json, azuredeploy.parameters.vm2.json and azuredeploy.parameters.vm3.json into the Cloud Shell home directory one by one.
+ > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
+
+2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, and azuredeploy.parameters.json into the Cloud Shell home directory one by one.
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -89,9 +89,7 @@ In this section, you will create three VMs, that will be in the same availabilit
    ```powershell
    $RGName = "IntLB-RG"
    
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm1.json
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm2.json
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.vm3.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
 It may take 5-10 min to create these three VMs. You do not have to wait until this job completes, you can continue with the next task already.
@@ -116,8 +114,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
    | Region                | **(US) East US**         |
-   | Type                  | **Internal**             |
    | SKU                   | **Standard**             |
+   | Type                  | **Internal**             |
+   | Tier                  | **Regional**             |
 
 1. Select **Next: Frontend IP configurations**.
 1. Select Add a frontend IP
@@ -157,7 +156,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
-1. Select **Add**.
+1. Select **Save**.
    ![Picture 7](../media/add-vms-backendpool.png)
 
 ### Create a health probe
@@ -175,7 +174,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Port                | **80**            |
    | Path                | **/**             |
    | Interval            | **15**            |
-   | Unhealthy threshold | **2**             |
 
 1. Select **Add**.
    ![Picture 5](../media/create-healthprobe.png)
@@ -184,7 +182,7 @@ The load balancer monitors the status of your app with a health probe. The healt
 
 A load balancer rule is used to define how traffic is distributed to the VMs. You define the frontend IP configuration for the incoming traffic and the backend IP pool to receive the traffic. The source and destination port are defined in the rule. Here you will create a load balancer rule.
 
-1. From the **Backend pools** page of your load balancer, under **Settings**, select **Load balancing rules**, then select **Add**.
+1. Under **Settings**, select **Load balancing rules**, then select **Add**.
 
 1. On the **Add load balancing rule** page, enter the information from the table below.
 
@@ -193,10 +191,10 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Name                   | **myHTTPRule**           |
    | IP Version             | **IPv4**                 |
    | Frontend IP address    | **LoadBalancerFrontEnd** |
+   | Backend pool           | **myBackendPool**        |
    | Protocol               | **TCP**                  |
    | Port                   | **80**                   |
    | Backend port           | **80**                   |
-   | Backend pool           | **myBackendPool**        |
    | Health probe           | **myHealthProbe**        |
    | Session persistence    | **None**                 |
    | Idle timeout (minutes) | **15**                   |

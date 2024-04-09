@@ -10,6 +10,8 @@ Exercise:
 
 Virtual network service endpoints enable you to limit network access to some Azure service resources to a virtual network subnet. You can also remove internet access to the resources. Service endpoints provide direct connection from your virtual network to supported Azure services, allowing you to use your virtual network's private address space to access the Azure services. Traffic destined to Azure resources through service endpoints always stays on the Microsoft Azure backbone network.
 
+![Diagram of service endpoint architecture.](../media/5-exercise-restrict-network-paas-resources-virtual-network-service-endpoints.png)
+
 In this exercise, you will:
 
 + Task 1: Create a virtual network
@@ -144,7 +146,8 @@ Create another outbound security rule that denies communication to the internet.
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
-   | Source                  | Select **VirtualNetwork** |
+   | Source                  | Select **Service Tag**    |
+   | Source service tag      | Select **VirtualNetwork** |
    | Source port ranges      | *                         |
    | Destination             | Select **Service Tag**    |
    | Destination service tag | Select **Internet**       |
@@ -216,10 +219,14 @@ The steps necessary to restrict network access to resources created through Azur
 ## Task 7: Create a file share in the storage account
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
-1. Select **File shares**, as shown in the following picture:
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share.png)
+1. Select **File shares**, as shown in the following picture: 
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-2.png)
 1. Select **+ File share**.
-1. Enter marketing under **Name**, and then select **Create**.
+1. Enter marketing under **Name**, and then select **Next : Backup**.
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-basics.png)
+1. Unselect **Enable backup**, as shown in the following picture: 
+   ![Graphical user interface, application Description automatically generated](../media/new-file-share-backup.png)
+1. Select **Review + Create**. Once the resource is validated select **Create**.
 
 ## Task 8: Restrict network access to a subnet
 
