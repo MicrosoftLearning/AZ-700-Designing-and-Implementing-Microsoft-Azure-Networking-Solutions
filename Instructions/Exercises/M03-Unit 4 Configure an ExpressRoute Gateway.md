@@ -15,8 +15,6 @@ To connect your Azure virtual network and your on-premises network via ExpressRo
 
 ### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
-**Gateway types**
-
 When you create a virtual network gateway, you need to specify several settings. One of the required settings, '-GatewayType', specifies whether the gateway is used for ExpressRoute, or VPN traffic. The two gateway types are:
 
 - **VPN** - To send encrypted traffic across the public Internet, you use the gateway type 'VPN'. This is also referred to as a VPN gateway. Site-to-Site, Point-to-Site, and VNet-to-VNet connections all use a VPN gateway.
@@ -62,7 +60,7 @@ In this exercise, you will:
 
 1. Confirm that the VNet passes the validation and then select **Create**.
 
-> [!Note]  
+> **NOTE**
 >
 > If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
 
@@ -96,8 +94,8 @@ In this exercise, you will:
 
 1. When the deployment is complete, select **Go to Resource**.
 
-> [!Note]
+> **NOTE**
 >
-> it can take up to 45 minutes to deploy a Gateway.
+> It can take up to 45 minutes to deploy an ExpressRoute Gateway.
 
 Congratulations! You have successfully created a Virtual network, a gateway subnet, and an ExpressRoute Gateway.

@@ -81,7 +81,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
    ![Virtual WAN configuration page with Virtual network connections highlighted.](../media/connect-vnet-to-virtual-hub.png)
 
-1. On ContosoVirtualWAN | Virtual network connections, select **+ Add connection**.
+1. On ContosoVirtualWAN &#124; Virtual network connections, select **+ Add connection**.
 
 1. In Add connection, use the following information to create the connection.
 
@@ -105,7 +105,7 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
 
 ## Task 4: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > **Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -115,4 +115,4 @@ Congratulations! You have created a Virtual WAN and a Virtual WAN Hub and connec
    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+    > **Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

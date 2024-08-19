@@ -26,7 +26,7 @@ In this exercise, you will:
 
 1. From a browser, navigate to the [Azure portal](https://portal.azure.com/) and sign in with your Azure account.
 
-   > [!Important]
+   > **IMPORTANT**
    >
    > Your ExpressRoute circuit is billed from the moment a service key is issued. Ensure that you perform this operation when the connectivity provider is ready to provision the circuit.
 
@@ -49,19 +49,19 @@ In this exercise, you will:
 + Provider is the internet service provider who you will be requesting your service from.
 + Peering Location is the physical location where you are peering with Microsoft.
 
-> [!Important]
+> **IMPORTANT**
 >
 > The Peering Location indicates the [physical location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) where you are peering with Microsoft. This is not linked to "Location" property, which refers to the geography where the Azure Network Resource Provider is located. While they are not related, it is a good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
 
 + **SKU** determines whether an ExpressRoute local, ExpressRoute standard, or an ExpressRoute premium add-on is enabled. You can specify **Local** to get the local SKU, **Standard** to get the standard SKU or **Premium** for the premium add-on. You can change the SKU to enable the premium add-on.
 
-> [!Important]
+> **IMPORTANT**
 >
 > You cannot change the SKU from Standard/Premium to Local.
 
 + **Billing model** determines the billing type. You can specify **Metered** for a metered data plan and **Unlimited** for an unlimited data plan. You can change the billing type from **Metered** to **Unlimited**.
 
-> [!Important]
+> **IMPORTANT**
 >
 > You cannot change the type from Unlimited to Metered.
 
@@ -104,7 +104,7 @@ Congratulations! You have created an ExpressRoute circuit and located the Servic
 
 If the ExpressRoute circuit service provider provisioning state is **Provisioning** or **Provisioned,** you must work with your service provider to deprovision the circuit on their side. Microsoft can continue to reserve resources and bill you until the service provider completes deprovisioning the circuit and notifies us.
 
-> [!Note]
+> **NOTE**
 >
 > You must unlink all virtual networks from the ExpressRoute circuit before deprovisioning. If this operation fails, check whether any virtual networks are linked to the circuit.
 >
@@ -116,7 +116,7 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
 
 ![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   > **Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -127,4 +127,4 @@ You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensur
    Remove-AzResourceGroup -Name 'ExpressRouteResourceGroup' -Force -AsJob
    ```
 
-   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   > **Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

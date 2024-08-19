@@ -35,7 +35,7 @@ In this exercise, you will:
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
- > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
+   > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**
 
@@ -95,13 +95,13 @@ In this exercise, you will:
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **ManufacturingVM**.
 1. On **ManufacturingVM**, select **Connect &gt; RDP**.
-1. On **ManufacturingVM | Connect**, select **Download RDP file**.
+1. On **ManufacturingVM &#124; Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
 1. Connect to **ManufacturingVM** using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
 1. On the Azure Portal home page, select **Virtual Machines**.
 1. Select **CoreServicesVM**.
 1. On **CoreServicesVM**, select **Connect &gt; RDP**.
-1. On **CoreServicesVM | Connect**, select **Download RDP file**.
+1. On **CoreServicesVM &#124; Connect**, select **Download RDP file**.
 1. Save the RDP file to your desktop.
 1. Connect to **CoreServicesVM** using the RDP file, and the username **TestUser** and the password you provided during deployment.
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
@@ -151,7 +151,7 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!NOTE]
+   > **NOTE**
    >
    > It can take up to 45 minutes to create a virtual network gateway.
 
@@ -182,7 +182,7 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!NOTE]
+   > **NOTE**
    >
    > It can take up to 45 minutes to create a virtual network gateway.
 
@@ -194,9 +194,9 @@ In this exercise, you will:
 
 1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-   > [!NOTE]
+   > **NOTE**
    >
-   >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
+   > You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
 1. Use the information in the following table to create the connection:
 
@@ -244,7 +244,7 @@ In this exercise, you will:
 
 ## Task 10: Verify that the connections connect
 
-1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
+1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **Connections** from the results.
 
 1. Wait until the status of both connections is **Connected**. You may need to refresh your screen.
 
