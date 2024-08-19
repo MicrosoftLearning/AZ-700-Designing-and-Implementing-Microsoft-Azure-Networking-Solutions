@@ -28,7 +28,7 @@ In this exercise, you will:
 1. Go to [Azure Portal](https://portal.azure.com/).
 
 2. On the Azure home page, in the search bar, enter dns, and then select **Private DNS zones**.  
-   ‎![Azure Portal home page with dns search.](../media/create-private-dns-zone.png)
+   ![Azure Portal home page with dns search.](../media/create-private-dns-zone.png)
 
 3. In Private DNS zones, select **+ Create**.
 
@@ -49,9 +49,9 @@ In this exercise, you will:
 
 1. In Contoso.com, under **Settings**, select **Virtual network links**.
 
-2. On Contoso.com | Virtual network links, select **+ Add**.
+2. On Contoso.com &#124; Virtual network links, select **+ Add**.
 
-![contoso.com | Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
+![contoso.com &#124; Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
 
 3. Use the information in the following table to add the virtual network link.
 
@@ -153,7 +153,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. On both VMs, if prompted, in **Networks**, select **Yes**.
 
-1. On TestVM1, open a command prompt and enter the command ipconfig /all.
+1. On TestVM1, open a command prompt and enter the command **ipconfig /all**.
 
 1. Verify that the IP address is the same as the one you noted in the DNS zone.
 

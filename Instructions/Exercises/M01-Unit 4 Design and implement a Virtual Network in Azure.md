@@ -79,7 +79,7 @@ In this exercise, you will:
 1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 2. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 3. Use the information in the following table to create the CoreServicesVnet virtual network.  
-   ‎Remove or overwrite the default IP Address space![ip address configuration for azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
+   Remove or overwrite the default IP Address space. ![IP address configuration for Azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
 
 | **Tab**      | **Option**         | **Value**            |
 | ------------ | ------------------ | -------------------- |
@@ -88,9 +88,9 @@ In this exercise, you will:
 |              | Region             | (US) East US         |
 | IP Addresses | IPv4 address space | 10.20.0.0/16         |
 
- 4. Use the information in the following table to create the CoreServicesVnet subnets.
+4. Use the information in the following table to create the CoreServicesVnet subnets.
 
- 5. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+5. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
 
 | **Subnet**             | **Option**           | **Value**              |
 | ---------------------- | -------------------- | ---------------------- |
@@ -103,11 +103,11 @@ In this exercise, you will:
 | PublicWebServiceSubnet | Subnet name          | PublicWebServiceSubnet |
 |                        | Subnet address range | 10.20.30.0/24          |
 
- 6. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
+6. To finish creating the CoreServicesVnet and its associated subnets, select **Review + create**.
 
- 7. Verify your configuration passed validation, and then select **Create**.
+7. Verify your configuration passed validation, and then select **Create**.
 
- 8. Repeat steps 1 -8 for each VNet based on the tables below  
+8. Repeat steps 1 -8 for each VNet based on the tables below  
 
 ## Task 3: Create the ManufacturingVnet virtual network and subnets
 
@@ -153,7 +153,7 @@ In this exercise, you will:
 
 4. In CoreServicesVnet, under **Settings**, select **Subnets**.
 
-5. In CoreServicesVnet | Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
+5. In CoreServicesVnet &#124; Subnets, verify that the subnets you created are listed, and that the IP address ranges are correct.
 
    ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
