@@ -3,6 +3,7 @@ Exercise:
     title: 'M03 - Unit 5 Provision an ExpressRoute circuit'
     module: 'Module 03 - Design and implement Azure ExpressRoute'
 ---
+
 # M03-Unit 5 Provision an ExpressRoute circuit
 
 ## Exercise scenario
@@ -42,30 +43,30 @@ In this exercise, you will:
 
 1. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
 
-![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration2.png)
+   ![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration2.png)
 
-+ Port type determines if you are connecting to a service provider or directly into Microsoft's global network at a peering location.
-+ Create new or import from classic determines if a new circuit is being created or if you are migrating a classic circuit to Azure Resource Manager.
-+ Provider is the internet service provider who you will be requesting your service from.
-+ Peering Location is the physical location where you are peering with Microsoft.
+   + Port type determines if you are connecting to a service provider or directly into Microsoft's global network at a peering location.
+   + Create new or import from classic determines if a new circuit is being created or if you are migrating a classic circuit to Azure Resource Manager.
+   + Provider is the internet service provider who you will be requesting your service from.
+   + Peering Location is the physical location where you are peering with Microsoft.
 
-> **IMPORTANT**
->
-> The Peering Location indicates the [physical location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) where you are peering with Microsoft. This is not linked to "Location" property, which refers to the geography where the Azure Network Resource Provider is located. While they are not related, it is a good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
+   > **IMPORTANT**
+   >
+   > The Peering Location indicates the [physical location](https://docs.microsoft.com/en-us/azure/expressroute/expressroute-locations) where you are peering with Microsoft. This is not linked to "Location" property, which refers to the geography where the Azure Network Resource Provider is located. While they are not related, it is a good practice to choose a Network Resource Provider geographically close to the Peering Location of the circuit.
 
-+ **SKU** determines whether an ExpressRoute local, ExpressRoute standard, or an ExpressRoute premium add-on is enabled. You can specify **Local** to get the local SKU, **Standard** to get the standard SKU or **Premium** for the premium add-on. You can change the SKU to enable the premium add-on.
+   + **SKU** determines whether an ExpressRoute local, ExpressRoute standard, or an ExpressRoute premium add-on is enabled. You can specify **Local** to get the local SKU, **Standard** to get the standard SKU or **Premium** for the premium add-on. You can change the SKU to enable the premium add-on.
 
-> **IMPORTANT**
->
-> You cannot change the SKU from Standard/Premium to Local.
+   > **IMPORTANT**
+   >
+   > You cannot change the SKU from Standard/Premium to Local.
 
-+ **Billing model** determines the billing type. You can specify **Metered** for a metered data plan and **Unlimited** for an unlimited data plan. You can change the billing type from **Metered** to **Unlimited**.
+   + **Billing model** determines the billing type. You can specify **Metered** for a metered data plan and **Unlimited** for an unlimited data plan. You can change the billing type from **Metered** to **Unlimited**.
 
-> **IMPORTANT**
->
-> You cannot change the type from Unlimited to Metered.
+   > **IMPORTANT**
+   >
+   > You cannot change the type from Unlimited to Metered.
 
-+ **Allow classic operation** will allow classic virtual networks to be link to the circuit.
+   + **Allow classic operation** will allow classic virtual networks to be link to the circuit.
 
 ## Task 2: Retrieve your Service key
 
@@ -96,7 +97,7 @@ In this exercise, you will:
      + Circuit status: Enabled
    + You should periodically check the provisioning status and the state of the circuit status.
 
-![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
+   ![Azure portal - ExpressRoute circuit properties showing status is now provisioned](../media/provisioned.png)
 
 Congratulations! You have created an ExpressRoute circuit and located the Service key, which you would need to complete the provisioning of the circuit.
 

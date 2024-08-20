@@ -219,12 +219,12 @@ The steps necessary to restrict network access to resources created through Azur
 ## Task 7: Create a file share in the storage account
 
 1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
-1. Select **File shares**, as shown in the following picture: 
+1. Select **File shares**, as shown in the following picture:
    ![Graphical user interface, application Description automatically generated](../media/new-file-share-2.png)
 1. Select **+ File share**.
 1. Enter marketing under **Name**, and then select **Next : Backup**.
    ![Graphical user interface, application Description automatically generated](../media/new-file-share-basics.png)
-1. Unselect **Enable backup**, as shown in the following picture: 
+1. Unselect **Enable backup**, as shown in the following picture:
    ![Graphical user interface, application Description automatically generated](../media/new-file-share-backup.png)
 1. Select **Review + Create**. Once the resource is validated select **Create**.
 
@@ -312,7 +312,7 @@ You receive no replies because the network security group associated to the Priv
 
 1. Complete steps 1-6 in the Confirm access to storage account task for the ContosoPublic VM.  
 
-   ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
+   After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
 
 1. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
 
@@ -328,13 +328,13 @@ You receive no replies because the network security group associated to the Priv
 
 1. You receive the error shown in the following screenshot:
 
-    ![Graphical user interface, text, application, email Description automatically generated](../media/no-access.png)
+   ![Graphical user interface, text, application, email Description automatically generated](../media/no-access.png)
 
  Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
 
 > **Warning**: Prior to continuing you should remove all resources used for this lab. To do this On the Azure portal select Resource groups. Select any resources groups you have created. On the resource group blade select Delete Resource group, enter the Resource Group Name and select Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
 
-Results: You have now completed this lab.
+Congratulations! You have now completed the lab.
 
 ## Task 11: Clean up resources
 

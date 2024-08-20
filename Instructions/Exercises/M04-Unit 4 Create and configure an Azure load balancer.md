@@ -4,8 +4,9 @@ Exercise:
     module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
 ---
 
-
 # M04-Unit 4 Create and configure an Azure load balancer
+
+## Exercise scenario
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization.
 
@@ -31,11 +32,11 @@ In this section, you will create a virtual network and a subnet.
 
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
+1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
-3. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 
-4. On the **Basics** tab, use the information in the table below to create the virtual network.
+1. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
    | -------------- | ------------------------------------------ |
@@ -44,21 +45,21 @@ In this section, you will create a virtual network and a subnet.
    | Name           | **IntLB-VNet**                             |
    | Region         | **(US) East US**                           |
 
-5. Select **Next : IP Addresses**.
+1. Select **Next : IP Addresses**.
 
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
+1. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
 
-7. On the **IP Addresses** tab, select **+ Add subnet**.
+1. On the **IP Addresses** tab, select **+ Add subnet**.
 
-8. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+1. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
 
-9. Select **Add**.
+1. Select **Add**.
 
-10. Select **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
+1. Select **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
 
-11. Select **Next : Security**.
+1. Select **Next : Security**.
 
-12. Under **BastionHost** select **Enable**, then enter the information from the table below.
+1. Under **BastionHost** select **Enable**, then enter the information from the table below.
 
     | **Setting**                       | **Value**                                     |
     | --------------------------------- | --------------------------------------------- |
@@ -66,9 +67,9 @@ In this section, you will create a virtual network and a subnet.
     | AzureBastionSubnet address  space | **10.1.1.0/26**                               |
     | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
 
-13. Select **Review + create**.
+1. Select **Review + create**.
 
-14. Select **Create**.
+1. Select **Create**.
 
 ## Task 2: Create backend servers
 
@@ -76,13 +77,13 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
- > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
+   > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
-2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, and azuredeploy.parameters.json into the Cloud Shell home directory one by one.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, and azuredeploy.parameters.json into the Cloud Shell home directory one by one.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
->**Note**: You will be prompted to provide an Admin password.
+   >**Note**: You will be prompted to provide an Admin password.
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -272,6 +273,8 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. If you select the refresh button in the browser a few times, you will see that the response comes randomly from the different VMs in the backend pool of the internal load balancer.
     ![Picture 9](../media/load-balancer-web-test-2.png)
+
+Congratulations! You have created and configured an Azure Load Balancer!
 
 ## Clean up resources
 

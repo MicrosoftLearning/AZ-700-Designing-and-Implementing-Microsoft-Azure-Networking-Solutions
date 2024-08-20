@@ -182,7 +182,7 @@ In this section, you will create three VMs for the backend pool of the load bala
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
- > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
+   > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M08**.
 
@@ -196,7 +196,7 @@ In this section, you will create three VMs for the backend pool of the load bala
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
   
-    > **Note:** This will take several minutes to deploy.
+   > **Note:** This will take several minutes to deploy.
 
 ## Task 7: Add VMs to the backend pool
 
@@ -408,4 +408,4 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.

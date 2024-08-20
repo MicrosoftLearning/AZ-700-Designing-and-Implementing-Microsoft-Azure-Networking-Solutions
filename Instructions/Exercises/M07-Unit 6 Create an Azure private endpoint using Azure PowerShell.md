@@ -12,7 +12,6 @@ Get started with Azure Private Link by using a Private Endpoint to connect secur
 
 ![Diagram of private endpoint architecture.](../media/6-exercise-create-azure-private-endpoint-using-azure-powershell.png)
 
-
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 45 minutes
@@ -21,7 +20,7 @@ You'll create a Private Endpoint for an Azure web app and deploy a virtual machi
 
 Private Endpoints can be created for different kinds of Azure services, such as Azure SQL and Azure Storage.
 
-**Prerequisites**
+## Prerequisites
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
 
@@ -57,11 +56,11 @@ New-AzResourceGroup -Name 'CreatePrivateEndpointQS-rg' -Location 'eastus'
 
 Deploy the following ARM templates to create the PremiumV2-tier Azure Web App needed for this exercise:
 
-   ```powershell
-   $RGName = "CreatePrivateEndpointQS-rg"
-   
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
-   ```
+  ```powershell
+  $RGName = "CreatePrivateEndpointQS-rg"
+
+  New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile template.json -TemplateParameterFile parameters.json
+  ```
 
 If you receive an error (for example while looking into the Deployment status in the Portal) like "Website with given name GEN-UNIQUE already exists." please make sure to go to the Prerequisites mentioned above regarding editing the template.
 
@@ -381,28 +380,28 @@ In this section, you'll use the virtual machine you created in the previous step
 
 1. Open Windows PowerShell on the server after you connect.
 
-1. Enter nslookup &lt;your- webapp-name&gt;.azurewebsites.net. Replace &lt;your-webapp-name&gt; with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
+1. Enter nslookup **&lt;your- webapp-name&gt;.azurewebsites.net**. Replace **&lt;your-webapp-name&gt;** with the name of the web app you created in the previous steps. You'll receive a message similar to what is displayed below:
 
-  ```
-  Server: UnKnown
-  
-  Address: 168.63.129.16
-  
-  Non-authoritative answer:
-  
-  Name: mywebapp8675.privatelink.azurewebsites.net
-  
-  Address: 10.0.0.5
-  
-  Aliases: mywebapp8675.azurewebsites.net 
-  ```  
+   ```
+   Server: UnKnown
+   
+   Address: 168.63.129.16
+   
+   Non-authoritative answer:
+   
+   Name: mywebapp8675.privatelink.azurewebsites.net
+   
+   Address: 10.0.0.5
+   
+   Aliases: mywebapp8675.azurewebsites.net 
+   ```
 
-A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
+   A private IP address of **10.0.0.5** is returned for the web app name. This address is in the subnet of the virtual network you created previously.
 
 1. In the bastion connection to **myVM**, open Internet Explorer.
 1. Enter the url of your web app, **https://&lt;your-webapp-name&gt;.azurewebsites.net**
 1. You'll receive the default web app page if your application hasn't been deployed:
-  ![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
+![screen shot of page in Azure indicating an app service is up and running](../media/web-app-default-page.png)
 1. Close the connection to **myVM**.
 
 ## Task 7: Clean up resources

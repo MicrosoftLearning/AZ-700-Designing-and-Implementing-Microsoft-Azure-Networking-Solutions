@@ -171,6 +171,8 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 1. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
+Congratulations! You have created and configured an Azure Traffic Manager profile!
+
 ## Task 5: Clean up resources
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.

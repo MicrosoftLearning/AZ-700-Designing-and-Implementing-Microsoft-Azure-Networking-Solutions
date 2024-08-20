@@ -4,8 +4,6 @@ Exercise:
     module: 'Module 05 - Load balancing HTTP(S) traffic in Azure'
 ---
 
-
-
 # M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal
 
 ## Exercise scenario  
@@ -50,7 +48,7 @@ This exercise requires two instances of a web application that run in different 
    | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
 1. Select **Review + create**, review the Summary, and then select **Create**.
-   ‎It might take several minutes for the deployment to complete.
+   It might take several minutes for the deployment to complete.
 
 1. Create a second web app. On the Azure Portal home page, search  **WebApp**.
 
@@ -71,7 +69,7 @@ This exercise requires two instances of a web application that run in different 
    | Pricing Plan     | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
 1. Select **Review + create**, review the Summary, and then select **Create**.
-   ‎It might take several minutes for the deployment to complete.
+   It might take several minutes for the deployment to complete.
 
 ## Task 2: Create a Front Door for your application
 
@@ -127,11 +125,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ![Browser showing App Service error page](../media/web-apps-both-stopped.png)
 
-   Congratulations! You have configured and tested an Azure Front Door.
+Congratulations! You have configured and tested an Azure Front Door.
 
 ## Task 4: Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 

@@ -33,9 +33,9 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
    > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
-2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
+1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 
-3. Deploy the following ARM templates to create the VMs needed for this exercise:
+1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
    >**Note**: You will be prompted to provide an Admin password.
 
@@ -45,9 +45,9 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
    ```
   
-4. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
-5. Verify that the virtual machine has been created.
+1. Verify that the virtual machine has been created.
 
 ## Task 2: Connect to the Test VMs using RDP
 
@@ -107,26 +107,26 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. Use the information in the following table to create the peering.
 
-| **Section**                          | **Option**                                    | **Value**                             |
-| ------------------------------------ | --------------------------------------------- | ------------------------------------- |
-| This virtual network                 |                                               |                                       |
-|                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Remote virtual network               |                                               |                                       |
-|                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-|                                      | Virtual network deployment model              | Resource manager                      |
-|                                      | I know my resource ID                         | Not selected                          |
-|                                      | Subscription                                  | Select the Subscription provided      |
-|                                      | Virtual network                               | ManufacturingVnet                     |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Review your settings and select Add. |                                               |                                       |
-|                                      |                                               |                                       |
+   | **Section**                          | **Option**                                    | **Value**                             |
+   | ------------------------------------ | --------------------------------------------- | ------------------------------------- |
+   | This virtual network                 |                                               |                                       |
+   |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
+   |                                      | Traffic to remote virtual network             | Allow (default)                       |
+   |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+   |                                      | Virtual network gateway or Route Server       | None (default)                        |
+   | Remote virtual network               |                                               |                                       |
+   |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
+   |                                      | Virtual network deployment model              | Resource manager                      |
+   |                                      | I know my resource ID                         | Not selected                          |
+   |                                      | Subscription                                  | Select the Subscription provided      |
+   |                                      | Virtual network                               | ManufacturingVnet                     |
+   |                                      | Traffic to remote virtual network             | Allow (default)                       |
+   |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+   |                                      | Virtual network gateway or Route Server       | None (default)                        |
+   | Review your settings and select Add. |                                               |                                       |
+   |                                      |                                               |                                       |
 
- >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously.
+   >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously.
 
 1. In CoreServicesVnet &#124; Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
