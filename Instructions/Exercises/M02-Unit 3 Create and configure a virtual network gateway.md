@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 02 - Design and implement hybrid networking'
 ---
 
-# M02-Unit 3 Create and configure a virtual network gateway
+# M02 - Unit 3 Create and configure a virtual network gateway
 
 ## Exercise scenario
 

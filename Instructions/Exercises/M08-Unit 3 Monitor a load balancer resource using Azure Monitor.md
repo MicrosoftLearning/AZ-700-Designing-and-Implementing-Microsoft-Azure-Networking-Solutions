@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 08 - Design and implement network monitoring'
 ---
 
-# M08-Unit 3 Monitor a load balancer resource using Azure Monitor
+# M08 - Unit 3 Monitor a load balancer resource using Azure Monitor
 
 ## Exercise scenario
 

@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 06 - Design and implement network security'
 ---
 
-# M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure portal
+# M06 - Unit 4 Configure DDoS Protection on a virtual network using the Azure portal
 
 ## Exercise scenario
 

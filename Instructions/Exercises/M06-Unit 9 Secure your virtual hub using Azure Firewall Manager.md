@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 06 - Design and implement network security'
 ---
 
-# M06-Unit 9 Secure your virtual hub using Azure Firewall Manager
+# M06 - Unit 9 Secure your virtual hub using Azure Firewall Manager
 
 ## Exercise scenario
 

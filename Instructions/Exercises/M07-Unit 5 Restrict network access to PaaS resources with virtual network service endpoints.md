@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 07 - Design and implement private access to Azure Services'
 ---
 
-# M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
+# M07 - Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
 
 ## Exercise scenario
 

@@ -4,7 +4,7 @@ Exercise:
     module: 'Module 06 - Design and implement network security '
 ---
 
-# M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
+# M06 - Unit 7 Deploy and configure Azure Firewall using the Azure portal
 
 ## Exercise scenario
 
