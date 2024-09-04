@@ -259,7 +259,10 @@ By default, storage accounts accept network connections from clients in any netw
 
 To test network access to a storage account, deploy a VM to each subnet.
 
-1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
+1. In the Azure portal, select the Cloud Shell icon (top right). If necessary, configure the shell.  
+    + Select **PowerShell**.
+    + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
+    + Wait for the terminal to create and a prompt to be displayed. 
 
 1. In the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **VMs.json** and **VMs.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M07**.
 
