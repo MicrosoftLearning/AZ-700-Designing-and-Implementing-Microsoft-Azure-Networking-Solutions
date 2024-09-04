@@ -3,7 +3,8 @@ Exercise:
     title: 'M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
     module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
-# M01-Unit 8 Connect two Azure Virtual Networks using global virtual network peering
+
+# M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering
 
 ## Exercise scenario
 
@@ -31,7 +32,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 ### Create ManufacturingVM
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
-  > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
+   > **Note:** If this is the first time opening Cloud Shell, you might be prompted to create a storage account. Select **Create storage**.
 
 1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M01**.
 
@@ -57,7 +58,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On ManufacturingVM, select **Connect &gt; RDP**.
 
-1. On ManufacturingVM | Connect, select **Download RDP file**.
+1. On ManufacturingVM \| Connect, select **Download RDP file**.
 
 1. Save the RDP file to your desktop.
 
@@ -69,7 +70,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
 1. On TestVM1, select **Connect &gt; RDP**.
 
-1. On TestVM1 | Connect, select **Download RDP file**.
+1. On TestVM1 \| Connect, select **Download RDP file**.
 
 1. Save the RDP file to your desktop.
 
@@ -101,34 +102,34 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 1. In CoreServicesVnet, under **Settings**, select **Peerings**.
-   ![screen shot of core services VNet Peering settings ](../media/create-peering-on-coreservicesvnet.png)
+   ![Screenshot of core services VNet peering settings ](../media/create-peering-on-coreservicesvnet.png)
 
-1. On CoreServicesVnet | Peerings, select **+ Add**.
+1. On CoreServicesVnet \| Peerings, select **+ Add**.
 
 1. Use the information in the following table to create the peering.
 
-| **Section**                          | **Option**                                    | **Value**                             |
-| ------------------------------------ | --------------------------------------------- | ------------------------------------- |
-| This virtual network                 |                                               |                                       |
-|                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Remote virtual network               |                                               |                                       |
-|                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
-|                                      | Virtual network deployment model              | Resource manager                      |
-|                                      | I know my resource ID                         | Not selected                          |
-|                                      | Subscription                                  | Select the Subscription provided      |
-|                                      | Virtual network                               | ManufacturingVnet                     |
-|                                      | Traffic to remote virtual network             | Allow (default)                       |
-|                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
-|                                      | Virtual network gateway or Route Server       | None (default)                        |
-| Review your settings and select Add. |                                               |                                       |
-|                                      |                                               |                                       |
+   | **Section**                          | **Option**                                    | **Value**                             |
+   | ------------------------------------ | --------------------------------------------- | ------------------------------------- |
+   | This virtual network                 |                                               |                                       |
+   |                                      | Peering link name                             | CoreServicesVnet-to-ManufacturingVnet |
+   |                                      | Traffic to remote virtual network             | Allow (default)                       |
+   |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+   |                                      | Virtual network gateway or Route Server       | None (default)                        |
+   | Remote virtual network               |                                               |                                       |
+   |                                      | Peering link name                             | ManufacturingVnet-to-CoreServicesVnet |
+   |                                      | Virtual network deployment model              | Resource manager                      |
+   |                                      | I know my resource ID                         | Not selected                          |
+   |                                      | Subscription                                  | Select the Subscription provided      |
+   |                                      | Virtual network                               | ManufacturingVnet                     |
+   |                                      | Traffic to remote virtual network             | Allow (default)                       |
+   |                                      | Traffic forwarded from remote virtual network | Allow (default)                       |
+   |                                      | Virtual network gateway or Route Server       | None (default)                        |
+   | Review your settings and select Add. |                                               |                                       |
+   |                                      |                                               |                                       |
 
- >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously. It's just a name.
+   >**Note**: If you don't have a "MOC Subscription", use the subscription you've been using previously.
 
-1. In CoreServicesVnet | Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
+1. In CoreServicesVnet \| Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
 1. Under Virtual networks, select **ManufacturingVnet**, and verify the **ManufacturingVnet-to-CoreServicesVnet** peering is listed.
 
@@ -159,4 +160,4 @@ Congratulations! You have successful configured connectivity between VNets by ad
    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
