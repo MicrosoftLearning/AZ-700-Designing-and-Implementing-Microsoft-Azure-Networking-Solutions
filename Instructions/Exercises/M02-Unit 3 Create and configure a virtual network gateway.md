@@ -245,7 +245,7 @@ In this exercise, you will:
 
 ## Task 10: Verify that the connections connect
 
-1. In **Search resources, services, and docs (G+/)**, enter **connections**, and then select **connections** from the results.
+1. In **Search resources, services, and docs (G+/)**, enter **vpn**, and then select **connections** from the results.
 
 1. Wait until the status of both connections is **Connected**. You may need to refresh your screen.
 
