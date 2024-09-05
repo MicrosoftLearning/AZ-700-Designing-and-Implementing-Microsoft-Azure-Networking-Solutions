@@ -92,13 +92,14 @@ In this exercise, you will:
 
 1. On the **Rule name** box, enter **RoutingRule**.
 
+1. For **Priority** enter **100**. 
+
 1. On the **Listener** tab, enter or select the following information:
 
     | **Setting**   | **Value**         |
     | ------------- | ----------------- |
     | Listener name | Listener          |
-    | Priority      | **100**           |
-    | Frontend IP   | Select **Public** |
+    | Frontend IP   | Select **Public IPv4** |
 
 1. Accept the default values for the other settings on the **Listener** tab.
 
