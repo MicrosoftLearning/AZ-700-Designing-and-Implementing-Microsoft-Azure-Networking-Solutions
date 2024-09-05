@@ -131,7 +131,16 @@ In this exercise, you will:
 
 1. Select **Create** to create the virtual network, the public IP address, and the application gateway.
 
-It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully before moving on to the next section.
+1. It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully.
+
+1. Search for and select the **ContosoVNet**. Verify there are two subnets, **AGSubnet** and **BackendSubnet**.
+
+1. To create the **BackendSubnet**, select **Settings** and then **Subnets**. Be sure to **Add** the subnet when finished.
+   
+   | **Setting**       | **Value**                          |
+   | ----------------- | ---------------------------------- |
+   | Subnet name       | BackendSubnet                      |
+   | Address range     | 10.0.1.0/24                        |
 
 ## Task 2: Create virtual machines
 
@@ -144,7 +153,7 @@ It may take several minutes for Azure to create the application gateway. Wait un
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
->**Note**: You will be prompted to provide an Admin password.
+>**Note**: You will be prompted to provide an Admin password. It will take a few minutes without messages for the command to process. 
 
    ```powershell
    $RGName = "ContosoResourceGroup"
