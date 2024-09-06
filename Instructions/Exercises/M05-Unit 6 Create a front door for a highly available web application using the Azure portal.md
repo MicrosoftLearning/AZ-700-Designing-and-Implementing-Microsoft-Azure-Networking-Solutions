@@ -47,7 +47,7 @@ This exercise requires two instances of a web application that run in different 
    | Operating System | Select **Windows**.                                          |
    | Region           | Select **Central US**.                                       |
    | Windows Plan     | Select **Create new** and enter myAppServicePlanCentralUS in the text box. |
-   | Princing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
+   | Pricing Plan    | Select **Standard S1 100 total ACU, 1.75 GB memory**.        |
 
 1. Select **Review + create**, review the Summary, and then select **Create**.
    ‎It might take several minutes for the deployment to complete.
