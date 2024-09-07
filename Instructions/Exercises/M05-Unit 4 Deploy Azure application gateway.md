@@ -57,11 +57,7 @@ In this exercise, you will:
    | **SUBNETS**       |                                    |
    | Subnet name       | Change **default** to **AGSubnet** |
    | Address range     | 10.0.0.0/24                        |
-   | Subnet name       | BackendSubnet                      |
-   | Address range     | 10.0.1.0/24                        |
 
-
->**Note**: If the UI does not have the option to add additional subnets, complete the steps and add the backend subnet after creating the gateway. 
 
 1. Select **OK** to return to the Create application gateway Basics tab.
 
@@ -133,7 +129,9 @@ In this exercise, you will:
 
 1. It may take several minutes for Azure to create the application gateway. Wait until the deployment finishes successfully.
 
-1. Search for and select the **ContosoVNet**. Verify there are two subnets, **AGSubnet** and **BackendSubnet**.
+### Add a subnet for a backend servers
+
+1. Search for and select the **ContosoVNet**. Verify the **AGSubnet** was created. 
 
 1. To create the **BackendSubnet**, select **Settings** and then **Subnets**. Be sure to **Add** the subnet when finished.
    
@@ -149,18 +147,20 @@ In this exercise, you will:
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed.
       
-1. On the toolbar of the Cloud Shell pane, select **Manage files** and then **Upload**. Upload the following files: **backend.json**, **backend.parameters.json**, and **install-iis.ps1**. You will need to download the files from the repository, **\Allfiles\Exercises\M05** folder.
+1. On the toolbar of the Cloud Shell pane, select **Manage files** and then **Upload**. Upload the following files: **backend.json**, **backend.parameters.json**, and **install-iis.ps1**.The files are available for download from the repository, **\Allfiles\Exercises\M05** folder.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
->**Note**: You will be prompted to provide an Admin password. It will take a few minutes without messages for the command to process. 
+>**Note**: You will be prompted to provide an Admin password. 
 
    ```powershell
    $RGName = "ContosoResourceGroup"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```
-  
+
+>**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. Also, IIS is installed on each machine. This will take a few minutes. 
+
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
 1. Verify that both virtual machines have been created.
