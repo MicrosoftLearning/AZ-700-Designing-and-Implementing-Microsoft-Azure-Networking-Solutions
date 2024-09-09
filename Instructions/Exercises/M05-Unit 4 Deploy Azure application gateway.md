@@ -158,12 +158,28 @@ In this exercise, you will:
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```
+>**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. This will take a few minutes. 
 
->**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. Also, IIS is installed on each machine. This will take a few minutes. 
+1. The command should complete successfully and list **BackendVM1** and **BackendVM2**.
 
-1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
+### Install IIS on each virtual machine
 
-1. Verify that both virtual machines have been created.
+1. Each backend server needs IIS installed.
+
+1. Continue at the PowerShell prompt and use the provided script to install IIS on **BackendVM1**.
+
+   ```powershell
+   Invoke-AzVMRunCommand -ResourceGroupName 'ContosoResourceGroup' -Name 'BackendVM1' -CommandId 'RunPowerShellScript' -ScriptPath 'install-iis.ps1'
+   ```
+
+>**Note**: While you wait review the PowerShell script. Notice that the IIS home page is being customized to provide the virtual machine name.
+
+1. Run the command again, this time for **BackendVM2**.
+
+   ```powershell
+   Invoke-AzVMRunCommand -ResourceGroupName 'ContosoResourceGroup' -Name 'BackendVM2' -CommandId 'RunPowerShellScript' -ScriptPath 'install-iis.ps1'
+   ```
+>**Note:** Each command will take a couple of minutes to complete.
 
 ## Task 3: Add backend servers to backend pool
 
@@ -183,9 +199,11 @@ In this exercise, you will:
 
    ![Azure Portal add target backends to backend pool](../media/edit-backend-pool.png)
 
-1. Select **Save**.
+1. Select **Save** and wait for the targets to be added. 
 
-Wait for the deployment to complete before proceeding to the next step.
+1. Check to ensure the backend servers are healthy. Select **Monitoring** and then **Backend Health**. Both targets should be healthy. 
+
+   ![Azure Portal check backend health.](../media/contoso-backend-health.png)
 
 ## Task 4: Test the application gateway
 
@@ -204,5 +222,6 @@ Although IIS isn't required to create the application gateway, you installed it 
    ![Broswer - display BackendVM1 or BackendVM2 depending which backend server reponds to request.](../media/browse-to-backend.png)
 
 1. Refresh the browser multiple times and you should see connections to both BackendVM1 and BackendVM2.
+
 
 Congratulations! You have configured and tested an Azure Application Gateway.
