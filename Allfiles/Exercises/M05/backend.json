@@ -226,8 +226,9 @@
                     ],
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File install-iis.ps1"
                 }
-            } */
+            } 
         } 
+    */
     ],
     "outputs": {}
 }
