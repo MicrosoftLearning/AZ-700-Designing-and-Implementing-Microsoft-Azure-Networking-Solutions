@@ -175,11 +175,11 @@ In this exercise, you will:
 
 1. On the Edit backend pool page, under **Backend targets**, in **Target type**, select **Virtual machine**.
 
-1. Under **Target**, select **BackendVM1.**
+1. Under **Target**, select **BackendVM1-nic.**
 
 1. On **Target type**, select **Virtual machine**.
 
-1. Under **Target**, select **BackendVM2.**
+1. Under **Target**, select **BackendVM2-nic.**
 
    ![Azure Portal add target backends to backend pool](../media/edit-backend-pool.png)
 
