@@ -184,7 +184,8 @@
                     }
                 ]
             }
-        },
+        }
+        /*,
       {
             "apiVersion": "2018-06-01",
             "type": "Microsoft.Compute/virtualMachines/extensions",
@@ -226,7 +227,7 @@
                     "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File install-iis.ps1"
                 }
             }
-        }
+        } */
     ],
     "outputs": {}
 }
