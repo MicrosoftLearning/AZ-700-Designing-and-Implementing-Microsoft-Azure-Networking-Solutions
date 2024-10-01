@@ -73,6 +73,8 @@ This exercise requires two instances of a web application that run in different 
 1. Select **Review + create**, review the Summary, and then select **Create**.
    ‎It might take several minutes for the deployment to complete.
 
+**Note:** If you receive a deployment error, read the notification carefully. If the error involves the region availability due to quotas, try changing to another region. 
+
 ## Task 2: Create a Front Door for your application
 
 Configure Azure Front Door to direct user traffic based on lowest latency between the two web apps servers. To begin, add a frontend host for Azure Front Door.
