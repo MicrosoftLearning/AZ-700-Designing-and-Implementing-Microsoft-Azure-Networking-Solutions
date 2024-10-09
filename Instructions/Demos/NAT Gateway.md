@@ -1,7 +1,7 @@
 ---
 demo:
-    title: 'Mod 01 - NAT Gateway'
     module: 'Module 01 - Introduction to Azure Virtual Networks'
+    title: 'NAT Gateway'
 ---
 Tutorial: Create a NAT gateway - Azure portal - https://learn.microsoft.com/azure/virtual-network/nat-gateway/tutorial-create-nat-gateway-portal
 
