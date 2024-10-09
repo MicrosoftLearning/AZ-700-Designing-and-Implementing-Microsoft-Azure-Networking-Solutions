@@ -1,7 +1,7 @@
 ---
 demo:
-    module: '06 - Design and Implement Network Security'
-    title: 'Firewall Manager'
+    module: 'Module 06 - Design and Implement Network Security'
+    title: 'Mod 06 - Firewall Manager'
 ---
 
 **Simulation:** [Deploy and configure Azure Firewall using the Azure portal](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20and%20configure%20Azure%20Firewall%20using%20the%20Azure%20portal)
