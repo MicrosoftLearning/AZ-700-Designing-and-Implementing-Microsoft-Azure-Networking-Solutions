@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'VNET Peering            '
+    title: 'Demo 01: VNET Peering            '
     module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
 ## Configure VNet Peering
