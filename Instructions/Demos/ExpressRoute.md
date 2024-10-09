@@ -1,7 +1,7 @@
 ---
 demo:
-    module: '03 - Design and implement Azure ExpressRoute'
-    title: 'ExpressRoute'
+    module: 'Module 03 - Design and implement Azure ExpressRoute'
+    title: 'Mod 03 - ExpressRoute'
 ---
 ## ExpressRoute
 
