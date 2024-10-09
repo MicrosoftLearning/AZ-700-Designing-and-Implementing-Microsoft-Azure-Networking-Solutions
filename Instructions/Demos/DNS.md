@@ -1,7 +1,7 @@
 ---
 demo:
-    title: 'DNS name resolution'
     module: 'Module 01 - Introduction to Azure Virtual Networks'
+    title: 'DNS name resolution'
 ---
 
 ✔ Always consider having students walk-through the demonstrations themselves. Also, consider the overlap with the formal labs and your best use of time. 
