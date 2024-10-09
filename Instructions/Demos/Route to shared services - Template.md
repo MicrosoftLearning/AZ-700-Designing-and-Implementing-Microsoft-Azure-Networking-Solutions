@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Route to shared services - Template'
+    title: 'Route to shared services'
     module: 'Module 02 - Design and implement hybrid networking'
 ---
 Consider demonstrating this to the students: 
