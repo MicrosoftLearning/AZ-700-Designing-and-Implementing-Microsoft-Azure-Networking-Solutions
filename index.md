@@ -8,7 +8,7 @@ layout: home
 
 Required exercise files can be [DOWNLOADED HERE](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/archive/master.zip)
 
-Hyperlinks to each of the exercises are listed below.
+Scroll down for demonstrations. 
 
 ## Exercise
 
