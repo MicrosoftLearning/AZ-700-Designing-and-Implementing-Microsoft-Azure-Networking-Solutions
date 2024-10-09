@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'VPN Gateways'
+    title: 'Demo 02: VPN Gateways'
     module: 'Module 02 - Design and implement hybrid networking'
 ---
 
