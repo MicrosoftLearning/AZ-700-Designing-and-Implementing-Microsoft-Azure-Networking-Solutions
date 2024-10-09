@@ -3,6 +3,9 @@ demo:
     title: 'VPN Gateways'
     module: 'Module 02 - Design and implement hybrid networking'
 ---
+
+**Simulation:** [Create and configure a virtual network gateway](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)
+
 In this demonstration, we will explore virtual network gateways.
 
 **Note**: This demonstration works best with two virtual networks with subnets.
