@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Mod 07 - Private Link Service'
+    title: 'Private Link Service (Module 07)'
     module: 'Demo: Design and implement private access to Azure Services'
 ---
 In this demonstration review configuring private link. 
