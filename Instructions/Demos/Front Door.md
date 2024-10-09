@@ -1,7 +1,7 @@
 ---
 demo:
-    title: 'Front Door'
-    module: '05 - Load balancing HTTPS traffic'
+    title: 'Mod 05 - Front Door'
+    module: 'Module 05 - Load balancing HTTPS traffic'
 ---
 In this demonstration review configuring Front Door.
 
