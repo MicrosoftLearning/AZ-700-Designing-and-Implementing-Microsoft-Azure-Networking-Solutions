@@ -1,7 +1,7 @@
 ---
 demo:
     module: 'Module 06 - Design and Implement Network Security'
-    title: 'DDOS Network Protection'
+    title: 'Module 06 - DDOS Network Protection'
 ---
 ## Configure DDoS network protection
 
