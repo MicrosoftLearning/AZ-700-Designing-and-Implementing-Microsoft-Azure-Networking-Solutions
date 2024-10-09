@@ -3,7 +3,6 @@ demo:
     title: 'VNET Peering            '
     module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
-✔ Always consider having students walk-through the demonstrations themselves. Also, consider the overlap with the formal labs and your best use of time. 
 
 Configure VNet Peering
 Note: For this demonstration you will need two virtual networks.
