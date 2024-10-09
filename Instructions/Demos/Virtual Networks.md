@@ -1,7 +1,7 @@
 ---
 demo:
     module: 'Module 01 - Introduction to Azure Virtual Networks'
-    title: 'Virtual Networks'
+    title: 'Mod 01 - Virtual Networks'
 ---
 ## Configure Virtual Networks
 
