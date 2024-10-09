@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Service Endpoints'
+    title: 'Mod 07 - Service Endpoints'
     module: 'Module 07 - Design and implement private access to Azure Services'
 ---
 Restrict access to PaaS resources - tutorial - Azure portal | Microsoft Docs - 
