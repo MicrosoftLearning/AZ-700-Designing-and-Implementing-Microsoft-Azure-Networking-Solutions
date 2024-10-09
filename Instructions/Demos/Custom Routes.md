@@ -1,7 +1,7 @@
 ---
 demo:
     module: 'Module 01 - Introduction to Azure Virtual Networks'
-    title: 'Mod 01 - Custom Routes'
+    title: 'M01 - Custom Routes'
 ---
 ## Configure Network Routing and Endpoints
 
