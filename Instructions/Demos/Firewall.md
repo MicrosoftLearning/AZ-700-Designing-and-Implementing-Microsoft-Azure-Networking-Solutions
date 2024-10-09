@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Module 06 - Firewall Manager'
+    title: 'Mod 06 - Firewall Manager'
     module: 'Module 06 - Design and Implement Network Security'
 ---
 Tutorial: Secure your hub virtual network using Azure Firewall Manager | Microsoft Docs – 
