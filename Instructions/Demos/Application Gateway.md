@@ -1,7 +1,7 @@
 ---
 demo:
     module: 'Module 05 - Load balancing HTTPS traffic'
-    title: "Module 05: Application Gateway"
+    title: "Application Gateway (Module 05)"
 ---
 ## Configure Azure Application Gateway
 
