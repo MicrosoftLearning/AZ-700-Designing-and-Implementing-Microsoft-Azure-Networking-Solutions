@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Demo 06 -Network Security Groups'
+    title: 'Demo 06: Network Security Groups'
     module: 'Module 06 - Design and Implement Network Security'
 ---
 ## Configure Network Security Groups
