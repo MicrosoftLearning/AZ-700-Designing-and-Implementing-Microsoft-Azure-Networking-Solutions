@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Create VPN Gateways'
+    title: 'VPN Gateways'
     module: 'Module 02 - Design and implement hybrid networking'
 ---
 In this demonstration, we will explore virtual network gateways.
