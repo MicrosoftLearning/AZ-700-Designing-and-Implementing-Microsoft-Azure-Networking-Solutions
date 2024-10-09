@@ -23,6 +23,6 @@ Hyperlinks to each of the exercises are listed below.
 {% assign demo = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
 | Module | Demonstration |
 | --- | --- | 
-{% for activity in demo  %} | {{ activity.demo.module }} | ({{ site.github.url }}{{ activity.url }}) |
+{% for activity in demo  %} | {{ activity.demo.module }} | [{{activity.demo.title}}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
