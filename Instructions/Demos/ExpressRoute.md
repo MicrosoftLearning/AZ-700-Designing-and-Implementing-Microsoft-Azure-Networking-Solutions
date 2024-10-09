@@ -1,5 +1,5 @@
 ---
 demo:
-    title: 'Creating custom routes'
+    title: 'ExpressRoute'
     module: 'Module 03 - Design and implement Azure ExpressRoute'
 ---
