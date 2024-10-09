@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Application Gateway'
+    title: 'Mod 05 - Application Gateway'
     module: 'Module 05 - Load balancing HTTPS traffic'
 ---
 In this demonstration review the configuration settings of the Application Gateway.
