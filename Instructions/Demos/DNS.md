@@ -1,7 +1,7 @@
 ---
 demo:
     module: 'Module 01 - Introduction to Azure Virtual Networks'
-    title: 'DNS name resolution'
+    title: 'Module 01 - DNS name resolution'
 ---
 ## Configure Azure DNS
 
