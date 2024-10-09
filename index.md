@@ -20,7 +20,7 @@ Hyperlinks to each of the exercises are listed below.
 
 ## Demonstrations (under construction)
 
-{% assign demo = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
+{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
 | Module | Demo |
 | --- | --- |
 {% for activity in demo  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}{% if activity.demo.type %} - {{ activity.demo.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
