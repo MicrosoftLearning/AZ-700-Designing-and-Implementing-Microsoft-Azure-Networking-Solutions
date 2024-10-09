@@ -1,6 +1,6 @@
 ---
 demo:
-    title: 'Load Balancer'
+    title: 'Mod 04 - Load Balancer'
     module: 'Module 04 - Load balancing non-HTTPS traffic '
 ---
 ## Configure Azure Load Balancer
