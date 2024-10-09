@@ -1,7 +1,7 @@
 ---
 demo:
-    title: 'M01 - Creating custom routes'
-    module: 'Introduction to Azure Virtual Networks'
+    title: 'Creating custom routes'
+    module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
 In this demonstration, we will learn how to create a route table, define a custom route, and associate the route with a subnet.
 
