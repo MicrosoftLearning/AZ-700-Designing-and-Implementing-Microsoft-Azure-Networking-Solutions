@@ -3,7 +3,6 @@ demo:
     title: 'VNET Peering            '
     module: 'Module 01 - Introduction to Azure Virtual Networks'
 ---
-
 Configure VNet Peering
 Note: For this demonstration you will need two virtual networks.
 Configure VNet peering on the first virtual network
