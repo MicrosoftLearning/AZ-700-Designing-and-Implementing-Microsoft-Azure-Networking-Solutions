@@ -114,28 +114,28 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
    | **Option**                                    | **Value**                             |
    | ------------------------------------ | --------------------------------------------- | 
-   | Peering link name    | CoreServicesVnet-to-ManufacturingVnet |
+   | Peering link name    | `CoreServicesVnet-to-ManufacturingVnet` |
    | Virtual network | ManufacturingVnet |
 
     **Remote virtual network peering settings**
    
    | **Option**                                    | **Value**                             |
    | ------------------------------------ | --------------------------------------------- | 
-   | Allow 'ManufacturingVnet' to access 'CoreServicesVnet' | Yes |
-   |'ManufacturingVnet' to receive forwarded traffic from 'CoreServicesVnet' | Yes |
+   | Allow 'ManufacturingVnet' to access 'CoreServicesVnet' | Enabled |
+   |'ManufacturingVnet' to receive forwarded traffic from 'CoreServicesVnet' | Enabled |
  
     **Local virtual network summary**
 
     | **Option**                                    | **Value**                             |
     | ------------------------------------ | --------------------------------------------- | 
-    | Peering link name | CoreServicesVnet-to-ManufacturingVnet |
+    | Peering link name | `CoreServicesVnet-to-ManufacturingVnet` |
  
     **Remote virtual network peering settings**
    
     | **Option**                                    | **Value**                             |
     | ------------------------------------ | --------------------------------------------- | 
-    | Allow 'CoreServicesVnet' to access 'ManufacturingVnet' | Yes
-    | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet' | Yes |
+    | Allow 'CoreServicesVnet' to access 'ManufacturingVnet' | Enabled
+    | Allow 'CoreServicesVnet' to receive forwarded traffic from 'ManufacturingVnet' | Enabled |
  
 1. In CoreServicesVnet \| Peerings, verify that the **CoreServicesVnet-to-ManufacturingVnet** peering is listed.
 
