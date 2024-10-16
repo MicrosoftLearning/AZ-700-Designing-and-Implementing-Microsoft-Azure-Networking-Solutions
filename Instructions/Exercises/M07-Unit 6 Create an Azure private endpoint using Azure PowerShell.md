@@ -31,7 +31,7 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
-1. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files **template.json** and **parameters.json** into the Cloud Shell home directory one by one.
+1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **template.json** and **parameters.json** into the Cloud Shell home directory one by one.
 
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
