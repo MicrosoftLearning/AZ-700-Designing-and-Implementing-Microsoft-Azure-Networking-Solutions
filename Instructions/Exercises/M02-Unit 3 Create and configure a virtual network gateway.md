@@ -154,15 +154,32 @@ In this exercise, you will:
 
    > [!NOTE]
    >
-   > It can take up to 45 minutes to create a virtual network gateway.
+   > It can take up to 15 - 30 minutes to create a virtual network gateway. You don't need to wait for the deployment to complete. Proceed to creating the next gateway. 
 
 ## Task 7: Create ManufacturingVnet Gateway
+
+### Create the GatewaySubnet
+
+**Note:** The template created the GatewaySubnet for the CoreServicesVnet. Here you create the subnet manually. 
+
+1. Search for and select the **ManufacturingVnet**.
+
+1. In the **Settings** blade, select **Subnets**, and then **+ Subnet**. 
+
+    | Parameter | Value |
+    | --------------- | ----------------- | 
+    | Subnet purpose | **Virtual Network Gateway** |
+    | Size | **/27 (32 addresses)** |
+
+1. Select **Add**. 
+
+### Create the virtual network gateway
 
 1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
 
 1. In Virtual network gateways, select **+ Create**.
 
-1. Use the information in the following table to create the virtual network gateway:
+1. Use this information and the **Settings** tab to create the virtual network gateway. 
 
    | **Tab**         | **Section**       | **Option**                                  | **Value**                    |
    | --------------- | ----------------- | ------------------------------------------- | ---------------------------- |
@@ -185,7 +202,7 @@ In this exercise, you will:
 
    > [!NOTE]
    >
-   > It can take up to 45 minutes to create a virtual network gateway.
+   > It can take up to 15 -30 minutes to create a virtual network gateway.
 
 ## Task 8: Connect CoreServicesVnet to ManufacturingVnet
 
@@ -199,12 +216,14 @@ In this exercise, you will:
    >
    >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
-1. Use the information in the following table to create the connection:
+1. Use this information and the **Settings** tab to create the virtual network gateway. 
+
 
    | **Option**                     | **Value**                         |
    | ------------------------------ | --------------------------------- |
    | Name                           | CoreServicesGW-to-ManufacturingGW |
    | Connection type                | VNet-to-VNet                      |
+   | Region                         | East US                           |
    | First virtual network gateway  | CoreServicesVnetGateway           |
    | Second virtual network gateway | ManufacturingVnetGateway          |
    | Shared key (PSK)               | abc123                            |
@@ -213,9 +232,9 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | East US                           |
 
-1. To create the connection, select **OK**.
+
+1. To create the connection, select **Review + Create** and then **Create**.
 
 ## Task 9: Connect ManufacturingVnet to CoreServicesVnet
 
@@ -231,6 +250,7 @@ In this exercise, you will:
    | ------------------------------ | --------------------------------- |
    | Name                           | ManufacturingGW-to-CoreServicesGW |
    | Connection type                | VNet-to-VNet                      |
+   | Location                       | West Europe                       |
    | First virtual network gateway  | ManufacturingVnetGateway          |
    | Second virtual network gateway | CoreServicesVnetGateway           |
    | Shared key (PSK)               | abc123                            |
@@ -239,9 +259,9 @@ In this exercise, you will:
    | IKE Protocol                   | IKEv2                             |
    | Subscription                   | No changes required               |
    | Resource group                 | No changes required               |
-   | Location                       | West Europe                       |
 
-1. To create the connection, select **OK**.
+
+1. To create the connection, select **Review + Create** and then **Create**.
 
 ## Task 10: Verify that the connections connect
 
