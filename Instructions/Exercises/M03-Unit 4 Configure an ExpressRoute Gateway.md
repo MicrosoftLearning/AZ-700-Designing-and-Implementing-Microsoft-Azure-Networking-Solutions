@@ -87,7 +87,6 @@ In this exercise, you will:
    | **Public IP address**     |                            |
    | Public IP address         | Create new                 |
    | Public IP address name    | CoreServicesVnetGateway-IP |
-   | Public IP address SKU     | Basic                      |
    | Assignment                | Not configurable           |
 
 1. Select **Review + Create**.
