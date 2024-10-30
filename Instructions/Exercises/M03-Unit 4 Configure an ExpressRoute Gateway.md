@@ -62,9 +62,7 @@ In this exercise, you will:
 
 1. Confirm that the VNet passes the validation and then select **Create**.
 
-> [!Note]  
->
-> If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
+>**Note:** If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
 
 ## Task 2: Create the virtual network gateway
 
@@ -95,8 +93,6 @@ In this exercise, you will:
 
 1. When the deployment is complete, select **Go to Resource**.
 
-> [!Note]
->
-> it can take up to 45 minutes to deploy a Gateway.
+>**Note:** It can take up to 45 minutes to deploy a Gateway.
 
 Congratulations! You have successfully created a Virtual network, a gateway subnet, and an ExpressRoute Gateway.
