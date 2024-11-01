@@ -154,7 +154,6 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 1. The test connection should succeed, and you will see a result similar to the following:
    ![Powershell window with Test-NetConnection 10.20.20.4 -port 3389 showing TCP test succeeded: true](../media/test-connection-succeeded.png)
 
-Congratulations! You have successful configured connectivity between VNets by adding peerings.
 
 ## Task 6: Clean up resources
 
@@ -167,5 +166,26 @@ Congratulations! You have successful configured connectivity between VNets by ad
    ```powershell
    Remove-AzResourceGroup -Name 'ContosoResourceGroup' -Force -AsJob
    ```
-
    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What the most common errors when configuring Azure virtual network peering?
++ In Azure, if I peer Vnet1 with Vnet2 and then I peer Vnet2 with Vnet3, is Vnet1 peered with Vnet3?
++ Can firewalls and gateways affect Azure virtual network peering?
+
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Virtual Networks](https://learn.microsoft.com/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
++ [Distribute your services across Azure virtual networks and integrate them by using virtual network peering](https://learn.microsoft.com/training/modules/integrate-vnets-with-vnet-peering/). In this module, you will learn how to configure virtual network peering.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
+
++ Virtual network peering enables you to seamlessly connect two Azure virtual networks. The virtual networks appear as one for connectivity purposes.
++ Azure supports connecting virtual networks within the same Azure region and across Azure regions (global).
++ The traffic between virtual machines in peered virtual networks is routed directly through the Microsoft backbone infrastructure, not through a gateway or over the public Internet.
++ You can resize the address space of Azure virtual networks that are peered without incurring any downtime on the currently peered address space.
