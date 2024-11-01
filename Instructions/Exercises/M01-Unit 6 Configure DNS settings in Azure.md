@@ -164,4 +164,22 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Alternatively, you can enter the command nslookup TestVM2.contoso.com and verify that you receive a successful name resolution record for VM2
 
-Congratulations! You have created a private DNS Zone, added a name resolution and auto-registration link, and tested name resolution in your configuration.
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What is the difference between Azure DNS and Azure Private DNS? Provide examples of when to use Azure private DNS.
++ What is the purpose of auto registration when creating an Azure DNS zone?
+
+## Learn more with self-paced training
+
++ [Introduction to Azure DNS](https://learn.microsoft.com/training/modules/intro-to-azure-dns/). This module explains what Azure DNS does, how it works, and when you should choose to use Azure DNS as a solution to meet your organization’s needs.
++ [Host your domain on Azure DNS](https://learn.microsoft.com/training/modules/host-domain-azure-dns/). In this module, you create a DNS zone and DNS records to map the domain to an IP address. You also test to ensure the domain name resolves to your web server.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
+
++ Azure DNS is a cloud service that allows you to host and manage domain name system (DNS) domains, also known as DNS zones. 
++ Azure DNS public zones host domain name zone data for records that you intend to be resolved by any host on the internet.
++ Azure Private DNS zones allow you to configure a private DNS zone namespace for private Azure resources.
++ A DNS zone is a collection of DNS records. DNS records provide information about the domain.
