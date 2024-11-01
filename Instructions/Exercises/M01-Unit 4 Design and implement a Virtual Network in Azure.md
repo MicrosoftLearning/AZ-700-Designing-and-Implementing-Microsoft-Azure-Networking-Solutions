@@ -160,5 +160,26 @@ In this exercise, you will:
    ![List of subnets in CoreServicesVnet.](../media/verify-subnets-annotated.png)
 
 1. Repeat steps 3 - 5 for each VNet.
+   
+## Extend your learning with Copilot
 
-Congratulations! You have successfully created a resource group, three VNets, and their associated subnets.
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ Can you provide an example of how the 10.30.0.0/16 IP address is used in a real-world scenario?
++ What is the Azure PowerShell command to create a virtual network called CoreServicesVnet in the East (US) region. The virtual network should use the 10.20.0.0/16 IP address space.
++ What is the Azure CLI command to create a virtual network called ManufacturingVnet in the West Europe region. The virtual network should use the 10.30.0.0/16 IP address space.
+
+## Learn more with self-paced training
+
++ [Design an IP addressing schema for your Azure deployment](https://learn.microsoft.com/en-us/training/modules/design-ip-addressing-for-azure/). In this module, identify the public and private IP addressing capabilities of Azure virtual networks.
++ [Introduction to Azure Virtual Networks](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
+
+## Key takeaways
+
++ Azure Virtual Network is a service that provides the fundamental building block for your private network in Azure. An instance of the service (a virtual network) enables many types of Azure resources to securely communicate with each other, the internet, and on-premises networks. Ensure nonoverlapping address spaces. Make sure your virtual network address space (CIDR block) doesn't overlap with your organization's other network ranges.
++ All Azure resources in a virtual network are deployed into subnets within the virtual network. Subnets enable you to segment the virtual network into one or more subnetworks and allocate a portion of the virtual network's address space to each subnet. Your subnets shouldn't cover the entire address space of the virtual network. Plan ahead and reserve some address space for the future.
+
+
+
+
+
+
