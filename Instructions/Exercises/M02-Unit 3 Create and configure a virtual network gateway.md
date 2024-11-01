@@ -287,4 +287,26 @@ In this exercise, you will:
 
 1. Close the Remote Desktop connection windows.
 
-Congratulations! You have configured a VNet-to-VNet connection by using a virtual network gateway.
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What are the main types of Azure VPN gateways and why would you use each type?
++ What factors should I consider when selecting the Azure VPN gateway sku? Give examples.
++ Are there costs associated with Azure VPN gateways?
+
+
+## Learn more with self-paced training
+
++ [Connect your on-premises network to Azure with VPN Gateway](https://learn.microsoft.com/training/modules/connect-on-premises-network-with-vpn-gateway/). In this module, you will how to use CLI to provision VPN gateways.
++ [Troubleshoot VPN gateways in Microsoft Azure](https://learn.microsoft.com/training/modules/troubleshoot-vpn-gateways/). In this module, you learn how to monitor and troubleshoot site-to-site and point-to-site VPNs.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
+
++ Azure VPN Gateway is a service that provides secure connectivity between your on-premises networks and Azure virtual networks.
++ Site-to-Site (S2S) connections connect your on-premises network to an Azure virtual network using IPsec/IKE VPN tunnels. Ideal for hybrid cloud scenarios.
++ Point-to-Site (P2S) connections connnect individual clients to an Azure virtual network from remote locations. VPN protocols inlcude OpenVPN, IKEv2, or SSTP. Useful for remote workers.
++ VNet-to-VNet connections connect two or more Azure virtual networks using IPsec/IKE VPN tunnels. Suitable for multi-region or multi-VNet deployments.
++ Different VPN Gateway SKUs offer varying levels of performance, throughput, and features. 
+
