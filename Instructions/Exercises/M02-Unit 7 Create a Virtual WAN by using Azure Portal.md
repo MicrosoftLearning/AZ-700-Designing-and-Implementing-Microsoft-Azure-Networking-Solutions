@@ -17,7 +17,7 @@ In this exercise, you will:
 + Task 1: Create a Virtual WAN
 + Task 2: Create a hub by using Azure Portal
 + Task 3: Connect a VNet to the Virtual Hub
-+ Task 4: Clean up resources
+
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20virtual%20WAN%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -101,7 +101,7 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 
 1. Select **Create**.
 
-## Task 4: Clean up resources
+## Clean up resources
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
