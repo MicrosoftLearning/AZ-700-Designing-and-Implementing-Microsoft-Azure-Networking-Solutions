@@ -20,7 +20,7 @@ In this exercise, you will:
 + Task 1: Create and provision an ExpressRoute circuit
 + Task 2: Retrieve your Service key
 + Task 3: Deprovisioning an ExpressRoute circuit
-+ Task 4: Clean up resources
+
 
 ## Task 1: Create and provision an ExpressRoute circuit
 
@@ -110,7 +110,7 @@ If the ExpressRoute circuit service provider provisioning state is **Provisionin
 >
 > If the service provider has deprovisioned the circuit (the service provider provisioning state is set to Not provisioned), you can delete the circuit. This stops billing for the circuit.
 
-## Task 4: Clean up resources
+## Clean up resources
 
 You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensure the provider status is Not provisioned before proceeding.
 
