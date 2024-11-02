@@ -276,7 +276,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -286,4 +286,25 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+>**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ How are the Azure public and private load balancers different? Provide example scenarios for each type.
++ Provide a table that compares the Azure load balancer basic and standard SKUs.
++ How does the Azure load balancer decide to process incoming requests?
+
+
+## Learn more with self-paced training
++ [Introduction to Azure Load Balancer](https://learn.microsoft.com/training/modules/intro-to-azure-load-balancer/). This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.
++ [Troubleshoot inbound network connectivity for Azure Load Balancer](https://learn.microsoft.com/en-us/training/modules/troubleshoot-inbound-connectivity-azure-load-balancer/). In this module, you identify and troubleshoot common Azure Load Balancer inbound connectivity issues.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Load balancing refers to efficiently distributing incoming network traffic across a group of backend servers or resources.
++ Azure Load Balancer distributes inbound flows from the load balancer's frontend to backend pool instances. These flows are distributed according to configured load-balancing rules and health probes. The backend pool instances can be Azure virtual machines (VMs) or virtual machine scale sets.
++ Azure offers both public and private load balancers. Public Load Balancers are ideal for internet-facing applications, outbound connections, and web applications. Private load balancers are better for internal applications, backend services, and hybrid scenarios.
+
+
