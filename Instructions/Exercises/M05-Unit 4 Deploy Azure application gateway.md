@@ -224,4 +224,23 @@ Although IIS isn't required to create the application gateway, you installed it 
 1. Refresh the browser multiple times and you should see connections to both BackendVM1 and BackendVM2.
 
 
-Congratulations! You have configured and tested an Azure Application Gateway.
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ How does the Azure Application Gateway route requests?
++ What security features does Azure Application Gateway include?
++ Compare the Azure Application Gateway with the Azure Load Balancer. Give examples of when to use each product.
+
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Application Gateway](https://learn.microsoft.com/training/modules/intro-to-azure-application-gateway/). This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.
++ [Load balance your web service traffic with Application Gateway](https://learn.microsoft.com/training/modules/load-balancing-https-traffic-azure/). In this module, you learn how to create and configure and Application Gateway with URL path-based routing.
++ [Load balance HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-https-traffic-azure/). In this module, you learn how to design and implement Azure Application Gateway.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Application Gateway is a web traffic (OSI layer 7) load balancer that enables you to manage traffic to your web applications.
++ Application Gateway can make routing decisions based on additional attributes of an HTTP request, for example URI path or host headers.
++ Use Application Gateway for application hosted in a single region and when you need URL based routing. 
