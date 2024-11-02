@@ -28,7 +28,6 @@ The diagram below approximately illustrates the environment you will be deployin
 + Task 2: Create a Traffic Manager profile
 + Task 3: Add Traffic Manager endpoints
 + Task 4: Test the Traffic Manager profile
-+ Task 5: Clean up resources
 
 ## Task 1: Create the web apps
 
@@ -171,9 +170,9 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 1. Verify that the web app is still responding. As the primary endpoint was not available, the traffic was instead routed to the failover endpoint to allow the web site to still function.
 
-## Task 5: Clean up resources
+## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -186,4 +185,23 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+>**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What are the high level steps for configuring Azure Traffic Manager?
++ Compare and contrast when to use Azure Load Balancer and Azure Traffic Manager.
++ Explain the Traffic Manager routing profiles and when they should be used.
+
+## Learn more with self-paced training
+
++ [Enhance your service availability and data locality by using Azure Traffic Manager](https://learn.microsoft.com/training/modules/distribute-load-with-traffic-manager/). In this module, you learn how to use Traffic Manager to dynamically distribute network traffic.
++ [Load balance non-HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-non-https-traffic-azure/). In this module, you learn about Azure Traffic Manager and implementing routing methods. 
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Traffic Manager is a DNS-based traffic load balancer. This service allows you to distribute traffic to your public facing applications across the global Azure regions.
++ Traffic Manager has six traffic-routing methods that allow you to control how Traffic Manager chooses which endpoint should receive traffic from each end user. How many can you name?
++ You can nest Traffic Manager profiles to combine the benefits of more than one traffic-routing method. Nested profiles allow you to override the default Traffic Manager behavior to support larger and more complex application deployments.
