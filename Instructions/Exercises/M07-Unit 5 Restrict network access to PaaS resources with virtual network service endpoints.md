@@ -356,7 +356,7 @@ Results: You have now completed this lab.
 ## Extend your learning with Copilot
 
 Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
-+ What is the difference between azure service endpoints and private links?
++ What is the difference between azure service endpoints and private endpoints?
 + Which Azure services can use service endpoints?
 + What are the steps to restricting access to Azure Storage by using service endpoints?
 
