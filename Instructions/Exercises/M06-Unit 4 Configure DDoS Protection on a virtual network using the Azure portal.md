@@ -21,7 +21,7 @@ In this exercise, you will:
 + Task 5: Configure DDoS diagnostic logs
 + Task 6: Configure DDoS alerts
 + Task 7: Test with simulation partners
-+ Task 8: Clean up resources
+
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20Azure%20DDoS%20Protection%20on%20a%20virtual%20network)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -229,7 +229,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
    ![Metrics showing resource under DDoS attack](../media/metrics-showing-resource-under-attack.png)
 
-## Task 8: Clean up resources
+## Clean up resources
 
 >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
@@ -241,4 +241,17 @@ In this step you will create a virtual machine, assign a public IP address to it
    Remove-AzResourceGroup -Name 'MyResourceGroup' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+>**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ 
+
+## Learn more with self-paced training
+
++ 
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
