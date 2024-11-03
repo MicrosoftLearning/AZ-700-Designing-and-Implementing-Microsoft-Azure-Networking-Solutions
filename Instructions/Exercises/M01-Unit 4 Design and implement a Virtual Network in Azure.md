@@ -170,8 +170,8 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Design an IP addressing schema for your Azure deployment](https://learn.microsoft.com/en-us/training/modules/design-ip-addressing-for-azure/). In this module, identify the public and private IP addressing capabilities of Azure virtual networks.
-+ [Introduction to Azure Virtual Networks](https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
++ [Design an IP addressing schema for your Azure deployment](https://learn.microsoft.com/training/modules/design-ip-addressing-for-azure/). In this module, identify the public and private IP addressing capabilities of Azure virtual networks.
++ [Introduction to Azure Virtual Networks](https://learn.microsoft.com/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
 
 ## Key takeaways
 
