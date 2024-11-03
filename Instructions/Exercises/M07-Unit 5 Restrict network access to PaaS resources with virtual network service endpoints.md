@@ -24,7 +24,7 @@ In this exercise, you will:
 + Task 8: Restrict network access to a subnet
 + Task 9: Create virtual machines
 + Task 10: Confirm access to storage account
-+ Task 11: Clean up resources
+
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -339,9 +339,9 @@ You receive no replies because the network security group associated to the Priv
 
 Results: You have now completed this lab.
 
-## Task 11: Clean up resources
+## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -351,4 +351,21 @@ Results: You have now completed this lab.
    Remove-AzResourceGroup -Name 'myResourceGroup' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+>**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What is the difference between azure service endpoints and private links?
++ Which Azure services can use service endpoints?
++ What are the steps to restricting access to Azure Storage by using service endpoints?
+
+## Learn more with self-paced training
+
++ [Secure and isolate access to Azure resources by using network security groups and service endpoints](https://learn.microsoft.com/training/modules/secure-and-isolate-with-nsg-and-service-endpoints/). In this module, you learn how to use virtual network service endpoints to control network traffic to and from Azure services.
+
+## Key takeaways
++ Virtual network service endpoints extend your private address space in Azure by providing a direct connection to your Azure services.
++ Service endpoints let you secure your Azure resources to only your virtual network. Service traffic will remain on the Azure backbone, and doesn't go out to the internet.
++ Azure service endpoints are available for many services, such as: Azure Storage, Azure SQL Database, and Azure Cosmos DB.
++ Virtual network service endpoints are not, by default, accessible from on-premises networks. To access resources from an on-premises network, use NAT IPs.
