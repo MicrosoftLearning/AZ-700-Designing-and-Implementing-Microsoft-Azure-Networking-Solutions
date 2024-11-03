@@ -246,12 +246,21 @@ In this step you will create a virtual machine, assign a public IP address to it
 ## Extend your learning with Copilot
 
 Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
-+ 
++ What are DDoS attacks? How are DDoS attacks categorized and are there mitigation strategies?
++ Provide a table summarizing the two different Azure DDoS Protection tiers.
++ What Azure resources can be protected by DDoS Protection?
+
 
 ## Learn more with self-paced training
 
-+ 
++ [Introduction to Azure DDoS Protection](https://learn.microsoft.com/training/modules/introduction-azure-ddos-protection/). In this module, you evaluate Azure DDoS Protection, its features, and architecture options.
++ [Design and implement network security](https://learn.microsoft.com/training/modules/design-implement-network-security-monitoring/). In this module, you learn about and deploy Azure DDoS Protection.
 
+  
 ## Key takeaways
 
 Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ A DDoS attack is a malicious attempt to overwhelm an application's resources, making the application unavailable to legitimate users. 
++ Azure DDoS Protection defends against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network. 
++ Azure DDoS Proectection features include: always on traffic monitoring, adaptive real time tuning, and telemetry and alerting.  
++ Azure DDoS Protection supports two tier types, DDoS IP Protection and DDoS Network Protection.
