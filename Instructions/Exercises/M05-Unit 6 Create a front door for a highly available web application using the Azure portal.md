@@ -19,7 +19,7 @@ In this exercise, you will:
 + Task 1: Create two instances of a web app
 + Task 2: Create a Front Door for your application
 + Task 3: View Azure Front Door in action
-+ Task 4: Clean up resources
+
 
 **Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Front%20Door%20profile%20for%20a%20highly%20available%20web%20application)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
@@ -131,9 +131,9 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    Congratulations! You have configured and tested an Azure Front Door.
 
-## Task 4: Clean up resources
+## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -145,4 +145,24 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+>**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ What are the differences between Azure Application Gateway and Azure Front Door? Provide examples where I would use each product.
++ Provide a checklist of things to do when configuring Azure Front Door.
++ What is an origin in Azure Front Door and how is it different from an endpoint?
+
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Front Door](https://learn.microsoft.com/training/modules/intro-to-azure-front-door/). In this module, you learn how Azure Front Door can protect your applications.
++ [Load balance your web service traffic with Front Door](https://learn.microsoft.com/training/modules/create-first-azure-front-door/). In this module, you learn to create and configure Azure Front Door. 
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Front Door is a cloud-based service that delivers your applications anywhere across the globe. 
++ Azure Front Door uses layer 7 load balancing to distribute traffic across multiple regions and endpoints.
++ Azure Front Door supports different traffic routing methods to determine how your HTTP/HTTPS traffic is distributed. The routing methods are: latency, priority, weighted, and session affinity. 
