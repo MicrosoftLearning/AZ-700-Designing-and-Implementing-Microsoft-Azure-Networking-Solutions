@@ -13,7 +13,7 @@ Get started with Azure Private Link by using a Private Endpoint to connect secur
 ![Diagram of private endpoint architecture.](../media/6-exercise-create-azure-private-endpoint-using-azure-powershell.png)
 
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20an%20Azure%20private%20endpoint%20using%20Azure%20PowerShell)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 45 minutes
 
@@ -79,6 +79,7 @@ Create a virtual network and bastion host with:
 - New-AzBastion
 
 ```PowerShell
+
 ## Create backend subnet config. ##
 
 $subnetConfig = New-AzVirtualNetworkSubnetConfig -Name myBackendSubnet -AddressPrefix 10.0.0.0/24
