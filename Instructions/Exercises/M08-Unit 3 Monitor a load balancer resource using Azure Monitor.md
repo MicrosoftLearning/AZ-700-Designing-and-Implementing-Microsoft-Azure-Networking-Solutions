@@ -31,7 +31,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 13: Configure diagnostic settings
 
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 > [!Note]  
 > You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same.
@@ -88,7 +88,9 @@ In this section, you will create a virtual network and a subnet.
 In this section, you will create an internal Standard SKU load balancer. The reason we are creating a Standard SKU load balancer here in the exercise, instead of a Basic SKU load balance, is for later exercises that require a Standard SKU version of the load balancer.
 
 1. On the Azure home page, in the search bar, enter **Load Balancer**
+
 1. Select **Create Load Balancer**.
+
 1. On the **Basics** tab, use the information in the table below to create the load balancer.
 
    | **Setting**           | **Value**                |
@@ -221,8 +223,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ### Create test VM
 
-> [!Note]  
-> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same.
+   >**Note**: You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same.
 
 1. On the Azure home page, using the global search enter **Virtual Machines** and select virtual machines under services.
 
@@ -399,7 +400,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Clean up resources
 
-   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+>**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
