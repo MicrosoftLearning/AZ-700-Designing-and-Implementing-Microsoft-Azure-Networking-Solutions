@@ -21,7 +21,7 @@ In this exercise, you will:
 + Task 3: View Azure Front Door in action
 
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Front%20Door%20profile%20for%20a%20highly%20available%20web%20application)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Front%20Door%20profile%20for%20a%20highly%20available%20web%20application)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 30 minutes
 
@@ -73,7 +73,7 @@ This exercise requires two instances of a web application that run in different 
 1. Select **Review + create**, review the Summary, and then select **Create**.
    ‎It might take several minutes for the deployment to complete.
 
-**Note:** If you receive a deployment error, read the notification carefully. If the error involves the region availability due to quotas, try changing to another region. 
+   >**Note**: If you receive a deployment error, read the notification carefully. If the error involves the region availability due to quotas, try changing to another region. 
 
 ## Task 2: Create a Front Door for your application
 
@@ -99,7 +99,9 @@ Configure Azure Front Door to direct user traffic based on lowest latency betwee
 1. Select **Review and Create**, and then select **Create**.
 
 1. Wait for the resource to deploy, and then select **Go to resource**.
+
 1. On the Front Door resource in the Overview blade, locate the **Origin Groups**, select the origin group created
+
 1. To update the origin group select the name **default-origin-group** from the list. Select **Add an origin** and add the second Web App. Select Add and then select Update.
 
 ## Task 3: View Azure Front Door in action
@@ -133,7 +135,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 ## Clean up resources
 
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -145,7 +147,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
    ```
 
->**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 ## Extend your learning with Copilot
 
