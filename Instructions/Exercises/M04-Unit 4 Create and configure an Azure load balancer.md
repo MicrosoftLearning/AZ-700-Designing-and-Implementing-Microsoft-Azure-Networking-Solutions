@@ -9,7 +9,7 @@ Exercise:
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization.
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
@@ -83,7 +83,7 @@ In this section, you will create three VMs, that will be in the same availabilit
 
 3. Deploy the following ARM templates to create the VMs needed for this exercise:
 
->**Note**: You will be prompted to provide an Admin password.
+   >**Note**: You will be prompted to provide an Admin password.
 
    ```powershell
    $RGName = "IntLB-RG"
@@ -118,7 +118,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Tier                  | **Regional**             |
 
 1. Select **Next: Frontend IP configurations**.
+   
 1. Select Add a frontend IP
+
 1. On the **Add frontend IP address** blade, enter the information from the table below and select **Add**.
 
    | **Setting**     | **Value**                |
@@ -276,7 +278,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 ## Clean up resources
 
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
@@ -286,7 +288,7 @@ In this section, you will create a test VM, and then test the load balancer.
    Remove-AzResourceGroup -Name 'IntLB-RG' -Force -AsJob
    ```
 
->**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
 
 ## Extend your learning with Copilot
 
