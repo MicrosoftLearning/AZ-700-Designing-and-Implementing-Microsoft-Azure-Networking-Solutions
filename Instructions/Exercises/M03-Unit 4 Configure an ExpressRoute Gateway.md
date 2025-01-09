@@ -11,7 +11,7 @@ Exercise:
 
 To connect your Azure virtual network and your on-premises network via ExpressRoute, you must create a virtual network gateway first. A virtual network gateway serves two purposes: to exchange IP routes between the networks and to route network traffic.
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20an%20ExpressRoute%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20an%20ExpressRoute%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
@@ -62,7 +62,7 @@ In this exercise, you will:
 
 1. Confirm that the VNet passes the validation and then select **Create**.
 
->**Note:** If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
+   >**Note**: If you are using a dual stack virtual network and plan to use IPv6-based private peering over ExpressRoute, select Add IP6 address space and input IPv6 address range values.
 
 ## Task 2: Create the virtual network gateway
 
@@ -93,7 +93,7 @@ In this exercise, you will:
 
 1. When the deployment is complete, select **Go to Resource**.
 
->**Note:** It can take up to 45 minutes to deploy a Gateway.
+   >**Note**: It can take up to 45 minutes to deploy a Gateway.
 
 
 ## Extend your learning with Copilot
