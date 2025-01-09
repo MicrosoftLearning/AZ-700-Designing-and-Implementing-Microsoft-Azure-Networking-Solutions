@@ -14,7 +14,7 @@ In this exercise, you will create the spoke virtual network and create a secured
 ![Diagram of virtual network architecture with a secure hub.](../media/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.png)
 
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ## Create a hub and spoke architecture
 
@@ -40,19 +40,32 @@ In this exercise, you will:
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers.
 
 1. On the Azure portal home page, in the search box, enter **virtual network** and select **Virtual Network** when it appears.
-2. Select **Create**.
-3. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
-4. In **Name**, enter **Spoke-01**.
-5. In **Region**, select your region.
-6. Select **Next: IP Addresses**.
-7. In **IPv4 address space**, enter **10.0.0.0/16**.
-8. **Delete** any other address spaces listed here, such as **10.1.0.0/16**.
-9. Under **Subnet name**, select the word **default**.
-10. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**.
-11. Change the **Subnet address range** to **10.0.1.0/24**.
-12. Select **Save**.
-13. Select **Review + create**.
-14. Select **Create**.
+
+1. Select **Create**.
+
+1. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
+
+1. In **Name**, enter **Spoke-01**.
+
+1. In **Region**, select your region.
+
+1. Select **Next: IP Addresses**.
+
+1. In **IPv4 address space**, enter **10.0.0.0/16**.
+
+1. **Delete** any other address spaces listed here, such as **10.1.0.0/16**.
+
+1. Under **Subnet name**, select the word **default**.
+
+1. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**.
+
+1. Change the **Subnet address range** to **10.0.1.0/24**.
+
+1. Select **Save**.
+
+1. Select **Review + create**.
+
+1. Select **Create**.
 
 Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information:
 
@@ -68,32 +81,32 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. From the Azure portal home page, select **All services**.
 
-2. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
-3. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
+1. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
 
-4. On the **Virtual hubs** page, select **Create new secured virtual hub**.
+1. On the **Virtual hubs** page, select **Create new secured virtual hub**.
 
-5. For **Resource group**, select **fw-manager-rg**.
+1. For **Resource group**, select **fw-manager-rg**.
 
-6. For **Region**, select your region.
+1. For **Region**, select your region.
 
-7. For the **Secured virtual hub name**, enter **Hub-01**.
+1. For the **Secured virtual hub name**, enter **Hub-01**.
 
-8. For **Hub address space**, enter **10.2.0.0/16**.
+1. For **Hub address space**, enter **10.2.0.0/16**.
 
-9. Choose **New vWAN**.
+1. Choose **New vWAN**.
 
-10. In **Virtual WAN Name**, enter **Vwan-01**.
+1. In **Virtual WAN Name**, enter **Vwan-01**.
 
-11. Select **Next: Azure Firewall**.
+1. Select **Next: Azure Firewall**.
     ![Create new secured virtual hub - Basics tab](../media/create-new-secured-virtual-hub-1.png)
 
-12. Select **Next: Security Partner Provider**.
+1. Select **Next: Security Partner Provider**.
 
-13. Select **Next: Review + create.**
+1. Select **Next: Review + create.**
 
-14. Select **Create**.
+1. Select **Create**.
 
     > **[!NOTE]**
     >
@@ -103,35 +116,44 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
     ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
 
-15. When the deployment completes, from the Azure portal home page, select **All services**.
+1. When the deployment completes, from the Azure portal home page, select **All services**.
 
-16. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
 
-17. On the **Firewall Manager** page, select **Virtual hubs**.
+1. On the **Firewall Manager** page, select **Virtual hubs**.
 
-18. Select **Hub-01**.
+1. Select **Hub-01**.
 
-19. Select **Public IP configuration**.
+1. Select **Public IP configuration**.
 
-20. Note down the public IP address (e.g., **51.143.226.18**), which you will use later.
+1. Note the public IP address (e.g., **51.143.226.18**), which you will use later.
 
 ## Task 3: Connect the hub and spoke virtual networks
 
 In this task you will connect the hub and spoke virtual networks. This is commonly known as peering.
 
 1. From the Azure portal home page, select **Resource groups**.
-2. Select the **fw-manager-rg** resource group, then select the **Vwan-01** virtual WAN.
-3. Under **Connectivity**, select **Virtual network connections**.
-4. Select **Add connection**.
-5. For **Connection name**, enter **hub-spoke-01**.
-6. For **Hubs**, select **Hub-01**.
-7. For **Resource group**, select **fw-manager-rg**.
-8. For **Virtual network**, select **Spoke-01**.
-9. Select **Create**.
-   ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
-10. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
 
-![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
+1. Select the **fw-manager-rg** resource group, then select the **Vwan-01** virtual WAN.
+
+1. Under **Connectivity**, select **Virtual network connections**.
+
+1. Select **Add connection**.
+
+1. For **Connection name**, enter **hub-spoke-01**.
+
+1. For **Hubs**, select **Hub-01**.
+
+1. For **Resource group**, select **fw-manager-rg**.
+
+1. For **Virtual network**, select **Spoke-01**.
+
+1. Select **Create**.
+   ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
+
+1. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
+
+    ![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
 
 ## Task 4: Deploy the servers
 
@@ -277,11 +299,17 @@ In this task you will associate the firewall policy with the virtual hub.
 
 1. From the Azure portal home page, select **Firewall Manager**.
    + If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+
 1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
+
 1. Select the checkbox for **Policy-01**.
+
 1. Select **Manage associations&gt;Associate hubs**.
+
 1. Select the checkbox for **Hub-01**.
+
 1. Select **Add**.
+
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
 
 ![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
@@ -375,4 +403,4 @@ In this task you will test the network rule to confirm that it works as expected
    Remove-AzResourceGroup -Name 'fw-manager-rg' -Force -AsJob
    ```
 
-    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+   >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
