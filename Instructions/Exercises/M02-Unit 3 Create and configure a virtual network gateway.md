@@ -11,6 +11,8 @@ Exercise:
 
 In this exercise you will configure a virtual network gateway to connect the Contoso Core Services VNet and Manufacturing VNet.
 
+   >**Important**: Look closely at this design. Did you notice the CoreServicesSubnet overlaps with the GatewaySubnet? As a best practice, these subnets should be segregated to avoid potential connectivity issues. 
+
 ![Diagram of virtual network gateway.](../media/3-exercise-create-configure-local-network-gateway.png)
 
 In this exercise, you will:
@@ -27,7 +29,7 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
 
-**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
 
@@ -49,7 +51,7 @@ In this exercise, you will:
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
 
- > **Note:** Currently, there is an ongoing issue in the West Europe Region affecting gateway deployments. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment.
+   >**Note**: Currently, there is an ongoing issue in the West Europe Region affecting gateway deployments. As a work around, the ManufacturingVnet region has been changed to North Europe for this deployment.
 
 ## Task 2: Create CoreServicesVM
 
@@ -152,15 +154,13 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!NOTE]
-   >
-   > It can take up to 15 - 30 minutes to create a virtual network gateway. You don't need to wait for the deployment to complete. Proceed to creating the next gateway. 
+   >**Note**: It can take up to 15 - 30 minutes to create a virtual network gateway. You don't need to wait for the deployment to complete. Proceed to creating the next gateway. 
 
 ## Task 7: Create ManufacturingVnet Gateway
 
 ### Create the GatewaySubnet
 
-**Note:** The template created the GatewaySubnet for the CoreServicesVnet. Here you create the subnet manually. 
+   >**Note**: The template created the GatewaySubnet for the CoreServicesVnet. Here you create the subnet manually. 
 
 1. Search for and select the **ManufacturingVnet**.
 
@@ -200,9 +200,7 @@ In this exercise, you will:
    |                 |                   | Configure BGP                               | Disabled                     |
    | Review + create |                   | Review your settings and select **Create**. |                              |
 
-   > [!NOTE]
-   >
-   > It can take up to 15 -30 minutes to create a virtual network gateway.
+   >**Note**: It can take up to 15 -30 minutes to create a virtual network gateway.
 
 ## Task 8: Connect CoreServicesVnet to ManufacturingVnet
 
@@ -212,9 +210,7 @@ In this exercise, you will:
 
 1. In CoreServicesGateway, select **Connections**, and then select **+ Add**.
 
-   > [!NOTE]
-   >
-   >  You will not be able to complete this configuration until the virtual network gateways are fully deployed.
+   >**Note**: You will not be able to complete this configuration until the virtual network gateways are fully deployed.
 
 1. Use this information and the **Settings** tab to create the virtual network gateway. 
 
