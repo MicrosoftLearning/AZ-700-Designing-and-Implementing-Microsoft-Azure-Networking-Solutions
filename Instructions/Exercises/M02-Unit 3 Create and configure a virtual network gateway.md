@@ -96,20 +96,35 @@ In this exercise, you will:
 ## Task 4: Connect to the VMs using RDP
 
 1. On the Azure Portal home page, select **Virtual Machines**.
+
 1. Select **ManufacturingVM**.
-1. On **ManufacturingVM**, select **Connect &gt; RDP**.
-1. On **ManufacturingVM | Connect**, select **Download RDP file**.
+
+1. On **ManufacturingVM**, select **Connect** and then **RDP**.
+
+1. Select **Download RDP file**.
+
 1. Save the RDP file to your desktop.
+
 1. Connect to **ManufacturingVM** using the RDP file, and the username **TestUser** and the password you provided during deployment. After connecting, minimize the RDP session.
+
 1. On the Azure Portal home page, select **Virtual Machines**.
+
 1. Select **CoreServicesVM**.
+
 1. On **CoreServicesVM**, select **Connect &gt; RDP**.
+
 1. On **CoreServicesVM | Connect**, select **Download RDP file**.
+
 1. Save the RDP file to your desktop.
+
 1. Connect to **CoreServicesVM** using the RDP file, and the username **TestUser** and the password you provided during deployment.
+
 1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
+
 1. On both VMs, in **Networks**, select **Yes**.
+
 1. On **CoreServicesVM**, open PowerShell, and run the following command: ipconfig
+
 1. Note the IPv4 address.
 
 ## Task 5: Test the connection between the VMs
