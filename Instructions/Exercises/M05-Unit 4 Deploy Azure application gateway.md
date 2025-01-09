@@ -13,7 +13,7 @@ In this exercise, you use the Azure portal to create an application gateway. The
 ![Diagram of application gateway architecture.](../media/4-exercise-deploy-azure-application-gateway.png)
 
 
->**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Deploy%20Azure%20Application%20Gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 25 minutes
 
@@ -151,14 +151,14 @@ In this exercise, you will:
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
->**Note**: You will be prompted to provide an Admin password. 
+   >**Note**: You will be prompted to provide an Admin password. 
 
    ```powershell
    $RGName = "ContosoResourceGroup"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```
->**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. This will take a few minutes. 
+   >**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. This will take a few minutes. 
 
 1. The command should complete successfully and list **BackendVM1** and **BackendVM2**.
 
@@ -172,14 +172,14 @@ In this exercise, you will:
    Invoke-AzVMRunCommand -ResourceGroupName 'ContosoResourceGroup' -Name 'BackendVM1' -CommandId 'RunPowerShellScript' -ScriptPath 'install-iis.ps1'
    ```
 
->**Note**: While you wait review the PowerShell script. Notice that the IIS home page is being customized to provide the virtual machine name.
+   >**Note**: While you wait review the PowerShell script. Notice that the IIS home page is being customized to provide the virtual machine name.
 
 1. Run the command again, this time for **BackendVM2**.
 
    ```powershell
    Invoke-AzVMRunCommand -ResourceGroupName 'ContosoResourceGroup' -Name 'BackendVM2' -CommandId 'RunPowerShellScript' -ScriptPath 'install-iis.ps1'
    ```
->**Note:** Each command will take a couple of minutes to complete.
+   >**Note**: Each command will take a couple of minutes to complete.
 
 ## Task 3: Add backend servers to backend pool
 
@@ -225,7 +225,7 @@ Although IIS isn't required to create the application gateway, you installed it 
 
 ## Clean up resources
 
->**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
+   >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
 1. On the Azure portal, open the **PowerShell** session within the **Cloud Shell** pane.
 
