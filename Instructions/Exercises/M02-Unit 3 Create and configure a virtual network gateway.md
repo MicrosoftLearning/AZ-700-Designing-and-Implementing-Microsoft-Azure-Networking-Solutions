@@ -29,7 +29,7 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+>**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20a%20virtual%20network%20gateway)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
 
@@ -111,9 +111,9 @@ In this exercise, you will:
 
 1. Select **CoreServicesVM**.
 
-1. On **CoreServicesVM**, select **Connect &gt; RDP**.
+1. On **CoreServicesVM**, select **Connect** and then **RDP**.
 
-1. On **CoreServicesVM | Connect**, select **Download RDP file**.
+1. Select **Download RDP file**.
 
 1. Save the RDP file to your desktop.
 
