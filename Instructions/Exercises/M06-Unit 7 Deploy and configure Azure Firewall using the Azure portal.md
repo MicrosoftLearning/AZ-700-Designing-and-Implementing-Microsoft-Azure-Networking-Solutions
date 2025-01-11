@@ -113,8 +113,6 @@ In this task, you will create the workload virtual machine and place it in the W
 
 1. Verify that the virtual machine has been created.
 
-1. When deployment of the VM completes, select **Go to resource**.
-
 1. On the **Overview** page of **Srv-Work**, on the right of the page under **Networking**, take a note of the **Private IP address** for this VM (e.g., **10.0.2.4**).
 
 ## Task 4: Deploy the firewall and firewall policy
@@ -146,13 +144,15 @@ In this task, you will deploy the firewall into the virtual network with a firew
 
    ![Add public IP address to firewall](../media/assign-public-ip-to-firewall.png)
 
-1. Review all the settings to ensure they match the screenshot below.
+1. We are not using the Firewall Manager so uncheck the box for **Enable Firewall Management NIC**. 
+
+1. Review your settings. 
 
    ![Create a firewall - review settings](../media/review-all-configurations-for-firewall.png)
 
-1. Select **Review + create**.
+1. Proceed to **Review + create** and then **Create**.
 
-1. Select **Create** and wait for the firewall deployment to complete.
+1. Wait for the firewall deployment to complete.
 
 1. When deployment of the firewall is completed, select **Go to resource**.
 
