@@ -26,7 +26,7 @@ In this unit, you will:
 
 ## Task 1: Create a Virtual Machine to test the configuration
 
-In this section, you will create a test VM on the Manufacturing VNet to test if you can access resources inside another Azure virtual network from your ManufacturingVnet.
+In this section, you will create a test VM on the  VNet to test if you can access resources inside another Azure virtual network from your Vnet.
 
 ### Create ManufacturingVM
 
@@ -113,7 +113,7 @@ In this section, you will create a test VM on the Manufacturing VNet to test if 
 
    | **Option**                                    | **Value**                             |
    | ------------------------------------ | --------------------------------------------- | 
-   | Peering link name    | `CoreServicesVnet-to-ManufacturingVnet` |
+   | Peering link name    | `ManufacturingVnet-to-CoreServicesVnet` |
    | Virtual network | ManufacturingVnet |
 
     **Remote virtual network peering settings**
