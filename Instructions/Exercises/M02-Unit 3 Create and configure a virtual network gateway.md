@@ -157,7 +157,6 @@ In this exercise, you will:
    |                 | Instance Details  | Name                                        | CoreServicesVnetGateway      |
    |                 |                   | Region                                      | East US                      |
    |                 |                   | Gateway type                                | VPN                          |
-   |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | CoreServicesVnet             |
@@ -201,9 +200,8 @@ In this exercise, you will:
    | Basics          | Project Details   | Subscription                                | No changes required          |
    |                 |                   | ResourceGroup                               | ContosoResourceGroup         |
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
-   |                 |                   | Region                                      | North Europe                  |
+   |                 |                   | Region                                      | North Europe                 |
    |                 |                   | Gateway type                                | VPN                          |
-   |                 |                   | VPN type                                    | Route-based                  |
    |                 |                   | SKU                                         | VpnGw1                       |
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | ManufacturingVnet            |
@@ -261,7 +259,7 @@ In this exercise, you will:
    | ------------------------------ | --------------------------------- |
    | Name                           | ManufacturingGW-to-CoreServicesGW |
    | Connection type                | VNet-to-VNet                      |
-   | Location                       | West Europe                       |
+   | Location                       | North Europe                      |
    | First virtual network gateway  | ManufacturingVnetGateway          |
    | Second virtual network gateway | CoreServicesVnetGateway           |
    | Shared key (PSK)               | abc123                            |
