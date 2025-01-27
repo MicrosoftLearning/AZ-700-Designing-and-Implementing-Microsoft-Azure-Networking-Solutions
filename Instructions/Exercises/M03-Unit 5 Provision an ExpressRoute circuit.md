@@ -32,9 +32,9 @@ In this exercise, you will:
 
    ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
 
-1. On the **Create ExpressRoute** page, provide the **Resource Group**, **Region**, and **Name** for the circuit with the following: ExpressRouteResourceGroup, East US 2, TestERCircuit. Then select **Next: Configuration &gt;**.
+1. On the **Create ExpressRoute** page, provide the **Resource Group** as ExpressRouteResourceGroup. Then select **Standard Resiliency** for **Resiliency**
 
-1. When you are filling in the values on this page, for this example, make sure that you specify the correct SKU tier (**Standard**) data metering billing model (**Metered**) Provider (**Equinix**) Peering location (**Seattle**) and Bandwidth (**50Mbps**).
+1. For ***Circuit Details**, make sure that you specify the correct Region (**East US 2**), Circuit Name (**TestERCircuit**), Peering location (**Seattle**), Provider (**Equinix**), Bandwidth (**50Mbps**), SKU tier (**Standard**) and data metering billing model (**Metered**).
 
 1. Select **Review + Create**.
 
