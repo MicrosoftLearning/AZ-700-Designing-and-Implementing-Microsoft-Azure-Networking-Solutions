@@ -49,10 +49,12 @@ In this exercise, you will:
 
 1. In the Add subnet pane, use the information in the following table to create the subnet:
 
-   | **Setting**                  | **Value**     |
-   | ---------------------------- | ------------- |
-   | Gateway Subnet name          | GatewaySubnet |
-   | Gateway Subnet address space | 10.20.0.0/27  |
+   | **Setting**                  | **Value**               |
+   | ---------------------------- | ----------------------- |
+   | Subnet purpose               | Virtual Network Gateway |
+   | Gateway Subnet address space | 10.20.0.0/27            |
+
+Note that the subnet name will be automatically populated.
 
 1. And then select **Add**.
 
