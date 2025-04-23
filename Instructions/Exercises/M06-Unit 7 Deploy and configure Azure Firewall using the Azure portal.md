@@ -218,7 +218,7 @@ In this task, you will add an application rule that allows outbound access to <w
 
 1. In the list of resources, select your firewall policy, **fw-test-pol**.
 
-1. Under **Settings**, select **Application Rules**.
+1. Under **Rules**, select **Application Rules**.
 
 1. Select **Add a rule collection**.
 
@@ -247,7 +247,7 @@ In this task, you will add an application rule that allows outbound access to <w
 
 In this task, you will add a network rule that allows outbound access to two IP addresses at port 53 (DNS).
 
-1. On the **fw-test-pol** page, under **Settings**, select **Network Rules**.
+1. On the **fw-test-pol** page, under **Rules**, select **Network Rules**.
 
 1. Select **Add a rule collection**.
 
@@ -277,7 +277,7 @@ In this task, you will add a network rule that allows outbound access to two IP 
 
 In this task, you will add a DNAT rule that allows you to connect a remote desktop to the Srv-Work virtual machine through the firewall.
 
-1. On the **fw-test-pol** page, under **Settings**, select **DNAT Rules**.
+1. On the **fw-test-pol** page, under **Rules**, select **DNAT Rules**.
 
 1. Select **Add a rule collection**.
 
