@@ -187,7 +187,9 @@ In this section, you will create three VMs for the backend pool of the load bala
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed. 
 
-1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M08**.
+1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
+
+    > **Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
 
 1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise:
 
