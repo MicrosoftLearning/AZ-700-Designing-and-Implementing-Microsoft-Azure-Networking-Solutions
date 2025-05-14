@@ -147,7 +147,9 @@ In this exercise, you will:
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed.
       
-1. On the toolbar of the Cloud Shell pane, select **Manage files** and then **Upload**. Upload the following files: **backend.json**, **backend.parameters.json**, and **install-iis.ps1**.The files are available for download from the repository, **\Allfiles\Exercises\M05** folder.
+1. On the toolbar of the Cloud Shell pane, select **Manage files** and then **Upload**. Upload the following files: **backend.json**, **backend.parameters.json**, and **install-iis.ps1**.
+
+    >**Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
