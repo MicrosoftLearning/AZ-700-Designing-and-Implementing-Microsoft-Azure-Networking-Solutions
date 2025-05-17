@@ -19,9 +19,11 @@ In this exercise, you will:
 + Task 3: Create Virtual Machines to test the configuration
 + Task 4: Verify records are present in the DNS zone
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+   >**Note:** An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 ### Estimated time: 25 minutes
+
+**Important:** This exercise requires the virtual networks from the previous lab. These can be installed using a [template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01/template.json) file. 
 
 ## Task 1: Create a private DNS Zone
 
@@ -36,8 +38,8 @@ In this exercise, you will:
 
     | **Tab**         | **Option**                             | **Value**            |
     | --------------- | -------------------------------------- | -------------------- |
-    | Basics          | Resource group  (create new if needed) | ContosoResourceGroup |
-    |                 | Name                                   | Contoso.com          |
+    | Basics          | Resource group  (create new if needed) | `ContosoResourceGroup` |
+    |                 | Name                                   | `Contoso.com`          |
     | Review + create | Review your settings and select Create |                      |
 
 1. Wait until the deployment is complete, and then select **Go to resource**.
@@ -56,7 +58,7 @@ In this exercise, you will:
 
     | **Option**                          | **Value**                               |
     | ----------------------------------- | --------------------------------------- |
-    | Link name                           | CoreServicesVnetLink                    |
+    | Link name                           | `CoreServicesVnetLink`                   |
     | Subscription                        | No changes required                     |
     | Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
     | Enable auto registration            | Selected                                |
@@ -65,34 +67,6 @@ In this exercise, you will:
 1. Select **Refresh**.
 
 1. Verify that the CoreServicesVnetLink has been created, and that auto-registration is enabled.
-
-1. Repeat steps 2 - 5 for the ManufacturingVnet, using the information in the following table:
-
-    | **Option**                          | **Value**                                |
-    | ----------------------------------- | ---------------------------------------- |
-    | Link name                           | ManufacturingVnetLink                    |
-    | Subscription                        | No changes required                      |
-    | Virtual Network                     | ManufacturingVnet (ContosoResourceGroup) |
-    | Enable auto registration            | Selected                                 |
-    | Review your settings and select OK. |                                          |
-
-1. Select **Refresh**.
-
-1. Verify that the ManufacturingVnetLink has been created, and that auto-registration is enabled.
-
-1. Repeat steps 2 - 5 for the ResearchVnet, using the information in the following table:
-
-    | **Option**                          | **Value**                           |
-    | ----------------------------------- | ----------------------------------- |
-    | Link name                           | ResearchVnetLink                    |
-    | Subscription                        | No changes required                 |
-    | Virtual Network                     | ResearchVnet (ContosoResourceGroup) |
-    | Enable auto registration            | Selected                            |
-    | Review your settings and select OK. |                                     |
-
-1. Select **Refresh**.
-
-1. Verify that the ResearchVnetLink has been created, and that auto-registration is enabled.
 
 ## Task 3: Create Virtual Machines to test the configuration
 
@@ -139,13 +113,11 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Select **TestVM1**.
 
-1. On TestVM1, select **Connect &gt; RDP** and download the RDP file.
+1. On TestVM1, select **Connect &gt; Connect** and download the RDP file.
 
-    ![TestVM1 with Connect and RDP highlighted.](../media/connect-to-am.png)
+1. Download the RDP file to your desktop.
 
-1. Save the RDP file to your desktop.
-
-1. Follow the same steps for **TestVM2**
+1. Follow the same steps for **TestVM2**.
 
 1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password you provided during deployment.
 
@@ -163,7 +135,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
 
-1. Alternatively, you can enter the command nslookup TestVM2.contoso.com and verify that you receive a successful name resolution record for VM2
+1. Use the `nslookup TestVM2.contoso.com` command to verify that you receive a successful name resolution record for VM2.
 
 ## Extend your learning with Copilot
 
