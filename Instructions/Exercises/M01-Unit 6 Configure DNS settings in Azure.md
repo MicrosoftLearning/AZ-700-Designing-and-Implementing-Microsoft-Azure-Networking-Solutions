@@ -36,9 +36,8 @@ In this exercise, you will:
 
     | **Tab**         | **Option**                             | **Value**            |
     | --------------- | -------------------------------------- | -------------------- |
-    | Basics          | Resource group                         | ContosoResourceGroup |
+    | Basics          | Resource group  (create new if needed) | ContosoResourceGroup |
     |                 | Name                                   | Contoso.com          |
-    | Tags            | No changes required                    |                      |
     | Review + create | Review your settings and select Create |                      |
 
 1. Wait until the deployment is complete, and then select **Go to resource**.
