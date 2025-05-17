@@ -23,7 +23,7 @@ In this exercise, you will:
 
 ### Estimated time: 25 minutes
 
-**Important:** This exercise requires the virtual networks from the previous lab. These can be installed using a [template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01/template.json) file. 
+**Important:** This exercise requires a virtual network from the previous lab. This can be installed using a [template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01/template.json) file. All of the virtual networks will be installed, but only the CoreServicesVNet is needed. 
 
 ## Task 1: Create a private DNS Zone
 
@@ -83,7 +83,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
    
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-   >**Note:** You will be prompted to provide an Admin password.
+   >**Note:** You will be prompted to provide an Admin password. You will need this password in a later step. 
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -107,35 +107,27 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Make a note of the names and IP addresses of the VMs.
 
-### Connect to the Test VMs using RDP
+### Connect to a VM to test the name resolution
 
 1. On the Azure Portal home page, select **Virtual Machines**.
 
 1. Select **TestVM1**.
 
-1. On TestVM1, select **Connect &gt; Connect** and download the RDP file.
+1. On TestVM1, select **Connect &gt; Connect** and download the RDP file. Ensure the file downloads successfully.
 
-1. Download the RDP file to your desktop.
+1. Locate the RDP file and double-click to execute the file.
 
-1. Follow the same steps for **TestVM2**.
+1. Select **Connect** and provide the **TestUser** password you provided during the template deployment.
 
-1. Connect to TestVM1 using the RDP file, and the username **TestUser** and the password you provided during deployment.
-
-1. Connect to TestVM2 using the RDP file, and the username **TestUser** and the password you provided during deployment.
-
-1. On both VMs, in **Choose privacy settings for your device**, select **Accept**.
-
-1. On both VMs, if prompted, in **Networks**, select **Yes**.
+1. Select **Okay** and then **Yes** at the warning page.
 
 1. On TestVM1, open a command prompt and enter the command `ipconfig /all`.
 
-1. Verify that the IP address is the same as the one you noted in the DNS zone.
+1. Notice the IP address is the same as the one in the DNS zone.
 
-1. Enter the command ping TestVM2.contoso.com.
+1. Enter the command `ping TestVM2.contoso.com`. This command will timeout because of the Windows Firewall that is enabled on the VMs.
 
-1. Verify that the FQDN resolves to the IP address that you noted in the Private DNS zone. The ping itself will timeout because of the Windows Firewall that is enabled on the VMs.
-
-1. Use the `nslookup TestVM2.contoso.com` command to verify that you receive a successful name resolution record for VM2.
+1. Instead, use `nslookup TestVM2.contoso.com` command to verify that you receive a successful name resolution record for VM2. This demonstrates private zone name resolution. 
 
 ## Extend your learning with Copilot
 
