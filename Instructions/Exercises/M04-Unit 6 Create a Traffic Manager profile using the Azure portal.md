@@ -10,7 +10,9 @@ Exercise:
 
 In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application.
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20a%20Traffic%20Manager%20profile%20using%20the%20Azure%20portal)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+### Interactive lab simulations
+
+>**Note**: The lab simulations that were previously provided have been retired.
 
 ### Estimated time: 35 minutes
 
@@ -21,6 +23,8 @@ You will then create a Traffic Manager profile based on endpoint priority. This 
 The diagram below approximately illustrates the environment you will be deploying in this exercise.
 
 ​ ![Picture 14](../media/exercise-traffic-manager-environment-diagram.png)
+
+### Job skills
 
  In this exercise, you will:
 
