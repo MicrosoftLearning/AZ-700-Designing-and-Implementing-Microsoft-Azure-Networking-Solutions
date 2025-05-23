@@ -50,6 +50,8 @@ You will create the following resources:
 
 These virtual networks and subnets are structured in a way that accommodates existing resources yet allows for projected growth. Let's create these virtual networks and subnets to lay the foundation for our networking infrastructure.
 
+### Job skills
+
 In this exercise, you will:
 
 + Task 1: Create the Contoso resource group
