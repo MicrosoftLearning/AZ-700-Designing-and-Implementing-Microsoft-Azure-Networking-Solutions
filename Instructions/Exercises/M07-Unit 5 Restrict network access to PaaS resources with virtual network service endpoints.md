@@ -12,6 +12,8 @@ Virtual network service endpoints enable you to limit network access to some Azu
 
 ![Diagram of service endpoint architecture.](../media/5-exercise-restrict-network-paas-resources-virtual-network-service-endpoints.png)
 
+### Job skills
+
 In this exercise, you will:
 
 + Task 1: Create a virtual network
@@ -26,7 +28,9 @@ In this exercise, you will:
 + Task 10: Confirm access to storage account
 
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Restrict%20network%20access%20to%20PaaS%20resources%20with%20virtual%20network%20service%20endpoints)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+### Interactive lab simulations
+
+>**Note**: The lab simulations that were previously provided have been retired.
 
 ### Estimated time: 35 minutes
 
