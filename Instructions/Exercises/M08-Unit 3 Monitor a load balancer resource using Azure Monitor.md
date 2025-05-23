@@ -14,6 +14,8 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 ![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/3-exercise-monitor-load-balancer-resource-using-azure-monitor.png)
 
+### Job skills
+
  In this exercise, you will:
 
 + Task 1: Create the virtual network
@@ -30,11 +32,9 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 12: View resource health
 + Task 13: Configure diagnostic settings
 
+### Interactive lab simulations
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Monitor%20a%20load%20balancer%20resource%20using%20Azure%20Monitor)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
-
-> [!Note]  
-> You may find slight differences between the instructions and the Azure portal interface, but the core concept is the same.
+>**Note**: The lab simulations that were previously provided have been retired.
 
 ### Estimated time: 55 minutes
 
