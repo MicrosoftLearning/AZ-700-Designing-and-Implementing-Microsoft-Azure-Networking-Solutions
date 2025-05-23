@@ -9,11 +9,15 @@ Exercise:
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model.
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Provision%20an%20ExpressRoute%20circuit)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+### Interactive lab simulations
+
+>**Note**: The lab simulations that were previously provided have been retired.
 
 ### Estimated time: 15 minutes
 
 ![Diagram ExpressRoute circuit layout for exercise](../media/5-exercise-provision-expressroute-circuit.png)
+
+### Job skills
 
 In this exercise, you will:
 
