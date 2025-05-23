@@ -12,7 +12,9 @@ In this unit, you will configure connectivity between the CoreServicesVnet and t
 
 ![Diagram of virtual network peering.](../media/8-exercise-connect-two-azure-virtual-networks-global.png)
 
-In this unit, you will:
+### Job skills
+
+In this exercise, you will:
 
 + Task 1: Create a Virtual Machine to test the configuration
 + Task 2: Connect to the Test VMs using RDP
@@ -20,7 +22,9 @@ In this unit, you will:
 + Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 + Task 5: Test the connection between the VMs
 
-   >**Note**: An **[interactive lab simulation](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Connect%20two%20Azure%20virtual%20networks%20using%20global%20virtual%20network%20peering)** is available that allows you to click through this lab at your own pace. You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
+### Interactive lab simulations
+
+>**Note**: The lab simulations that were previously provided have been retired.
 
 ### Estimated time: 20 minutes
 
