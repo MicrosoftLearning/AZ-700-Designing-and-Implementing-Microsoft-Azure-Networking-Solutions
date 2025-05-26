@@ -12,6 +12,20 @@
 
 - We hope that this brings a sense of collaboration to the labs like we've never had before - when Azure changes and you find it first during a live delivery, go ahead and make an enhancement right in the lab source.  Help your fellow MCTs.
 
+This is700 by Adnan
+gemeslme;g';
+ egENGLeg
+
+ GEMLKETNL
+
+ 
+
+
+
+
+
+
+
 ## How should I use these files relative to the released MOC files?
 
 - The instructor handbook and PowerPoints are still going to be your primary source for teaching the course content.
