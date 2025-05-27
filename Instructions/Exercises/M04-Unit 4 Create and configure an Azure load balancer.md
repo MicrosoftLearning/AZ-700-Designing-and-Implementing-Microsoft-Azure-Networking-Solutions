@@ -48,27 +48,26 @@ In this section, you will create a virtual network and a subnet.
    | Name           | **IntLB-VNet**                             |
    | Region         | **(US) East US**                           |
 
-5. Select **Next : IP Addresses**.
+5. Select **Next** (takes you to the Security tab).
 
-6. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
+6. Under **Azure Bastion** select **Enable Azure Bastion**, then enter the information from the table below.
 
-7. On the **IP Addresses** tab, select **+ Add subnet**.
+    | **Setting**                   | **Value**                                                    |
+    | ----------------------------- | ------------------------------------------------------------ |
+    | Host name                     | **myBastionHost**                                            |
+    | Public IP address             | Select **Create a public IP address**  Name: **myBastionIP** |
 
-8. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**.
+7. Select **Next** (takes you to the IP addresses tab).
 
-9. Select **Add**.
+8. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
 
-10. Select **Add subnet**, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
+9. On the **IP Addresses** tab, select **+ Add a subnet**.
 
-11. Select **Next : Security**.
+10. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**. Select **Add**
 
-12. Under **BastionHost** select **Enable**, then enter the information from the table below.
+11. Select **Add subnet** again, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
 
-    | **Setting**                       | **Value**                                     |
-    | --------------------------------- | --------------------------------------------- |
-    | Bastion name                      | **myBastionHost**                             |
-    | AzureBastionSubnet address  space | **10.1.1.0/26**                               |
-    | Public IP address                 | Select **Create  new**  Name: **myBastionIP** |
+12. On the notification about Azure Bastion, select **Add Azure Bastion subnet**
 
 13. Select **Review + create**.
 
