@@ -32,11 +32,9 @@ In this exercise, you will:
 
    >**Important**:  Your ExpressRoute circuit is billed from the moment a service key is issued. Ensure that you perform this operation when the connectivity provider is ready to provision the circuit.
 
-1. On the Azure portal menu, select **+ Create a resource**. Select **Networking**, and then select **ExpressRoute**, as shown in the following image. If ExpressRoute does not appear in the list, use **Search the marketplace** to search for it:
+1. In the Azure portal menu, search for and select **ExpressRoute circuits**.
 
-   ![Azure portal - create ExpressRoute circuit menu](../media/create-expressroute-circuit-menu.png)
-
-1. On the **Create ExpressRoute** page, provide the **Resource Group** as ExpressRouteResourceGroup. Then select **Standard Resiliency** for **Resiliency**
+1. On the **Create ExpressRoute** page, provide the **Resource Group** as `ExpressRouteResourceGroup`. Then select **Standard Resiliency** for **Resiliency**.
 
 1. For ***Circuit Details**, make sure that you specify the correct Region (**East US 2**), Circuit Name (**TestERCircuit**), Peering location (**Seattle**), Provider (**Equinix**), Bandwidth (**50Mbps**), SKU tier (**Standard**) and data metering billing model (**Metered**).
 
