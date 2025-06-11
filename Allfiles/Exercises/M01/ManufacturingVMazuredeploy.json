@@ -152,12 +152,12 @@
   "name":  "[variables('PIPName1')]",
   "location": "[variables('location')]",
   "sku": {
-    "name": "Basic",
+    "name": "Standard",
     "tier": "Regional"
   },
   "properties": {
     "publicIPAddressVersion": "IPv4",
-    "publicIPAllocationMethod": "Dynamic"
+    "publicIPAllocationMethod": "Static"
   }
 }
     ],
