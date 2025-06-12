@@ -6,7 +6,7 @@ Exercise:
 
 # M07-Unit 6 Create an Azure private endpoint using Azure PowerShell (optional)
 
-> **Note**: This lab is optional. The previous lab, *Create an Azure private endpoint using Azure PowerShell*, covers this topic. In the future, this lab will be retired. 
+> **Note**: This lab is optional. The previous lab, *Restrict network access to PaaS resources with virtual network service endpoints*, covers this capability. In the future, this lab will be retired. 
 
 ## Exercise scenario
 
