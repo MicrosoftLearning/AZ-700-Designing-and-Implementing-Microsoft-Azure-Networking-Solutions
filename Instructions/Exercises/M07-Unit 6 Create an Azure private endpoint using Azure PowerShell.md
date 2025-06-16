@@ -170,6 +170,10 @@ Create the virtual machine with the following commands:
 - Add-AzVMNetworkInterface
 
 ```PowerShell
+## Register Standard Security Type ##
+
+Register-AzProviderFeature -FeatureName UseStandardSecurityType -ProviderNamespace Microsoft.Compute
+
 ## Set credentials for server admin and password. ##
 
 $cred = Get-Credential
