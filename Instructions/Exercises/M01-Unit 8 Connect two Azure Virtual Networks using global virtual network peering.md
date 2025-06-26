@@ -135,7 +135,7 @@ In this section, you will create a test VM on the  VNet to test if you can acces
     | ------------------------------------ | --------------------------------------------- | 
     | Peering link name | `CoreServicesVnet-to-ManufacturingVnet` |
  
-    **Remote virtual network peering settings**
+    **Local virtual network peering settings**
    
     | **Option**                                    | **Value**                             |
     | ------------------------------------ | --------------------------------------------- | 
