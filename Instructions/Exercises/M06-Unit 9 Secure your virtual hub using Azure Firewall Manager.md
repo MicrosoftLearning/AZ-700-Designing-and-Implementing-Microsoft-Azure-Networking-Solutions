@@ -45,64 +45,63 @@ In this task, you will create the two spoke virtual networks each containing a s
 
 1. Select **Create**.
 
-1. In **Resource group**, select **Create new**, and enter **fw-manager-rg** as the name and select **OK**.
+1. In **Resource group**, select **Create new**, and enter `fw-manager-rg` as the name and select **OK**.
 
-1. In **Name**, enter **Spoke-01**.
+1. In **Name**, enter `Spoke-01`.
 
 1. In **Region**, select your region.
 
-1. Select **Next: IP Addresses**.
+1. Select **Next**. Review but don't make any changes on the **Security** tab. 
 
-1. In **IPv4 address space**, enter **10.0.0.0/16**.
+1. Select **Next** and move to the **IP Addresses** tab.
 
-1. **Delete** any other address spaces listed here, such as **10.1.0.0/16**.
+1. Select **Delete address space** then **Add IPv4 address space**. 
 
-1. Under **Subnet name**, select the word **default**.
+1. Verify the IP address space is **10.0.0.0/16**.
 
-1. In the **Edit subnet** dialog box, change the name to **Workload-01-SN**.
+1. Select **Add a subnet**. 
 
-1. Change the **Subnet address range** to **10.0.1.0/24**.
+1. Change the subnet **Name** to `Workload-01-SN`.
 
-1. Select **Save**.
+1. Change the **Starting address** to `10.0.1.0`.
+
+1. Select **Add**.
 
 1. Select **Review + create**.
 
 1. Select **Create**.
 
-Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information:
+Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information. You don't need to wait for the first virtual network to finish deploying. 
 
 + Resource Group: **fw-manager-rg** (select existing)
-+ Name: **Spoke-02**
++ Virtual network name: `Spoke-02`
 + Address space: **10.1.0.0/16** - (delete any other listed address spaces)
-+ Subnet name: **Workload-02-SN**
++ Subnet name: `Workload-02-SN`
 + Subnet address range: **10.1.1.0/24**
 
 ## Task 2: Create the secured virtual hub
 
 In this task you will create your secured virtual hub using Firewall Manager.
 
-1. From the Azure portal home page, select **All services**.
+1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
+   
+1. In the **Secure your resources** blade, select **Virtual Hubs**.
 
-1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
-
-1. On the **Firewall Manager** page, from the Overview page, select **View secured virtual hubs**.
-
-1. On the **Virtual hubs** page, select **Create new secured virtual hub**.
+1. Select **Create new secured virtual hub**.
 
 1. For **Resource group**, select **fw-manager-rg**.
 
 1. For **Region**, select your region.
 
-1. For the **Secured virtual hub name**, enter **Hub-01**.
+1. For the **Secured virtual hub name**, enter `Hub-01`.
 
-1. For **Hub address space**, enter **10.2.0.0/16**.
+1. For **Hub address space**, enter `10.2.0.0/16`.
 
-1. Choose **New vWAN**.
+1. Ensure **New vWAN** is selected
 
-1. In **Virtual WAN Name**, enter **Vwan-01**.
+1. In **Virtual WAN Name**, enter `Vwan-01`.
 
 1. Select **Next: Azure Firewall**.
-    ![Create new secured virtual hub - Basics tab](../media/create-new-secured-virtual-hub-1.png)
 
 1. Select **Next: Security Partner Provider**.
 
@@ -110,17 +109,11 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. Select **Create**.
 
-    > **[!NOTE]**
-    >
-    > This can take up to 30 minutes to deploy.
+    > Note: This can take up to 30 minutes to deploy.
 
-    ​
+1. Wait for the deployment to complete. 
 
-    ![Create new secured virtual hub - Review + create tab](../media/create-new-secured-virtual-hub-2.png)
-
-1. When the deployment completes, from the Azure portal home page, select **All services**.
-
-1. In the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
 
 1. On the **Firewall Manager** page, select **Virtual hubs**.
 
@@ -134,15 +127,15 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 In this task you will connect the hub and spoke virtual networks. This is commonly known as peering.
 
-1. From the Azure portal home page, select **Resource groups**.
-
-1. Select the **fw-manager-rg** resource group, then select the **Vwan-01** virtual WAN.
+1. Select **Go to resource group**.
+2. 
+1. In the portal, search for and select the **Vwan-01** virtual WAN.
 
 1. Under **Connectivity**, select **Virtual network connections**.
 
 1. Select **Add connection**.
 
-1. For **Connection name**, enter **hub-spoke-01**.
+1. For **Connection name**, enter `hub-spoke-01`.
 
 1. For **Hubs**, select **Hub-01**.
 
@@ -151,12 +144,11 @@ In this task you will connect the hub and spoke virtual networks. This is common
 1. For **Virtual network**, select **Spoke-01**.
 
 1. Select **Create**.
-   ![Add hub and spoke connection to virtual WAN - Spoke 1](../media/connect-hub-spoke-vnet-1.png)
 
-1. Repeat steps 4 to 9 above to create another similar connection but using the connection name of **hub-spoke-02** to connect the **Spoke-02** virtual network.
+1. Repeat steps 4 to 9 above to create another similar connection but using the connection name of `hub-spoke-02` to connect the **Spoke-02** virtual network.
 
-    ![Add hub and spoke connection to virtual WAN - Spoke 2](../media/connect-hub-spoke-vnet-2.png)
-
+1. **Refresh** the virtual network connections page and verify you have two virtual networks, Spoke-01 and Spoke-02.\
+   
 ## Task 4: Deploy the servers
 
 1. In the Azure portal, select the Cloud Shell icon (top right). If necessary, configure the shell.  
@@ -182,36 +174,35 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
 
-1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
+1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.0.4**).
 
 ## Task 5: Create a firewall policy and secure your hub
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. From the Azure portal home page, select **Firewall Manager**.
-   + If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
 
-1. From **Firewall Manager**, from the Overview page, select **View Azure Firewall Policies**.
+1. In the **Firewall Manager** blade, select **Azure Firewall Policies**.
 
-1. Select **Create Azure Firewall Policy**.
+1. Select **Create**.
 
 1. On **Resource group**, select **fw-manager-rg**.
 
-5. Under **Policy details**, for the **Name**, enter **Policy-01**.
+5. Under **Policy details**, for the **Name**, enter `Policy-01`.
 
 1. On **Region** select your region.
 
 1. On **Policy tier**, select **Standard**.
 
-1. Select **Next : DNS Settings**.
+1. Select **Next : DNS Settings**. Review but don't make any changes. 
 
-1. Select **Next : TLS Inspection (preview)**.
+1. Select **Next : TLS Inspection**. Review but don't make any changes. 
 
 1. Select **Next : Rules**.
 
 1. On the **Rules** tab, select **Add a rule collection**.
 
-1. On the **Add a rule collection** page, in **Name**, enter **App-RC-01**.
+1. On the **Add a rule collection** page, in **Name**, enter `App-RC-01`.
 
 1. For **Rule collection type**, select **Application**.
 
@@ -219,31 +210,29 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Ensure **Rule collection action** is **Allow**.
 
-1. Under **Rules**, in **Name** enter **Allow-msft**.
+1. Under **Rules**, in **Name** enter `Allow-msft`.
 
 1. For the **Source type**, select **IP Address**.
 
 1. For **Source**, enter *.
 
-1. For **Protocol**, enter **http,https**.
+1. For **Protocol**, enter `http,https`.
 
 1. Ensure **Destination type** is **FQDN**.
 
-1. For **Destination**, enter ***.microsoft.com**.
+1. For **Destination**, enter `*.microsoft.com`.
 
 1. Select **Add**.
 
-    ![Add application rule collection to firewall policy](../media/add-rule-collection-firewall-policy-1.png)
-
 1. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, select **Add a rule collection**.
 
-1. For **Name**, enter **dnat-rdp**.
+1. For **Name**, enter `dnat-rdp`.
 
 1. For **Rule collection type**, select **DNAT**.
 
 1. For **Priority**, enter **100**.
 
-1. Under **Rules**, in **Name** enter **Allow-rdp**.
+1. Under **Rules**, in **Name** enter `Allow-rdp`.
 
 1. For the **Source type**, select **IP Address**.
 
@@ -251,11 +240,11 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. For **Protocol**, select **TCP**.
 
-1. For **Destination Ports**, enter **3389**.
+1. For **Destination Ports**, enter `3389`.
 
-1. For **Destination Type**, select **IP Address**.
+1. For **Destination IP address**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
 
-1. For **Destination**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
+1. For **Translated type**, select **IP address**.
 
 1. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (e.g., **10.0.1.4**).
 
@@ -265,7 +254,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. To add a Network rule so you can connect a remote desktop from Srv-workload-01 to Srv-workload-02 VM, select **Add a rule collection**.
 
-1. For **Name**, enter **vnet-rdp**.
+1. For **Name**, enter `vnet-rdp`.
 
 1. For **Rule collection type**, select **Network**.
 
@@ -273,7 +262,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. For **Rule collection action**, select **Allow**.
 
-1. Under **Rules**, in **Name** enter **Allow-vnet**.
+1. Under **Rules**, in **Name** enter `Allow-vnet`.
 
 1. For the **Source type**, select **IP Address**.
 
@@ -285,11 +274,9 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. For **Destination Type**, select **IP Address**.
 
-1. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.1.4**).
+1. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.0.4**).
 
 1. Select **Add**.
-
-    ![List rule collections in the firewall policy](../media/list-rule-collections-firewall-policy.png)
 
 1. You should now have 3 rule collections listed.
 
@@ -301,8 +288,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. From the Azure portal home page, select **Firewall Manager**.
-   + If the Firewall Manager icon does not appear on the homepage, then select **All services**. Then in the search box, enter **firewall manager** and select **Firewall Manager** when it appears.
+1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
 
 1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
 
@@ -315,8 +301,6 @@ In this task you will associate the firewall policy with the virtual hub.
 1. Select **Add**.
 
 1. When the policy has been attached, select **Refresh**. The association should be displayed.
-
-![Show associated firewall policy on hub](../media/associate-firewall-policy-with-hub-end.png)
 
 ## Task 7: Route traffic to your hub
 
