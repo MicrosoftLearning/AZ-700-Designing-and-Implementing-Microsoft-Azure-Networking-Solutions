@@ -15,7 +15,9 @@ In this exercise, you will create the spoke virtual network and create a secured
 
 ### Interactive lab simulations
 
->**Note**: The lab simulations that were previously provided have been retired.
+**Note**: The lab simulations that were previously provided have been retired.
+
+
 ## Create a hub and spoke architecture
 
 In this part of the exercise, you will create the spoke virtual networks and subnets where you will place the workload servers. Then you will create the secured virtual hub and connect the hub and spoke virtual networks.
@@ -121,7 +123,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. Select **Azure Firewall** and then **Public IP configuration**.
 
-1. Note the public IP address (e.g., **51.143.226.18**), which you will use later.
+1. Note the public IP address (e.g., **172.191.79.203**), which you will use later.
 
 ## Task 3: Connect the hub and spoke virtual networks
 
@@ -160,7 +162,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. Deploy the following ARM templates to create the VM needed for this exercise:
 
-   >**Note**: You will be prompted to provide an Admin password.
+   >**Note**: You will be prompted to provide an Admin password. **You will need this password in a later step.**
 
    ```powershell
    $RGName = "fw-manager-rg"
@@ -172,7 +174,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. On the **Overview** page of **Srv-workload-01**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.0.1.4**).
 
-1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.0.4**).
+1. On the **Overview** page of **Srv-workload-02**, in the right-hand pane, under the **Networking** section, note down the **Private IP address** (e.g., **10.1.1.4**).
 
 ## Task 5: Create a firewall policy and secure your hub
 
@@ -286,31 +288,38 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 In this task you will associate the firewall policy with the virtual hub.
 
-1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
+1. In the portal search for and select `Hub-01`.
 
-1. On **Firewall Manager**, under **Security**, select **Azure Firewall Policies**.
+1. In the **Settings** blade, select **Security providers**
 
-1. Select the checkbox for **Policy-01**.
+1. Select the checkbox for **Add Policy**.
 
-1. Select **Manage associations&gt;Associate hubs**.
+1. Select **Policy-01** and then **Save**.
 
 1. Select the checkbox for **Hub-01**.
 
 1. Select **Add**.
 
-1. When the policy has been attached, select **Refresh**. The association should be displayed.
+1. When the policy has been association, select **Refresh**. The association should be displayed.
 
 ## Task 7: Route traffic to your hub
 
 In this task you will ensure that network traffic gets routed through your firewall.
 
-1. On **Firewall Manager**, select **Virtual hubs**.
-1. Select **Hub-01**.
-1. Under **Settings**, select **Security configuration**.
+1. In the portal, search for and select **Vwan-01**.
+
+1. In the **Connectivity** blade, select **Hubs**, and then **Hub-01**.
+   
+1. In the **Security** blade, select **Azure Firewall and Firewall Manager**, select **Hub-01**, and then **Security configuration**.
+
 1. On **Internet traffic**, select **Azure Firewall**.
+
 1. On **Private traffic**, select **Send via Azure Firewall**.
-1. Select **Save**.
+
+1. Select **Save** and click **OK** to confirm your choice.
+
 1. This will take a few minutes to complete.
+
 1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
 
 ## Task 8: Test the application rule
@@ -339,7 +348,7 @@ In this task you will test the application rule to confirm that it works as expe
 
 1. Open Internet Explorer and select **OK** in the **Set up Internet Explorer 11** dialog box.
 
-1. Browse to **https://** **<www.microsoft.com>**.
+1. Browse to `https://www.microsoft.com`
 
 1. On the **Security Alert** dialog box, select **OK**.
 
