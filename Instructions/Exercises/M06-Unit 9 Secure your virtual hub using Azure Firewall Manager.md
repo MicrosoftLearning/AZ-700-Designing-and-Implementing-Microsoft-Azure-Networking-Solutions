@@ -119,7 +119,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. Select **Hub-01**.
 
-1. Select **Public IP configuration**.
+1. Select **Azure Firewall** and then **Public IP configuration**.
 
 1. Note the public IP address (e.g., **51.143.226.18**), which you will use later.
 
