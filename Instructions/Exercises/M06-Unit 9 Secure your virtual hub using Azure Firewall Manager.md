@@ -41,13 +41,13 @@ In this exercise, you will:
 
 In this task, you will create the two spoke virtual networks each containing a subnet that will host your workload servers.
 
-1. On the Azure portal home page, in the search box, enter **virtual network** and select **Virtual Network** when it appears.
+1. In the Azure portal, search for and select `Virtual Networks`.
 
 1. Select **Create**.
 
 1. In **Resource group**, select **Create new**, and enter `fw-manager-rg` as the name and select **OK**.
 
-1. In **Name**, enter `Spoke-01`.
+1. In **Virtual network name**, enter `Spoke-01`.
 
 1. In **Region**, select your region.
 
@@ -71,13 +71,13 @@ In this task, you will create the two spoke virtual networks each containing a s
 
 1. Select **Create**.
 
-Repeat steps 1 to 14 above to create another similar virtual network and subnet but using the following information. You don't need to wait for the first virtual network to finish deploying. 
+Repeat steps 1 to 14 above to create another similar virtual network and subnet using the following information. You don't need to wait for the first virtual network to finish deploying. 
 
 + Resource Group: **fw-manager-rg** (select existing)
 + Virtual network name: `Spoke-02`
 + Address space: **10.1.0.0/16** - (delete any other listed address spaces)
 + Subnet name: `Workload-02-SN`
-+ Subnet address range: **10.1.1.0/24**
++ Subnet starting address: `10.1.1.0`
 
 ## Task 2: Create the secured virtual hub
 
@@ -101,9 +101,9 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 1. In **Virtual WAN Name**, enter `Vwan-01`.
 
-1. Select **Next: Azure Firewall**.
+1. Select **Next: Azure Firewall**. Review but don't make any changes. 
 
-1. Select **Next: Security Partner Provider**.
+1. Select **Next: Security Partner Provider**. Review but don't make any changes. 
 
 1. Select **Next: Review + create.**
 
@@ -127,9 +127,7 @@ In this task you will create your secured virtual hub using Firewall Manager.
 
 In this task you will connect the hub and spoke virtual networks. This is commonly known as peering.
 
-1. Select **Go to resource group**.
-2. 
-1. In the portal, search for and select the **Vwan-01** virtual WAN.
+1. In the portal, search for and select the `Vwan-01` virtual WAN.
 
 1. Under **Connectivity**, select **Virtual network connections**.
 
@@ -147,7 +145,7 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 1. Repeat steps 4 to 9 above to create another similar connection but using the connection name of `hub-spoke-02` to connect the **Spoke-02** virtual network.
 
-1. **Refresh** the virtual network connections page and verify you have two virtual networks, Spoke-01 and Spoke-02.\
+1. **Refresh** the virtual network connections page and verify you have two virtual networks, Spoke-01 and Spoke-02.
    
 ## Task 4: Deploy the servers
 
