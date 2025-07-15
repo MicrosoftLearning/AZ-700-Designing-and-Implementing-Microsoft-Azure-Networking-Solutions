@@ -264,7 +264,7 @@
   "name":  "[variables('PIPName1')]",
   "location": "[resourceGroup().location]",
   "sku": {
-    "name": "Basic",
+    "name": "Standard",
     "tier": "Regional"
   },
   "properties": {
