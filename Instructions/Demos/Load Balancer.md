@@ -7,8 +7,6 @@ demo:
 
 In this demonstration, we will learn how to create a public load balancer. 
 
-**Simulation:** [Create and configure an Azure load balancer](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)
-
 **Reference**: [Quickstart: Create a public load balancer to load balance VMs using the Azure portal](https://learn.microsoft.com/azure/load-balancer/quickstart-load-balancer-standard-public-portal)
 
 **Note:** This demonstration requires a virtual network with at least one subnet. 
