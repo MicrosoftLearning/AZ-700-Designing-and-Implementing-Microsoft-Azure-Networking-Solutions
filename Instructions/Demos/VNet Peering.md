@@ -7,8 +7,6 @@ demo:
 
 **Note:** For this demonstration you will need two virtual networks.
 
-**Simulation:** [Connect two virtual networks using Azure peering](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Connect%20two%20Azure%20virtual%20networks%20using%20global%20virtual%20network%20peering)
-
 **Reference**: [Connect virtual networks with VNet peering - tutorial](https://docs.microsoft.com/azure/virtual-network/tutorial-connect-virtual-networks-portal)
 
 **Configure VNet peering on the first virtual network**
