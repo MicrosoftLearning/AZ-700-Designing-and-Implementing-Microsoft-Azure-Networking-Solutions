@@ -7,8 +7,6 @@ demo:
 
 In this demonstration, you will explore Azure DNS.
 
-**Reference:** [Simulation: Configure DNS settings in Azure](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)
-
 **Reference**: [Tutorial: Host your domain and subdomain - Azure DNS](https://docs.microsoft.com/azure/dns/dns-delegate-domain-azure-dns)
 
 **Create a DNS zone**
