@@ -38,7 +38,7 @@ In this exercise, you will:
 
 1. Login to the Azure Portal.
 
-1. On the Azure Portal home page, search for virtual network and then select **Virtual network** from the results.
+1. On the Azure Portal home page, search for `virtual network` and then select **Virtual network** from the results.
 
 1. Select **+** **Create**.
 
@@ -52,15 +52,6 @@ In this exercise, you will:
    | Name           | CoreServicesVNet                              |
    | Location       | Select **East US**                            |
 
-1. Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name):
-   ![Graphical user interface, text, application, email Description automatically generated](../media/create-virtual-network-ip.png)
-
-   | **Setting**          | **Value**   |
-   | -------------------- | ----------- |
-   | Address space        | 10.0.0.0/16 |
-   | Subnet Name          | Public      |
-   | Subnet Address range | 10.0.0.0/24 |
-
 1. Select the **Security** tab and enter the following values:
    ![Graphical user interface, text, application, email Description automatically generated](../media/ create-virtual-network-security.png)
 
@@ -69,6 +60,15 @@ In this exercise, you will:
    | BastionHost             | Disabled  |
    | DDoS Network Protection | Disabled  |
    | Firewall                | Disabled  |
+
+1. Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name):
+   ![Graphical user interface, text, application, email Description automatically generated](../media/create-virtual-network-ip.png)
+
+   | **Setting**          | **Value**   |
+   | -------------------- | ----------- |
+   | Address space        | 10.0.0.0/16 |
+   | Subnet Name          | Public      |
+   | Subnet Address range | 10.0.0.0/24 |
 
 1. Select **Review + Create**. Once the resource is validated select **Create**.
 
@@ -89,7 +89,7 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
    | Address range               | 10.0.1.0/24                  |
    | Service endpoints: Services | Select **Microsoft.Storage** |
 
-1. Select **Save**.
+1. Select **Add**.
 
 You should now have two subnets configured:
 
@@ -135,7 +135,7 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
    | Protocol                | Any                       |
    | Action                  | Allow                     |
    | Priority                | 100                       |
-   | Name                    | Allow-Storage-All         |
+   | Name                    | `Allow-Storage-All`         |
 
 1. Select **Add**:
 
@@ -160,7 +160,7 @@ Create another outbound security rule that denies communication to the internet.
    | Protocol                | Any                       |
    | Action                  | Deny                      |
    | Priority                | 110                       |
-   | Name                    | Deny-Internet-All         |
+   | Name                    | `Deny-Internet-All`         |
 
 1. Select **Add**.
 
@@ -179,13 +179,13 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
    | ----------------------- | ------------------------- |
    | Source                  | Any                       |
    | Source port ranges      | *                         |
-   | Destination             | Select **VirtualNetwork** |
+   | Destination             | Any                       |
    | Service                 | Custom                    |
    | Destination port ranges | 3389                      |
    | Protocol                | Any                       |
    | Action                  | Allow                     |
    | Priority                | 120                       |
-   | Name                    | Allow-RDP-All             |
+   | Name                    | `Allow-RDP-All`            |
 
 1. And then select **Add**.
 
@@ -203,9 +203,9 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 
 The steps necessary to restrict network access to resources created through Azure services enabled for service endpoints varies across services. See the documentation for individual services for specific steps for each service. The remainder of this exercise includes steps to restrict network access for an Azure Storage account, as an example.
 
-1. On the Azure portal, select Storage accounts.
+1. In the Azure portal, search for and select `Storage accounts`.
 
-1. Select +Create.
+1. Select **Create**.
 
 1. Enter, or select, the following information and accept the remaining defaults:
 
@@ -214,22 +214,25 @@ The steps necessary to restrict network access to resources created through Azur
    | Subscription   | Select your subscription                                     |
    | Resource group | myResourceGroup                                              |
    | Name           | Enter contosostoragexx (where xx are your initials to make it unique) |
+   | Primary service | Azure Files                                                |
    | Performance    | Standard StorageV2 (general purpose v2)                      |
    | Location       | Select East US                                               |
    | Replication    | Locally-redundant storage (LRS)                              |
 
-1. select **Review**, then select **Create**.
+1. Select **Review**, then select **Create**.
+
+1. After the storage account successfully deploys, select **Go to resource**. 
 
 ## Task 7: Create a file share in the storage account
 
-1. After the storage account is created, enter the name of the storage account in the **Search resources, services, and docs** box, at the top of the portal. When the name of your storage account appears in the search results, select it.
-1. Select **File shares**, as shown in the following picture: 
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share-2.png)
-1. Select **+ File share**.
-1. Enter marketing under **Name**, and then select **Next : Backup**.
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share-basics.png)
+1. In the Storage account, in the **Data storage** blade, select **File shares**.
+
+1. Select **+ File share**. 
+
+1. For **Name**, enter **marketing**, and then select **Next : Backup**.
+
 1. Unselect **Enable backup**, as shown in the following picture: 
-   ![Graphical user interface, application Description automatically generated](../media/new-file-share-backup.png)
+
 1. Select **Review + Create**. Once the resource is validated select **Create**.
 
 ## Task 8: Restrict network access to a subnet
@@ -238,26 +241,23 @@ By default, storage accounts accept network connections from clients in any netw
 
 1. Under **Security + networking** for the storage account, select **Networking**.
 
-1. Select **Enabled from selected virtual networks and IP addresses**.
+1. Select **Manage** in the **Public network access** section.
 
-1. Select **+Add existing virtual network**.
+1 In the **Public access scope** section, select **Enabled from selected networks**.
 
-1. Under **Add networks**, select the following values:
-   ![Graphical user interface, application Description automatically generated](../media/add-network-access.png)
+1. Select **+ Add existing virtual network**, and then **Add existing virtual network**. 
 
    | **Setting**      | **Value**                    |
    | ---------------- | ---------------------------- |
    | Subscription     | Select your subscription.    |
-   | Virtual networks | Select CoreServicesVNet**.** |
-   | Subnets          | Select **Private**.          |
+   | Virtual networks | **CoreServicesVNet** |
+   | Subnets          | **Private**.          |
 
-1. Select **Add**.
-
-1. Select **Save**.
+1. Select **Add**, and then **Save**.
 
 1. Under **Security and Networking** for the storage account, select **Access keys**.
 
-1. Select **Show Keys**. Note the **Key** value, as you'll have to manually enter it in a later step when mapping the file share to a drive letter in a VM.
+1. Use **Show** for the **Key1** value. Copy the value you will need it later. 
 
 ## Task 9: Create virtual machines
 
@@ -268,7 +268,7 @@ To test network access to a storage account, deploy a VM to each subnet.
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed. 
 
-1. In the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **VMs.json** and **VMs.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M07**.
+1. In the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **VMs.json** and **VMs.parameters.json** into the Cloud Shell home directory. This Module 07, Exercise 05. 
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
@@ -284,12 +284,15 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 ## Task 10: Confirm access to storage account
 
-1. Once the ContosoPrivate VM finishes creating, open the blade for the VM by selecting Go to resource. Select the Connect button, then select RDP.
-   ![Graphical user interface, application Description automatically generated](../media/private-virtual-machine-connect.png)
-1. After selecting the Connect button and RDP, select the Download RDP File button. A Remote Desktop Protocol (.rdp) file is created and downloaded to your computer.
-1. Open the downloaded rdp file. If prompted, select Connect. Enter the user name and password you specified when creating the VM. You may need to select More choices, then Use a different account, to specify the credentials you entered when you created the VM.
-1. Select **OK**.
-1. You may receive a certificate warning during the sign-in process. If you receive the warning, select Yes or Continue to proceed with the connection.
+1. In the portal, search for and select the **ContosoPrivate** virtual machine.
+
+1. Selecting **Connect**, then **Connect**, and then **Download RDP file**. If prompted, confirm the download.
+
+1. From the **Downloads** folder, open the ContosoPrivate.rdp file.
+
+1. Select **Connect** and provide the virtual machine password. Select **Ok** and indicate **Yes** to the certificate warning. 
+
+1. Login to the machine, 
 1. On the ContosoPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragexx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
 
 ```azurecli
@@ -313,27 +316,13 @@ You receive no replies because the network security group associated to the Priv
 
 ### Confirm access is denied to storage account
 
-1. Enter ContosoPublic In the **Search resources, services, and docs** box at the top of the portal.
-
-1. When **ContosoPublic** appears in the search results, select it.
-
-1. Complete steps 1-6 in the Confirm access to storage account task for the ContosoPublic VM.  
-
-   ‎After a short wait, you receive a New-PSDrive : Access is denied error. Access is denied because the ContosoPublic VM is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for Azure Storage. The storage account only allows network access from the Private subnet, not the Public subnet.
-
-1. Confirm that the public VM does have outbound connectivity to the internet from a command prompt:
-
- ping bing.com
-
-1. Close the remote desktop session to the ContosoPublic VM.
-
 1. From your computer, browse to the Azure portal.
 
 1. Enter the name of the storage account you created in the **Search resources, services, and docs** box. When the name of your storage account appears in the search results, select it.
 
-1. Select **File shares** then select the **marketing** file share.
+1. Select **File shares** then select the **marketing** file share. 
 
-1. You receive the error shown in the following screenshot:
+1. Select **Browse** and notice the access denied error. Your error may look different. 
 
     ![Graphical user interface, text, application, email Description automatically generated](../media/no-access.png)
 
