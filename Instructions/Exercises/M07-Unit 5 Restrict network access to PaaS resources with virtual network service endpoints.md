@@ -292,45 +292,30 @@ To test network access to a storage account, deploy a VM to each subnet.
 
 1. Select **Connect** and provide the virtual machine password. Select **Ok** and indicate **Yes** to the certificate warning. 
 
-1. Login to the machine, 
-1. On the ContosoPrivate VM, map the Azure file share to drive Z using PowerShell. Before running the commands that follow, replace <storage-account-key> , <storage-account-name> (i.e. contosostoragexx) and my-file-share (i.e marketing) with values you supplied and retrieved in the Create a storage account task.
+1. Use PowerShell to create a file share. Replace <storage-account-key1-value> , <storage-account-name> (i.e. contosostoragexx) with the values when you created the storage account. 
+    ```powershell
+    $acctKey = ConvertTo-SecureString -String "<storage-account-key1-value>" -AsPlainText -Force
 
-```azurecli
-$acctKey = ConvertTo-SecureString -String "<storage-account-key>" -AsPlainText -Force
+    $credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
 
-$credential = New-Object System.Management.Automation.PSCredential -ArgumentList "Azure\<storage-account-name>", $acctKey
+    New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\marketing" -Credential $credential
 
-New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage-account-name>.file.core.windows.net\marketing" -Credential $credential
+    ```
+1. Confirm that the VM has no outbound connectivity. You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
-```
-
-The Azure file share successfully mapped to the Z drive.
-
-1. Confirm that the VM has no outbound connectivity to the internet from a command prompt:
-
- ping bing.com
-
-You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
+ ```ping bing.com```
 
 1. Close the remote desktop session to the ContosoPrivate VM.
 
 ### Confirm access is denied to storage account
 
-1. From your computer, browse to the Azure portal.
+1. Return to the Azure portal.
 
-1. Enter the name of the storage account you created in the **Search resources, services, and docs** box. When the name of your storage account appears in the search results, select it.
+1. Navigate to your storage account, select **File shares** then select the **marketing** file share. 
 
-1. Select **File shares** then select the **marketing** file share. 
-
-1. Select **Browse** and notice the access denied error. Your error may look different. 
+1. Select **Browse** and notice the access denied error. Your error may look different.  Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
 
     ![Graphical user interface, text, application, email Description automatically generated](../media/no-access.png)
-
- Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
-
-   >**Warning**: Prior to continuing you should remove all resources used for this lab. To do this On the Azure portal select Resource groups. Select any resources groups you have created. On the resource group blade select Delete Resource group, enter the Resource Group Name and select Delete. Repeat the process for any additional Resource Groups you may have created. Failure to do this may cause issues with other labs.
-
-Results: You have now completed this lab.
 
 ## Clean up resources
 
