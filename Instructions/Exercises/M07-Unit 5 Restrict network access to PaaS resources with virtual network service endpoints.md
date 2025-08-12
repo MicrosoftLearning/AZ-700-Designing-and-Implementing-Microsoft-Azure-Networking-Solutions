@@ -303,7 +303,7 @@ To test network access to a storage account, deploy a VM to each subnet.
     ```
 1. Confirm that the VM has no outbound connectivity. You receive no replies because the network security group associated to the Private subnet does not allow outbound access to the internet.
 
- ```ping bing.com```
+    ```ping bing.com```
 
 1. Close the remote desktop session to the ContosoPrivate VM.
 
