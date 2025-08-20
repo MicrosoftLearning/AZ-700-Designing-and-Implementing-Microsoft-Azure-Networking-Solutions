@@ -180,19 +180,16 @@ In this task you will connect the hub and spoke virtual networks. This is common
 
 In this task you will first create your firewall policy, then secure your hub. The firewall policy will define collections of rules to direct traffic on one or more Secured virtual hubs.
 
-1. In the portal search for `firewall manager` and then select **Network Security keyword firewall manager**.
-
-1. In the **Firewall Manager** blade, select **Azure Firewall Policies**.
+1. In the portal, search for and select `Firewall Policies`.
 
 1. Select **Create**.
 
-1. On **Resource group**, select **fw-manager-rg**.
-
-5. Under **Policy details**, for the **Name**, enter `Policy-01`.
-
-1. On **Region** select your region.
-
-1. On **Policy tier**, select **Standard**.
+    | Setting    | Value |
+    | ---------- | --------------|
+    | Resource group | **fw-manager-rg** |
+    | Name    | `Policy-01` |
+    | Region     | Select your region |
+    | Policy tier | **Standard** |
 
 1. Select **Next : DNS Settings**. Review but don't make any changes. 
 
