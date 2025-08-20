@@ -195,6 +195,8 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Select **Next : TLS Inspection**. Review but don't make any changes. 
 
+**Add a rule collection and rule to allow the Microsoft domain**
+
 1. Select **Next : Rules**, and then select **Add a rule collection**.
 
    | **Setting** | **Value** |
@@ -215,33 +217,31 @@ In this task you will first create your firewall policy, then secure your hub. T
    | Destination type | **FQDN** |
    | Destination | `*.microsoft.com` |
 
-1. Select **Add**.
+**Add a rule collection and rule to allow a remote desktop connection to the Srv-workload-01 virtual machine. 
 
-1. To add a DNAT rule so you can connect a remote desktop to the Srv-workload-01 VM, select **Add a rule collection**.
+1. Select **Add a rule collection**.
 
-1. For **Name**, enter `dnat-rdp`.
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name        |  `dnat-rdp` |
+   | Rule collection type | **DNAT** |
+   | Priority    | `100` |
+   | Rule collection action | **Allow** |
 
-1. For **Rule collection type**, select **DNAT**.
+1. In the **Rules** section.
 
-1. For **Priority**, enter **100**.
-
-1. Under **Rules**, in **Name** enter `Allow-rdp`.
-
-1. For the **Source type**, select **IP Address**.
-
-1. For **Source**, enter *.
-
-1. For **Protocol**, select **TCP**.
-
-1. For **Destination Ports**, enter `3389`.
-
-1. For **Destination IP address**, enter the firewall virtual hub public IP address that you noted down earlier (e.g., **51.143.226.18**).
-
-1. For **Translated type**, select **IP address**.
-
-1. For **Translated address**, enter the private IP address for **Srv-workload-01** that you noted down earlier (e.g., **10.0.1.4**).
-
-1. For **Translated port**, enter **3389**.
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name |  `Allow-rdp` |
+   | Source type | **IP Address** |
+   | Source | `*` |
+   | Protocol | **TCP** |
+   | Destination Ports | `3389` |
+   | Destination (Firewall IP Address) | Enter the firewall virtual hub public IP address |
+   | Translated type | **IP Address** |
+   | Translated address or FQDN | Enter the private IP address for Srv-workload-01* virtual machine |
+   | Translated port | `3389` |
+   
 
 1. Select **Add**.
 
