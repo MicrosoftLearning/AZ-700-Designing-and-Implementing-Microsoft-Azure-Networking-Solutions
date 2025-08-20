@@ -217,7 +217,7 @@ In this task you will first create your firewall policy, then secure your hub. T
    | Destination type | **FQDN** |
    | Destination | `*.microsoft.com` |
 
-**Add a rule collection and rule to allow a remote desktop connection to the Srv-workload-01 virtual machine. 
+**Add a rule collection and rule to allow a remote desktop connection to the Srv-workload-01 virtual machine.**
 
 1. Select **Add a rule collection**.
 
@@ -239,39 +239,37 @@ In this task you will first create your firewall policy, then secure your hub. T
    | Destination Ports | `3389` |
    | Destination (Firewall IP Address) | Enter the firewall virtual hub public IP address |
    | Translated type | **IP Address** |
-   | Translated address or FQDN | Enter the private IP address for Srv-workload-01* virtual machine |
+   | Translated address or FQDN | Enter the private IP address for Srv-workload-01 virtual machine |
    | Translated port | `3389` |
    
+**Add a rule collection and rule to allow a remote desktop connection to the Srv-workload-02 virtual machine.**
+
+1. Select **Add a rule collection**.
+
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name        |  `vnet-rdp` |
+   | Rule collection type | **Network** |
+   | Priority    | `100` |
+   | Rule collection action | **Allow** |
+
+1. In the **Rules** section.
+
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name |  `Allow-vnet` |
+   | Source type | **IP Address** |
+   | Source | `*` |
+   | Protocol | **TCP** |
+   | Destination Ports | `3389` |
+   | Destination (Firewall IP Address) | Enter the firewall virtual hub public IP address |
+   | Translated type | **IP Address** |
+   | Translated address or FQDN | Enter the private IP address for Srv-workload-02 virtual machine |
+   | Translated port | `3389` |
 
 1. Select **Add**.
 
-1. To add a Network rule so you can connect a remote desktop from Srv-workload-01 to Srv-workload-02 VM, select **Add a rule collection**.
-
-1. For **Name**, enter `vnet-rdp`.
-
-1. For **Rule collection type**, select **Network**.
-
-1. For **Priority**, enter **100**.
-
-1. For **Rule collection action**, select **Allow**.
-
-1. Under **Rules**, in **Name** enter `Allow-vnet`.
-
-1. For the **Source type**, select **IP Address**.
-
-1. For **Source**, enter *.
-
-1. For **Protocol**, select **TCP**.
-
-1. For **Destination Ports**, enter **3389**.
-
-1. For **Destination Type**, select **IP Address**.
-
-1. For **Destination**, enter the private IP address for **Srv-workload-02** that you noted down earlier (e.g., **10.1.0.4**).
-
-1. Select **Add**.
-
-1. You should now have 3 rule collections listed.
+1. Verify you have three rule collections.
 
 1. Select **Review + create**.
 
