@@ -204,17 +204,16 @@ In this task you will first create your firewall policy, then secure your hub. T
    | Priority    | `100` |
    | Rule collection action | **Allow** |
 
-1. Under **Rules**, in **Name** enter `Allow-msft`.
+1. In the **Rules** section.
 
-1. For the **Source type**, select **IP Address**.
-
-1. For **Source**, enter *.
-
-1. For **Protocol**, enter `http,https`.
-
-1. Ensure **Destination type** is **FQDN**.
-
-1. For **Destination**, enter `*.microsoft.com`.
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name |  `Allow-msft` |
+   | Source type | **IP Address** |
+   | Source | `*` |
+   | Protocol | `http,https` |
+   | Destination type | **FQDN** |
+   | Destination | `*.microsoft.com` |
 
 1. Select **Add**.
 
