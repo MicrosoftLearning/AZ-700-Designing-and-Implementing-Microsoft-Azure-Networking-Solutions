@@ -184,7 +184,7 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Select **Create**.
 
-    | Setting    | Value |
+    | **Setting**    | **Value** |
     | ---------- | --------------|
     | Resource group | **fw-manager-rg** |
     | Name    | `Policy-01` |
@@ -195,17 +195,14 @@ In this task you will first create your firewall policy, then secure your hub. T
 
 1. Select **Next : TLS Inspection**. Review but don't make any changes. 
 
-1. Select **Next : Rules**.
+1. Select **Next : Rules**, and then select **Add a rule collection**.
 
-1. On the **Rules** tab, select **Add a rule collection**.
-
-1. On the **Add a rule collection** page, in **Name**, enter `App-RC-01`.
-
-1. For **Rule collection type**, select **Application**.
-
-1. For **Priority**, enter **100**.
-
-1. Ensure **Rule collection action** is **Allow**.
+   | **Setting** | **Value** |
+   | ---------- | --------------|
+   | Name        |  `App-RC-01` |
+   | Rule collection type | **Application** |
+   | Priority    | `100` |
+   | Rule collection action | **Allow** |
 
 1. Under **Rules**, in **Name** enter `Allow-msft`.
 
