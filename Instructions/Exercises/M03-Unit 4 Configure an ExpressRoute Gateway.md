@@ -88,11 +88,8 @@ Note that the subnet name will be automatically populated.
    | Gateway type              | ExpressRoute               |
    | SKU                       | Standard                   |
    | Virtual network           | CoreServicesVNet           |
-   | **Public IP address**     |                            |
-   | Public IP address         | Create new                 |
-   | Public IP address name    | CoreServicesVnetGateway-IP |
-   | Assignment                | Not configurable           |
-
+   | Subnet                    | GatewaySubnet              |
+   
 1. Select **Review + Create**.
 
 1. Confirm that the Gateway configuration passes validation and then select **Create**.
@@ -121,3 +118,4 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. The connection is private and travels over a dedicated line, third parties can't intercept the traffic.
 + You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct.
 + ExpressRoute features is determined by the SKU: Local, Standard, and Premuium. 
+
