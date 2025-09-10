@@ -126,7 +126,7 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. Switch back to your browser and select Refresh. You should see the same information page.
 
-**There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
+    **There may be a delay while the web app stops. If you get an error page in your browser, refresh the page**.
 
 1. Switch back to the Azure Portal, locate the other web app, and stop it.
 
