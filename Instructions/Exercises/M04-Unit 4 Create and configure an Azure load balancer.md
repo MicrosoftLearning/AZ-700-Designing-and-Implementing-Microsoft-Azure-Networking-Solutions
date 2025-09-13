@@ -59,19 +59,21 @@ In this section, you will create a virtual network and a subnet.
 
 7. Select **Next** (takes you to the IP addresses tab).
 
-8. On the **IP Addresses** tab, in the **IPv4 address space** box, remove the default and enter **10.1.0.0/16**.
+8. On the **IP Addresses** tab, in the **IPv4 address space** box, replace the prepopulated IPv4 address space with: **10.1.0.0/16**.
 
-9. On the **IP Addresses** tab, select **+ Add a subnet**.
+9. On the **IP Addresses** tab, under **Subnets**, delete the **default** subnet.
 
-10. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a subnet address range of **10.1.0.0/24**. Select **Add**
+10. On the **IP Addresses** tab, select **+ Add a subnet**.
 
-11. Select **Add subnet** again, provide a subnet name of **myFrontEndSubnet**, and a subnet address range of **10.1.2.0/24**. Select **Add**
+11. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a starting address of: **10.1.0.0/24**. Select **Add**
 
-12. On the notification about Azure Bastion, select **Add Azure Bastion subnet**
+12. Select **+ Add a subnet** again, provide a subnet name of **myFrontEndSubnet**, and a starting address of: **10.1.2.0/24**. Select **Add**
 
-13. Select **Review + create**.
+13. Verify that **AzureBastionSubnet** exists, add if needed.
 
-14. Select **Create**.
+14. Select **Review + create**.
+
+15. Select **Create**.
 
 ## Task 2: Create backend servers
 
@@ -126,7 +128,7 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    
 1. Select Add a frontend IP
 
-1. On the **Add frontend IP address** blade, enter the information from the table below and select **Add**.
+1. On the **Add frontend IP address** blade, enter the information from the table below and select **Save**.
 
    | **Setting**     | **Value**                |
    | --------------- | ------------------------ |
@@ -158,7 +160,7 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
 
-1. Under **Virtual machines**, select **Add**.
+1. Under **Virtual machines**, select **Save**.
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
