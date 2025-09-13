@@ -100,7 +100,7 @@ Now you will create a Traffic Manager profile that directs user traffic based on
    | Resource group          | **Contoso-RG-TM1**       |
    | Resource group location | **East US**              |
 
-1. Select **Create**.
+1. Select **Review + create** and then **Create**.
 
 ## Task 3: Add Traffic Manager endpoints
 
@@ -160,13 +160,13 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 1. To test the failover endpoint is working properly, you need to disable the primary site.
 
-1. On the **Contoso-TMProfile** page, on the overview screen, select **myPrimaryEndpoint**.
+1. On the **Contoso-TMProfile** page, on the overview screen, select the number **2** to the right of **Endpoints:**.
 
-1. On the **myPrimaryEndpoint** page, under **Status**, select **Disabled**, and then select **Save**.
+1. Select the Edit button (pencil icon) for **myPrimaryEndpoint**.
 
-   ![Picture 25](../media/disable-primary-endpoint-1.png)
+1. On the **myPrimaryEndpoint** blade, under **Status**, clear the checkbox for **Enable Endpoint**, and then select **Save**.
 
-1. Close the **myPrimaryEndpoint** page (select the **X** in the top right corner of the page).
+1. If needed, close the **myPrimaryEndpoint** blade (select the **X** in the top right corner of the page).
 
 1. On the **Contoso-TMProfile** page, the **Monitor status** for **myPrimaryEndpoint** should now be **Disabled**.
 
