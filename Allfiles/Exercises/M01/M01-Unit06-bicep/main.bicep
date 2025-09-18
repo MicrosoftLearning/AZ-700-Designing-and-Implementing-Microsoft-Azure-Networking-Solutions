@@ -235,12 +235,12 @@ resource PIPName1 'Microsoft.Network/publicIPAddresses@2021-05-01' = {
   name: PIPName1_var
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Standard'
     tier: 'Regional'
   }
   properties: {
     publicIPAddressVersion: 'IPv4'
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
   }
 }
 
@@ -248,11 +248,11 @@ resource PIPName2 'Microsoft.Network/publicIPAddresses@2021-05-01' = {
   name: PIPName2_var
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Standard'
     tier: 'Regional'
   }
   properties: {
     publicIPAddressVersion: 'IPv4'
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
   }
 }
