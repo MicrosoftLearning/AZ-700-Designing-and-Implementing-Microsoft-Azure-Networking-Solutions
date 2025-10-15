@@ -69,11 +69,11 @@ In this task, you will create a single virtual network with two subnets.
 
 1. Select **Next: IP Addresses**. Enter IPv4 address space 10.0.0.0/16 if not already there by default.
 
-1. Under **Subnet name**, select the word **default**.
+1. Click the **Edit** icon next to the **Default** subnet.
 
-1. In the **Edit subnet** dialog box, change the name to **AzureFirewallSubnet**.
+1. In the **Subnet purpose** drop-down select **Azure Firewall**. 
 
-1. Change the **Subnet address range** to **10.0.1.0/26**.
+1. Change the **Starting address** to **10.0.1.0/26**.
 
 1. Select **Save**.
 
