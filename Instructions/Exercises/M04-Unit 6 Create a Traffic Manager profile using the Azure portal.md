@@ -10,10 +10,6 @@ Exercise:
 
 In this exercise, you will create a Traffic Manager profile to deliver high availability for the fictional Contoso Ltd organization's web application.
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 35 minutes
 
 You will create two instances of a web application deployed in two different regions (East US and West Europe). The East US region will act as a primary endpoint for Traffic Manager, and the West Europe region will act as a failover endpoint.
