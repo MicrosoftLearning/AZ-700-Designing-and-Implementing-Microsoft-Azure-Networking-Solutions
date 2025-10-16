@@ -22,10 +22,6 @@ In this exercise, you will:
 + Task 2: Create a Front Door for your application
 + Task 3: View Azure Front Door in action
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 30 minutes
 
 ## Task 1: Create two instances of a web app
