@@ -9,10 +9,6 @@ Exercise:
 
 In this exercise, you will create an ExpressRoute circuit using the Azure portal and the Azure Resource Manager deployment model.
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 15 minutes
 
 ![Diagram ExpressRoute circuit layout for exercise](../media/5-exercise-provision-expressroute-circuit.png)
@@ -141,4 +137,5 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. The connection is private and travels over a dedicated line, third parties can't intercept the traffic.
 + You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct.
 + ExpressRoute features is determined by the SKU: Local, Standard, and Premuium. 
+
 
