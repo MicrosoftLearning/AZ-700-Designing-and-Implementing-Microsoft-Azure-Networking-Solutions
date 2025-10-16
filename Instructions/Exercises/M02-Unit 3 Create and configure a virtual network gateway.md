@@ -29,10 +29,6 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
 
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
