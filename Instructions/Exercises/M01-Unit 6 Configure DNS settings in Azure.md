@@ -20,10 +20,6 @@ In this exercise, you will:
 + Task 3: Create Virtual Machines to test the configuration
 + Task 4: Verify records are present in the DNS zone
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 25 minutes
 
 **Important:** This exercise requires a virtual network from the previous lab. This can be installed using a [template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01/template.json) file. All of the virtual networks will be installed, but only the CoreServicesVNet is needed. 
