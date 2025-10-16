@@ -11,10 +11,6 @@ Exercise:
 
 To connect your Azure virtual network and your on-premises network via ExpressRoute, you must create a virtual network gateway first. A virtual network gateway serves two purposes: to exchange IP routes between the networks and to route network traffic.
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
 **Gateway types**
@@ -118,4 +114,5 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. The connection is private and travels over a dedicated line, third parties can't intercept the traffic.
 + You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct.
 + ExpressRoute features is determined by the SKU: Local, Standard, and Premuium. 
+
 
