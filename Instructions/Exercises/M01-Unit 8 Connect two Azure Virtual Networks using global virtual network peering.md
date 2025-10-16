@@ -22,10 +22,6 @@ In this exercise, you will:
 + Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 + Task 5: Test the connection between the VMs
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 20 minutes
 
 ## Task 1: Create a Virtual Machine to test the configuration
