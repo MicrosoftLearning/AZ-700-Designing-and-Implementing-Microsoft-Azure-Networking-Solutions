@@ -27,10 +27,6 @@ In this exercise, you will:
 + Task 9: Change the primary and secondary DNS address for the server's network interface
 + Task 10: Test the firewall
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 60 minutes
 
 ## Task 1: Create a resource group
