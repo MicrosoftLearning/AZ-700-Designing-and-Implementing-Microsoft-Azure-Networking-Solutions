@@ -13,11 +13,6 @@ In this exercise, you will create the spoke virtual network and create a secured
 
 ![Diagram of virtual network architecture with a secure hub.](../media/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.png)
 
-### Interactive lab simulations
-
-**Note**: The lab simulations that were previously provided have been retired.
-
-
 ## Create a hub and spoke architecture
 
 In this part of the exercise, you will create the spoke virtual networks and subnets where you will place the workload servers. Then you will create the secured virtual hub and connect the hub and spoke virtual networks.
