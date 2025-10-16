@@ -51,11 +51,11 @@ In this section, you will create two instances of a web application deployed in 
    | Operating system | **Windows**                                                  |
    | Region           | **East US**                                                  |
    | Windows Plan     | Select **Create  new**  Name: **ContosoAppServicePlanEastUS** |
-   | Pricing Plan     | **Standard S1 100 total ACU, 1.75-GB  memory**               |
+   | Pricing Plan     | **Premium V3 P1V3**  (Select another plan if this is unavailable)          |
 
-1. Select **Monitoring** tab.
+1. Select **Monitor + secure** tab.
 
-1. On the **Monitoring** tab, select the **No** option for **Enable Application Insights**.
+1. Select the **No** option for **Enable Application Insights**.
 
 1. Select **Review + create**.
 
