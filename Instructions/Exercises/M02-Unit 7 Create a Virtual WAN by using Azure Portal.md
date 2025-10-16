@@ -19,10 +19,6 @@ In this exercise, you will:
 + Task 2: Create a hub by using Azure Portal
 + Task 3: Connect a VNet to the Virtual Hub
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
->
 ### Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
 
 ## Task 1: Create a Virtual WAN
