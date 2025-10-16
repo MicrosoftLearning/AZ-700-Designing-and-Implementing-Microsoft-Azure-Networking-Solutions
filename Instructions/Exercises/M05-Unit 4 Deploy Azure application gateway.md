@@ -12,10 +12,6 @@ In this exercise, you use the Azure portal to create an application gateway. The
 
 ![Diagram of application gateway architecture.](../media/4-exercise-deploy-azure-application-gateway.png)
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 25 minutes
 
 The application gateway directs application web traffic to specific resources in a backend pool. You assign listeners to ports, create rules, and add resources to a backend pool. For the sake of simplicity, this article uses a simple setup with a public front-end IP, a basic listener to host a single site on the application gateway, a basic request routing rule, and two virtual machines in the backend pool.
