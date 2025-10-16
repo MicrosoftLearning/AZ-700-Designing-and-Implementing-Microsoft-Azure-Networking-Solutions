@@ -14,10 +14,6 @@ Get started with Azure Private Link by using a Private Endpoint to connect secur
 
 ![Diagram of private endpoint architecture.](../media/6-exercise-create-azure-private-endpoint-using-azure-powershell.png)
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 45 minutes
 
 You'll create a Private Endpoint for an Azure web app and deploy a virtual machine to test the private connection.
