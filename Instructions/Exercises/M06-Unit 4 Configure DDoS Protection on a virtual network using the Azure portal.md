@@ -24,9 +24,6 @@ In this exercise, you will:
 + Task 6: Configure DDoS alerts
 + Task 7: Test with simulation partners
   
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
 ### Estimated time: 40 minutes
 
 ## Task 1: Create a resource group
