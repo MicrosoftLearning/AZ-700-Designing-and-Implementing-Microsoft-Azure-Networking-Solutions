@@ -32,10 +32,6 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 12: View resource health
 + Task 13: Configure diagnostic settings
 
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 55 minutes
 
 ## Task 1: Create the virtual network
