@@ -53,7 +53,6 @@ In this exercise, you will:
    | Location       | Select **East US**                            |
 
 1. Select the **Security** tab and enter the following values:
-   ![Graphical user interface, text, application, email Description automatically generated](../media/ create-virtual-network-security.png)
 
    | **Setting**             | **Value** |
    | ----------------------- | --------- |
