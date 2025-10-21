@@ -27,11 +27,6 @@ In this exercise, you will:
 + Task 9: Create virtual machines
 + Task 10: Confirm access to storage account
 
-
-### Interactive lab simulations
-
->**Note**: The lab simulations that were previously provided have been retired.
-
 ### Estimated time: 35 minutes
 
 ## Task 1: Create a virtual network
