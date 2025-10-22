@@ -257,7 +257,7 @@ In this exercise, you will:
    | ------------------------------ | --------------------------------- |
    | Name                           | ManufacturingGW-to-CoreServicesGW |
    | Connection type                | VNet-to-VNet                      |
-   | Location                       | North Europe                      |
+   | Location                       | West Europe                      |
    | First virtual network gateway  | ManufacturingVnetGateway          |
    | Second virtual network gateway | CoreServicesVnetGateway           |
    | Shared key (PSK)               | abc123                            |
