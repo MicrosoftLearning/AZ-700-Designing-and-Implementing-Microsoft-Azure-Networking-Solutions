@@ -47,9 +47,9 @@ In this exercise, you will:
 
 ## Task 2: Link subnet for auto registration
 
-1. In Contoso.com, under **DNS Management**, select **Virtual network links**.
+1. In Contoso.com, under **DNS Management**, select **Virtual Network Links**.
 
-1. On Contoso.com \| Virtual network links, select **+ Add**.
+1. On Contoso.com \| Virtual Network Links, select **+ Add**.
 
     ![contoso.com \| Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
 
@@ -61,7 +61,7 @@ In this exercise, you will:
     | Subscription                        | No changes required                     |
     | Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
     | Enable auto registration            | Selected                                |
-    | Review your settings and select OK. |                                         |
+    | Review your settings and select **Create**. |                                         |
 
 1. Select **Refresh**.
 
