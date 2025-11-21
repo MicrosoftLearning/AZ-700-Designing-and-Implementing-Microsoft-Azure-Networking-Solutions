@@ -39,7 +39,7 @@ In this exercise, you will:
     | --------------- | -------------------------------------- | -------------------- |
     | Basics          | Resource group  (create new if needed) | `ContosoResourceGroup` |
     |                 | Name                                   | `Contoso.com`          |
-    | Review + create | Review your settings and select Create |                      |
+    | Review + create | Review your settings and select **Create** |                      |
 
 1. Wait until the deployment is complete, and then select **Go to resource**.
 
@@ -47,9 +47,9 @@ In this exercise, you will:
 
 ## Task 2: Link subnet for auto registration
 
-1. In Contoso.com, under **DNS Management**, select **Virtual network links**.
+1. In Contoso.com, under **DNS Management**, select **Virtual Network Links**.
 
-1. On Contoso.com \| Virtual network links, select **+ Add**.
+1. On Contoso.com \| Virtual Network Links, select **+ Add**.
 
     ![contoso.com \| Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
 
@@ -61,7 +61,7 @@ In this exercise, you will:
     | Subscription                        | No changes required                     |
     | Virtual Network                     | CoreServicesVnet (ContosoResourceGroup) |
     | Enable auto registration            | Selected                                |
-    | Review your settings and select OK. |                                         |
+    | Review your settings and select **Create**. |                                         |
 
 1. Select **Refresh**.
 
@@ -76,7 +76,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed. 
 
-1. On the toolbar of the Cloud Shell pane, select the **Manage Files** icon, in the drop-down menu, select **Upload** and upload the template files: **azuredeploy.json** and **azuredeploy.parameters.json**.
+1. On the toolbar of the Cloud Shell pane, select the **Manage Files** icon, in the drop-down menu, select **Upload** and upload the template files: **azuredeploy.json** and **azuredeploy.parameters.json** from the **\\Allfiles\\Exercises\\M01\\** folder.
 
    >**Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
    

@@ -93,7 +93,7 @@ In this exercise, you will:
 
 1. Use the information in the following table to create the CoreServicesVnet subnets.
 
-1. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**.
+1. To begin creating each subnet, select **+ Add subnet**. To finish creating each subnet, select **Add**. If needed, **Edit** (pencil icon) or **Delete** the default subnet.
 
    | **Subnet**             | **Option**           | **Value**               |
    | ---------------------- | -------------------- | ----------------------- |
