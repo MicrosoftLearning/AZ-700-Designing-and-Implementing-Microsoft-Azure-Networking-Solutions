@@ -76,7 +76,7 @@ In this section, you will create two test VMs to test the Private DNS zone confi
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed. 
 
-1. On the toolbar of the Cloud Shell pane, select the **Manage Files** icon, in the drop-down menu, select **Upload** and upload the template files: **azuredeploy.json** and **azuredeploy.parameters.json**.
+1. On the toolbar of the Cloud Shell pane, select the **Manage Files** icon, in the drop-down menu, select **Upload** and upload the template files: **azuredeploy.json** and **azuredeploy.parameters.json** from the **\\Allfiles\\Exercises\\M01\\** folder.
 
    >**Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
    
