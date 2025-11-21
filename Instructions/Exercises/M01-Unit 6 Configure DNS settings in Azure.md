@@ -124,9 +124,13 @@ In this section, you will create two test VMs to test the Private DNS zone confi
 
 1. Notice the IP address is the same as the one in the DNS zone.
 
-1. Enter the command `ping TestVM2.contoso.com`. This command will timeout because of the Windows Firewall that is enabled on the VMs.
+1. Enter the command `ping TestVM2.contoso.com`.
 
-1. Instead, use `nslookup TestVM2.contoso.com` command to verify that you receive a successful name resolution record for VM2. This demonstrates private zone name resolution. 
+    >**Note:** This command will timeout because of the Windows Firewall that is enabled on the VMs.
+
+1. Instead, use the `nslookup TestVM2.contoso.com` command.
+
+    >**Note:** This command is successful, and demonstrates private zone name resolution. 
 
 ## Extend your learning with Copilot
 
