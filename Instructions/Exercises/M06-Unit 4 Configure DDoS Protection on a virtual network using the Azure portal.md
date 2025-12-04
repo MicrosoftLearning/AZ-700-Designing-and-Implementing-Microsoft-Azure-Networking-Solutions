@@ -146,6 +146,8 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. On the **Basics** tab, create a new VM using the information in the table below.
 
+    >**Note:** If the Ubuntu image and size isn't available in your region, select something else. The image and size isn't important to configuring the alert. 
+
    | **Setting**           | **Value**                                                    |
    | --------------------- | ------------------------------------------------------------ |
    | Subscription          | Select your subscription                                     |
@@ -153,8 +155,8 @@ In this step you will create a virtual machine, assign a public IP address to it
    | Virtual machine name  | **MyVirtualMachine**                                         |
    | Region                | Your region                                                  |
    | Availability options  | **No infrastructure  redundancy required**                   |
-   | Image                 | **Ubuntu Server 20.04 LTS -  Gen 2** (Select Configure VM Generation link if needed) |
-   | Size                  | Select **See  all sizes**, then choose **B1ls** in the  list and choose **Select**  **(Standard_B1ls - 1 vcpu,  0.5 GiB memory** |
+   | Image                 | **Ubuntu Server 22.04 LTS -  x64 Gen 2** (Select Configure VM Generation link if needed) |
+   | Size                  | Select **See  all sizes**, then choose **D-series v3** and then **Standard_D2s_v3** |
    | Authentication type   | **SSH public key**                                           |
    | Username              | **azureuser**                                                |
    | SSH public key source | **Generate new key pair**                                    |
