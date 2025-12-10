@@ -218,6 +218,8 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
+    > **Note:** If the Image isn't available, select another image. The specifics don't matter, we are just creating a VM for testing. 
+
    | **Setting**          | **Value**                                    |
    | -------------------- | -------------------------------------------- |
    | Subscription         | Select your subscription                     |
