@@ -272,7 +272,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. Select **OK** on the **Set up Internet Explorer 11** dialog box.
 
-1. Enter (or paste) the **Private IP address** (e.g. 10.1.0.4) from the previous step into the address bar of the browser and press Enter.
+1. Enter (or paste) the **Private IP address** from the previous step into the address bar of the browser and press Enter.
 
 1. The default web home page of the IIS Web server is displayed in the browser window. One of the three virtual machines in the backend pool will respond.
     ![Picture 8](../media/load-balancer-web-test-1.png)
