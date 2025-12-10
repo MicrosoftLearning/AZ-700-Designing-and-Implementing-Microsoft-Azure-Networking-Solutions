@@ -155,12 +155,13 @@ The backend address pool contains the IP addresses of the virtual NICs connected
    | --------------- | -------------------- |
    | Name            | **myBackendPool**    |
    | Virtual network | **IntLB-VNet**       |
+   | Backend pool configuration | **NIC**  |
 
-1. Under **Virtual machines**, select **Save**.
+1. Click **Add** for the IP Configurations. 
 
 1. Select the checkboxes for all 3 VMs (**myVM1**, **myVM2**, and **myVM3**), then select **Add**.
 
-1. Select **Save**.
+1. Select **Save**. Double-check that you have a backend pool with three virtual machines. 
    ![Picture 7](../media/add-vms-backendpool.png)
 
 ### Create a health probe
