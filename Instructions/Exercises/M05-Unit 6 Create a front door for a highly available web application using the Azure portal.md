@@ -109,10 +109,11 @@ Once you create a Front Door, it takes a few minutes for the configuration to be
 
 1. On the Front Door resource in the Overview blade, locate the endpoint hostname that is created for your endpoint. This should be fdendpoint followed by a hyphen and a random string. For example, **fdendpoint-fxa8c8hddhhgcrb9.z01.azurefd.net**. **Copy** this FQDN.
 
-1. In a new browser tab, navigate to the Front Door endpoint FQDN. An information page that states the web app is up and running and waiting for content will be displayed. 
+1. In a new browser tab, navigate to the Front Door endpoint FQDN. An information page that states the web app is up and running and waiting for content will be displayed.
+    ![Screenshot showing web app is waiting for content.](../media/front-door-app-ready.png)
 
 1. It can take up to an hour before the default App Service page is displayed.
-   ![Browser showing App Service information page](../media/app-service-info-page.png)
+   ![Screenshot showing the App Service information page.](../media/app-service-info-page.png)
 
 1. To test instant global failover in action, try the following steps:
 
