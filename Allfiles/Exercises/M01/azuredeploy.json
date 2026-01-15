@@ -28,7 +28,7 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_D2s_v3",
+        "defaultValue": "Standard_DC1s_v3",
         "metadata": {
           "description": "Virtual machine size"
         }
