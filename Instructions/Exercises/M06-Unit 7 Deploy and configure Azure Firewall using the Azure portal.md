@@ -12,7 +12,7 @@ Being part of the Network Security team at Contoso, your next task is to create 
 
 ![Diagram of virtual network with Azure Firewall architecture.](../media/7-exercise-deploy-configure-azure-firewall-using-azure-portal.png)
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
@@ -27,7 +27,7 @@ In this exercise, you will:
 + Task 9: Change the primary and secondary DNS address for the server's network interface
 + Task 10: Test the firewall
 
-### Estimated time: 60 minutes
+## Estimated time: 60 minutes
 
 ## Task 1: Create a resource group
 
