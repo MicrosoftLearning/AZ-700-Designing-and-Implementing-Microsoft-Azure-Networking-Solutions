@@ -12,7 +12,7 @@ In this unit, you will configure connectivity between the CoreServicesVnet and t
 
 ![Diagram of virtual network peering.](../media/8-exercise-connect-two-azure-virtual-networks-global.png)
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
