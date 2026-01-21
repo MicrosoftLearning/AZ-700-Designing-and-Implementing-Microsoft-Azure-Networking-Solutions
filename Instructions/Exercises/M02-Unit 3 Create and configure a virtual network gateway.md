@@ -29,7 +29,7 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
 
-### Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
+## Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
 
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
