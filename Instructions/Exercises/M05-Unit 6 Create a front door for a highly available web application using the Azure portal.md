@@ -14,7 +14,7 @@ In this exercise, you will set up an Azure Front Door configuration that pools t
 
 ![Network configuration for Azure Front Door.](../media/6-exercise-create-front-door-for-highly-available.png)
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
@@ -22,7 +22,7 @@ In this exercise, you will:
 + Task 2: Create a Front Door for your application
 + Task 3: View Azure Front Door in action
 
-### Estimated time: 30 minutes
+## Estimated time: 30 minutes
 
 ## Task 1: Create two instances of a web app
 
