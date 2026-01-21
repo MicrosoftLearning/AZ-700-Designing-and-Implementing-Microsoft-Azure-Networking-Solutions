@@ -13,7 +13,7 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 ![Diagram of virtual network gateway.](../media/3-exercise-create-configure-local-network-gateway.png)
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
