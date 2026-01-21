@@ -14,7 +14,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 ![Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs](../media/3-exercise-monitor-load-balancer-resource-using-azure-monitor.png)
 
-### Job skills
+## Job skills
 
  In this exercise, you will:
 
@@ -32,7 +32,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 + Task 12: View resource health
 + Task 13: Configure diagnostic settings
 
-### Estimated time: 55 minutes
+## Estimated time: 55 minutes
 
 ## Task 1: Create the virtual network
 
