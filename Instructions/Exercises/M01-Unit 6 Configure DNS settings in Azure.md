@@ -12,7 +12,7 @@ In this unit, you will configure DNS name resolution for Contoso Ltd. You will c
 
 ![Diagram of DNS architecture.](../media/6-exercise-configure-domain-name-servers-configuration-azure.png)
 
-### Job skills
+## Job skills
 In this exercise, you will:
 
 + Task 1: Create a private DNS Zone
