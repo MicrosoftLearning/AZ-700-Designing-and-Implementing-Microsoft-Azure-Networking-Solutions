@@ -22,7 +22,7 @@ When you create a virtual network gateway, you need to specify several settings.
 
 Each virtual network can have only one virtual network gateway per gateway type. For example, you can have one virtual network gateway that uses -GatewayType VPN, and one that uses -GatewayType ExpressRoute.
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
@@ -114,6 +114,7 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. The connection is private and travels over a dedicated line, third parties can't intercept the traffic.
 + You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct.
 + ExpressRoute features is determined by the SKU: Local, Standard, and Premuium. 
+
 
 
 
