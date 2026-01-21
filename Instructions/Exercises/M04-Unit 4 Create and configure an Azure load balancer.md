@@ -9,13 +9,13 @@ Exercise:
 
 In this exercise, you will create an internal load balancer for the fictional Contoso Ltd organization.
 
-### Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
+## Estimated time: 60 minutes (includes ~45 minutes deployment waiting time)
 
 The steps to create an internal load balancer, are very similar to those you have already learned about in this module, to create a public load balancer. The key difference is that with a public load balancer the front end is accessed via a public IP address, and you test connectivity from a host which is located outside your virtual network; whereas, with an internal load balancer, the front end is a private IP address inside your virtual network, and you test connectivity from a host inside the same network.
 
 ![internal standard loadbalancer diagram](../media/4-exercise-create-configure-azure-load-balancer.png)
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
