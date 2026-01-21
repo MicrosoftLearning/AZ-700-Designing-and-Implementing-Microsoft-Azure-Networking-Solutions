@@ -14,7 +14,7 @@ Get started with Azure Private Link by using a Private Endpoint to connect secur
 
 ![Diagram of private endpoint architecture.](../media/6-exercise-create-azure-private-endpoint-using-azure-powershell.png)
 
-### Estimated time: 45 minutes
+## Estimated time: 45 minutes
 
 You'll create a Private Endpoint for an Azure web app and deploy a virtual machine to test the private connection.
 
@@ -36,7 +36,7 @@ Private Endpoints can be created for different kinds of Azure services, such as 
 
 If you choose to install and use PowerShell locally, this example requires the Azure PowerShell module version 5.4.1 or later. Run ```Get-Module -ListAvailable Az``` to find the installed version. If you need to upgrade, see [Install Azure PowerShell module](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps). If you're running PowerShell locally, you also need to run ```Connect-AzAccount``` to create a connection with Azure.
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
