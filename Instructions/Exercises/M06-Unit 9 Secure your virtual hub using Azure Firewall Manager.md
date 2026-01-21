@@ -17,7 +17,7 @@ In this exercise, you will create the spoke virtual network and create a secured
 
 In this part of the exercise, you will create the spoke virtual networks and subnets where you will place the workload servers. Then you will create the secured virtual hub and connect the hub and spoke virtual networks.
 
-### Job skills
+## Job skills
 
 In this exercise, you will:
 
@@ -32,7 +32,7 @@ In this exercise, you will:
 + Task 9: Test the network rule
 + Task 10: Clean up resources
 
-### Estimated time: 35 minutes
+## Estimated time: 35 minutes
 
 ## Task 1: Create two spoke virtual networks and subnets
 
