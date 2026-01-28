@@ -155,7 +155,7 @@ In this exercise, you will:
    |                 | Instance Details  | Name                                        | CoreServicesVnetGateway      |
    |                 |                   | Region                                      | East US                      |
    |                 |                   | Gateway type                                | VPN                          |
-   |                 |                   | SKU                                         | VpnGw1                       |
+   |                 |                   | SKU                                         | VpnGw1AZ                       |
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | CoreServicesVnet             |
    |                 |                   | Subnet                                      | GatewaySubnet (10.20.0.0/27) |
@@ -200,7 +200,7 @@ In this exercise, you will:
    |                 | Instance Details  | Name                                        | ManufacturingVnetGateway     |
    |                 |                   | Region                                      | West Europe                  |
    |                 |                   | Gateway type                                | VPN                          |
-   |                 |                   | SKU                                         | VpnGw1                       |
+   |                 |                   | SKU                                         | VpnGw1AZ                     |
    |                 |                   | Generation                                  | Generation1                  |
    |                 |                   | Virtual network                             | ManufacturingVnet            |
    |                 |                   | Subnet                                      | GatewaySubnet |
