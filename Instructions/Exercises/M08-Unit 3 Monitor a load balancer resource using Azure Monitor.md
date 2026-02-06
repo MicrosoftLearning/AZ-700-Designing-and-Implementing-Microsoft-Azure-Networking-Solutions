@@ -36,7 +36,7 @@ The diagram below illustrates the environment you will be deploying in this exer
 
 ## Task 1: Create the virtual network
 
-In this section, you will create a virtual network and a subnet.
+In this section, you will create the virtual network and subnets. 
 
 1. Log in to the Azure portal.
 
@@ -62,17 +62,17 @@ In this section, you will create a virtual network and a subnet.
     | **Setting**                       | **Value**                                              |
     | --------------------------------- | ------------------------------------------------------ |
     | Bastion name                      | **myBastionHost**                                      |
-    | Public IP address                 | Select **Create new**<br /><br />Name: **myBastionIP** |
+    | Public IP address                 | Select **Create new** and change the Name to **myBastionIP** |
 
 1. Select **Next : IP Addresses**.
 
-1. **Delete IP address**, then **IPv4 address space**. Enter **10.1.0.0/16**.
+1. Verify the virtual network IP address is **10.1.0.0/16**.
 
-1. Edit the **AzureBastionSubnet** and change the **Starting address** to **10.1.1.0**. **Save** the change. 
+1. Verify the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`. 
 
-1. Select **+ Add subnet**, the subnet name is `myBackendSubnet`, and the subnet address range is `10.1.0.0/24`. Select **Add**.
+1. Verify the AzureBastionSubnet is **10.1.1.0 - 10.1.1.63** with **/26**. 
 
-1. You should now have a virtual network with two subnets. 
+1. You should now have a virtual network with two subnets. Compare to the architecture diagram. 
 
 1. Select **Review + create**.
 
