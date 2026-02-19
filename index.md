@@ -8,8 +8,6 @@ layout: home
 
 Required exercise files can be [DOWNLOADED HERE](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/archive/master.zip)
 
-Scroll down for demonstrations. 
-
 ## Exercises
 
 {% assign Exercise = site.pages | where_exp:"page", "page.url contains '/Instructions/Exercises'" %}
@@ -17,34 +15,3 @@ Scroll down for demonstrations.
 | --- | --- | 
 {% for activity in Exercise %}| {{ activity.Exercise.module }} | [{{ activity.Exercise.title }}{% if activity.Exercise.type %} - {{ activity.Exercise.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
-
-## Demonstrations 
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-|  |
-| --- | 
-{% for activity in demos  %}| [{{ activity.demo.module }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
-
-
-# Content Directory
-
-Required labs files can be [DOWNLOADED HERE](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator/archive/master.zip)
-
-## Labs
-
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
-| --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
-
-## Demonstrations
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demonstration |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
-
-
