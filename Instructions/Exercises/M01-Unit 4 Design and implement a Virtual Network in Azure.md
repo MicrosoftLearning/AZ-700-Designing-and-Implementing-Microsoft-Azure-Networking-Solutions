@@ -7,7 +7,7 @@ lab:
   islab: true
   primarytopics:
   - Azure
-  - Azure Portal
+  - Virtual networks
 ---
 
 # M01 - Unit 4 Design and implement a Virtual Network in Azure
