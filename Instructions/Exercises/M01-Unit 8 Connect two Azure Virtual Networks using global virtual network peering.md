@@ -2,13 +2,13 @@
 lab:
   title: M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network
     peering
-  description: In this unit, you will configure connectivity between the CoreServicesVnet
-    and the ManufacturingVnet by adding peerings to allow traffic flow.
+  description: Configure and test virtual network peerings. 
   duration: 20 minutes
   level: 400
   islab: true
   primarytopics:
   - Azure
+  - Virtual network peering
 ---
 
 # M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering
