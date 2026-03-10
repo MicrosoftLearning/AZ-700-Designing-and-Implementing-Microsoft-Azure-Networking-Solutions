@@ -8,6 +8,7 @@ lab:
   islab: true
   primarytopics:
   - Azure
+  - DNS resolution
 ---
 
 # M01 - Unit 6 Configure DNS settings in Azure
