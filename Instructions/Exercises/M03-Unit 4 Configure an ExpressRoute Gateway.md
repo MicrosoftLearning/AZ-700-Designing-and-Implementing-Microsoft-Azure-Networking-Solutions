@@ -1,10 +1,13 @@
 ---
 lab:
   title: M03-Unit 4 Configure an ExpressRoute Gateway
-  description: '![Diagram of virtual network gateway.](../media/4-exercise-configure-expressroute-gateway.png)'
+  description: Configure an ExpressRoute Gateway
   duration: 60 minutes
   level: 300
   islab: true
+  primarytopics:
+  - Azure
+  - ExpressRoute
 ---
 
 # M03-Unit 4 Configure an ExpressRoute Gateway
@@ -118,6 +121,7 @@ Congratulations on completing the lab. Here are the main takeaways for this lab.
 + Microsoft guarantees a minimum of 99.95% availability for ExpressRoute dedicated connections. The connection is private and travels over a dedicated line, third parties can't intercept the traffic.
 + You can create a connection between your on-premises network and the Microsoft cloud in four different ways, CloudExchange Co-location, Point-to-point Ethernet Connection, Any-to-any (IPVPN) Connection, and ExpressRoute Direct.
 + ExpressRoute features is determined by the SKU: Local, Standard, and Premuium. 
+
 
 
 
