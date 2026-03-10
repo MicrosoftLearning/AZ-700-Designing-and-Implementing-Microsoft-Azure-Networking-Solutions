@@ -1,13 +1,13 @@
 ---
 lab:
   title: M02-Unit 7 Create a Virtual WAN by using Azure Portal
-  description: In this exercise, you will create a Virtual WAN for Contoso.
+  description: Create and configure a Virtual WAN.
   duration: 65 minutes
   level: 300
   islab: true
   primarytopics:
   - Azure
-  - Azure Portal
+  - Virtual WAN
 ---
 
 # M02-Unit 7 Create a Virtual WAN by using Azure Portal
