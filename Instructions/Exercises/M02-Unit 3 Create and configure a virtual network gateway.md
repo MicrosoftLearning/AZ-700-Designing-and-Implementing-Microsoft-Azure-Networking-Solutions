@@ -1,8 +1,7 @@
 ---
 lab:
   title: M02-Unit 3 Create and configure a virtual network gateway
-  description: In this exercise you will configure a virtual network gateway to connect
-    the Contoso Core Services VNet and Manufacturing VNet.
+  description: Configure and test a virtual network gateway.
   duration: 70 minutes
   level: 400
   islab: true
