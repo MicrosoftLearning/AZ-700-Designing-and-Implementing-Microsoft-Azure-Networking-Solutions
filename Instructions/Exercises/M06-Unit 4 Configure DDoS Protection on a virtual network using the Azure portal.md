@@ -9,7 +9,7 @@ Exercise:
   islab: true
   primarytopics:
     - Azure
-    - Azure Portal
+    - DDoS Protection
 ---
 
 # M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure portal
