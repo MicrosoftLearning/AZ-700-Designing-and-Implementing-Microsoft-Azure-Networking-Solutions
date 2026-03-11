@@ -4,10 +4,12 @@ Exercise:
   module: Module 01 - Introduction to Azure Virtual Networks
   description: Configure and test virtual network peerings.
   duration: 20 minutes
-  level: 400
+  level: 300
   islab: true
   primarytopics:
     - Azure
+    - Virtual networks
+    - Virtual network peering
 ---
 
 # M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering
