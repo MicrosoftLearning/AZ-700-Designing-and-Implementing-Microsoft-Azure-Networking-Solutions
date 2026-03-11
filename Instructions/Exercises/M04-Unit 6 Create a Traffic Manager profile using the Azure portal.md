@@ -8,7 +8,7 @@ Exercise:
   islab: true
   primarytopics:
     - Azure
-    - Azure Portal
+    - Azure Traffic Manager
 ---
 
 # M04-Unit 6 Create a Traffic Manager profile using the Azure portal
