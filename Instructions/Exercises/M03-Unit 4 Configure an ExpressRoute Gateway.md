@@ -2,7 +2,7 @@
 Exercise:
   title: M03 - Unit 4 Configure an ExpressRoute Gateway
   module: Module 03 - Design and implement Azure ExpressRoute
-  description: '![Diagram of virtual network gateway.](../media/4-exercise-configure-expressroute-gateway.png)'
+  description: Configure an ExpressRoute gateway.
   duration: 60 minutes
   level: 300
   islab: true

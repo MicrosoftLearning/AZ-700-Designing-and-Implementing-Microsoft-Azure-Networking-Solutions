@@ -2,13 +2,13 @@
 Exercise:
   title: M01 - Unit 4 Design and implement a Virtual Network in Azure
   module: Module 01 - Introduction to Azure Virtual Networks
-  description: Now you're ready to deploy virtual networks in the Azure portal.
+  description: Deploy virtual networks in the Azure portal.
   duration: 20 minutes
   level: 400
   islab: true
   primarytopics:
-  - Azure
-  - Azure Portal
+    - Azure
+    - Azure Portal
 ---
 
 # M01 - Unit 4 Design and implement a Virtual Network in Azure

@@ -2,16 +2,14 @@
 Exercise:
   title: M07 - Unit 6 Create an Azure private endpoint using Azure PowerShell
   module: Module 07 - Design and implement private access to Azure Services
-  description: Get started with Azure Private Link by using a Private Endpoint to
-    connect securely to an Azure web app. There are many ways to create Endpoints
-    including Portal, CLI, PowerShell etc.
+  description: Configure a private endpoint for a web app.
   duration: 45 minutes
   level: 500
   islab: true
   primarytopics:
-  - Azure
-  - Azure PowerShell
-  - Azure Private Link
+    - Azure
+    - Azure PowerShell
+    - Azure Private Link
 ---
 
 # M07-Unit 6 Create an Azure private endpoint using Azure PowerShell (optional)

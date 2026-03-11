@@ -3,16 +3,13 @@ Exercise:
   title: M06 - Unit 4 Configure DDoS Protection on a virtual network using the Azure
     portal
   module: Module 06 - Design and implement network security
-  description: Being responsible for Contoso's Network Security team, you are going
-    to run a mock DDoS attack on the virtual network. The following steps walk you
-    through creating a virtual network, configuring DDoS Protection, and creating
-    an attack which you can observe and monitor with the help of telemetry and metrics.
+  description: Configure DDoS Protection.
   duration: 40 minutes
   level: 400
   islab: true
   primarytopics:
-  - Azure
-  - Azure Portal
+    - Azure
+    - Azure Portal
 ---
 
 # M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure portal
