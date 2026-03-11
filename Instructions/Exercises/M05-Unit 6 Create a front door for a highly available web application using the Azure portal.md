@@ -1,10 +1,15 @@
 ---
 Exercise:
-    title: 'M05 - Unit 6 Create a Front Door for a highly available web application using the Azure portal'
-    module: 'Module 05 - Load balancing HTTP(S) traffic in Azure'
+  title: M05 - Unit 6 Create a Front Door for a highly available web application using the Azure portal
+  module: Module 05 - Load balancing HTTP(S) traffic in Azure
+  description: Create and configure Azure Front Door.
+  duration: 30 minutes
+  level: 400
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Front Door
 ---
-
-
 
 # M05-Unit 6 Create a Front Door for a highly available web application using the Azure portal
 

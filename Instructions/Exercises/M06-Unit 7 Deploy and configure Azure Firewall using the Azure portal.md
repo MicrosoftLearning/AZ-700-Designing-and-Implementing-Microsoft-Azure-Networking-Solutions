@@ -1,7 +1,14 @@
 ---
 Exercise:
-    title: 'M06 - Unit 7 Deploy and configure Azure Firewall using the Azure portal'
-    module: 'Module 06 - Design and implement network security '
+  title: M06 - Unit 7 Deploy and configure Azure Firewall using the Azure portal
+  module: 'Module 06 - Design and implement network security '
+  description: Create and configure Azure Firewall.
+  duration: 60 minutes
+  level: 500
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Firewall
 ---
 
 # M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal

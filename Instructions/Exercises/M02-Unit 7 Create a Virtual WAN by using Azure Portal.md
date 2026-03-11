@@ -1,7 +1,14 @@
 ---
 Exercise:
-    title: 'M02 - Unit 7 Create a Virtual WAN by using Azure Portal'
-    module: 'Module 02 - Design and implement hybrid networking'
+  title: M02 - Unit 7 Create a Virtual WAN by using Azure Portal
+  module: Module 02 - Design and implement hybrid networking
+  description: Create and configure a Virtual WAN.
+  duration: 65 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Virtual WAN
 ---
 
 # M02-Unit 7 Create a Virtual WAN by using Azure Portal

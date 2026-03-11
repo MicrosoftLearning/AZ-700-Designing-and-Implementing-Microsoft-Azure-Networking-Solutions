@@ -1,9 +1,15 @@
 ---
 Exercise:
-    title: 'M04 - Unit 4 Create and configure an Azure load balancer'
-    module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
+  title: M04 - Unit 4 Create and configure an Azure load balancer
+  module: Module 04 - Load balancing non-HTTP(S) traffic in Azure
+  description: Create and configure an internal load balancer.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Load Balancer
 ---
-
 
 # M04-Unit 4 Create and configure an Azure load balancer
 

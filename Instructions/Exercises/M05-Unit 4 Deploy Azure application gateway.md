@@ -1,7 +1,14 @@
 ---
 Exercise:
-    title: 'M05 - Unit 4 Deploy Azure Application Gateway'
-    module: 'Module 05 - Load balancing HTTP(S) traffic in Azure'
+  title: M05 - Unit 4 Deploy Azure Application Gateway
+  module: Module 05 - Load balancing HTTP(S) traffic in Azure
+  description: Create and configure an Azure Application Gateway.
+  duration: 25 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Application Gateway
 ---
 
 # M05-Unit 4 Deploy Azure Application Gateway
