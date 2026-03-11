@@ -3,7 +3,7 @@ lab:
   title: M07-Unit 6 Create an Azure private endpoint using Azure PowerShell (optional)
   description: Configure a private endpoint for a web app. 
   duration: 45 minutes
-  level: 500
+  level: 400
   islab: true
   primarytopics:
   - Azure
