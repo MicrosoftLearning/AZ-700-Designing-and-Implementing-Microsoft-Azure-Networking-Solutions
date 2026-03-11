@@ -9,6 +9,7 @@ Exercise:
   islab: true
   primarytopics:
     - Azure
+    - Service endpoints
 ---
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
