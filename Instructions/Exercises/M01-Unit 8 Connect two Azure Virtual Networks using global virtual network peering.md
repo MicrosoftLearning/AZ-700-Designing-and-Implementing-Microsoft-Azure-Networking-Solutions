@@ -1,7 +1,15 @@
 ---
 Exercise:
-    title: 'M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
-    module: 'Module 01 - Introduction to Azure Virtual Networks'
+  title: M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network
+    peering
+  module: Module 01 - Introduction to Azure Virtual Networks
+  description: In this unit, you will configure connectivity between the CoreServicesVnet
+    and the ManufacturingVnet by adding peerings to allow traffic flow.
+  duration: 20 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
 ---
 
 # M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering
