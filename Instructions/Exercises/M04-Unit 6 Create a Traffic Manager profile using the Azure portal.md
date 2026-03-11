@@ -1,13 +1,7 @@
 ---
-lab:
-  title: M04-Unit 6 Create a Traffic Manager profile using the Azure portal
-  description: Create and configure a Traffic Manager
-  duration: 35 minutes
-  level: 300
-  islab: true
-  primarytopics:
-  - Azure
-  - Traffic Manager
+Exercise:
+    title: 'M04 - Unit 6 Create a Traffic Manager profile using the Azure portal'
+    module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
 ---
 
 # M04-Unit 6 Create a Traffic Manager profile using the Azure portal

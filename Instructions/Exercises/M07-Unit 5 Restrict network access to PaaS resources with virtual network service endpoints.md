@@ -1,15 +1,7 @@
 ---
-lab:
-  title: M07-Unit 5 Restrict network access to PaaS resources with virtual network
-    service endpoints
-  description: Restrict network access to storage with virtual network endpoints. 
-  duration: 35 minutes
-  level: 400
-  islab: true
-  primarytopics:
-  - Azure
-  - Virtual network endpoints
-  - Azure file shares
+Exercise:
+    title: 'M07 - Unit 5 Restrict network access to PaaS resources with virtual network service endpoints'
+    module: 'Module 07 - Design and implement private access to Azure Services'
 ---
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
