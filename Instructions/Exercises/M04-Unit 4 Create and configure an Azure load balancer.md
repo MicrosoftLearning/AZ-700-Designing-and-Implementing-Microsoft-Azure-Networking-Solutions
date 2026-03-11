@@ -4,7 +4,7 @@ Exercise:
   module: Module 04 - Load balancing non-HTTP(S) traffic in Azure
   description: Create and configure an internal load balancer.
   duration: 60 minutes
-  level: 400
+  level: 300
   islab: true
   primarytopics:
     - Azure
