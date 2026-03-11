@@ -1,8 +1,7 @@
 ---
 lab:
   title: M04-Unit 4 Create and configure an Azure load balancer
-  description: In this exercise, you will create an internal load balancer for the
-    fictional Contoso Ltd organization.
+  description: Create and configure an internal load balancer.
   duration: 60 minutes
   level: 400
   islab: true
