@@ -1,15 +1,13 @@
 ---
 lab:
   title: M05-Unit 4 Deploy Azure Application Gateway
-  description: In this exercise, you use the Azure portal to create an application
-    gateway. Then you test it to make sure it works correctly.
+  description: Create and configure an Azure Application Gateway. 
   duration: 25 minutes
   level: 400
   islab: true
   primarytopics:
   - Azure
   - Azure Application Gateway
-  - Azure Portal
 ---
 
 # M05-Unit 4 Deploy Azure Application Gateway
