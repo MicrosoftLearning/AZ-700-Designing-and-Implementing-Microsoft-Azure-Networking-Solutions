@@ -8,7 +8,7 @@ Exercise:
   islab: true
   primarytopics:
     - Azure
-    - Azure Portal
+    - Virtual WAN
 ---
 
 # M02-Unit 7 Create a Virtual WAN by using Azure Portal
