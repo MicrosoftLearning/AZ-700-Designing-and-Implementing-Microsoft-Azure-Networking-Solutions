@@ -1,14 +1,7 @@
 ---
-lab:
-  title: M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure
-    portal
-  description: Configure DDoS Protection. 
-  duration: 40 minutes
-  level: 400
-  islab: true
-  primarytopics:
-  - Azure
-  - DDoS Protection
+Exercise:
+    title: 'M06 - Unit 4 Configure DDoS Protection on a virtual network using the Azure portal'
+    module: 'Module 06 - Design and implement network security'
 ---
 
 # M06-Unit 4 Configure DDoS Protection on a virtual network using the Azure portal

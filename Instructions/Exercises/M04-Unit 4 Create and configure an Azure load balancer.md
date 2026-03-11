@@ -1,14 +1,9 @@
 ---
-lab:
-  title: M04-Unit 4 Create and configure an Azure load balancer
-  description: Create and configure an internal load balancer.
-  duration: 60 minutes
-  level: 400
-  islab: true
-  primarytopics:
-  - Azure
-  - Azure Load Balancer
+Exercise:
+    title: 'M04 - Unit 4 Create and configure an Azure load balancer'
+    module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
 ---
+
 
 # M04-Unit 4 Create and configure an Azure load balancer
 

@@ -1,14 +1,7 @@
 ---
-lab:
-  title: M08-Unit 3 Monitor a load balancer resource using Azure Monitor
-  description: Configure Azure Monitor to review an internal load balancer's performance. 
-  duration: 55 minutes
-  level: 500
-  islab: true
-  primarytopics:
-  - Azure
-  - Azure Monitor
-  - Load Balancer
+Exercise:
+    title: 'M08 - Unit 3 Monitor a load balancer resource using Azure Monitor'
+    module: 'Module 08 - Design and implement network monitoring'
 ---
 
 # M08-Unit 3 Monitor a load balancer resource using Azure Monitor
