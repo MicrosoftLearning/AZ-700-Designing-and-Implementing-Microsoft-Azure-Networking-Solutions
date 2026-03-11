@@ -9,7 +9,6 @@ Exercise:
   primarytopics:
     - Azure
     - Azure Firewall
-    - Azure Portal
 ---
 
 # M06-Unit 7 Deploy and configure Azure Firewall using the Azure portal
