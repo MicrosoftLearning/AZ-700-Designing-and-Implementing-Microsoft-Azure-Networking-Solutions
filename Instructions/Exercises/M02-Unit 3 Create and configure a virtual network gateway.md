@@ -1,9 +1,15 @@
 ---
 Exercise:
-    title: 'M02 - Unit 3 Create and configure a virtual network gateway'
-    module: 'Module 02 - Design and implement hybrid networking'
+  title: M02 - Unit 3 Create and configure a virtual network gateway
+  module: Module 02 - Design and implement hybrid networking
+lab:
+  title: M02-Unit 3 Create and configure a virtual network gateway
+  description: In this exercise you will configure a virtual network gateway to connect
+    the Contoso Core Services VNet and Manufacturing VNet.
+  duration: 70 minutes
+  level: 400
+  islab: true
 ---
-
 
 # M02-Unit 3 Create and configure a virtual network gateway
 
