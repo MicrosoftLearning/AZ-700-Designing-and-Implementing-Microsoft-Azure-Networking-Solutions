@@ -1,7 +1,15 @@
 ---
 Exercise:
-    title: 'M04 - Unit 6 Create a Traffic Manager profile using the Azure portal'
-    module: 'Module 04 - Load balancing non-HTTP(S) traffic in Azure'
+  title: M04 - Unit 6 Create a Traffic Manager profile using the Azure portal
+  module: Module 04 - Load balancing non-HTTP(S) traffic in Azure
+  description: In this exercise, you will create a Traffic Manager profile to deliver
+    high availability for the fictional Contoso Ltd organization's web application.
+  duration: 35 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Portal
 ---
 
 # M04-Unit 6 Create a Traffic Manager profile using the Azure portal
