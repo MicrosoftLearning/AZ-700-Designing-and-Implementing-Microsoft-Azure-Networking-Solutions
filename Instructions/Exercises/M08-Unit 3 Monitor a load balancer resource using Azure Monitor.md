@@ -1,7 +1,20 @@
 ---
 Exercise:
-    title: 'M08 - Unit 3 Monitor a load balancer resource using Azure Monitor'
-    module: 'Module 08 - Design and implement network monitoring'
+  title: M08 - Unit 3 Monitor a load balancer resource using Azure Monitor
+  module: Module 08 - Design and implement network monitoring
+  description: In this exercise, you will create an internal load balancer for the
+    fictional Contoso Ltd organization. Then you will create a Log Analytics workspace,
+    and use Azure Monitor Insights to view information about your internal load balancer.
+    You will view the Functional Dependency View, then view detailed metrics for the
+    load balancer resource, and view resource health information for the load balancer.
+    Finally, you will configure the load balancer's diagnostic settings to send metrics
+    to the Log Analytics workspace you created.
+  duration: 55 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Monitor
 ---
 
 # M08-Unit 3 Monitor a load balancer resource using Azure Monitor
