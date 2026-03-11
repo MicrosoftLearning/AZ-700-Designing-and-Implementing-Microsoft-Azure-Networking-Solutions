@@ -1,7 +1,14 @@
 ---
-Exercise:
-    title: 'M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering'
-    module: 'Module 01 - Introduction to Azure Virtual Networks'
+lab:
+  title: M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network
+    peering
+  description: Configure and test virtual network peerings. 
+  duration: 20 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - Virtual network peering
 ---
 
 # M01 - Unit 8 Connect two Azure Virtual Networks using global virtual network peering

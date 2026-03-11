@@ -1,7 +1,14 @@
 ---
-Exercise:
-    title: 'M01 - Unit 6 Configure DNS settings in Azure'
-    module: 'Module 01 - Introduction to Azure Virtual Networks'
+lab:
+  title: M01 - Unit 6 Configure DNS settings in Azure
+  description: Create a private DNS zone, link the VNets for registration
+    and resolution, create two virtual machines, and test the resolution.
+  duration: 25 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - DNS resolution
 ---
 
 # M01 - Unit 6 Configure DNS settings in Azure

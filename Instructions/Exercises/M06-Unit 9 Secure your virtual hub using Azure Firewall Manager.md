@@ -1,9 +1,15 @@
 ---
-Exercise:
-    title: 'M06 - Unit 9 Secure your virtual hub using Azure Firewall Manager'
-    module: 'Module 06 - Design and implement network security'
+lab:
+  title: M06-Unit 9 Secure your virtual hub using Azure Firewall Manager
+  description: Create and configure Azure Firewall Manager. 
+  duration: 35 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Firewall
+  - Azure Firewall Manager
 ---
-
 
 # M06-Unit 9 Secure your virtual hub using Azure Firewall Manager
 

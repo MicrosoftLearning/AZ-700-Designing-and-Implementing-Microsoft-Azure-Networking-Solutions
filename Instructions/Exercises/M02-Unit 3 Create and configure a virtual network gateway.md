@@ -1,9 +1,14 @@
 ---
-Exercise:
-    title: 'M02 - Unit 3 Create and configure a virtual network gateway'
-    module: 'Module 02 - Design and implement hybrid networking'
+lab:
+  title: M02-Unit 3 Create and configure a virtual network gateway
+  description: Configure and test a virtual network gateway.
+  duration: 70 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - Virtual network gateways
 ---
-
 
 # M02-Unit 3 Create and configure a virtual network gateway
 
