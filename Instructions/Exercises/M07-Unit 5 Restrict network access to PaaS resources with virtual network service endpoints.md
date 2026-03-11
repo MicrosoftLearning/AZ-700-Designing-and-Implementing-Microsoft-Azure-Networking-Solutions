@@ -2,18 +2,14 @@
 lab:
   title: M07-Unit 5 Restrict network access to PaaS resources with virtual network
     service endpoints
-  description: Virtual network service endpoints enable you to limit network access
-    to some Azure service resources to a virtual network subnet. You can also remove
-    internet access to the resources. Service endpoints provide direct connection
-    from your virtual network to supported Azure services, allowing you to use your
-    virtual network's private address space to access the Azure services. Traffic
-    destined to Azure resources through service endpoints always stays on the Microsoft
-    Azure backbone network.
+  description: Restrict network access to storage with virtual network endpoints. 
   duration: 35 minutes
-  level: 500
+  level: 400
   islab: true
   primarytopics:
   - Azure
+  - Virtual network endpoints
+  - Azure file shares
 ---
 
 # M07-Unit 5 Restrict network access to PaaS resources with virtual network service endpoints
