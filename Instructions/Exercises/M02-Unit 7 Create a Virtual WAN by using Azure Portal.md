@@ -19,14 +19,14 @@ In this exercise, you will create a Virtual WAN for Contoso.
 
 ![Diagram of virtual network WAN architecture.](../media/7-exercise-create-virtual-wan-by-using-azure-portal.png)
 
-## Job skills
-In this exercise, you will:
+## Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
 
+## Job skills
+
+In this exercise, you:
 + Task 1: Create a Virtual WAN
 + Task 2: Create a hub by using Azure Portal
 + Task 3: Connect a VNet to the Virtual Hub
-
-## Estimated time: 65 minutes (including ~45 minutes deployment waiting time)
 
 ## Task 1: Create a Virtual WAN
 
