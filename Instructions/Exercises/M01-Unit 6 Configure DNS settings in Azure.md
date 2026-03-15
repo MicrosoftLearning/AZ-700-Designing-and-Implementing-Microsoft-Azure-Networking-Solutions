@@ -18,6 +18,8 @@ In this unit, you will configure DNS name resolution for Contoso Ltd. You will c
 
 ![Diagram of DNS architecture.](../media/6-exercise-configure-domain-name-servers-configuration-azure.png)
 
+## Estimated time: 25 minutes
+
 ## Job skills
 In this exercise, you will:
 
@@ -25,8 +27,6 @@ In this exercise, you will:
 + Task 2: Link subnet for auto registration
 + Task 3: Create Virtual Machines to test the configuration
 + Task 4: Verify records are present in the DNS zone
-
-## Estimated time: 25 minutes
 
 **Important:** This exercise requires a virtual network from the previous lab. This can be installed using a [template](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises/M01/template.json) file. All of the virtual networks will be installed, but only the CoreServicesVNet is needed. 
 
