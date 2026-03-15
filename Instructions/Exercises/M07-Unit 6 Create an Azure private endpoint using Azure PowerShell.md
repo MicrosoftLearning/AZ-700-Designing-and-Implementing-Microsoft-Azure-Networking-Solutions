@@ -24,10 +24,6 @@ Get started with Azure Private Link by using a Private Endpoint to connect secur
 
 ## Estimated time: 45 minutes
 
-You'll create a Private Endpoint for an Azure web app and deploy a virtual machine to test the private connection.
-
-Private Endpoints can be created for different kinds of Azure services, such as Azure SQL and Azure Storage.
-
 **Prerequisites**
 
 - An Azure Web App with a PremiumV2-tier or higher app service plan deployed in your Azure subscription.
@@ -46,7 +42,7 @@ If you choose to install and use PowerShell locally, this example requires the A
 
 ## Job skills
 
-In this exercise, you will:
+In this exercise, you:
 
 - Task 1: Create a resource group
 - Task 2: Create a virtual network and bastion host
