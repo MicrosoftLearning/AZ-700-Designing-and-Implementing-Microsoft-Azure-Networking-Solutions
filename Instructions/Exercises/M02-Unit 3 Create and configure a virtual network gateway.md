@@ -16,9 +16,11 @@ In this exercise you will configure a virtual network gateway to connect the Con
 
 ![Diagram of virtual network gateway.](../media/3-exercise-create-configure-local-network-gateway.png)
 
+## Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
+
 ## Job skills
 
-In this exercise, you will:
+In this exercise, you:
 
 + Task 1: Create CoreServicesVnet and ManufacturingVnet
 + Task 2: Create CoreServicesVM
@@ -32,7 +34,7 @@ In this exercise, you will:
 + Task 10: Verify that the connections connect
 + Task 11: Test the connection between the VMs
 
-## Estimated time: 70 minutes (including ~45 minutes deployment waiting time)
+
 
 ## Task 1: Create CoreServicesVnet and ManufacturingVnet
 
