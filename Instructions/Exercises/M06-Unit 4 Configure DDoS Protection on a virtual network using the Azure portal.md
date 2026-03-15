@@ -20,6 +20,8 @@ Being responsible for Contoso's Network Security team, you are going to run a mo
 
 ![Diagram of DDoS architecture.](../media/4-exercise-configure-ddos-protection-virtual-network-using-azure-portal.png)
 
+## Estimated time: 40 minutes
+
 ## Job skills
 
 In this exercise, you will:
@@ -32,7 +34,7 @@ In this exercise, you will:
 + Task 6: Configure DDoS alerts
 + Task 7: Test with simulation partners
   
-## Estimated time: 40 minutes
+
 
 ## Task 1: Create a resource group
 
