@@ -20,17 +20,17 @@ In this unit, you will configure connectivity between the CoreServicesVnet and t
 
 ![Diagram of virtual network peering.](../media/8-exercise-connect-two-azure-virtual-networks-global.png)
 
+## Estimated time: 20 minutes
+
 ## Job skills
 
-In this exercise, you will:
+In this exercise, you:
 
 + Task 1: Create a Virtual Machine to test the configuration
 + Task 2: Connect to the Test VMs using RDP
 + Task 3: Test the connection between the VMs
 + Task 4: Create VNet peerings between CoreServicesVnet and ManufacturingVnet
 + Task 5: Test the connection between the VMs
-
-## Estimated time: 20 minutes
 
 ## Task 1: Create a Virtual Machine to test the configuration
 
