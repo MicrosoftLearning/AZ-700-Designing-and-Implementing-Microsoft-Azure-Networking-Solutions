@@ -20,9 +20,8 @@ In this exercise, you will create the spoke virtual network and create a secured
 
 ![Diagram of virtual network architecture with a secure hub.](../media/9-exercise-secure-your-virtual-hub-using-azure-firewall-manager.png)
 
-## Create a hub and spoke architecture
 
-In this part of the exercise, you will create the spoke virtual networks and subnets where you will place the workload servers. Then you will create the secured virtual hub and connect the hub and spoke virtual networks.
+## Estimated time: 35 minutes
 
 ## Job skills
 
@@ -39,7 +38,7 @@ In this exercise, you will:
 + Task 9: Test the network rule
 + Task 10: Clean up resources
 
-## Estimated time: 35 minutes
+
 
 ## Task 1: Create two spoke virtual networks and subnets
 
@@ -316,8 +315,6 @@ In this task you will ensure that network traffic gets routed through your firew
 1. Once configuration has completed, ensure that under **INTERNET TRAFFIC** and **PRIVATE TRAFFIC**, it says **Secured by Azure Firewall** for both hub-spoke connections.
 
 ## Task 8: Test the application rule
-
-In this part of the exercise, you will connect a remote desktop to the firewall public IP address, which is NATed to Srv-Workload-01. You will then use a web browser to test the application rule and connect a remote desktop to Srv-Workload-02 to test the network rule.
 
 In this task you will test the application rule to confirm that it works as expected.
 
