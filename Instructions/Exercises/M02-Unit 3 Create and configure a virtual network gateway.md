@@ -309,7 +309,7 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Connect your on-premises network to Azure with VPN Gateway](https://learn.microsoft.com/training/modules/connect-on-premises-network-with-vpn-gateway/). In this module, you will how to use CLI to provision VPN gateways.
++ [Introduction to Azure VPN Gateway](https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/). This module describes what Azure VPN Gateway does, how it works, and when you should choose to use Azure VPN Gateway as a solution to meet your organization's needs.
 + [Troubleshoot VPN gateways in Microsoft Azure](https://learn.microsoft.com/training/modules/troubleshoot-vpn-gateways/). In this module, you learn how to monitor and troubleshoot site-to-site and point-to-site VPNs.
 
 ## Key takeaways
