@@ -190,7 +190,7 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 ## Learn more with self-paced training
 
 + [Introduction to Azure Virtual Networks](https://learn.microsoft.com/training/modules/introduction-to-azure-virtual-networks/). In this module, you learn how to design and implement Azure networking services. You learn about virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
-+ [Distribute your services across Azure virtual networks and integrate them by using virtual network peering](https://learn.microsoft.com/training/modules/integrate-vnets-with-vnet-peering/). In this module, you will learn how to configure virtual network peering.
++ [Configure Azure Virtual Network peering](https://learn.microsoft.com/training/modules/configure-vnet-peering/). Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns.
 
 ## Key takeaways
 
