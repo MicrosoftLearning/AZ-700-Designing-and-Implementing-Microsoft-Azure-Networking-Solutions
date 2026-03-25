@@ -387,5 +387,22 @@ In this task you will test the network rule to confirm that it works as expected
    ```powershell
    Remove-AzResourceGroup -Name 'fw-manager-rg' -Force -AsJob
    ```
-
    >**Note**: The command executes asynchronously (as determined by the -AsJob parameter), so while you will be able to run another PowerShell command immediately afterwards within the same PowerShell session, it will take a few minutes before the resource groups are actually removed.
+
+## Extend your learning with Copilot
+
+Copilot can assist you in learning how to use the Azure scripting tools. Copilot can also assist in areas not covered in the lab or where you need more information. Open an Edge browser and choose Copilot (top right) or navigate to *copilot.microsoft.com*. Take a few minutes to try these prompts.
++ Provide three common usage scenarios for Azure Firewall Manager. 
++ What types of Firewall Policy rules are available. Provide usage cases for each type. 
+
+## Learn more with self-paced training
+
++ [Introduction to Azure Firewall](https://learn.microsoft.com/training/modules/introduction-azure-firewall/). In this module, you learn how Azure Firewall protects Azure virtual network resources including features, rules, and deployment options.
++ [Introduction to Azure Firewall Manager](https://learn.microsoft.com/training/modules/intro-to-azure-firewall-manager/). In this module, you learn how Azure Firewall Manager provides central security policy and route management for cloud-based security perimeters.
+
+## Key takeaways
+
+Congratulations on completing the lab. Here are the main takeaways for this lab. 
++ Azure Firewall Manager provides centralized configuration and management across multiple Azure Firewall instances.
++ Azure Firewall Manager lets you create one or more firewall policies and rapidly apply them to multiple firewalls.
++ There are Firewall Policy rules for application, network, and NAT. 
