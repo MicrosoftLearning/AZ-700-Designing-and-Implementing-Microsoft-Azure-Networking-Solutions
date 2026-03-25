@@ -433,7 +433,6 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Introduction to Azure Private Link](https://learn.microsoft.com/training/modules/introduction-azure-private-link/). In this module, you learn how Azure Private Link enables private connectivity to Azure services, including its features, how it works, and its use cases.
 + [Design and implement private access to Azure Services](https://learn.microsoft.com/en-us/training/modules/design-implement-private-access-to-azure-services/). In this module, you learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 
 ## Key takeaways
