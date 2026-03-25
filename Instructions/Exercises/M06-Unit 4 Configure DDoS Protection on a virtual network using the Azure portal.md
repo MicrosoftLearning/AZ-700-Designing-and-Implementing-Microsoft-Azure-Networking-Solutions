@@ -253,7 +253,6 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Introduction to Azure DDoS Protection](https://learn.microsoft.com/training/modules/introduction-azure-ddos-protection/). In this module, you evaluate Azure DDoS Protection, its features, and architecture options.
 + [Design and implement network security](https://learn.microsoft.com/training/modules/design-implement-network-security-monitoring/). In this module, you learn about and deploy Azure DDoS Protection.
 
   
