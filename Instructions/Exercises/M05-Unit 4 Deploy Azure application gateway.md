@@ -258,7 +258,6 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 ## Learn more with self-paced training
 
 + [Introduction to Azure Application Gateway](https://learn.microsoft.com/training/modules/intro-to-azure-application-gateway/). This module explains what Azure Application Gateway does, how it works, and when you should choose to use Application Gateway as a solution to meet your organization's needs.
-+ [Load balance your web service traffic with Application Gateway](https://learn.microsoft.com/training/modules/load-balancing-https-traffic-azure/). In this module, you learn how to create and configure and Application Gateway with URL path-based routing.
 + [Load balance HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-https-traffic-azure/). In this module, you learn how to design and implement Azure Application Gateway.
 
 ## Key takeaways
