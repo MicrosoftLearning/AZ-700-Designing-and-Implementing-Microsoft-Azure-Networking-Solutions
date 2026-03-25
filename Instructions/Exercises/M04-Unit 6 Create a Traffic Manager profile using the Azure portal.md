@@ -205,7 +205,6 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Enhance your service availability and data locality by using Azure Traffic Manager](https://learn.microsoft.com/training/modules/distribute-load-with-traffic-manager/). In this module, you learn how to use Traffic Manager to dynamically distribute network traffic.
 + [Load balance non-HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-non-https-traffic-azure/). In this module, you learn about Azure Traffic Manager and implementing routing methods. 
 
 ## Key takeaways
