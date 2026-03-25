@@ -170,8 +170,7 @@ Copilot can assist you in learning how to use the Azure scripting tools. Copilot
 
 ## Learn more with self-paced training
 
-+ [Introduction to Azure Front Door](https://learn.microsoft.com/training/modules/intro-to-azure-front-door/). In this module, you learn how Azure Front Door can protect your applications.
-+ [Load balance your web service traffic with Front Door](https://learn.microsoft.com/training/modules/create-first-azure-front-door/). In this module, you learn to create and configure Azure Front Door. 
++ [Load balance HTTP(S) traffic in Azure](https://learn.microsoft.com/training/modules/load-balancing-https-traffic-azure/). Learn how to design load balancer solutions for HTTP(S) traffic and how to implement Azure Application Gateway and Azure Front Door.
 
 ## Key takeaways
 
