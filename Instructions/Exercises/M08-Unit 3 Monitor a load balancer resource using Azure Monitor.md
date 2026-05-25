@@ -195,7 +195,7 @@ In this section, you will create three VMs for the backend pool of the load bala
 
     > **Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
 
-1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise. T**Note**: You will be prompted to provide an Admin password.
+1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise. **Note**: You will be prompted to provide an Admin password.
 
    ```powershell
    $RGName = "IntLB-RG"
