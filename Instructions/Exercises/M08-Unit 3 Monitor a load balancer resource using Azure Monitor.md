@@ -180,6 +180,7 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Health probe           | **myHealthProbe**        |
    | Session persistence    | **None**                 |
    | Idle timeout (minutes) | **15**                   |
+   | Enable TCP Reset      | **Disabled**        |
    | Floating IP            | **Disabled**             |
 
    ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
@@ -195,15 +196,17 @@ In this section, you will create three VMs for the backend pool of the load bala
 
 1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
 
-    > **Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
+    > **Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository. Make sure to use Lab 08. 
 
-1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise. **Note**: You will be prompted to provide an Admin password.
+1. Deploy the following ARM templates to create the virtual network, subnets, and VMs needed for this exercise. **Note**: You will be prompted to provide an **admin** password. Make a note of your password, it will be required in later steps. 
 
    ```powershell
    $RGName = "IntLB-RG"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
-1. Deployment may take several minutes. You can check the progress in the portal by refreshing the virtual machine resource page.   
+1. Deployment may take several minutes. You can check the progress in the portal by refreshing the virtual machine resource page.
+
+1. The VMs must be deployed and running before proceeding to the next step. 
 
 ## Task 7: Add VMs to the backend pool
 
