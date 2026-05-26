@@ -71,22 +71,24 @@ In this section, you will create the virtual network and subnets.
 
     | **Setting**                       | **Value**                                              |
     | --------------------------------- | ------------------------------------------------------ |
-    | Bastion name                      | **myBastionHost**                                      |
+    | Bastion name                      | `myBastionHost`                                   |
     | Public IP address                 | Select **Create new** and change the Name to **myBastionIP** |
 
 1. Select **Next : IP Addresses**.
 
 1. Verify the virtual network IP address is **10.1.0.0/16**.
 
-1. Verify the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`. 
+1. Verify the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`. **Save** your changes. 
 
 1. Verify the AzureBastionSubnet is **10.1.1.0 - 10.1.1.63** with **/26**. 
-
-1. You should now have a virtual network with two subnets. Compare to the architecture diagram. 
 
 1. Select **Review + create**.
 
 1. Select **Create**.
+
+1. This task will create a virtual network with two subnets as shown on the architecture diagram. 
+  
+1. You can continue to the next task, but monitor the Notifications to ensure the deployment succeeds. 
 
 ## Task 2: Create the load balancer
 
@@ -99,18 +101,18 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 1. On the **Basics** tab, use the information in the table below to create the load balancer.
 
    | **Setting**           | **Value**                |
-   | --------------------- | ------------------------ |
-   | Basics tab            |                          |
+   | ---| ---|
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
-   | Name                  | **myIntLoadBalancer**    |
-   | Region                | **(US) West US**         |
+   | Name                  | `myIntLoadBalancer`   |
+   | Region                | **West US**         |
    | SKU                   | **Standard**             |
    | Type                  | **Internal**             |
 
 1. Move to the **Frontend IP configuration tab** and select **+ Add a frontend IP configuration**.
 
    | **Setting**            | **Value**            |
+   | --- | ---| 
    | Name                  | `LoadBalancerFrontEnd` |
    | Virtual network       | **IntLB-VNet**           |
    | Subnet                | **myBackendSubnet**      |
