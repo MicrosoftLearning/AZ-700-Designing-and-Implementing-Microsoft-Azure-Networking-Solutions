@@ -74,7 +74,7 @@ In this section, you will create the virtual network and subnets.
     | Bastion name                      | `myBastionHost`                                   |
     | Public IP address                 | Select **Create new** and change the Name to **myBastionIP** |
 
-1. Select **Next : IP Addresses**.
+1. Select **Next : Address Space**.
 
 1. Verify the virtual network IP address is **10.1.0.0/16**.
 
@@ -88,7 +88,7 @@ In this section, you will create the virtual network and subnets.
 
 1. This task will create a virtual network with two subnets as shown on the architecture diagram. 
   
-1. You can continue to the next task, but monitor the Notifications to ensure the deployment succeeds. 
+1. Monitor the Notifications to ensure the deployment succeeds. 
 
 ## Task 2: Create the load balancer
 
