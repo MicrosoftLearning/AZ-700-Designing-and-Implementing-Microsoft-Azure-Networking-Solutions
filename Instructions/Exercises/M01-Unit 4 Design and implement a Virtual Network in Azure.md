@@ -87,7 +87,7 @@ In this exercise, you will:
 1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
    
 1. Use the information in the following table to create the CoreServicesVnet virtual network.  
-   Remove or overwrite the default IP Address space. ![IP address configuration for Azure virtual network deployment ](../media/default-vnet-ip-address-range-annotated.png)
+   Remove or overwrite the default IP Address space. 
 
    | **Tab**      | **Option**         | **Value**            |
    | ------------ | ------------------ | -------------------- |
