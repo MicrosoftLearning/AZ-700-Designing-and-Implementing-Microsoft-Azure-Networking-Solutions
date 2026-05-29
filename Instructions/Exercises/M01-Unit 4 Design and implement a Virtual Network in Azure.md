@@ -94,7 +94,7 @@ In this exercise, you will:
    | Basics       | Resource Group     | ContosoResourceGroup |
    |              | Name               | CoreServicesVnet     |
    |              | Region             | (US) East US         |
-   | IP Addresses | IPv4 address space | 10.20.0.0/16         |
+   | Address Space | IPv4 address space | 10.20.0.0/16         |
 
 1. Use the information in the following table to create the CoreServicesVnet subnets.
 
@@ -125,7 +125,7 @@ In this exercise, you will:
    | Basics       | Resource Group     | ContosoResourceGroup |
    |              | Name               | ManufacturingVnet    |
    |              | Region             | (Europe) West Europe |
-   | IP Addresses | IPv4 address space | 10.30.0.0/16         |
+   | Addresses Space | IPv4 address space | 10.30.0.0/16         |
 
    | **Subnet**                | **Option**           | **Value**                 |
    | ------------------------- | -------------------- | ------------------------- |
@@ -145,7 +145,7 @@ In this exercise, you will:
    | Basics       | Resource Group     | ContosoResourceGroup |
    |              | Name               | ResearchVnet         |
    |              | Region             | Southeast Asia       |
-   | IP Addresses | IPv4 address space | 10.40.0.0/16         |
+   | Address Space| IPv4 address space | 10.40.0.0/16         |
 
    | **Subnet**           | **Option**           | **Value**            |
    | -------------------- | -------------------- | -------------------- |
