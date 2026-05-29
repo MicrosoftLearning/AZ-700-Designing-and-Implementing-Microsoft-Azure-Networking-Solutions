@@ -78,7 +78,9 @@ In this section, you will create the virtual network and subnets.
 
 1. Ensure the virtual network IP address is **10.1.0.0/16**.
 
-1. Ensure the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`. **Save** your changes. 
+1. Ensure the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`.
+
+1. Ensure **Enable private network (no default outbound access)** is not checked. **Save** your changes. 
 
 1. Ensure the AzureBastionSubnet is **10.1.1.0 - 10.1.1.63** with **/26**. 
 
