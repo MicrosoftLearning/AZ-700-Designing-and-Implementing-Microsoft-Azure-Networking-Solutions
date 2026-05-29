@@ -80,7 +80,7 @@ In this section, you will create the virtual network and subnets.
 
 1. Ensure the default subnet IP address range is **10.1.0.0 - 10.1.0.255** with **/24**. Change the name to `myBackendSubnet`.
 
-1. Ensure **Enable private network (no default outbound access)** is not checked. **Save** your changes. 
+1. Ensure **Enable private network (no default outbound access)** is **not** checked. **Save** your changes. 
 
 1. Ensure the AzureBastionSubnet is **10.1.1.0 - 10.1.1.63** with **/26**. 
 
@@ -204,7 +204,7 @@ In this section, you will create three VMs for the backend pool of the load bala
 
    ```powershell
    $RGName = "IntLB-RG"
-   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
+   New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json -Verbose
    ```
 1. Deployment may take several minutes. You can check the progress in the portal by refreshing the virtual machine resource page.
 
