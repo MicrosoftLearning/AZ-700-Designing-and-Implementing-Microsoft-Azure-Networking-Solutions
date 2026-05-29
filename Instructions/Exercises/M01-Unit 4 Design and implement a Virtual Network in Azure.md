@@ -125,7 +125,7 @@ In this exercise, you will:
    | Basics       | Resource Group     | ContosoResourceGroup |
    |              | Name               | ManufacturingVnet    |
    |              | Region             | (Europe) West Europe |
-   | Addresses Space | IPv4 address space | 10.30.0.0/16         |
+   | Address Space | IPv4 address space | 10.30.0.0/16         |
 
    | **Subnet**                | **Option**           | **Value**                 |
    | ------------------------- | -------------------- | ------------------------- |
