@@ -106,11 +106,9 @@ In this section, you will create an internal Standard SKU load balancer. The rea
 
 1. On the Azure portal home page, select **Create a resource**.
 
-1. On the search box at the top of the page, enter **Load Balancer**, then press **Enter** (**Note:** do not select one from the list).
+1. Search for and select **Load Balancers**.
 
-1. On the results page, locate and select **Load Balancer** (the one that says 'Microsoft' and 'Azure Service' under the name).
-
-1. Select **Create**.
+1. Select **Create** and in the drop-down select **Standard Load balancer**.
 
 1. On the **Basics** tab, use the information in the table below to create the load balancer.
 
@@ -119,14 +117,14 @@ In this section, you will create an internal Standard SKU load balancer. The rea
    | Subscription          | Select your subscription |
    | Resource group        | **IntLB-RG**             |
    | Name                  | **myIntLoadBalancer**    |
-   | Region                | **(US) East US**         |
+   | Region                | **East US**         |
    | SKU                   | **Standard**             |
    | Type                  | **Internal**             |
    | Tier                  | **Regional**             |
 
 1. Select **Next: Frontend IP configurations**.
    
-1. Select Add a frontend IP
+1. Select **Add a frontend IP configuration**. 
 
 1. On the **Add frontend IP address** blade, enter the information from the table below and select **Save**.
 
@@ -207,7 +205,8 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Health probe           | **myHealthProbe**        |
    | Session persistence    | **None**                 |
    | Idle timeout (minutes) | **15**                   |
-   | Floating IP            | **Disabled**             |
+   | Enable TCP Reset       | **Not checked**          |
+   | Enable Floating IP     | **Not checked**          |
 
 1. Select **Save**.
    ![Picture 6](../media/create-loadbalancerrule.png)
