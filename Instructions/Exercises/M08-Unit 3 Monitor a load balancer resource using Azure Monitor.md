@@ -238,11 +238,13 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. In the **Username** box, enter **TestUser** and in the **Password** box, enter the password you provided during deployment, then select **Connect**.
 
+1. If there is a popup blocker error, allow popups using the icon at the end of URL. 
+
 1. The **myTestVM** window will open in another browser tab.
 
 1. If a **Networks** pane appears, select **Yes**.
 
-1. Select the **Internet Explorer** icon in the task bar to open the web browser.
+1. Select the **Internet Explorer** icon in the task bar to open the web browser. Be sure it is the icon inside the virtual machine. 
 
 1. Select **OK** on the **Set up Internet Explorer 11** dialog box.
 
