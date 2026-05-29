@@ -227,7 +227,7 @@ In this step you will create a virtual machine, assign a public IP address to it
 
 1. Review the [Azure DDoS simulation testing policy](https://learn.microsoft.com/en-us/azure/ddos-protection/test-through-simulations#configure-a-ddos-attack-simulation) page. 
 
-1. Notice there are several testing partners. As you have time, configure a DDoS attack simulation. For BreakingPoint Cloud, you must first create a BreakingPoint Cloud account.
+1. Notice there are several testing partners. As you have time, review and try any of the simulation partners.
 
 ## Clean up resources
 
