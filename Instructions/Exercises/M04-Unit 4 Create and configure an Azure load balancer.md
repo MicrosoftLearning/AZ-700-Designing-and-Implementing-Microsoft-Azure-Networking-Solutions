@@ -57,13 +57,13 @@ In this section, you will create a virtual network and a subnet.
     | Host name                     | **myBastionHost**                                            |
     | Public IP address             | Select **Create a public IP address**  Name: **myBastionIP** |
 
-7. Select **Next** (takes you to the IP addresses tab).
+7. Select **Next** (takes you to the Address space tab).
 
-8. On the **IP Addresses** tab, in the **IPv4 address space** box, replace the prepopulated IPv4 address space with: **10.1.0.0/16**.
+8. On the **Address space** tab, in the **IPv4 address space** box, replace the prepopulated IPv4 address space with: **10.1.0.0/16**.
 
-9. On the **IP Addresses** tab, under **Subnets**, delete the **default** subnet.
+9. On the **Address space** tab, under **Subnets**, delete the **default** subnet.
 
-10. On the **IP Addresses** tab, select **+ Add a subnet**.
+10. On the **Address space** tab, select **+ Add a subnet**.
 
 11. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a starting address of: **10.1.0.0/24**. Select **Add**
 
