@@ -86,7 +86,7 @@ In this section, you will create three VMs, that will be in the same availabilit
     + Select **No Storage Account required** and your **Subscription**, then select **Apply**.
     + Wait for the terminal to create and a prompt to be displayed. 
 
-2. On the toolbar of the Cloud Shell pane, select the **Upload/Download files** icon, in the drop-down menu, select **Upload** and upload the following files azuredeploy.json, and azuredeploy.parameters.json into the Cloud Shell home directory.
+2. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload/Download** and upload the following files azuredeploy.json, and azuredeploy.parameters.json into the Cloud Shell home directory.
 
     > **Note:** If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
 
