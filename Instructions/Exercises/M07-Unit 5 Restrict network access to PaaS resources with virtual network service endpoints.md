@@ -228,9 +228,9 @@ The steps necessary to restrict network access to resources created through Azur
 
 ## Task 7: Create a file share in the storage account
 
-1. In the Storage account, in the **Data storage** blade, select **File shares**.
+1. In the Storage account, in the **Data storage** blade, select **Classic file shares**.
 
-1. Select **+ File share**. 
+1. Select **+ Classic file share**. 
 
 1. For **Name**, enter **marketing**, and then select **Next : Backup**.
 
