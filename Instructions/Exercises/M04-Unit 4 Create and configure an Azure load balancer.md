@@ -35,11 +35,11 @@ In this section, you will create a virtual network and a subnet.
 
 1. Log in to the Azure portal.
 
-2. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
+1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
-3. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
 
-4. On the **Basics** tab, use the information in the table below to create the virtual network.
+1. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                  |
    | -------------- | ------------------------------------------ |
@@ -48,32 +48,34 @@ In this section, you will create a virtual network and a subnet.
    | Name           | **IntLB-VNet**                             |
    | Region         | **(US) East US**                           |
 
-5. Select **Next** (takes you to the Security tab).
+1. Select **Next** (takes you to the Security tab).
 
-6. Under **Azure Bastion** select **Enable Azure Bastion**, then enter the information from the table below.
+1. Under **Azure Bastion** select **Enable Azure Bastion**, then enter the information from the table below.
 
     | **Setting**                   | **Value**                                                    |
     | ----------------------------- | ------------------------------------------------------------ |
     | Host name                     | **myBastionHost**                                            |
     | Public IP address             | Select **Create a public IP address**  Name: **myBastionIP** |
 
-7. Select **Next** (takes you to the Address space tab).
+1. Select **Next** (takes you to the Address space tab).
 
-8. On the **Address space** tab, in the **IPv4 address space** box, replace the prepopulated IPv4 address space with: **10.1.0.0/16**.
+1. On the **Address space** tab, in the **IPv4 address space** box, replace the prepopulated IPv4 address space with: **10.1.0.0/16**.
 
-9. On the **Address space** tab, under **Subnets**, delete the **default** subnet.
+1. On the **Address space** tab, under **Subnets**, delete the **default** subnet.
 
-10. On the **Address space** tab, select **+ Add a subnet**.
+1. On the **Address space** tab, select **+ Add a subnet**.
 
-11. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a starting address of: **10.1.0.0/24**. Select **Add**
+1. In the **Add subnet** pane, provide a subnet name of **myBackendSubnet**, and a starting address of: **10.1.0.0/24**.
 
-12. Select **+ Add a subnet** again, provide a subnet name of **myFrontEndSubnet**, and a starting address of: **10.1.2.0/24**. Select **Add**
+1. Ensure **Enable private network (no default outbound access)** is **not** checked. **Save** your changes. Select **Add**
 
-13. Verify that **AzureBastionSubnet** exists, add if needed.
+1. Select **+ Add a subnet** again, provide a subnet name of **myFrontEndSubnet**, and a starting address of: **10.1.2.0/24**. Select **Add**
 
-14. Select **Review + create**.
+1. Verify that **AzureBastionSubnet** exists, add if needed.
 
-15. Select **Create**.
+1. Select **Review + create**.
+
+1. Select **Create**.
 
 ## Task 2: Create backend servers
 
