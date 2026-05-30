@@ -43,7 +43,7 @@ In this exercise, you:
 1. On any Azure Portal page, in **Search resources, services and docs (G+/)**, enter application gateway, and then select **Application gateways** from the results.
     ![Azure Portal search for application gateway](../media/search-application-gateway.png)
 
-1. On the Application gateways page, select **+ Create**.
+1. On the Application gateways page, select **+ Create**, and then select **Pplication Gateway**.
 
 1. On the Create application gateway **Basics** tab, enter, or select the following information:
 
