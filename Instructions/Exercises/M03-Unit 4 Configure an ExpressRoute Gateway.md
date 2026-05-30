@@ -42,20 +42,22 @@ In this exercise, you will:
    | -------------------- | -------------------------------- |
    | Virtual Network Name | CoreServicesVNet                 |
    | Resource Group       | ContosoResourceGroup             |
-   | Location             | East US                          |
+   | Region             | East US                          |
 
-1. Select **Next : IP addresses**.
+1. Select **Next: Security**, review your choices but don't make any changes.
 
-1. On the **IP Addresses** tab, in **IPv4 address space**, enter 10.20.0.0/16, and then select **+ Add subnet**.
+1. Select **Next : Address space**.
 
-1. In the Add subnet pane, use the information in the following table to create the subnet:
+1. On the **Address space** tab, in **IPv4 address space**, enter 10.20.0.0/16.
+
+1. Delete the **default** subnet.
+
+1. Select **+ Add subnet**. Use the information in the following table to create the subnet:
 
    | **Setting**                  | **Value**               |
    | ---------------------------- | ----------------------- |
    | Subnet purpose               | Virtual Network Gateway |
    | Gateway Subnet address space | 10.20.0.0/27            |
-
-Note that the subnet name will be automatically populated.
 
 1. And then select **Add**.
 
