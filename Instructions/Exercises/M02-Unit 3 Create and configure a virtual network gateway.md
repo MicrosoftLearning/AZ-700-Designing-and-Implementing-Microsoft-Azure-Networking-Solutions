@@ -45,7 +45,7 @@ In this exercise, you:
 
 1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **azuredeploy.json** and **azuredeploy.parameters.json** into the Cloud Shell home directory.
 
-        Note:: If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
+  >Note:: If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
 
 1. Deploy the following ARM templates to create the virtual network and subnets needed for this exercise:
 
@@ -83,7 +83,9 @@ In this exercise, you:
 
 1. On the toolbar of the Cloud Shell pane, select the **Manage files** icon, in the drop-down menu, select **Upload** and upload the following files **ManufacturingVMazuredeploy.json** and **ManufacturingVMazuredeploy.parameters.json** into the Cloud Shell home directory one by one from the source folder **F:\Allfiles\Exercises\M02**.
 
-1. Deploy the following ARM templates to create the VMs needed for this exercise:
+  >Note:: If you are working in your own subscription the [template files](https://github.com/MicrosoftLearning/AZ-700-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions/tree/master/Allfiles/Exercises) are available in the GitHub lab repository.
+
+1. Deploy the following ARM templates to create the VMs needed for this exercise.
 
    >**Note**: You will be prompted to provide an Admin password.You will need this password in the next task.
 
@@ -147,8 +149,9 @@ In this exercise, you:
 
 ## Task 6: Create CoreServicesVnet Gateway
 
-1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
-   ![Search for virtual network gateway on Azure Portal.](../media/virtual-network-gateway-search.png)
+1. In the portal search for and select **Hybrid connectity**.
+
+1. In the **VPN Gateways** blade, select **VVPN gateways**.
 
 1. In Virtual network gateways, select **+ Create**.
 
@@ -193,7 +196,9 @@ In this exercise, you:
 
 ### Create the virtual network gateway
 
-1. In **Search resources, services, and docs (G+/)**, enter **Virtual network gateway**, and then select **Virtual network gateways** from the results.
+1. In the portal search for and select **Hybrid connectity**.
+
+1. In the **VPN Gateways** blade, select **VVPN gateways**.
 
 1. In Virtual network gateways, select **+ Create**.
 
