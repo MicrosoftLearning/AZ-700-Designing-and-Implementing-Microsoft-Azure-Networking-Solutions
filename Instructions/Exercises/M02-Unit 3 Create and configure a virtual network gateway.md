@@ -55,6 +55,7 @@ In this exercise, you:
    New-AzResourceGroup -Name $RGName -Location "eastus"
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
+1. In the portal, you can verify three virtual networks were created.
    
 ## Task 2: Create CoreServicesVM
 
@@ -64,7 +65,7 @@ In this exercise, you:
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-   >**Note**: You will be prompted to provide an Admin password.
+   >**Note**: You will be prompted to provide an Admin password. You will need this password later in the exercise. 
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -84,7 +85,7 @@ In this exercise, you:
 
 1. Deploy the following ARM templates to create the VMs needed for this exercise:
 
-   >**Note**: You will be prompted to provide an Admin password.
+   >**Note**: You will be prompted to provide an Admin password.You will need this password in the next task.
 
    ```powershell
    $RGName = "ContosoResourceGroup"
@@ -102,7 +103,7 @@ In this exercise, you:
 
 1. Select **ManufacturingVM**.
 
-1. On **ManufacturingVM**, select **Connect** and then **RDP**.
+1. On **ManufacturingVM**, select **Connect** and then **Connect**.
 
 1. Select **Download RDP file**.
 
