@@ -57,7 +57,8 @@ In this exercise, you will:
    | **Setting**                  | **Value**               |
    | ---------------------------- | ----------------------- |
    | Subnet purpose               | Virtual Network Gateway |
-   | Gateway Subnet address space | 10.20.0.0/27            |
+   | Starting address | `10.20.0.0`          |
+   | Size    | /27 |
 
 1. And then select **Add**.
 
