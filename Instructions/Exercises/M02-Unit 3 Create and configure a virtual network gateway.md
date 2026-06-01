@@ -151,7 +151,7 @@ In this exercise, you:
 
 1. In the portal search for and select **Hybrid connectity**.
 
-1. In the **VPN Gateways** blade, select **VVPN gateways**.
+1. In the **VPN Gateways** blade, select **VPN gateways**.
 
 1. In Virtual network gateways, select **+ Create**.
 
@@ -198,7 +198,7 @@ In this exercise, you:
 
 1. In the portal search for and select **Hybrid connectity**.
 
-1. In the **VPN Gateways** blade, select **VVPN gateways**.
+1. In the **VPN Gateways** blade, select **VPN gateways**.
 
 1. In Virtual network gateways, select **+ Create**.
 
