@@ -387,8 +387,6 @@ In this section, you'll use the virtual machine you created in the previous step
 
 1. On the overview page for **myVM**, select **Connect** then **Bastion**.
 
-1. Select the blue **Use Bastion** button.
-
 1. Enter the username and password that you entered during the virtual machine creation.
 
 1. Open Windows PowerShell on the server after you connect.
