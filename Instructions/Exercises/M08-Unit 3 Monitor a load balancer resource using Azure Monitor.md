@@ -54,8 +54,6 @@ In this section, you will create the virtual network and subnets.
 
 1. Select **+ Create**.
 
-   ![Create virtual network](../media/create-virtual-network.png)
-
 1. On the **Basics** tab, use the information in the table below to create the virtual network.
 
    | **Setting**    | **Value**                                           |
@@ -249,7 +247,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. One of the two backend servers virtual machines (myVM1 or myVM2) will respond. Continue refreshing the page, and notice the response comes randomly from the backend servers. 
 
-## Task 9:: Create a Log Analytics Workspace
+## Task 9: Create a Log Analytics Workspace
 
 1. In the Azure portal, search for and select the **Log Analytics workspaces** resource.
    
