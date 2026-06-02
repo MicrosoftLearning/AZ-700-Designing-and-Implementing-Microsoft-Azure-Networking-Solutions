@@ -65,7 +65,6 @@ In this exercise, you will:
    | Firewall                | Disabled  |
 
 1. Select the **IP Addresses** tab and enter the following values (select **default** to change the subnet name):
-   ![Graphical user interface, text, application, email Description automatically generated](../media/create-virtual-network-ip.png)
 
    | **Setting**          | **Value**   |
    | -------------------- | ----------- |
@@ -82,7 +81,6 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 1. In the **Search resources, services, and docs** box at the top of the portal, enter CoreServicesVNet. When CoreServicesVNet appears in the search results, select it.
 
 1. Add a subnet to the virtual network. Under **Settings**, select **Subnets**, and then select **+ Subnet**, as shown in the following picture:
-   ![Graphical user interface, application Description automatically generated](../media/create-subnet.png)
 
 1. Under **Add subnet**, select or enter the following information:
 
@@ -95,8 +93,6 @@ Service endpoints are enabled per service, per subnet. Create a subnet and enabl
 1. Select **Add**.
 
 You should now have two subnets configured:
-
-![Graphical user interface, text, application, email Description automatically generated](../media/configured-subnets.png)
 
 ## Task 3: Restrict network access for a subnet
 
@@ -124,7 +120,6 @@ By default, all VMs in a subnet can communicate with all resources. You can limi
 1. Select **+ Add**.
 
 1. Create a rule that allows outbound communication to the Azure Storage service. Enter, or select, the following information:
-   ![Graphical user interface, application Description automatically generated](../media/add-outbound-security-rule.png)
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
@@ -149,7 +144,6 @@ Create another outbound security rule that denies communication to the internet.
 1. Select **+Add** under **Outbound security rules**.
 
 1. Enter, or select, the following information:
-   ![Graphical user interface, application, email Description automatically generated](../media/add-outbound-security-rule-deny.png)
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
@@ -176,7 +170,6 @@ Create an inbound security rule that allows Remote Desktop Protocol (RDP) traffi
 1. Select **+ Add**.
 
 1. In Add inbound security rule, enter the following values::
-   ![Graphical user interface, application Description automatically generated](../media/add-inbound-security-rule.png)
 
    | **Setting**             | **Value**                 |
    | ----------------------- | ------------------------- |
@@ -317,8 +310,6 @@ To test network access to a storage account, deploy a VM to each subnet.
 1. Navigate to your storage account, select **File shares** then select the **marketing** file share. 
 
 1. Select **Browse** and notice the access denied error. Your error may look different.  Access is denied, because your computer is not in the Private subnet of the CoreServicesVNet virtual network.
-
-    ![Graphical user interface, text, application, email Description automatically generated](../media/no-access.png)
 
 ## Clean up resources
 
