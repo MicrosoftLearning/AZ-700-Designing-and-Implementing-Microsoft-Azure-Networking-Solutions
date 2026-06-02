@@ -47,7 +47,7 @@ In this exercise, you will:
 1. Select **+** **Create**.
 
 1. Enter, or select, the following information:
-   ![Graphical user interface, text, application Description automatically generated](../media/create-virtual-network.png)
+
 
    | **Setting**    | **Value**                                     |
    | -------------- | --------------------------------------------- |
