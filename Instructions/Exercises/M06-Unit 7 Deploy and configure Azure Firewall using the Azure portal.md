@@ -50,8 +50,6 @@ In this task, you will create a new resource group.
 
 1. On the **Region**, select your region from the list.
 
-   ![Create a resource group for Azure firewall](../media/create-resource-group-for-azure-firewall.png)
-
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -68,8 +66,6 @@ In this task, you will create a single virtual network with two subnets.
 
 1. In the **Name** box, enter **Test-FW-VN**.
 
-   ![Create a virtual network - Basics tab](../media/create-vnet-basics-for-azure-firewall.png)
-
 1. Select **Next: Address space**. Enter IPv4 address space 10.0.0.0/16 if not already there by default.
 
 1. Click the **Edit** icon next to the **Default** subnet.
@@ -81,8 +77,6 @@ In this task, you will create a single virtual network with two subnets.
 1. Select **Save**.
 
 1. Select **Add subnet**, to create another subnet, which will host the workload server that you will create shortly.
-
-    ![Add subnet](../media/add-workload-subnet.png)
 
 1. In the **Edit subnet** dialog box, change the name to **Workload-SN**.
 
@@ -143,20 +137,15 @@ In this task, you will deploy the firewall into the virtual network with a firew
    | Firewall management  | **Use a Firewall Policy to manage this firewall**            |
    | Firewall policy      | Select **Add new**<br />Name: **fw-test-pol**<br />Region: **your region** |
 
-   ![Create a new firewall policy](../media/create-firewall-policy.png)
 
    | Choose a virtual network | **Use existing**                         |
    | ------------------------ | ---------------------------------------- |
    | Virtual network          | **Test-FW-VN**                           |
    | Public IP address        | Select **Add new**<br />Name: **fw-pip** |
 
-   ![Add public IP address to firewall](../media/assign-public-ip-to-firewall.png)
-
 1. We are not using the Firewall Manager so uncheck the box for **Enable Firewall Management NIC**. 
 
 1. Review your settings. 
-
-   ![Create a firewall - review settings](../media/review-all-configurations-for-firewall.png)
 
 1. Proceed to **Review + create** and then **Create**.
 
@@ -192,8 +181,6 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 
 1. Select **Create**.
 
-   ![Create a route table](../media/create-route-table.png)
-
 1. After deployment completes, select **Go to resource**.
 
 1. On the **Firewall-route** page, under **Settings**, select **Subnets** and then select **Associate**.
@@ -215,8 +202,6 @@ In this task, on the Workload-SN subnet, you will configure the outbound default
 1. On **Next hop address**, enter the private IP address for the firewall that you noted previously (e.g., **10.0.1.4**)
 
 1. Select **Add**.
-
-    ![Add firewall route](../media/add-firewall-route.png)
 
 ## Task 6: Configure an application rule
 
@@ -246,8 +231,6 @@ In this task, you will add an application rule that allows outbound access to <w
    | Protocol               | **http,https**                            |
    | Destination type       | **FQDN**                                  |
    | Destination            | **<www.google.com>**                        |
-
-   ![Add an application rule collection](../media/add-an-application-rule-for-firewall.png)
 
 1. Select **Add**.
 
@@ -308,8 +291,6 @@ In this task, you will add a DNAT rule that allows you to connect a remote deskt
    | Translated address    | Enter the private IP address from **Srv-Work** that you noted earlier.<br />**e.g. - 10.0.2.4** |
    | Translated port       | **3389**                                                     |
 
-​  ![Add a DNAT rule collection](../media/add-a-dnat-rule.png)
-
 1. Select **Add**.
 
 ## Task 9: Change the primary and secondary DNS address for the server's network interface
@@ -321,8 +302,6 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 1. In the list of resource groups, select your resource group, **Test-FW-RG**.
 
 1. In the list of resources in this resource group, select the network interface for the **Srv-Work** virtual machine (e.g., **srv-work350**).
-
-   ![Select NIC in resource group](../media/change-dns-servers-srv-work-nic-1.png)
 
 1. Under **Settings**, select **DNS servers**.
 
