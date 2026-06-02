@@ -91,8 +91,6 @@ Now you will create a Traffic Manager profile that directs user traffic based on
 
 1. In the search box at the top of the page, enter **Traffic Manager profile**, and then select it from the pop-up list.
 
-   ![Picture 20](../media/create-tmprofile-1.png)
-
 1. Select **Create**.
 
 1. On the **Create Traffic Manager profile** page, use the information in the table below to create the Traffic Manager profile.
@@ -114,8 +112,6 @@ In this section, you will add the website in the East US as the primary endpoint
 1. On the Azure portal home page, select **All resources**, then select on **Contoso-TMProfile** in the resources list.
 
 1. Under **Settings**, select **Endpoints**, and then select **Add**.
-
-   ![Picture 21](../media/create-tmendpoints-1.png)
 
 1. On the **Add endpoint** page, enter the information from the table below.
 
