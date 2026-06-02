@@ -260,8 +260,6 @@ In this task, you will add a network rule that allows outbound access to two IP 
    | Destination Type       | **IP Address**                                               |
    | Destination            | **209.244.0.3, 209.244.0.4**<br />These are public DNS servers operated by Century Link |
 
-   ​ ![Add a network rule collection](../media/add-a-network-rule-for-firewall.png)
-
 1. Select **Add**.
 
 ## Task 8: Configure a Destination NAT (DNAT) rule
@@ -311,8 +309,6 @@ For testing purposes in this exercise, in this task, you will configure the Srv-
 
 1. Select **Save**.
 
-   ![Change DNS servers on NIC](../media/change-dns-servers-srv-work-nic-2.png)
-
 1. Restart the **Srv-Work** virtual machine.
 
 ## Task 10: Test the firewall
@@ -327,8 +323,6 @@ In this final task, you will test the firewall to verify that the rules are conf
 
 1. Select **Connect**.
 
-   ![RDP connection to firewall's public IP address](../media/remote-desktop-connection-1.png)
-
 1. On the **Enter your credentials** dialog box, log into the **Srv-Work** server virtual machine, by using the password you provided during deployment.
 
 1. Select **OK**.
@@ -342,8 +336,6 @@ In this final task, you will test the firewall to verify that the rules are conf
 1. Select **Close** on the Internet Explorer security alerts that may pop-up.
 
 1. You should see the Google home page.
-
-    ![RDP session on Srv-work server - browser on google.com](../media/remote-desktop-connection-2.png)
 
 1. Browse to **<https://www.microsoft.com>**.
 
