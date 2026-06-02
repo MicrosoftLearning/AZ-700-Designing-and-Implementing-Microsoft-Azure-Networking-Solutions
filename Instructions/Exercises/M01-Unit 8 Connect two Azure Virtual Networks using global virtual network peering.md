@@ -113,7 +113,6 @@ In this section, you will create a test VM on the  VNet to test if you can acces
 1. On the Azure home page, select **Virtual Networks**, and then select **CoreServicesVnet**.
 
 1. In CoreServicesVnet, under **Settings**, select **Peerings**.
-   ![Screenshot of core services VNet peering settings ](../media/create-peering-on-coreservicesvnet.png)
 
 1. On CoreServicesVnet \| Peerings, select **+ Add**.
 
