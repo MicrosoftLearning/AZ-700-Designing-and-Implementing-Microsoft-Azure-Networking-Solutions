@@ -328,8 +328,6 @@ In this task you will test the application rule to confirm that it works as expe
 
 1. Select **Connect**.
 
-   ![RDP connection to srv-workload-01](../media/rdp-srv-workload-01.png)
-
 1. On the **Enter your credentials** dialog box, log into the **Srv-workload-01** server virtual machine, by using the password you provided during deployment.
 
 1. Select **OK**.
@@ -345,8 +343,6 @@ In this task you will test the application rule to confirm that it works as expe
 1. Select **Close** on the Internet Explorer security alerts that may pop-up.
 
 1. You should see the Microsoft home page.
-
-    ![RDP session browsing microsoft.com](../media/microsoft-home-page.png)
 
 1. Browse to **https://** **<www.google.com>**.
 
