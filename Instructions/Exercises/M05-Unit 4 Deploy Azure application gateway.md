@@ -107,8 +107,6 @@ In this exercise, you:
 
 1. Accept the default values for the other settings on the **Listener** tab.
 
-    ![Azure Portal add an Application Gateway routing rule](../media/Routing-rule-listener-tab.png)
-
 1. Select the **Backend targets** tab to configure the rest of the routing rule.
 
 1. On the **Backend targets** tab, enter or select the following information:
@@ -206,8 +204,6 @@ In this exercise, you:
 1. On **Target type**, select **Virtual machine**.
 
 1. Under **Target**, select **BackendVM2-nic.**
-
-   ![Azure Portal add target backends to backend pool](../media/edit-backend-pool.png)
 
 1. Select **Save** and wait for the targets to be added. 
 
