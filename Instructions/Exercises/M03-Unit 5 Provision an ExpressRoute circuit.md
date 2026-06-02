@@ -47,8 +47,6 @@ In this exercise, you will:
 
 1. Confirm that the ExpressRoute configuration passes validation and then select **Create**.
 
-![Azure portal - Create ExpressRoute configuration tab](../media/expressroute-create-configuration2.png)
-
 + Port type determines if you are connecting to a service provider or directly into Microsoft's global network at a peering location.
 + Create new or import from classic determines if a new circuit is being created or if you are migrating a classic circuit to Azure Resource Manager.
 + Provider is the internet service provider who you will be requesting your service from.
@@ -77,8 +75,6 @@ In this exercise, you will:
    ![Azure portal - Create ExpressRoute resource menu](../media/expressroute-circuit-menu.png)
 
 1. All ExpressRoute circuits created in the subscription will appear here.
-
-   ![Azure portal - show existing Expressroute circuits](../media/expressroute-circuit-list.png)
 
 1. The circuit page displays the properties of the circuit. The service key appears in the service key field. Your service provider will need the Service Key to complete the provisioning process. The service key is specific to your circuit. **You must send the service key to your connectivity provider for provisioning.**
 
@@ -112,8 +108,6 @@ If the ExpressRoute circuit service provider provisioning state is **Provisionin
 ## Clean up resources
 
 You can delete your ExpressRoute circuit by selecting the **Delete** icon. Ensure the provider status is Not provisioned before proceeding.
-
-![Azure portal - delete an ExpressRoute circuit](../media/expressroute-circuit-delete.png)
 
    >**Note**: Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not see unexpected charges.
 
