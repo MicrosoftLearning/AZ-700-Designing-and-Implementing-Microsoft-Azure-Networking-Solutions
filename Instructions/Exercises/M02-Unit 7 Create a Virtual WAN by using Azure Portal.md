@@ -63,7 +63,6 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1. On the Virtual WAN page, under **Connectivity**, select **Hubs**.
 
 1. On the Hubs page, select **+New Hub** to open the Create virtual hub page.
-   ![Create Virtual Hub, Basics tab.](../media/create-vwan-hub.png)
 
 1. On the Create virtual hub page **Basics** tab, complete the following fields:
    + **Region:** West US
@@ -91,8 +90,6 @@ A hub contains gateways for site-to-site, ExpressRoute, or point-to-site functio
 1. Locate the Virtual WAN that you created.
 
 1. In ContosoVirtualWAN, under **Connectivity**, select **Virtual network connections**.
-
-   ![Virtual WAN configuration page with Virtual network connections highlighted.](../media/connect-vnet-to-virtual-hub.png)
 
 1. On ContosoVirtualWAN | Virtual network connections, select **+ Add connection**.
 
