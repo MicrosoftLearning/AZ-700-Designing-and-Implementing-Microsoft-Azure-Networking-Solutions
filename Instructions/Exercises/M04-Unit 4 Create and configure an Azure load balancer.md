@@ -37,7 +37,7 @@ In this section, you will create a virtual network and a subnet.
 
 1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
-1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+1. Select **Create** on the Virtual networks page.  
 
 1. On the **Basics** tab, use the information in the table below to create the virtual network.
 
@@ -183,7 +183,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Interval            | **15**            |
 
 1. Select **Add**.
-   ![Picture 5](../media/create-healthprobe.png)
 
 ### Create a load balancer rule
 
@@ -209,7 +208,6 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Enable Floating IP     | **Not checked**          |
 
 1. Select **Save**.
-   ![Picture 6](../media/create-loadbalancerrule.png)
 
 ## Task 5: Test the load balancer
 
