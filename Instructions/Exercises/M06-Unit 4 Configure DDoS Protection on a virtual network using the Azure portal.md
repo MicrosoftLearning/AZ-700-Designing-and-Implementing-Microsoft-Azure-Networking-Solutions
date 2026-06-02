@@ -80,8 +80,6 @@ Here you will enable DDoS on a new virtual network rather than on an existing on
 
 1. On the **DDoS protection plan** drop-down list, select **MyDdosProtectionPlan**.
 
-   ![Create virtual network - Security tab](../media/create-virtual-network-security-for-ddos-protection.png)
-
 1. Select **Review + create**.
 
 1. Select **Create**.
@@ -112,15 +110,11 @@ You create a Public IP address, and then set up telemetry in the next steps.
 
 1. Select the **Scope** box, then select the checkbox next to **MyPublicIPAddress**.
 
-    ![Create metrics scope for DDoS telemetry](../media/create-metrics-scope-for-ddos-telemetry.png)
-
 1. Select **Apply**.
 
 1. On the **Metrics** box, select **Inbound packets dropped DDoS**.
 
 1. On the **Aggregation** box, select **Max**.
-
-    ![Metrics created for DDoS telemetry](../media/metrics-created-for-ddos-telemetry.png)
 
 ## Task 5: Configure DDoS diagnostic logs
 
