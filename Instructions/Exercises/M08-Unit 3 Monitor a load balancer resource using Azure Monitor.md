@@ -142,8 +142,6 @@ The backend address pool contains the IP addresses of the virtual NICs connected
 
 1. Select **Save**.
 
-   ![Show backend pool created in load balancer](../media/create-backendpool.png)
-
 ## Task 4: Create a health probe
 
 The load balancer monitors the status of your app with a health probe. The health probe adds or removes VMs from the load balancer based on their response to health checks. Here you will create a health probe to monitor the health of the VMs.
@@ -161,8 +159,6 @@ The load balancer monitors the status of your app with a health probe. The healt
    | Interval            | **15**            |
 
 1. Select **Save**.
-
-   ![Show health probe created in load balancer](../media/create-healthprobe.png)
 
 ## Task 5: Create a load balancer rule
 
@@ -185,7 +181,6 @@ A load balancer rule is used to define how traffic is distributed to the VMs. Yo
    | Enable TCP Reset      | **Disabled**        |
    | Floating IP            | **Disabled**             |
 
-   ![Show load balancing rule created in load balancer](../media/create-loadbalancerrule.png)
 
 ## Task 6: Create backend servers
 
