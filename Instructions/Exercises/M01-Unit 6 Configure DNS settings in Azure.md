@@ -57,8 +57,6 @@ In this exercise, you will:
 
 1. On Contoso.com \| Virtual Network Links, select **+ Add**.
 
-    ![contoso.com \| Virtual links with + Add highlighted.](../media/add-network-link-dns.png)
-
 1. Use the information in the following table to add the virtual network link.
 
     | **Option**                          | **Value**                               |
