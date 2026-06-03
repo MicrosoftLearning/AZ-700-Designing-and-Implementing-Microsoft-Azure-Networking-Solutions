@@ -84,7 +84,7 @@ In this exercise, you will:
 
 1. On the Azure portal home page, navigate to the Global Search bar and search **Virtual Networks** and select virtual networks under services.  ![Azure portal home page Global Search bar results for virtual network.](../media/global-search-bar.PNG)
 
-1. Select **Create** on the Virtual networks page.  ![Create a virtual network wizard.](../media/create-virtual-network.png)
+1. Select **Create** on the Virtual networks page.  
    
 1. Use the information in the following table to create the CoreServicesVnet virtual network.  
    Remove or overwrite the default IP Address space. 
