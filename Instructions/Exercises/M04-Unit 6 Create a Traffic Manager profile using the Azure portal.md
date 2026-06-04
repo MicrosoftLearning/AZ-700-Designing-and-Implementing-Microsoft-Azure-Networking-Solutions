@@ -153,6 +153,8 @@ In this section, you will check the DNS name of your Traffic Manager profile, an
 
 1. Open a web browser tab, and paste (or enter) the **DNS name** entry (contoso-tmprofile.trafficmanager.net) into the address bar, and press Enter.
 
+    >**Note:** If you receive errors that the website is not secure, use an InPrivate browsing window. 
+
 1. The web app's default web site should be displayed. If you get **404 Web Site not found** message, **Disable profile** from **Contoso-TMProfilexx** Traffic Manager profile overview page and **Enable profile**. Then refresh the webpage.
 
    ![Picture 24](../media/tm-webapp-test-1a.png)
