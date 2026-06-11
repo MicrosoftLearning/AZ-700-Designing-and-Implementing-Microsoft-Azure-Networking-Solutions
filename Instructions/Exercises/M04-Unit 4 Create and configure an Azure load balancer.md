@@ -219,7 +219,7 @@ In this section, you will create a test VM, and then test the load balancer.
 
 1. On the **Create a virtual machine** page, on the **Basics** tab, use the information in the table below to create the first VM.
 
-    > **Note:** If the Image isn't available, select another image. The specifics don't matter, we are just creating a VM for testing. 
+    > **Note:** If the Image isn't available, select another image. The specifics don't matter, we are just creating a VM for testing.The VM must have IIS web server installed. 
 
    | **Setting**          | **Value**                                    |
    | -------------------- | -------------------------------------------- |
@@ -228,7 +228,7 @@ In this section, you will create a test VM, and then test the load balancer.
    | Virtual machine name | **myTestVM**                                 |
    | Region               | **(US) East US**                             |
    | Availability options | **No infrastructure redundancy required**    |
-   | Image                | **Windows Server 2025 Datacenter Server Core - x64 Gen 2**   |
+   | Image                | **Windows Server 2019 Datacenter**   |
    | Size                 | **Standard_DS2_v3 - 2 vcpu, 8 GiB memory**   |
    | Username             | **TestUser**                                 |
    | Password             | **Provide a secure password**                |
