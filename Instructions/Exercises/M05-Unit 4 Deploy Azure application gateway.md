@@ -161,13 +161,15 @@ In this exercise, you:
 
    >**Note**: You will be prompted to provide an Admin password. 
 
-   >**Note**: If deployment fails with **NotAvailableForSubscription** for the default VM size, open **backend.parameters.json**, update the **vmSize** value to a VM size that is available in your subscription and region, and rerun the deployment command.
-
    ```powershell
    $RGName = "ContosoResourceGroup"
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile backend.json -TemplateParameterFile backend.parameters.json
    ```
+
+   > [!NOTE]
+   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, check whether **ContosoResourceGroup** was created. If it exists, delete the resource group, update the **vmSize** value in **backend.parameters.json** to **Standard_D2s_v6**, and repeat the deployment. If that deployment fails for the same reason, delete the resource group, set **vmSize** to **Standard_D2s_v7**, and retry.
+
    >**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. This will take a few minutes. 
 
 1. The command should complete successfully and list **BackendVM1** and **BackendVM2**.

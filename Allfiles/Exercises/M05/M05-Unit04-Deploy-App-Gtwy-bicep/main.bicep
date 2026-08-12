@@ -13,8 +13,13 @@ param vmName2 string
 @description('description')
 param nicName2 string
 
+@allowed([
+  'Standard_D2s_v5'
+  'Standard_D2s_v6'
+  'Standard_D2s_v7'
+])
 @description('Virtual machine size')
-param vmSize string = 'Standard_D2s_v3'
+param vmSize string = 'Standard_D2s_v5'
 
 @description('Admin username')
 param adminUsername string

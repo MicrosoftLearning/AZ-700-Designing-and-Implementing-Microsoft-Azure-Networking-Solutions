@@ -82,6 +82,9 @@ In this exercise, you:
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile CoreServicesVMazuredeploy.json -TemplateParameterFile CoreServicesVMazuredeploy.parameters.json
    ```
+
+   > [!NOTE]
+   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, check whether **ContosoResourceGroup** was created. If it exists, delete the resource group, update the **vmSize** value in **CoreServicesVMazuredeploy.parameters.json** to **Standard_D2s_v6**, and repeat the deployment. If that deployment fails for the same reason, delete the resource group, set **vmSize** to **Standard_D2s_v7**, and retry.
   
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
@@ -104,6 +107,9 @@ In this exercise, you:
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile ManufacturingVMazuredeploy.json -TemplateParameterFile ManufacturingVMazuredeploy.parameters.json
    ```
+
+   > [!NOTE]
+   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, check whether **ContosoResourceGroup** was created. If it exists, delete the resource group, update the **vmSize** value in **ManufacturingVMazuredeploy.parameters.json** to **Standard_D2s_v6**, and repeat the deployment. If that deployment fails for the same reason, delete the resource group, set **vmSize** to **Standard_D2s_v7**, and retry.
   
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 

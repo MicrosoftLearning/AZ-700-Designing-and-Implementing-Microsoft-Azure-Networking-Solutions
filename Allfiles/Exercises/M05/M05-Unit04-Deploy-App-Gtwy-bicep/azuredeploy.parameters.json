@@ -16,7 +16,7 @@
             "value": "BackendVM2-nic"
         },
         "vmSize": {
-            "value": "Standard_D2s_v3"
+            "value": "Standard_D2s_v5"
         },
         "adminUsername": {
             "value": "TestUser"

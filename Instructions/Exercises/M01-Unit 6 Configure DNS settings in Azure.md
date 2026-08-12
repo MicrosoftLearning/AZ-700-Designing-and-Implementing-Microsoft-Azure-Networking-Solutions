@@ -93,6 +93,9 @@ In this section, you will create two test VMs to test the Private DNS zone confi
    
    New-AzResourceGroupDeployment -ResourceGroupName $RGName -TemplateFile azuredeploy.json -TemplateParameterFile azuredeploy.parameters.json
    ```
+
+    > [!NOTE]
+    > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, check whether **ContosoResourceGroup** was created. If it exists, delete the resource group, update the **vmSize** value in **azuredeploy.parameters.json** to **Standard_D2s_v6**, and repeat the deployment. If that deployment fails for the same reason, delete the resource group, set **vmSize** to **Standard_D2s_v7**, and retry.
   
 1. When the deployment is complete, go to the Azure portal home page, and then select **Virtual Machines**.
 
