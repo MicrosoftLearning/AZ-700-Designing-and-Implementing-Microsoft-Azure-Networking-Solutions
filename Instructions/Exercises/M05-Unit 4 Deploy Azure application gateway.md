@@ -168,7 +168,7 @@ In this exercise, you:
    ```
 
    > [!NOTE]
-   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, update the **vmSize** value in **backend.parameters.json** to **Standard_D2s_v6**, and repeat the deployment in the same resource group. If that deployment fails for the same reason, set **vmSize** to **Standard_D2s_v7**, and retry. Azure Resource Manager deployments are incremental, so don't delete the resource group before retrying. Delete and recreate it only if a failed deployment left partial resources that cause naming or configuration conflicts.
+   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, update the **vmSize** value in **backend.parameters.json** to **Standard_D2s_v6**, and repeat the deployment in the same resource group. If that deployment fails for the same reason, set **vmSize** to **Standard_D2s_v7**, and retry. Azure Resource Manager deployments are incremental, so don't delete the resource group before retrying. Delete and recreate it only if a failed deployment left partial resources that cause naming or configuration conflicts. If you delete the resource group, restart this exercise at **Task 1: Create an application gateway** to rebuild the prerequisite resources.
 
    >**Note**: Take time to review the **backend.json** file. There are two virtual machines being deployed. This will take a few minutes. 
 
