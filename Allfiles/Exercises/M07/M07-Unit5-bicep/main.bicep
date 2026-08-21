@@ -84,7 +84,7 @@ resource vm1 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {
@@ -170,7 +170,7 @@ resource vm2 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {

@@ -201,7 +201,7 @@ In this section, you will create three VMs for the backend pool of the load bala
    ```
 
    > [!NOTE]
-   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, check whether **IntLB-RG** was created. If it exists, delete the resource group, update the **vmSize** value in **azuredeploy.parameters.json** to **Standard_D2s_v6**, and repeat the deployment. If that deployment fails for the same reason, delete the resource group, set **vmSize** to **Standard_D2s_v7**, and retry.
+   > The template provides three current VM sizes. Use **Standard_D2s_v5** first. If the deployment fails because the size is unavailable or Azure lacks capacity, update the **vmSize** value in **azuredeploy.parameters.json** to **Standard_D2s_v6**, and repeat the deployment in the same resource group. If that deployment fails for the same reason, set **vmSize** to **Standard_D2s_v7**, and retry. Azure Resource Manager deployments are incremental, so don't delete the resource group before retrying. Delete and recreate it only if a failed deployment left partial resources that cause naming or configuration conflicts.
 
 1. Deployment may take several minutes. You can check the progress in the portal by refreshing the virtual machine resource page.
 
