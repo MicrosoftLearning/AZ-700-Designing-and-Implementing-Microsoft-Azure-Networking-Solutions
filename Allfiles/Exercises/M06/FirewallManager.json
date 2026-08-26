@@ -28,9 +28,14 @@
       },
       "vmSize": {
         "type": "string",
-        "defaultValue": "Standard_D2s_v3",
+                "defaultValue": "Standard_D2s_v5",
+                "allowedValues": [
+                    "Standard_D2s_v5",
+                    "Standard_D2s_v6",
+                    "Standard_D2s_v7"
+                ],
         "metadata": {
-          "description": "Virtual machine size"
+                    "description": "Select a VM size available in the deployment region."
         }
       },
       "adminUsername": {
@@ -81,7 +86,7 @@
                     "imageReference": {
                         "publisher": "MicrosoftWindowsServer",
                         "offer": "WindowsServer",
-                        "sku": "2019-Datacenter",
+                        "sku": "2022-datacenter-g2",
                         "version": "latest"
                     },
                     "osDisk": {
@@ -148,7 +153,7 @@
                     "imageReference": {
                         "publisher": "MicrosoftWindowsServer",
                         "offer": "WindowsServer",
-                        "sku": "2019-Datacenter",
+                        "sku": "2022-datacenter-g2",
                         "version": "latest"
                     },
                     "osDisk": {

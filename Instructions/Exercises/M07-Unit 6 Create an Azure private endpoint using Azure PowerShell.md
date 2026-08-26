@@ -222,7 +222,7 @@ $parameters4 = @{
 
  Offer = 'WindowsServer'
 
- Skus = '2019-Datacenter'
+ Skus = '2022-datacenter-g2'
 
  Version = 'latest'
 

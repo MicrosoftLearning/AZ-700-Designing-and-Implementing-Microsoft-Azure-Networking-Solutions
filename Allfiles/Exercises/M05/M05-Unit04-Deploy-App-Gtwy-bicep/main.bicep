@@ -13,8 +13,13 @@ param vmName2 string
 @description('description')
 param nicName2 string
 
+@allowed([
+  'Standard_D2s_v5'
+  'Standard_D2s_v6'
+  'Standard_D2s_v7'
+])
 @description('Virtual machine size')
-param vmSize string = 'Standard_D2s_v3'
+param vmSize string = 'Standard_D2s_v5'
 
 @description('Admin username')
 param adminUsername string
@@ -76,7 +81,7 @@ resource vm1 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {
@@ -134,7 +139,7 @@ resource vm2 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {

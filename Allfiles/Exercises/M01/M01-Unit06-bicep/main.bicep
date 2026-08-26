@@ -19,8 +19,13 @@ param location string = resourceGroup().location
 @description('description')
 param nicName2 string
 
+@allowed([
+  'Standard_D2s_v5'
+  'Standard_D2s_v6'
+  'Standard_D2s_v7'
+])
 @description('Virtual machine size')
-param vmSize string = 'Standard_D2s_v3'
+param vmSize string = 'Standard_D2s_v5'
 
 @description('Admin username')
 param adminUsername string
@@ -78,7 +83,7 @@ resource vmName1_resource 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {
@@ -164,7 +169,7 @@ resource vmName2_resource 'Microsoft.Compute/virtualMachines@2021-11-01' = {
       imageReference: {
         publisher: 'MicrosoftWindowsServer'
         offer: 'WindowsServer'
-        sku: '2019-Datacenter'
+        sku: '2022-datacenter-g2'
         version: 'latest'
       }
       osDisk: {
