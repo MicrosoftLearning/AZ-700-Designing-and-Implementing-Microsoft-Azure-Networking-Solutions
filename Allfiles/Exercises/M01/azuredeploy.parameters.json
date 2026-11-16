@@ -15,7 +15,7 @@
             "value": "testvm2-nic"
         },
         "vmSize": {
-            "value": "Standard_D2s_v5"
+            "value": "Standard_D2s_v6"
         },
         "adminUsername": {
             "value": "TestUser"
